@@ -1,0 +1,73 @@
+\documentclass[11pt]{article}
+\usepackage{fontspec}
+\usepackage[utf8]{inputenc}
+\setmainfont{STIXGeneral}
+\usepackage[paperwidth=8.25in,paperheight=11.75in,margin=1in,headheight=0.0in,footskip=0.5in,includehead,includefoot,portrait]{geometry}
+\usepackage[absolute]{textpos}
+\TPGrid[0.5in, 0.25in]{23}{24}
+\parindent=0pt
+\parskip=12pt
+\usepackage{nopageno}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage{amsmath}
+\usepackage{tikz}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
+
+\begin{document}
+
+\begin{textblock}{23}(0, 1)
+\begin{center}
+\huge FOREWORD
+\end{center}
+\end{textblock}
+
+\vspace*{0.25\baselineskip}
+
+\begingroup
+\begin{center}
+\leftskip0.5in
+The \textit{Nagual} is a shapeshifting magician.
+\rightskip\leftskip
+\phantom{text} \hfill (GRE)
+\end{center}
+\endgroup
+
+
+\vspace*{2\baselineskip}
+
+\begin{center}
+\huge PERFORMANCE NOTES
+\end{center}
+\begingroup
+\begin{center}
+
+\leftskip0.25in
+\pmb{Alternate Timbres} : Rhythmicized timbre alterations are notated as a circled number above a note (such as \circled{1}, \circled{2}, or \circled{3}), where higher numbers refer to a greater deviation in timbre and pitch.
+\rightskip\leftskip
+\phantom{text} \hfill \phantom{()}
+
+\leftskip0.25in
+\pmb{Accidentals} : Accidentals apply only to the pitch which they immediately precede, but persist through ties.
+\rightskip\leftskip
+\phantom{text} \hfill \phantom{()}
+\end{center}
+\endgroup
+
+\vspace*{10\baselineskip}
+
+\begin{center}
+\leftskip0.25in
+\textit{Nagual} was composed for Ensemble Dal Niente as part of the 2021 Summer Residency for New Music at DePaul University.
+\rightskip\leftskip
+\phantom{text} \hfill \phantom{()}
+\end{center}
+
+\vspace*{26\baselineskip}
+
+\begin{center}
+duration: c. 7'
+\end{center}
+
+\end{document}
