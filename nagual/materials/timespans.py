@@ -4,10 +4,8 @@ import tsmakers
 from abjadext import rmakers
 
 from nagual.materials.instruments import instruments
-from nagual.materials.material_patterns import (
-    pitch_materials_01,
-    rhythm_materials_01,
-)
+from nagual.materials.material_patterns import pitch_materials_01, rhythm_materials_01
+
 # from nagual.materials.time_signatures import (
 #     bounds_01,
 # )
@@ -50,7 +48,7 @@ for voice in voice_names:
 
 # rhythm_timespans_01 = evans.timespan.make_split_list(timespan_list_01, bounds_01)
 
-rhythm_timespans_01 = timespan_list_01 # temp
+rhythm_timespans_01 = timespan_list_01  # temp
 
 rhythm_commands_01 = []
 for span in rhythm_timespans_01:

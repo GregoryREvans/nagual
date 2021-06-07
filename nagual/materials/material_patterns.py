@@ -1,15 +1,9 @@
 import abjad
 import evans
 
-from nagual.lib import (
-    WarbleFingerings,
-)
-from nagual.materials.pitch import (
-    demo_pitch_handler,
-)
-from nagual.materials.rhythm import (
-    note_rhythm_handler,
-)
+from nagual.lib import WarbleFingerings
+from nagual.materials.pitch import demo_pitch_handler
+from nagual.materials.rhythm import note_rhythm_handler
 
 ## 01
 

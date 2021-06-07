@@ -3,11 +3,7 @@ import pathlib
 import abjad
 import evans
 
-from nagual.lib import (
-    mark_108,
-    with_sharps,
-    zero_padding_glissando,
-)
+from nagual.lib import mark_108, with_sharps, zero_padding_glissando
 from nagual.materials.instruments import instruments
 from nagual.materials.score_structure import score
 from nagual.materials.time_signatures import signatures_01

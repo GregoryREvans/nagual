@@ -11,7 +11,9 @@ from nagual.materials.timespans import rhythm_timespans_01
 offset_counter_01 = abjad.OffsetCounter(rhythm_timespans_01)
 
 counter_path_01 = f"""{pathlib.Path(__file__).parent}/segment_01_offset_counter.pdf"""
-persisted_counter_01 = abjad.persist.as_pdf(offset_counter_01, counter_path_01, scale=0.70)
+persisted_counter_01 = abjad.persist.as_pdf(
+    offset_counter_01, counter_path_01, scale=0.70
+)
 
 permitted_meters_01 = abjad.MeterList(
     [
