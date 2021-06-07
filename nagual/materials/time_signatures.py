@@ -21,7 +21,7 @@ permitted_meters_01 = abjad.MeterList(
         (4, 4),
         (3, 4),
         (2, 4),
-        (1, 4),
+        # (1, 4),
     ]
 )
 
@@ -40,6 +40,6 @@ meters_01 = [abjad.Meter(_) for _ in pairs_01]
 
 signatures_01 = [abjad.TimeSignature(_) for _ in meters_01]
 
-signatures_01.append(abjad.TimeSignature((3, 16)))  # for ending skip
+signatures_01.append(abjad.TimeSignature((1, 4)))  # for ending skip
 
 bounds_01 = abjad.math.cumulative_sums([_.duration for _ in signatures_01])

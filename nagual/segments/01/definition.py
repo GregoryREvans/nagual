@@ -1,9 +1,10 @@
 import pathlib
 
 import abjad
+import baca
 import evans
 
-from nagual.lib import mark_108, with_sharps, zero_padding_glissando
+from nagual.lib import mark_108  # , with_sharps, zero_padding_glissando
 from nagual.materials.instruments import instruments
 from nagual.materials.score_structure import score
 from nagual.materials.time_signatures import signatures_01
@@ -59,6 +60,39 @@ maker = evans.SegmentMaker(
                 r"\markup { \raise #4 c.2'}", direction=abjad.Up, literal=True
             ),
             abjad.select().leaf(-1, grace=False),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.Clef("percussion"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(
+                r"\staff-line-count 1", format_slot="absolute_before"
+            ),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(
+                r"\staff-line-count #2", format_slot="absolute_before"
+            ),
+            baca.selectors.note(2),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(
+                r"\staff-line-count #3", format_slot="absolute_before"
+            ),
+            baca.selectors.note(5),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(
+                r"\staff-line-count #4", format_slot="absolute_before"
+            ),
+            baca.selectors.note(7),
         ),
         evans.attach(
             "Global Context",

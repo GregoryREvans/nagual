@@ -24,3 +24,13 @@ colophon = \markup
 normale-markup = \markup \override #'(style . "box") \override #'(box-padding . 0.5) \italic \box \whiteout \small "normale"
 
 rit-markup = \markup \override #'(style . "box") \override #'(box-padding . 0.5) \italic \box \whiteout \small "ritardando"
+
+staff-line-count = #(
+    define-music-function (parser location number music) (number? ly:music?)
+    #{
+    \stopStaff
+    \override Staff.StaffSymbol.line-count = ##'number
+    \startStaff
+    $music
+    #}
+    )
