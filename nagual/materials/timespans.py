@@ -23,16 +23,16 @@ voice_names = [specifier for specifier in music_specifiers]
 # # 01
 
 
-target_timespan_01 = abjad.Timespan(0, (30, 4))
+target_timespan_01 = abjad.Timespan(0, (17, 1))
 
 timespan_maker_01 = tsmakers.TaleaTimespanMaker(
-    initial_silence_talea=rmakers.Talea(counts=([5, 9, 0, 0]), denominator=4),
+    initial_silence_talea=rmakers.Talea(counts=([5, 0, 9, 0]), denominator=4),
     playing_talea=rmakers.Talea(
         counts=([7, 6, 5]),
         denominator=8,
     ),
     playing_groupings=([1, 1, 2]),
-    silence_talea=rmakers.Talea(counts=([0, 1, 2, 3, 2, 1]), denominator=4),
+    silence_talea=rmakers.Talea(counts=([0, 1, 2, 1]), denominator=4),
 )
 
 timespan_list_01 = timespan_maker_01(

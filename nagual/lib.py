@@ -189,6 +189,26 @@ mark_30 = abjad.LilyPondLiteral(
     format_slot="after",
 )
 
+accel_40_100 = evans.TempoSpannerHandler(
+    tempo_list=[
+        (2, 0, 1, "40"),
+        (2, 0, 1, "100"),
+    ],
+    boolean_vector=[1],
+    padding=0.2,
+    staff_padding=0.2,
+    forget=False,
+)
+
+met_mod_40_66 = evans.metric_modulation(
+    metronome_mark=((1, 4), 40),
+    left_note=(abjad.Tuplet((3, 5), [abjad.Note("c'4")])),
+    right_note=(abjad.Note("c'4")),
+    modulated_beat=(abjad.Note("c'4")),
+)
+
+abjad.tweak(met_mod_40_66).padding = 6
+
 
 def zero_padding_glissando(selections):
     abjad.glissando(selections[:], zero_padding=True, allow_repeats=True)

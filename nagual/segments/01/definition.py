@@ -4,7 +4,11 @@ import abjad
 import baca
 import evans
 
-from nagual.lib import mark_108  # , with_sharps, zero_padding_glissando
+from nagual.lib import (  # , with_sharps, zero_padding_glissando
+    accel_40_100,
+    mark_40,
+    met_mod_40_66,
+)
 from nagual.materials.instruments import instruments
 from nagual.materials.score_structure import score
 from nagual.materials.time_signatures import signatures_01
@@ -55,13 +59,6 @@ maker = evans.SegmentMaker(
             abjad.select().leaf(3, grace=False),
         ),
         evans.attach(
-            "Staff 1",
-            abjad.Markup(
-                r"\markup { \raise #4 c.2'}", direction=abjad.Up, literal=True
-            ),
-            abjad.select().leaf(-1, grace=False),
-        ),
-        evans.attach(
             "Voice 3",
             abjad.Clef("percussion"),
             baca.selectors.leaf(0),
@@ -96,11 +93,32 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Global Context",
-            mark_108,
+            mark_40,
             abjad.select().leaf(0),
+        ),
+        evans.attach(
+            "Global Context",
+            abjad.Markup(r"\rehearsal-mark-markup A 6", literal=True),
+            baca.selectors.leaf(6),
+        ),
+        evans.attach(
+            "Global Context",
+            abjad.Markup(r"\rehearsal-mark-markup B 6", literal=True),
+            baca.selectors.leaf(10),
+        ),
+        evans.attach(
+            "Global Context",
+            met_mod_40_66,
+            baca.selectors.leaf(10),
+        ),
+        evans.call(
+            "Global Context",
+            accel_40_100,
+            baca.selectors.leaves([13, 14, 15]),
         ),
     ],
     score_template=score,
+    transpose_from_sounding_pitch=True,
     time_signatures=signatures_01,
     clef_handlers=None,
     tuplet_bracket_noteheads=False,
@@ -115,9 +133,9 @@ maker = evans.SegmentMaker(
     beam_pattern="meter",
     beam_rests=False,
     barline="||",
-    tempo=((1, 4), 108),
+    tempo=((1, 4), 40),
     rehearsal_mark="",
-    fermata="scripts.ushortfermata",
+    fermata="scripts.ufermata",
     page_break_counts=[90],
 )
 

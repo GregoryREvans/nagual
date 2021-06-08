@@ -3,6 +3,8 @@
 #(set-default-paper-size "arch a")
 #(set-global-staff-size 9) % was 8
 
+\include "/Users/evansdsg2/evans/lilypond/evans-markups.ily"
+\include "/Users/evansdsg2/evans/lilypond/evans-spanners.ily"
 \include "../../lib.ily"
 
 \header {
@@ -34,9 +36,9 @@
             \fontsize #3
             \line {
                 for \hspace #0.75
-                Flute \hspace #0.75
-                Guitar \hspace #0.75
-                Percussion \hspace #0.75
+                Flute, \hspace #0.75
+                Guitar, \hspace #0.75
+                Percussion, \hspace #0.75
                 & \hspace #0.75
                 Violin
             }
@@ -65,6 +67,7 @@
 		\consists Mark_engraver
 		\consists Metronome_mark_engraver
 		\consists Text_engraver
+		\consists Text_spanner_engraver
 		\override BarNumber.Y-extent = ##f
 		\override BarNumber.Y-offset = 0
 		\override BarNumber.extra-offset = #'(-4 . -4)
@@ -141,6 +144,10 @@
         \override StemTremolo.flag-count = 4
         \override StemTremolo.slope = 0.5
 
+		\override Tie.stencil = #flare-tie % experimental
+		\override Tie.height-limit = 6 % experimental
+		\override Tie.thickness = 1.5 % experimental
+
 		\override TupletBracket.breakable = ##t
         \override TupletBracket.full-length-to-extent = ##f
         \override TupletBracket.padding = 2 % was 1.55
@@ -154,6 +161,7 @@
 		\override TupletNumber.text = #tuplet-number::calc-fraction-text
 		autoBeaming = ##f
 		proportionalNotationDuration = #(ly:make-moment 1 17)
+		barNumberFormatter = #oval-bar-numbers
 		tupletFullLength = ##t
 	}
 	\context {
