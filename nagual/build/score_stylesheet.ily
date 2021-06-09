@@ -1,7 +1,14 @@
 \version "2.19.84"
 \language "english"
+% preferred style
 #(set-default-paper-size "arch a")
 #(set-global-staff-size 9) % was 8
+% alt style 1
+%{ #(set-default-paper-size "17x11")
+#(set-global-staff-size 13) %}
+% alt style 2
+%{ #(set-default-paper-size "11x17")
+#(set-global-staff-size 13) %}
 
 \include "/Users/evansdsg2/evans/lilypond/evans-markups.ily"
 \include "/Users/evansdsg2/evans/lilypond/evans-spanners.ily"
@@ -137,8 +144,8 @@
 		\override SpacingSpanner.strict-grace-spacing = ##t % trevor
 		\override SpacingSpanner.strict-note-spacing = ##t % trevor
 		\override SpacingSpanner.uniform-stretching = ##t % trevor
-		\override StaffGrouper.staff-staff-spacing = #'((basic-distance . 11) (minimum-distance . 11) (padding . 2))
-		\override StaffGrouper.staffgroup-staff-spacing = #'((basic-distance . 11) (minimum-distance . 11) (padding . 2))
+		\override StaffGrouper.staff-staff-spacing = #'((basic-distance . 0) (minimum-distance . 23) (padding . 0))
+		%{ \override StaffGrouper.staffgroup-staff-spacing = #'((basic-distance . 11) (minimum-distance . 11) (padding . 2)) %}
 		\override Stem.stemlet-length = #1.15
 		\override StemTremolo.beam-width = 1.5
         \override StemTremolo.flag-count = 4
@@ -160,7 +167,7 @@
 		\override TupletBracket.direction = #down
 		\override TupletNumber.text = #tuplet-number::calc-fraction-text
 		autoBeaming = ##f
-		proportionalNotationDuration = #(ly:make-moment 1 17)
+		proportionalNotationDuration = #(ly:make-moment 1 17) % maybe 15? system breaks?
 		barNumberFormatter = #oval-bar-numbers
 		tupletFullLength = ##t
 	}
@@ -183,28 +190,12 @@
 		\RhythmicStaff
 		\remove Time_signature_engraver
 	}
-	\context {
-		\GrandStaff
-		systemStartDelimiter = #'SystemStartSquare
-		%{ \override VerticalAxisGroup.default-staff-staff-spacing = #'((basic-distance . 17) (minimum-distance . 17) (padding . 0)) %}
-    }
-	\context {
-		\PianoStaff
-		systemStartDelimiter = #'SystemStartBrace
-		%{ \override VerticalAxisGroup.default-staff-staff-spacing = #'((basic-distance . 17) (minimum-distance . 17) (padding . 0)) %}
-	}
-	\context {
- 		\StaffGroup
-		systemStartDelimiter = #'SystemStartBracket
-  %{ \override VerticalAxisGroup.default-staff-staff-spacing = #'((basic-distance . 17) (minimum-distance . 17) (padding . 0)) %}
-	}
 
 
 }
 
 \paper {
 	system-separator-markup = \markup { \slashSeparator }
-	system-system-spacing = #'((basic-distance . 16) (minimum-distance . 16) (padding . 2))
 
 	%{ indent = 20\mm %}
     %{ short-indent = 15\mm %}
@@ -218,7 +209,6 @@
 	oddFooterMarkup = \markup
         \on-the-fly #print-page-number-check-first
         \fill-line {
-            " "
             \bold
             \fontsize #3
             \override #'(font-name . "STIXGeneral")
@@ -237,10 +227,9 @@
 				\hspace #1
 				Evans
             }
-            " "
     }
     evenFooterMarkup = \oddFooterMarkup
-	print-first-page-number = ##t
+	print-first-page-number = ##f
     print-page-number = ##t
     ragged-bottom = ##t
     ragged-last-bottom = ##t
@@ -253,7 +242,7 @@
     )
     system-system-spacing = #'(
         (basic-distance . 0)
-        (minimum-distance . 24) % space after each system
+        (minimum-distance . 30) % space after each system
         (padding . 0)
         (stretchability . 0)
     )

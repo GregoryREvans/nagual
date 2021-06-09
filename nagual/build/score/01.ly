@@ -12,6 +12,7 @@
             \time 2/4
             \mark \markup \bold {  }
             s1 * 1/2
+            \tweak padding 6
             ^ \markup {
               \huge
               \concat {
@@ -86,6 +87,7 @@
             %! abjad.SegmentMaker.comment_measure_numbers()
             % [Global Context measure 11]
 
+            \tempo 4=66
             %! scaling time signatures
             \time 4/4
             s1 * 1
@@ -120,6 +122,7 @@
             %! abjad.SegmentMaker.comment_measure_numbers()
             % [Global Context measure 14]
 
+            \tempo 4=70
             %! scaling time signatures
             \time 4/4
             s1 * 1
@@ -160,6 +163,7 @@
             \time 1/4
             s1 * 1/4
             \bacaStopTextSpanMM
+            \break
 
         }
 
