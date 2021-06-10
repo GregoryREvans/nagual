@@ -22,6 +22,9 @@
             % [Global Context measure 1]
 
             \tempo 4=66
+            \once \override Score.BarLine.X-extent = #'(0 . 3)
+            \once \override Score.BarLine.thick-thickness = #4
+            \bar ".|:"
             %! scaling time signatures
             \time 9/8
             \mark \markup \bold {  }
@@ -46,6 +49,11 @@
             %! scaling time signatures
             \time 9/8
             s1 * 9/8
+            \once \override Score.BarLine.color = #red
+            \once \override Score.SpanBar.color = #red
+            \once \override Score.BarLine.X-extent = #'(0 . 3)
+            \once \override Score.BarLine.thick-thickness = #4
+            \bar ".|:"
             %! COMMENT_MEASURE_NUMBERS
             %! abjad.SegmentMaker.comment_measure_numbers()
             % [Global Context measure 3]
@@ -75,6 +83,11 @@
             %! scaling time signatures
             \time 6/8
             s1 * 3/4
+            \once \override Score.BarLine.color = #red
+            \once \override Score.SpanBar.color = #red
+            \once \override Score.BarLine.X-extent = #'(0 . 1.5)
+            \once \override Score.BarLine.thick-thickness = #4
+            \bar ":|."
             %! COMMENT_MEASURE_NUMBERS
             %! abjad.SegmentMaker.comment_measure_numbers()
             % [Global Context measure 5]

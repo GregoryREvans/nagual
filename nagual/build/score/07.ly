@@ -8,6 +8,9 @@
             % [Global Context measure 1]
 
             \tempo 4=100
+            \once \override Score.BarLine.X-extent = #'(0 . 1.5)
+            \once \override Score.BarLine.thick-thickness = #4
+            \bar ":|."
             %! scaling time signatures
             \time 6/4
             \mark \markup \bold {  }

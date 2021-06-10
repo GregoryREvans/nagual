@@ -9,6 +9,7 @@ from nagual.lib import (  # , with_sharps, zero_padding_glissando
     met_100,
     met_110,
     met_mod_66_100,
+    stop_repeat_before,
 )
 from nagual.materials.instruments import instruments
 from nagual.materials.score_structure import score
@@ -89,6 +90,11 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(r"\rehearsal-mark-markup H 6", literal=True),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Global Context",
+            stop_repeat_before,
             baca.selectors.leaf(0),
         ),
         # evans.call(

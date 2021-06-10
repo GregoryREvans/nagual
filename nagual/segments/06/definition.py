@@ -11,6 +11,9 @@ from nagual.lib import (  # , with_sharps, zero_padding_glissando
     met_mod_40_66,
     met_mod_66_40,
     met_mod_120_66,
+    red_start_repeat,
+    red_stop_repeat,
+    start_repeat_before,
 )
 from nagual.materials.instruments import instruments
 from nagual.materials.score_structure import score
@@ -103,6 +106,21 @@ maker = evans.SegmentMaker(
             abjad.Markup(r"\rehearsal-mark-markup G 6", literal=True),
             baca.selectors.leaf(0),
         ),
+        evans.attach(
+            "Global Context",
+            start_repeat_before,
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Global Context",
+            red_start_repeat,
+            baca.selectors.leaf(1),
+        ),
+        evans.attach(
+            "Global Context",
+            red_stop_repeat,
+            baca.selectors.leaf(3),
+        ),
         # evans.call(
         #     "Global Context",
         #     evans.annotate_time,
@@ -124,7 +142,6 @@ maker = evans.SegmentMaker(
     cutaway=False,
     beam_pattern="meter",
     beam_rests=False,
-    barline="||",
     rehearsal_mark="",
     fermata="scripts.ufermata",
     page_break_counts=[90],
