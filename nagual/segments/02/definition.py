@@ -6,7 +6,9 @@ import evans
 
 from nagual.lib import (  # , with_sharps, zero_padding_glissando
     mark_100,
+    mark_100_cautionary,
     met_100,
+    met_mod_100_66,
     red_start_repeat,
     red_stop_repeat,
     start_repeat,
@@ -80,6 +82,16 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Global Context",
+            mark_100_cautionary,
+            abjad.select().leaf(6),
+        ),
+        evans.attach(
+            "Global Context",
+            met_mod_100_66,
+            abjad.select().leaf(10),
+        ),
+        evans.attach(
+            "Global Context",
             abjad.Markup(r"\rehearsal-mark-markup C 6", literal=True),
             baca.selectors.leaf(0),
         ),
@@ -103,16 +115,6 @@ maker = evans.SegmentMaker(
             red_stop_repeat,
             baca.selectors.leaf(12),
         ),
-        # evans.attach(
-        #     "Global Context",
-        #     met_mod_40_66,
-        #     baca.selectors.leaf(10),
-        # ),
-        # evans.call(
-        #     "Global Context",
-        #     accel_40_100,
-        #     baca.selectors.leaves([13, 14, 15]),
-        # ),
         # evans.call(
         #     "Global Context",
         #     evans.annotate_time,
@@ -124,7 +126,7 @@ maker = evans.SegmentMaker(
     time_signatures=signatures_02,
     clef_handlers=None,
     tuplet_bracket_noteheads=False,
-    add_final_grand_pause=False,
+    add_final_grand_pause=True,
     score_includes=[
         "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily",
         "/Users/evansdsg2/Scores/nagual/nagual/build/score_stylesheet.ily",

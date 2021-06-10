@@ -2,6 +2,22 @@ import abjad
 handler_to_value = abjad.OrderedDict(
     [
         (
+            'note_rhythm_handler',
+            abjad.OrderedDict(
+                [
+                    (
+                        'state',
+                        abjad.OrderedDict(
+                            [
+                                ('divisions_consumed', 3),
+                                ('logical_ties_produced', 3),
+                                ]
+                            ),
+                        ),
+                    ]
+                ),
+            ),
+        (
             'silence_maker',
             abjad.OrderedDict(
                 [
@@ -11,22 +27,6 @@ handler_to_value = abjad.OrderedDict(
                             [
                                 ('divisions_consumed', 1),
                                 ('logical_ties_produced', 1),
-                                ]
-                            ),
-                        ),
-                    ]
-                ),
-            ),
-        (
-            'note_rhythm_handler',
-            abjad.OrderedDict(
-                [
-                    (
-                        'state',
-                        abjad.OrderedDict(
-                            [
-                                ('divisions_consumed', 6),
-                                ('logical_ties_produced', 6),
                                 ]
                             ),
                         ),

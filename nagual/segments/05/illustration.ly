@@ -1,3 +1,17 @@
+%! abjad.LilyPondFile._get_format_pieces()
+\version "2.19.84"
+%! abjad.LilyPondFile._get_format_pieces()
+\language "english"
+%! abjad.LilyPondFile._get_formatted_includes()
+\include "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily"
+%! abjad.LilyPondFile._get_formatted_includes()
+\include "/Users/evansdsg2/Scores/nagual/nagual/build/score_stylesheet.ily"
+
+%! abjad.LilyPondFile._get_formatted_blocks()
+\score
+%! abjad.LilyPondFile._get_formatted_blocks()
+{
+
     \context Score = "nagual Score"
     <<
 
@@ -9,10 +23,10 @@
 
             \tempo 4=120
             %! scaling time signatures
-            \time 6/8
+            \time 4/4
             \mark \markup \bold {  }
-            s1 * 3/4
-            - \rehearsal-mark-markup E 6
+            s1 * 1
+            - \rehearsal-mark-markup F 6
             \tweak padding 6
             ^ \markup {
               \huge
@@ -20,7 +34,7 @@
                   \abjad-metronome-mark-markup #2 #0 #1 #"120"
                   \hspace #1
                   \upright [
-                  \abjad-metric-modulation-tuplet-lhs #2 #0 #5 #6 #2 #0 #'(0.6 . 0.6)
+                  \abjad-metric-modulation #2 #0 #1 #0 #'(0.6 . 0.6)
                   \hspace #0.5
                   \upright ]
               }
@@ -30,45 +44,18 @@
             % [Global Context measure 2]
 
             %! scaling time signatures
-            \time 8/8
+            \time 4/4
             s1 * 1
             %! COMMENT_MEASURE_NUMBERS
             %! abjad.SegmentMaker.comment_measure_numbers()
             % [Global Context measure 3]
 
-            \tempo 4=60
             %! scaling time signatures
-            \time 9/8
-            s1 * 9/8
-            \tweak padding 6
-            ^ \markup {
-              \huge
-              \concat {
-                  \abjad-metronome-mark-markup #2 #0 #1 #"60"
-                  \hspace #1
-                  \upright [
-                  \abjad-metric-modulation #1 #0 #2 #0 #'(0.6 . 0.6)
-                  \hspace #0.5
-                  \upright ]
-              }
-            }
-            %! COMMENT_MEASURE_NUMBERS
-            %! abjad.SegmentMaker.comment_measure_numbers()
-            % [Global Context measure 4]
-
-            %! scaling time signatures
-            \time 9/8
-            s1 * 9/8
-            %! COMMENT_MEASURE_NUMBERS
-            %! abjad.SegmentMaker.comment_measure_numbers()
-            % [Global Context measure 5]
-
-            %! scaling time signatures
-            \time 4/8
+            \time 2/4
             s1 * 1/2
             %! COMMENT_MEASURE_NUMBERS
             %! abjad.SegmentMaker.comment_measure_numbers()
-            % [Global Context measure 6]
+            % [Global Context measure 4]
 
             %! applying ending skips
             \once \override Score.TimeSignature.stencil = ##f
@@ -106,51 +93,29 @@
                             \markup { \hcenter-in #14 "Alto Flute" }
                             %! applying invisibility
                             \once \override Rest.transparent = ##t
-                            r1 * 3/8
+                            r1 * 1/2
 
-                            R1 * 3/8
+                            R1 * 1/2
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 2]
 
-                            r2
-
-                            fs'2
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 1 measure 3]
-
-                            fs'4.
+                            r4
 
                             fs'2.
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 1 measure 4]
-
-                            r4
-
-                            fs'8
-                            ~
-
-                            fs'4.
-                            ~
+                            % [Voice 1 measure 3]
 
                             fs'8
 
+                            r8
+
                             r4
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 1 measure 5]
-
-                            %! applying invisibility
-                            \once \override Rest.transparent = ##t
-                            r1 * 1/4
-
-                            R1 * 1/4
                             \bar "||"
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 1 measure 6]
+                            % [Voice 1 measure 4]
 
                             %! applying ending skips
                             \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
@@ -193,9 +158,14 @@
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Guitar" }
                             cs''2.
+
+                            cs''4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 2]
+
+                            cs''4
+                            ~
 
                             \override Staff.Stem.stemlet-length = 0.75
                             cs''8
@@ -207,51 +177,17 @@
                             ]
 
                             cs''2
-                            ~
-
-                            cs''8
-
-                            r8
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 3]
 
-                            r4.
-
-                            cs''4.
-                            ~
-
                             cs''4
 
-                            r8
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 2 measure 4]
-
-                            r8
-
-                            cs''4
-                            ~
-
-                            cs''4.
-                            ~
-
-                            cs''4
-
-                            r8
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 2 measure 5]
-
-                            %! applying invisibility
-                            \once \override Rest.transparent = ##t
-                            r1 * 1/4
-
-                            R1 * 1/4
+                            r4
                             \bar "||"
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 2 measure 6]
+                            % [Voice 2 measure 4]
 
                             %! applying ending skips
                             \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
@@ -281,7 +217,6 @@
 
                         \context Voice = "Voice 3"
                         {
-                            %! applying indicators
                             \staff-line-count 1
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
@@ -295,55 +230,36 @@
                             \set Staff.instrumentName =
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Percussion" }
-                            %! applying invisibility
-                            \once \override Rest.transparent = ##t
-                            %! applying indicators
                             \clef "percussion"
-                            r1 * 3/8
+                            cs'2.
 
-                            R1 * 3/8
+                            cs'4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 2]
 
-                            %! applying invisibility
-                            \once \override Rest.transparent = ##t
-                            r1 * 1/2
-
-                            R1 * 1/2
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 3 measure 3]
-
-                            r4.
-
-                            r8
-
                             cs'4
                             ~
-
-                            cs'4.
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 3 measure 4]
 
                             cs'8
 
-                            cs'4
+                            r8
+
+                            r8
+
+                            cs'8
                             ~
 
-                            cs'4.
-
-                            cs'4.
+                            cs'4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 3 measure 5]
+                            % [Voice 3 measure 3]
 
                             cs'2
                             \bar "||"
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 3 measure 6]
+                            % [Voice 3 measure 4]
 
                             %! applying ending skips
                             \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
@@ -386,6 +302,8 @@
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Violin" }
                             cs'2.
+
+                            r4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 2]
@@ -402,28 +320,6 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 3]
 
-                            r4.
-
-                            cs'2.
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 4 measure 4]
-
-                            cs'8
-
-                            cs'4
-                            ~
-
-                            cs'4.
-                            ~
-
-                            cs'8
-
-                            r4
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 4 measure 5]
-
                             %! applying invisibility
                             \once \override Rest.transparent = ##t
                             r1 * 1/4
@@ -432,7 +328,7 @@
                             \bar "||"
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 4 measure 6]
+                            % [Voice 4 measure 4]
 
                             %! applying ending skips
                             \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
@@ -460,3 +356,4 @@
 
     >>
 %! abjad.LilyPondFile._get_formatted_blocks()
+}

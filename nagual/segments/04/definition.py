@@ -4,7 +4,12 @@ import abjad
 import baca
 import evans
 
-from nagual.lib import mark_100, met_100  # , with_sharps, zero_padding_glissando
+from nagual.lib import (  # , with_sharps, zero_padding_glissando
+    met_60,
+    met_120,
+    met_mod_100_120,
+    met_mod_120_60,
+)
 from nagual.materials.instruments import instruments
 from nagual.materials.score_structure import score
 from nagual.materials.time_signatures import signatures_04
@@ -50,6 +55,26 @@ maker = evans.SegmentMaker(
         #     abjad.select(),
         # ),
         evans.attach(
+            "Global Context",
+            met_120,
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Global Context",
+            met_mod_100_120,
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Global Context",
+            met_60,
+            baca.selectors.leaf(2),
+        ),
+        evans.attach(
+            "Global Context",
+            met_mod_120_60,
+            baca.selectors.leaf(2),
+        ),
+        evans.attach(
             "Voice 3",
             abjad.Clef("percussion"),
             baca.selectors.leaf(0),
@@ -63,29 +88,9 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Global Context",
-            mark_100,
-            abjad.select().leaf(0),
-        ),
-        evans.attach(
-            "Global Context",
-            met_100,
-            abjad.select().leaf(0),
-        ),
-        evans.attach(
-            "Global Context",
             abjad.Markup(r"\rehearsal-mark-markup E 6", literal=True),
             baca.selectors.leaf(0),
         ),
-        # evans.attach(
-        #     "Global Context",
-        #     met_mod_40_66,
-        #     baca.selectors.leaf(10),
-        # ),
-        # evans.call(
-        #     "Global Context",
-        #     accel_40_100,
-        #     baca.selectors.leaves([13, 14, 15]),
-        # ),
         # evans.call(
         #     "Global Context",
         #     evans.annotate_time,
@@ -97,7 +102,7 @@ maker = evans.SegmentMaker(
     time_signatures=signatures_04,
     clef_handlers=None,
     tuplet_bracket_noteheads=False,
-    add_final_grand_pause=False,
+    add_final_grand_pause=True,
     score_includes=[
         "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily",
         "/Users/evansdsg2/Scores/nagual/nagual/build/score_stylesheet.ily",

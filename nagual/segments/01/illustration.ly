@@ -235,7 +235,6 @@
 
                             \revert Staff.Stem.stemlet-length
                             fs'8
-                            ~
                             ]
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
@@ -251,7 +250,6 @@
                             r8
 
                             fs'8
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 5]
@@ -259,7 +257,6 @@
                             fs'2
 
                             fs'2.
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 6]
@@ -276,7 +273,6 @@
                             ~
 
                             fs'4
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 7]
@@ -296,7 +292,6 @@
                             fs'2
 
                             fs'4
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 8]
@@ -333,7 +328,6 @@
                             r2
 
                             fs'4
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 10]
@@ -351,7 +345,6 @@
                             ~
 
                             fs'2
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 11]
@@ -368,7 +361,6 @@
                             fs'2
 
                             fs'4
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 12]
@@ -411,7 +403,6 @@
                             % [Voice 1 measure 15]
 
                             fs'2
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 16]
@@ -470,7 +461,6 @@
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Guitar" }
                             cs''2
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 2]
@@ -480,7 +470,6 @@
                             r4
 
                             cs''4
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 3]
@@ -498,7 +487,6 @@
                             ]
 
                             cs''2
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 4]
@@ -542,7 +530,6 @@
                             cs''4
 
                             cs''2
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 8]
@@ -564,7 +551,6 @@
                             r4
 
                             cs''4
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 9]
@@ -576,7 +562,6 @@
                             r4
 
                             cs''2
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 10]
@@ -598,7 +583,6 @@
                             r4
 
                             cs''4
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 11]
@@ -606,7 +590,6 @@
                             cs''2
 
                             cs''2
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 12]
@@ -621,7 +604,6 @@
                             ~
 
                             cs''4
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 13]
@@ -629,7 +611,6 @@
                             cs''2
 
                             cs''2
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 14]
@@ -639,7 +620,6 @@
                             r2
 
                             cs''4
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 15]
@@ -744,7 +724,6 @@
                             cs'2.
 
                             cs'4
-                            ~
                             \staff-line-count #2
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
@@ -794,7 +773,6 @@
                             ]
 
                             cs'4
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 8]
@@ -821,7 +799,6 @@
                             ~
 
                             cs'2
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 10]
@@ -848,7 +825,6 @@
                             r8
 
                             cs'8
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 12]
@@ -861,7 +837,6 @@
                             cs'2.
 
                             cs'4
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 14]
@@ -879,7 +854,6 @@
                             ~
 
                             cs'4
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 15]
@@ -938,7 +912,6 @@
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Violin" }
                             cs'2
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 2]
@@ -953,7 +926,6 @@
                             ~
 
                             cs'4
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 3]
@@ -961,7 +933,6 @@
                             cs'2
 
                             cs'2
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 4]
@@ -1013,7 +984,6 @@
                             ~
 
                             cs'2
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 8]
@@ -1028,7 +998,6 @@
                             r4
 
                             cs'4
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 9]
@@ -1065,7 +1034,6 @@
                             r4
 
                             cs'4
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 11]
@@ -1083,7 +1051,6 @@
                             ]
 
                             cs'2
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 12]
@@ -1091,7 +1058,6 @@
                             cs'4
 
                             cs'2
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 13]
@@ -1101,7 +1067,6 @@
                             r4
 
                             cs'2
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 14]
@@ -1118,7 +1083,6 @@
                             ~
 
                             cs'4
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 15]

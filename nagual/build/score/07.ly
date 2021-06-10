@@ -7,20 +7,20 @@
             %! abjad.SegmentMaker.comment_measure_numbers()
             % [Global Context measure 1]
 
-            \tempo 4=120
+            \tempo 4=100
             %! scaling time signatures
-            \time 6/8
+            \time 6/4
             \mark \markup \bold {  }
-            s1 * 3/4
-            - \rehearsal-mark-markup E 6
+            s1 * 3/2
+            - \rehearsal-mark-markup H 6
             \tweak padding 6
             ^ \markup {
               \huge
               \concat {
-                  \abjad-metronome-mark-markup #2 #0 #1 #"120"
+                  \abjad-metronome-mark-mixed-number-markup #2 #0 #1 #"99" #"9" #"10"
                   \hspace #1
                   \upright [
-                  \abjad-metric-modulation-tuplet-lhs #2 #0 #5 #6 #2 #0 #'(0.6 . 0.6)
+                  \abjad-metric-modulation-tuplet-lhs #2 #0 #2 #3 #2 #0 #'(0.6 . 0.6)
                   \hspace #0.5
                   \upright ]
               }
@@ -30,51 +30,67 @@
             % [Global Context measure 2]
 
             %! scaling time signatures
-            \time 8/8
-            s1 * 1
+            \time 6/4
+            s1 * 3/2
             %! COMMENT_MEASURE_NUMBERS
             %! abjad.SegmentMaker.comment_measure_numbers()
             % [Global Context measure 3]
 
-            \tempo 4=60
             %! scaling time signatures
-            \time 9/8
-            s1 * 9/8
-            \tweak padding 6
-            ^ \markup {
-              \huge
-              \concat {
-                  \abjad-metronome-mark-markup #2 #0 #1 #"60"
-                  \hspace #1
-                  \upright [
-                  \abjad-metric-modulation #1 #0 #2 #0 #'(0.6 . 0.6)
-                  \hspace #0.5
-                  \upright ]
-              }
-            }
+            \time 4/4
+            s1 * 1
             %! COMMENT_MEASURE_NUMBERS
             %! abjad.SegmentMaker.comment_measure_numbers()
             % [Global Context measure 4]
 
             %! scaling time signatures
-            \time 9/8
-            s1 * 9/8
+            \time 5/4
+            s1 * 5/4
             %! COMMENT_MEASURE_NUMBERS
             %! abjad.SegmentMaker.comment_measure_numbers()
             % [Global Context measure 5]
 
+            \tempo 4=110
             %! scaling time signatures
-            \time 4/8
-            s1 * 1/2
+            \time 4/4
+            s1 * 1
+            - \abjad-dashed-line-with-arrow
+            - \baca-metronome-mark-spanner-left-text 2 0 1 "100"
+            - \tweak padding #0.2
+            - \tweak staff-padding #0.2
+            - \tweak font-size #2
+            \bacaStartTextSpanMM
             %! COMMENT_MEASURE_NUMBERS
             %! abjad.SegmentMaker.comment_measure_numbers()
             % [Global Context measure 6]
+
+            %! scaling time signatures
+            \time 4/4
+            s1 * 1
+            %! COMMENT_MEASURE_NUMBERS
+            %! abjad.SegmentMaker.comment_measure_numbers()
+            % [Global Context measure 7]
+
+            %! scaling time signatures
+            \time 3/4
+            s1 * 3/4
+            \bacaStopTextSpanMM
+            - \abjad-invisible-line
+            - \baca-metronome-mark-spanner-left-text 2 0 1 "120"
+            - \tweak padding #0.2
+            - \tweak staff-padding #0.2
+            - \tweak font-size #2
+            \bacaStartTextSpanMM
+            %! COMMENT_MEASURE_NUMBERS
+            %! abjad.SegmentMaker.comment_measure_numbers()
+            % [Global Context measure 8]
 
             %! applying ending skips
             \once \override Score.TimeSignature.stencil = ##f
             %! scaling time signatures
             \time 1/4
             s1 * 1/4
+            \bacaStopTextSpanMM
 
         }
 
@@ -104,53 +120,111 @@
                             \set Staff.instrumentName =
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Alto Flute" }
-                            %! applying invisibility
-                            \once \override Rest.transparent = ##t
-                            r1 * 3/8
+                            fs'2.
+                            ~
 
-                            R1 * 3/8
+                            \override Staff.Stem.stemlet-length = 0.75
+                            fs'8
+                            [
+
+                            \revert Staff.Stem.stemlet-length
+                            fs'8
+                            ~
+                            ]
+
+                            fs'2
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 2]
 
-                            r2
+                            fs'8
+
+                            r8
+
+                            r8
+
+                            fs'8
+                            ~
+
+                            fs'4
+                            ~
+
+                            fs'4
 
                             fs'2
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 3]
 
-                            fs'4.
+                            fs'4
+                            ~
 
-                            fs'2.
+                            fs'8
+
+                            r8
+
+                            r4
+
+                            r8
+
+                            fs'8
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 4]
 
-                            r4
-
-                            fs'8
-                            ~
-
-                            fs'4.
+                            fs'2
                             ~
 
                             fs'8
 
-                            r4
+                            r8
+
+                            r8
+
+                            fs'8
+                            ~
+
+                            fs'4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 5]
 
-                            %! applying invisibility
-                            \once \override Rest.transparent = ##t
-                            r1 * 1/4
+                            fs'4
 
-                            R1 * 1/4
-                            \bar "||"
+                            fs'2.
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 6]
+
+                            \override Staff.Stem.stemlet-length = 0.75
+                            fs'8
+                            [
+
+                            \revert Staff.Stem.stemlet-length
+                            fs'8
+                            ~
+                            ]
+
+                            fs'2
+                            ~
+
+                            fs'8
+
+                            r8
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 1 measure 7]
+
+                            r8
+
+                            fs'8
+                            ~
+
+                            fs'2
+                            \bar "||"
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 1 measure 8]
 
                             %! applying ending skips
                             \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
@@ -193,9 +267,80 @@
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Guitar" }
                             cs''2.
+                            ~
+
+                            cs''8
+
+                            r8
+
+                            r4
+
+                            r8
+
+                            cs''8
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 2]
+
+                            cs''2
+                            ~
+
+                            cs''8
+
+                            r8
+
+                            r8
+
+                            cs''8
+                            ~
+
+                            cs''2
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 2 measure 3]
+
+                            cs''2.
+                            ~
+
+                            \override Staff.Stem.stemlet-length = 0.75
+                            cs''8
+                            [
+
+                            \revert Staff.Stem.stemlet-length
+                            cs''8
+                            ]
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 2 measure 4]
+
+                            cs''2
+                            ~
+
+                            cs''8
+
+                            r8
+
+                            r8
+
+                            cs''8
+                            ~
+
+                            cs''4
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 2 measure 5]
+
+                            cs''4
+
+                            r2
+
+                            cs''4
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 2 measure 6]
+
+                            cs''2
+                            ~
 
                             \override Staff.Stem.stemlet-length = 0.75
                             cs''8
@@ -206,52 +351,23 @@
                             ~
                             ]
 
-                            cs''2
+                            cs''4
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 2 measure 7]
+
+                            cs''4
                             ~
 
                             cs''8
 
                             r8
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 2 measure 3]
 
-                            r4.
-
-                            cs''4.
-                            ~
-
-                            cs''4
-
-                            r8
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 2 measure 4]
-
-                            r8
-
-                            cs''4
-                            ~
-
-                            cs''4.
-                            ~
-
-                            cs''4
-
-                            r8
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 2 measure 5]
-
-                            %! applying invisibility
-                            \once \override Rest.transparent = ##t
-                            r1 * 1/4
-
-                            R1 * 1/4
+                            r4
                             \bar "||"
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 2 measure 6]
+                            % [Voice 2 measure 8]
 
                             %! applying ending skips
                             \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
@@ -281,7 +397,6 @@
 
                         \context Voice = "Voice 3"
                         {
-                            %! applying indicators
                             \staff-line-count 1
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
@@ -295,55 +410,87 @@
                             \set Staff.instrumentName =
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Percussion" }
-                            %! applying invisibility
-                            \once \override Rest.transparent = ##t
-                            %! applying indicators
                             \clef "percussion"
-                            r1 * 3/8
+                            cs'2
+                            ~
 
-                            R1 * 3/8
+                            cs'8
+
+                            r8
+
+                            r8
+
+                            cs'8
+                            ~
+
+                            cs'2
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 2]
 
-                            %! applying invisibility
-                            \once \override Rest.transparent = ##t
-                            r1 * 1/2
+                            cs'4
 
-                            R1 * 1/2
+                            cs'2
+                            ~
+
+                            cs'4
+
+                            cs'2
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 3]
 
-                            r4.
+                            cs'8
 
                             r8
 
-                            cs'4
+                            r8
+
+                            cs'8
                             ~
 
-                            cs'4.
+                            cs'2
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 4]
 
-                            cs'8
-
                             cs'4
-                            ~
 
-                            cs'4.
+                            r2
 
-                            cs'4.
+                            cs'2
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 5]
 
+                            cs'4
+
+                            r4
+
                             cs'2
-                            \bar "||"
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 6]
+
+                            \override Staff.Stem.stemlet-length = 0.75
+                            cs'8
+                            [
+
+                            \revert Staff.Stem.stemlet-length
+                            cs'8
+                            ~
+                            ]
+
+                            cs'2.
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 3 measure 7]
+
+                            cs'2.
+                            \bar "||"
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 3 measure 8]
 
                             %! applying ending skips
                             \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
@@ -385,12 +532,31 @@
                             \set Staff.instrumentName =
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Violin" }
-                            cs'2.
+                            cs'2
+                            ~
+
+                            cs'8
+
+                            r8
+
+                            r8
+
+                            cs'8
+                            ~
+
+                            cs'2
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 2]
 
-                            r4
+                            cs'4
+
+                            r2
+
+                            cs'2.
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 4 measure 3]
 
                             cs'2
                             ~
@@ -398,41 +564,53 @@
                             cs'8
 
                             r8
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 4 measure 3]
 
-                            r4.
+                            r8
 
-                            cs'2.
+                            cs'8
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 4]
 
-                            cs'8
+                            cs'2.
 
-                            cs'4
-                            ~
-
-                            cs'4.
-                            ~
-
-                            cs'8
-
-                            r4
+                            cs'2
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 5]
 
-                            %! applying invisibility
-                            \once \override Rest.transparent = ##t
-                            r1 * 1/4
+                            cs'4
 
-                            R1 * 1/4
-                            \bar "||"
+                            r4
+
+                            cs'2
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 6]
+
+                            \override Staff.Stem.stemlet-length = 0.75
+                            cs'8
+                            [
+
+                            \revert Staff.Stem.stemlet-length
+                            cs'8
+                            ~
+                            ]
+
+                            cs'2.
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 4 measure 7]
+
+                            %! applying invisibility
+                            \once \override Rest.transparent = ##t
+                            r1 * 3/8
+
+                            R1 * 3/8
+                            \bar "||"
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 4 measure 8]
 
                             %! applying ending skips
                             \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff

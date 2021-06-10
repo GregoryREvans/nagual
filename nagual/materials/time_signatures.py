@@ -83,9 +83,6 @@ bounds_03 = abjad.math.cumulative_sums([_.duration for _ in signatures_03])
 
 pairs_04 = evans.Sequence(time_signature_series["B"][5:7]).flatten(depth=-1)[:5]
 
-# segment_duration_04 = sum([abjad.Duration(_.pair) for _ in pairs_04])
-# raise Exception(f"Segment 04 dur is {segment_duration_04}, with {len(pairs_04)} measures.")
-
 meters_04 = [abjad.Meter(_) for _ in pairs_04]
 
 signatures_04 = [abjad.TimeSignature(_) for _ in meters_04]
@@ -93,3 +90,88 @@ signatures_04 = [abjad.TimeSignature(_) for _ in meters_04]
 signatures_04.append(abjad.TimeSignature((1, 4)))  # for ending skip
 
 bounds_04 = abjad.math.cumulative_sums([_.duration for _ in signatures_04])
+
+##
+## 05
+##
+
+pairs_05 = evans.Sequence(time_signature_series["A"][8:12]).flatten(depth=-1)[:3]
+
+# segment_duration_05 = sum([abjad.Duration(_.pair) for _ in pairs_05])
+# raise Exception(f"Segment 05 dur is {segment_duration_05}, with {len(pairs_05)} measures.")
+
+meters_05 = [abjad.Meter(_) for _ in pairs_05]
+
+signatures_05 = [abjad.TimeSignature(_) for _ in meters_05]
+
+signatures_05.append(abjad.TimeSignature((1, 4)))  # for ending skip
+
+bounds_05 = abjad.math.cumulative_sums([_.duration for _ in signatures_05])
+
+##
+## 06
+##
+
+pairs_06 = evans.Sequence(time_signature_series["B"][10:14]).flatten(depth=-1)[:7]
+
+# segment_duration_06 = sum([abjad.Duration(_.pair) for _ in pairs_06])
+# raise Exception(f"Segment 06 dur is {segment_duration_06}, with {len(pairs_06)} measures.")
+
+meters_06 = [abjad.Meter(_) for _ in pairs_06]
+
+signatures_06 = [abjad.TimeSignature(_) for _ in meters_06]
+
+signatures_06.append(abjad.TimeSignature((1, 4)))  # for ending skip
+
+bounds_06 = abjad.math.cumulative_sums([_.duration for _ in signatures_06])
+
+##
+## 07
+##
+
+pairs_07 = evans.Sequence(time_signature_series["C"][0:5]).flatten(depth=-1)[:7]
+
+# segment_duration_07 = sum([abjad.Duration(_.pair) for _ in pairs_07])
+# raise Exception(f"Segment 07 dur is {segment_duration_07}, with {len(pairs_07)} measures.")
+
+meters_07 = [abjad.Meter(_) for _ in pairs_07]
+
+signatures_07 = [abjad.TimeSignature(_) for _ in meters_07]
+
+signatures_07.append(abjad.TimeSignature((1, 4)))  # for ending skip
+
+bounds_07 = abjad.math.cumulative_sums([_.duration for _ in signatures_07])
+
+##
+## 08
+##
+
+pairs_08 = evans.Sequence(time_signature_series["D"][0:5]).flatten(depth=-1)[:15]
+
+# segment_duration_08 = sum([abjad.Duration(_.pair) for _ in pairs_08])
+# raise Exception(f"Segment 08 dur is {segment_duration_08}, with {len(pairs_08)} measures.")
+
+meters_08 = [abjad.Meter(_) for _ in pairs_08]
+
+signatures_08 = [abjad.TimeSignature(_) for _ in meters_08]
+
+signatures_08.append(abjad.TimeSignature((1, 4)))  # for ending skip
+
+bounds_08 = abjad.math.cumulative_sums([_.duration for _ in signatures_08])
+
+##
+## 09
+##
+
+pairs_09 = evans.Sequence(time_signature_series["C"][3:7]).flatten(depth=-1)[:7]
+
+# segment_duration_09 = sum([abjad.Duration(_.pair) for _ in pairs_09])
+# raise Exception(f"Segment 09 dur is {segment_duration_09}, with {len(pairs_09)} measures.")
+
+meters_09 = [abjad.Meter(_) for _ in pairs_09]
+
+signatures_09 = [abjad.TimeSignature(_) for _ in meters_09]
+
+signatures_09.append(abjad.TimeSignature((1, 4)))  # for ending skip
+
+bounds_09 = abjad.math.cumulative_sums([_.duration for _ in signatures_09])
