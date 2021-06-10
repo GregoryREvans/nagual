@@ -1,6 +1,6 @@
 colophon = \markup
 {
-    \override #'(font-name . "STIXGeneral")
+    \override #'(font-name . "Bell MT Std")
     \with-color #white
     \right-column
     {

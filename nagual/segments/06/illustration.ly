@@ -1,5 +1,5 @@
 %! abjad.LilyPondFile._get_format_pieces()
-\version "2.19.84"
+\version "2.23.2"
 %! abjad.LilyPondFile._get_format_pieces()
 \language "english"
 %! abjad.LilyPondFile._get_formatted_includes()
@@ -32,12 +32,12 @@
             - \rehearsal-mark-markup G 6
             \tweak padding 6
             ^ \markup {
-              \huge
+              \override #'(font-size . 5.5)
               \concat {
                   \abjad-metronome-mark-mixed-number-markup #2 #0 #1 #"66" #"2" #"3"
                   \hspace #1
                   \upright [
-                  \abjad-metric-modulation-tuplet-rhs #2 #0 #2 #0 #5 #9 #'(0.6 . 0.6)
+                  \abjad-metric-modulation-tuplet-rhs #2 #0 #2 #0 #5 #9 #'(0.8 . 0.8)
                   \hspace #0.5
                   \upright ]
               }
@@ -64,14 +64,14 @@
             s1 * 1/2
             \tweak padding 6
             ^ \markup {
-              \huge
+              \override #'(font-size . 5.5)
               \concat {
                    c.
                   \hspace #1
                   \abjad-metronome-mark-markup #2 #0 #1 #"40"
                   \hspace #1
                   \upright [
-                  \abjad-metric-modulation-tuplet-rhs #2 #0 #2 #0 #3 #5 #'(0.6 . 0.6)
+                  \abjad-metric-modulation-tuplet-rhs #2 #0 #2 #0 #3 #5 #'(0.8 . 0.8)
                   \hspace #0.5
                   \upright ]
               }
@@ -98,12 +98,12 @@
             s1 * 1
             \tweak padding 6
             ^ \markup {
-              \huge
+              \override #'(font-size . 5.5)
               \concat {
                   \abjad-metronome-mark-mixed-number-markup #2 #0 #1 #"66" #"2" #"3"
                   \hspace #1
                   \upright [
-                  \abjad-metric-modulation-tuplet-lhs #2 #0 #3 #5 #2 #0 #'(0.6 . 0.6)
+                  \abjad-metric-modulation-tuplet-lhs #2 #0 #3 #5 #2 #0 #'(0.8 . 0.8)
                   \hspace #0.5
                   \upright ]
               }

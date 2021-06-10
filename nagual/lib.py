@@ -68,7 +68,7 @@ met_40_mark = abjad.MetronomeMark.make_tempo_equation_markup((1, 4), 40)
 mark_40 = abjad.LilyPondLiteral(
     [
         r"^ \markup {",
-        r"  \huge",
+        r"  \override #'(font-size . 5.5)",
         r"  \concat {",
         f"      {str(met_40_mark)[8:]}",
         r"  }",
@@ -84,7 +84,7 @@ met_100_mark = abjad.MetronomeMark.make_tempo_equation_markup((1, 4), 100)
 mark_100 = abjad.LilyPondLiteral(
     [
         r"^ \markup {",
-        r"  \huge",
+        r"  \override #'(font-size . 5.5)",
         r"  \concat {",
         f"      {str(met_100_mark)[8:]}",
         r"  }",
@@ -98,7 +98,7 @@ abjad.tweak(mark_100).padding = 6
 mark_100_cautionary = abjad.LilyPondLiteral(
     [
         r"^ \markup {",
-        r"  \huge",
+        r"  \override #'(font-size . 3)",
         r"  \concat {",
         r"      (",
         f"      {str(met_100_mark)[8:]}",
@@ -122,6 +122,7 @@ accel_40_100 = evans.TempoSpannerHandler(
     padding=0.2,
     staff_padding=0.2,
     forget=False,
+    font_size=5.5,
 )
 
 accel_100_120 = evans.TempoSpannerHandler(
@@ -133,6 +134,7 @@ accel_100_120 = evans.TempoSpannerHandler(
     padding=0.2,
     staff_padding=0.2,
     forget=False,
+    font_size=5.5,
 )
 
 rit_130_60 = evans.TempoSpannerHandler(
@@ -144,6 +146,7 @@ rit_130_60 = evans.TempoSpannerHandler(
     padding=0.2,
     staff_padding=0.2,
     forget=False,
+    font_size=5.5,
 )
 
 met_mod_40_66 = evans.metric_modulation(
@@ -151,6 +154,8 @@ met_mod_40_66 = evans.metric_modulation(
     left_note=(abjad.Tuplet((3, 5), [abjad.Note("c'4")])),
     right_note=(abjad.Note("c'4")),
     modulated_beat=(abjad.Note("c'4")),
+    font_size=5.5,
+    leaf_scale=(0.8, 0.8),
 )
 
 abjad.tweak(met_mod_40_66).padding = 6
@@ -160,6 +165,8 @@ met_mod_100_66 = evans.metric_modulation(
     left_note=(abjad.Note("c'4")),
     right_note=(abjad.Tuplet((2, 3), [abjad.Note("c'4")])),
     modulated_beat=(abjad.Note("c'4")),
+    font_size=5.5,
+    leaf_scale=(0.8, 0.8),
 )
 
 abjad.tweak(met_mod_100_66).padding = 6
@@ -170,6 +177,8 @@ met_mod_66_50 = evans.metric_modulation(
     right_note=(abjad.Note("c'8.")),
     modulated_beat=(abjad.Note("c'4")),
     rounded=True,
+    font_size=5.5,
+    leaf_scale=(0.8, 0.8),
 )
 
 abjad.tweak(met_mod_66_50).padding = 6
@@ -179,6 +188,8 @@ met_mod_50_100 = evans.metric_modulation(
     left_note=(abjad.Note("c'4")),
     right_note=(abjad.Note("c'2")),
     modulated_beat=(abjad.Note("c'4")),
+    font_size=5.5,
+    leaf_scale=(0.8, 0.8),
 )
 
 abjad.tweak(met_mod_50_100).padding = 6
@@ -188,6 +199,8 @@ met_mod_100_120 = evans.metric_modulation(
     left_note=(abjad.Tuplet((5, 6), [abjad.Note("c'4")])),
     right_note=(abjad.Note("c'4")),
     modulated_beat=(abjad.Note("c'4")),
+    font_size=5.5,
+    leaf_scale=(0.8, 0.8),
 )
 
 abjad.tweak(met_mod_100_120).padding = 6
@@ -197,6 +210,7 @@ met_mod_120_60 = evans.metric_modulation(
     left_note=(abjad.Note("c'2")),
     right_note=(abjad.Note("c'4")),
     modulated_beat=(abjad.Note("c'4")),
+    font_size=5.5,
 )
 
 abjad.tweak(met_mod_120_60).padding = 6
@@ -206,6 +220,8 @@ met_mod_60_120 = evans.metric_modulation(
     left_note=(abjad.Note("c'4")),
     right_note=(abjad.Note("c'2")),
     modulated_beat=(abjad.Note("c'4")),
+    font_size=5.5,
+    leaf_scale=(0.8, 0.8),
 )
 
 abjad.tweak(met_mod_60_120).padding = 6
@@ -215,6 +231,8 @@ met_mod_120_66 = evans.metric_modulation(
     left_note=(abjad.Note("c'4")),
     right_note=(abjad.Tuplet((5, 9), [abjad.Note("c'4")])),
     modulated_beat=(abjad.Note("c'4")),
+    font_size=5.5,
+    leaf_scale=(0.8, 0.8),
 )
 
 abjad.tweak(met_mod_120_66).padding = 6
@@ -225,6 +243,8 @@ met_mod_66_40 = evans.metric_modulation(
     right_note=(abjad.Tuplet((3, 5), [abjad.Note("c'4")])),
     modulated_beat=(abjad.Note("c'4")),
     rounded=True,
+    font_size=5.5,
+    leaf_scale=(0.8, 0.8),
 )
 
 abjad.tweak(met_mod_66_40).padding = 6
@@ -235,6 +255,8 @@ met_mod_66_100 = evans.metric_modulation(
     right_note=(abjad.Note("c'4")),
     modulated_beat=(abjad.Note("c'4")),
     rounded=True,
+    font_size=5.5,
+    leaf_scale=(0.8, 0.8),
 )
 
 abjad.tweak(met_mod_66_100).padding = 6
@@ -244,6 +266,8 @@ met_mod_120_100 = evans.metric_modulation(
     left_note=(abjad.Note("c'4")),
     right_note=(abjad.Tuplet((5, 6), [abjad.Note("c'4")])),
     modulated_beat=(abjad.Note("c'4")),
+    font_size=5.5,
+    leaf_scale=(0.8, 0.8),
 )
 
 abjad.tweak(met_mod_120_100).padding = 6
@@ -253,6 +277,8 @@ met_mod_100_80 = evans.metric_modulation(
     left_note=(abjad.Tuplet((5, 4), [abjad.Note("c'4")])),
     right_note=(abjad.Note("c'4")),
     modulated_beat=(abjad.Note("c'4")),
+    font_size=5.5,
+    leaf_scale=(0.8, 0.8),
 )
 
 abjad.tweak(met_mod_100_80).padding = 6
@@ -262,6 +288,8 @@ met_mod_80_130 = evans.metric_modulation(
     left_note=(abjad.Tuplet((8, 13), [abjad.Note("c'4")])),
     right_note=(abjad.Note("c'4")),
     modulated_beat=(abjad.Note("c'4")),
+    font_size=5.5,
+    leaf_scale=(0.8, 0.8),
 )
 
 abjad.tweak(met_mod_80_130).padding = 6
@@ -271,6 +299,8 @@ met_mod_60_40 = evans.metric_modulation(
     left_note=(abjad.Note("c'4")),
     right_note=(abjad.Tuplet((2, 3), [abjad.Note("c'4")])),
     modulated_beat=(abjad.Note("c'4")),
+    font_size=5.5,
+    leaf_scale=(0.8, 0.8),
 )
 
 abjad.tweak(met_mod_60_40).padding = 6
@@ -280,6 +310,8 @@ met_mod_80_100 = evans.metric_modulation(
     left_note=(abjad.Note("c'4")),
     right_note=(abjad.Tuplet((5, 4), [abjad.Note("c'4")])),
     modulated_beat=(abjad.Note("c'4")),
+    font_size=5.5,
+    leaf_scale=(0.8, 0.8),
 )
 
 abjad.tweak(met_mod_80_100).padding = 6

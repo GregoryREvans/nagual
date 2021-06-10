@@ -17,10 +17,10 @@
 \header {
 	tagline = ##f
 	breakbefore = ##t
-	dedication = \markup \override #'(font-name . "STIXGeneral") \fontsize #5.4 \center-column {"t o   E n s e m b l e   D a l   N i e n t e" \fontsize #3.4 \with-color #white "."}
+	dedication = \markup \override #'(font-name . "Bell MT Std") \fontsize #5.4 \center-column {"t o   E n s e m b l e   D a l   N i e n t e" \fontsize #3.4 \with-color #white "."}
 	title =  \markup \center-column {
         %{ \center-align { %}
-            \override #'(font-name . "STIXGeneral")
+            \override #'(font-name . "Bell MT Std")
             \fontsize #16
             \line {
                 \concat {
@@ -39,7 +39,7 @@
                 }
             }
             " "
-            \override #'(font-name . "STIXGeneral Italic")
+            \override #'(font-name . "Bell MT Std Italic")
             \fontsize #3
             \line {
                 for \hspace #0.75
@@ -51,9 +51,9 @@
             }
         %{ } %}
     }
-	%subtitle = \markup \center-column { \with-color #white "." \override #'(font-name . "STIXGeneral") \fontsize #5.27 "or, earth eats the sun" }
-	%subsubtitle = \markup \center-column { \with-color #white "." \override #'(font-name . "STIXGeneral") \fontsize #2.27 "for Flute, Guitar, Percussion, & Violin" }
-	composer = \markup \override #'(font-name . "STIXGeneral") \fontsize #5 {"Gregory Rowland Evans (*1995)"}
+	%subtitle = \markup \center-column { \with-color #white "." \override #'(font-name . "Bell MT Std") \fontsize #5.27 "or, earth eats the sun" }
+	%subsubtitle = \markup \center-column { \with-color #white "." \override #'(font-name . "Bell MT Std") \fontsize #2.27 "for Flute, Guitar, Percussion, & Violin" }
+	composer = \markup \override #'(font-name . "Bell MT Std") \fontsize #5 {"Gregory Rowland Evans (*1995)"}
 	tagline = \markup { "" }
 }
 
@@ -80,14 +80,14 @@
 		\override BarNumber.extra-offset = #'(-4 . -4)
         \override BarNumber.font-size = 1
 		\override BarNumber.padding = 4
-		\override BarNumber.font-name = "STIXGeneral"
+		\override BarNumber.font-name = "Bell MT Std"
 		\override MetronomeMark.stencil = ##f
 		\override RehearsalMark.X-extent = #'(0 . 0)
 		\override RehearsalMark.X-offset = 6
 		\override RehearsalMark.Y-offset = -2.5
 		\override RehearsalMark.break-align-symbols = #'(time-signature)
 		\override RehearsalMark.break-visibility = #end-of-line-invisible
-		\override RehearsalMark.font-name = "STIXGeneral"
+		\override RehearsalMark.font-name = "Bell MT Std"
 		\override RehearsalMark.font-size = 3
 		\override RehearsalMark.outside-staff-priority = 500
 		\override RehearsalMark.self-alignment-X = #center
@@ -97,14 +97,14 @@
 		\override TimeSignature.X-extent = ##f
         \override TimeSignature.break-align-symbol = #'left-edge
         \override TimeSignature.break-visibility = #end-of-line-invisible
-        \override TimeSignature.font-size = 5
+        \override TimeSignature.font-size = 3 % was 5 for STIXGeneral
         \override TimeSignature.space-alist.clef = #'(extra-space . 0.5)
         \override TimeSignature.style = #'numbered
 
 		%{ \override TimeSignature.padding = #7 %}
         %{ \override TimeSignature.X-offset = #ly:self-alignment-interface::x-aligned-on-self %}
         %{ \override TimeSignature.Y-extent = #'(0 . 0) %}
-		\override TimeSignature.font-name = "STIXGeneral"
+		%{ \override TimeSignature.font-name = "Bell MT Std" %}
         %{ \override TimeSignature.self-alignment-X = #center %}
 		\override TimeSignature.whiteout-style = #'outline
 		\override TimeSignature.whiteout = ##t
@@ -211,9 +211,9 @@
         \fill-line {
             \bold
             \fontsize #3
-            \override #'(font-name . "STIXGeneral")
+            \override #'(font-name . "Bell MT Std")
             \concat {
-                \override #'(font-name . "STIXGeneral Italic")
+                \override #'(font-name . "Bell MT Std Italic")
                 Nagual
                 \hspace #3
                 —

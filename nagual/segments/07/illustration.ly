@@ -1,5 +1,5 @@
 %! abjad.LilyPondFile._get_format_pieces()
-\version "2.19.84"
+\version "2.23.2"
 %! abjad.LilyPondFile._get_format_pieces()
 \language "english"
 %! abjad.LilyPondFile._get_formatted_includes()
@@ -32,14 +32,14 @@
             - \rehearsal-mark-markup H 6
             \tweak padding 6
             ^ \markup {
-              \huge
+              \override #'(font-size . 5.5)
               \concat {
                    c.
                   \hspace #1
                   \abjad-metronome-mark-markup #2 #0 #1 #"100"
                   \hspace #1
                   \upright [
-                  \abjad-metric-modulation-tuplet-lhs #2 #0 #2 #3 #2 #0 #'(0.6 . 0.6)
+                  \abjad-metric-modulation-tuplet-lhs #2 #0 #2 #3 #2 #0 #'(0.8 . 0.8)
                   \hspace #0.5
                   \upright ]
               }
@@ -77,7 +77,7 @@
             - \baca-metronome-mark-spanner-left-text 2 0 1 "100"
             - \tweak padding #0.2
             - \tweak staff-padding #0.2
-            - \tweak font-size #2
+            - \tweak font-size #5.5
             \bacaStartTextSpanMM
             %! COMMENT_MEASURE_NUMBERS
             %! abjad.SegmentMaker.comment_measure_numbers()
@@ -98,7 +98,7 @@
             - \baca-metronome-mark-spanner-left-text 2 0 1 "120"
             - \tweak padding #0.2
             - \tweak staff-padding #0.2
-            - \tweak font-size #2
+            - \tweak font-size #5.5
             \bacaStartTextSpanMM
 
         }

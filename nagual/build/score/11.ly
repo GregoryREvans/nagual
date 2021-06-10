@@ -18,12 +18,12 @@
             - \rehearsal-mark-markup M 6
             \tweak padding 6
             ^ \markup {
-              \huge
+              \override #'(font-size . 5.5)
               \concat {
                   \abjad-metronome-mark-markup #2 #0 #1 #"130"
                   \hspace #1
                   \upright [
-                  \abjad-metric-modulation-tuplet-lhs #2 #0 #8 #13 #2 #0 #'(0.6 . 0.6)
+                  \abjad-metric-modulation-tuplet-lhs #2 #0 #8 #13 #2 #0 #'(0.8 . 0.8)
                   \hspace #0.5
                   \upright ]
               }
@@ -82,7 +82,7 @@
             - \baca-metronome-mark-spanner-left-text 2 0 1 "130"
             - \tweak padding #0.2
             - \tweak staff-padding #0.2
-            - \tweak font-size #2
+            - \tweak font-size #5.5
             \bacaStartTextSpanMM
             %! COMMENT_MEASURE_NUMBERS
             %! abjad.SegmentMaker.comment_measure_numbers()
@@ -110,7 +110,7 @@
             - \baca-metronome-mark-spanner-left-text 2 0 1 "60"
             - \tweak padding #0.2
             - \tweak staff-padding #0.2
-            - \tweak font-size #2
+            - \tweak font-size #5.5
             \bacaStartTextSpanMM
 
         }

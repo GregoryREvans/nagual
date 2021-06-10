@@ -15,14 +15,14 @@
             - \rehearsal-mark-markup D 6
             \tweak padding 6
             ^ \markup {
-              \huge
+              \override #'(font-size . 5.5)
               \concat {
                    c.
                   \hspace #1
                   \abjad-metronome-mark-markup #2 #0 #1 #"50"
                   \hspace #1
                   \upright [
-                  \abjad-metric-modulation #2 #0 #3 #1 #'(0.6 . 0.6)
+                  \abjad-metric-modulation #2 #0 #3 #1 #'(0.8 . 0.8)
                   \hspace #0.5
                   \upright ]
               }
@@ -86,12 +86,12 @@
             s1 * 3/2
             \tweak padding 6
             ^ \markup {
-              \huge
+              \override #'(font-size . 5.5)
               \concat {
                   \abjad-metronome-mark-markup #2 #0 #1 #"100"
                   \hspace #1
                   \upright [
-                  \abjad-metric-modulation #2 #0 #1 #0 #'(0.6 . 0.6)
+                  \abjad-metric-modulation #2 #0 #1 #0 #'(0.8 . 0.8)
                   \hspace #0.5
                   \upright ]
               }
