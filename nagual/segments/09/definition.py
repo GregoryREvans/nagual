@@ -99,7 +99,7 @@ maker = evans.SegmentMaker(
     beam_rests=False,
     barline="||",
     rehearsal_mark="",
-    fermata="scripts.ufermata",
+    fermata="scripts.ushortfermata",
     page_break_counts=[90],
 )
 

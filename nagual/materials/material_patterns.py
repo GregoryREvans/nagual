@@ -94,3 +94,33 @@ rhythm_materials_09 = [
 pitch_materials_09 = [
     demo_pitch_handler,
 ]
+
+## 10
+
+rhythm_materials_10 = [
+    note_rhythm_handler,
+]
+
+pitch_materials_10 = [
+    demo_pitch_handler,
+]
+
+## 11
+
+rhythm_materials_11 = [
+    note_rhythm_handler,
+]
+
+pitch_materials_11 = [
+    demo_pitch_handler,
+]
+
+## 12
+
+rhythm_materials_12 = [
+    note_rhythm_handler,
+]
+
+pitch_materials_12 = [
+    demo_pitch_handler,
+]

@@ -39,6 +39,7 @@
                   \upright ]
               }
             }
+            \bacaStopTextSpanMM
             %! COMMENT_MEASURE_NUMBERS
             %! abjad.SegmentMaker.comment_measure_numbers()
             % [Global Context measure 2]
@@ -137,15 +138,6 @@
             %! scaling time signatures
             \time 3/8
             s1 * 3/8
-            %! COMMENT_MEASURE_NUMBERS
-            %! abjad.SegmentMaker.comment_measure_numbers()
-            % [Global Context measure 16]
-
-            %! applying ending skips
-            \once \override Score.TimeSignature.stencil = ##f
-            %! scaling time signatures
-            \time 1/4
-            s1 * 1/4
 
         }
 
@@ -295,23 +287,6 @@
 
                             fs'4.
                             \bar "||"
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 1 measure 16]
-
-                            %! applying ending skips
-                            \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
-                            %! applying ending skips
-                            \once \override Rest.transparent = ##t
-                            r1 * 1/8
-
-                            %! applying ending skips
-                            \once \override MultiMeasureRest.transparent = ##t
-                            R1 * 1/8
-                            %! applying ending skips
-                            ^ \markup \center-align \musicglyph #"scripts.ufermata" 
-                            %! applying ending skips
-                            \stopStaff \startStaff
 
                         }
 
@@ -456,23 +431,6 @@
 
                             R1 * 3/16
                             \bar "||"
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 2 measure 16]
-
-                            %! applying ending skips
-                            \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
-                            %! applying ending skips
-                            \once \override Rest.transparent = ##t
-                            r1 * 1/8
-
-                            %! applying ending skips
-                            \once \override MultiMeasureRest.transparent = ##t
-                            R1 * 1/8
-                            %! applying ending skips
-                            ^ \markup \center-align \musicglyph #"scripts.ufermata" 
-                            %! applying ending skips
-                            \stopStaff \startStaff
 
                         }
 
@@ -637,23 +595,6 @@
 
                             R1 * 3/16
                             \bar "||"
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 3 measure 16]
-
-                            %! applying ending skips
-                            \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
-                            %! applying ending skips
-                            \once \override Rest.transparent = ##t
-                            r1 * 1/8
-
-                            %! applying ending skips
-                            \once \override MultiMeasureRest.transparent = ##t
-                            R1 * 1/8
-                            %! applying ending skips
-                            ^ \markup \center-align \musicglyph #"scripts.ufermata" 
-                            %! applying ending skips
-                            \stopStaff \startStaff
 
                         }
 
@@ -806,23 +747,6 @@
 
                             cs'4.
                             \bar "||"
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 4 measure 16]
-
-                            %! applying ending skips
-                            \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
-                            %! applying ending skips
-                            \once \override Rest.transparent = ##t
-                            r1 * 1/8
-
-                            %! applying ending skips
-                            \once \override MultiMeasureRest.transparent = ##t
-                            R1 * 1/8
-                            %! applying ending skips
-                            ^ \markup \center-align \musicglyph #"scripts.ufermata" 
-                            %! applying ending skips
-                            \stopStaff \startStaff
 
                         }
 

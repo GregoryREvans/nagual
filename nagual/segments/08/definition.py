@@ -76,6 +76,11 @@ maker = evans.SegmentMaker(
             abjad.Markup(r"\rehearsal-mark-markup J 6", literal=True),
             baca.selectors.leaf(0),
         ),
+        evans.attach(
+            "Global Context",
+            abjad.LilyPondLiteral(r"\bacaStopTextSpanMM", format_slot="after"),
+            baca.selectors.leaf(0),
+        ),
         # evans.call(
         #     "Global Context",
         #     evans.annotate_time,
@@ -87,7 +92,7 @@ maker = evans.SegmentMaker(
     time_signatures=signatures_08,
     clef_handlers=None,
     tuplet_bracket_noteheads=False,
-    add_final_grand_pause=True,
+    add_final_grand_pause=False,
     score_includes=[
         "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily",
         "/Users/evansdsg2/Scores/nagual/nagual/build/score_stylesheet.ily",

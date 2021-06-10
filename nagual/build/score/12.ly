@@ -1,17 +1,3 @@
-%! abjad.LilyPondFile._get_format_pieces()
-\version "2.19.84"
-%! abjad.LilyPondFile._get_format_pieces()
-\language "english"
-%! abjad.LilyPondFile._get_formatted_includes()
-\include "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily"
-%! abjad.LilyPondFile._get_formatted_includes()
-\include "/Users/evansdsg2/Scores/nagual/nagual/build/score_stylesheet.ily"
-
-%! abjad.LilyPondFile._get_formatted_blocks()
-\score
-%! abjad.LilyPondFile._get_formatted_blocks()
-{
-
     \context Score = "nagual Score"
     <<
 
@@ -21,69 +7,105 @@
             %! abjad.SegmentMaker.comment_measure_numbers()
             % [Global Context measure 1]
 
-            \tempo 4=80
+            \tempo 4=40
             %! scaling time signatures
-            \time 4/4
+            \time 3/8
             \mark \markup \bold {  }
-            s1 * 1
-            - \rehearsal-mark-markup K 6
+            s1 * 3/8
+            - \rehearsal-mark-markup N 6
             \tweak padding 6
             ^ \markup {
               \huge
               \concat {
-                  \abjad-metronome-mark-markup #2 #0 #1 #"80"
+                  \abjad-metronome-mark-markup #2 #0 #1 #"40"
                   \hspace #1
                   \upright [
-                  \abjad-metric-modulation-tuplet-lhs #2 #0 #5 #4 #2 #0 #'(0.6 . 0.6)
+                  \abjad-metric-modulation-tuplet-rhs #2 #0 #2 #0 #2 #3 #'(0.6 . 0.6)
                   \hspace #0.5
                   \upright ]
               }
             }
+            \bacaStopTextSpanMM
             %! COMMENT_MEASURE_NUMBERS
             %! abjad.SegmentMaker.comment_measure_numbers()
             % [Global Context measure 2]
 
             %! scaling time signatures
-            \time 3/4
-            s1 * 3/4
+            \time 5/8
+            s1 * 5/8
             %! COMMENT_MEASURE_NUMBERS
             %! abjad.SegmentMaker.comment_measure_numbers()
             % [Global Context measure 3]
 
             %! scaling time signatures
-            \time 2/4
+            \time 4/8
             s1 * 1/2
             %! COMMENT_MEASURE_NUMBERS
             %! abjad.SegmentMaker.comment_measure_numbers()
             % [Global Context measure 4]
 
             %! scaling time signatures
-            \time 4/4
-            s1 * 1
+            \time 5/8
+            s1 * 5/8
             %! COMMENT_MEASURE_NUMBERS
             %! abjad.SegmentMaker.comment_measure_numbers()
             % [Global Context measure 5]
 
             %! scaling time signatures
-            \time 6/4
-            s1 * 3/2
+            \time 4/8
+            s1 * 1/2
             %! COMMENT_MEASURE_NUMBERS
             %! abjad.SegmentMaker.comment_measure_numbers()
             % [Global Context measure 6]
 
             %! scaling time signatures
-            \time 4/4
-            s1 * 1
+            \time 3/8
+            s1 * 3/8
             %! COMMENT_MEASURE_NUMBERS
             %! abjad.SegmentMaker.comment_measure_numbers()
             % [Global Context measure 7]
 
             %! scaling time signatures
-            \time 6/4
-            s1 * 3/2
+            \time 6/8
+            s1 * 3/4
             %! COMMENT_MEASURE_NUMBERS
             %! abjad.SegmentMaker.comment_measure_numbers()
             % [Global Context measure 8]
+
+            %! scaling time signatures
+            \time 4/8
+            s1 * 1/2
+            %! COMMENT_MEASURE_NUMBERS
+            %! abjad.SegmentMaker.comment_measure_numbers()
+            % [Global Context measure 9]
+
+            %! scaling time signatures
+            \time 9/8
+            s1 * 9/8
+            %! COMMENT_MEASURE_NUMBERS
+            %! abjad.SegmentMaker.comment_measure_numbers()
+            % [Global Context measure 10]
+
+            %! scaling time signatures
+            \time 9/8
+            s1 * 9/8
+            %! COMMENT_MEASURE_NUMBERS
+            %! abjad.SegmentMaker.comment_measure_numbers()
+            % [Global Context measure 11]
+
+            %! scaling time signatures
+            \time 8/8
+            s1 * 1
+            %! COMMENT_MEASURE_NUMBERS
+            %! abjad.SegmentMaker.comment_measure_numbers()
+            % [Global Context measure 12]
+
+            %! scaling time signatures
+            \time 3/8
+            s1 * 3/8
+            %! COMMENT_MEASURE_NUMBERS
+            %! abjad.SegmentMaker.comment_measure_numbers()
+            % [Global Context measure 13]
 
             %! applying ending skips
             \once \override Score.TimeSignature.stencil = ##f
@@ -121,64 +143,86 @@
                             \markup { \hcenter-in #14 "Alto Flute" }
                             %! applying invisibility
                             \once \override Rest.transparent = ##t
-                            r1 * 1/2
+                            r1 * 3/16
 
-                            R1 * 1/2
+                            R1 * 3/16
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 2]
 
-                            r4
+                            %! applying invisibility
+                            \once \override Rest.transparent = ##t
+                            r1 * 5/16
 
-                            fs'2
+                            R1 * 5/16
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 3]
 
+                            r4
+
                             fs'4
-                            ~
-
-                            \override Staff.Stem.stemlet-length = 0.75
-                            fs'8
-                            [
-
-                            \revert Staff.Stem.stemlet-length
-                            fs'8
-                            ]
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 4]
 
-                            fs'2
+                            fs'4.
                             ~
 
-                            fs'8
-
-                            r8
-
-                            r8
-
-                            fs'8
+                            fs'4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 5]
 
                             fs'2
-
-                            fs'4
-                            ~
-
-                            fs'2
-                            ~
-
-                            fs'8
-
-                            r8
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 6]
 
+                            fs'4
+
+                            r8
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 1 measure 7]
+
+                            r8
+
+                            fs'4
+                            ~
+
+                            fs'4.
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 1 measure 8]
+
+                            fs'2
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 1 measure 9]
+
+                            fs'4.
+
+                            r4.
+
+                            r8
+
+                            fs'4
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 1 measure 10]
+
+                            fs'4.
+                            ~
+
+                            fs'8
+
                             r4
+
+                            r4.
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 1 measure 11]
 
                             r8
 
@@ -186,29 +230,20 @@
                             ~
 
                             fs'2
+
+                            r4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 1 measure 7]
+                            % [Voice 1 measure 12]
 
-                            fs'8
+                            %! applying invisibility
+                            \once \override Rest.transparent = ##t
+                            r1 * 3/16
 
-                            r8
-
-                            r8
-
-                            fs'8
-                            ~
-
-                            fs'4
-                            ~
-
-                            fs'4
-
-                            r2
-                            \bar "||"
+                            R1 * 3/16
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 1 measure 8]
+                            % [Voice 1 measure 13]
 
                             %! applying ending skips
                             \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
@@ -220,9 +255,10 @@
                             \once \override MultiMeasureRest.transparent = ##t
                             R1 * 1/8
                             %! applying ending skips
-                            ^ \markup \center-align \musicglyph #"scripts.ushortfermata" 
+                            ^ \markup \center-align \musicglyph #"scripts.uverylongfermata" 
+                            \bar "|."
                             %! applying ending skips
-                            \stopStaff \startStaff
+                            \stopStaff
 
                         }
 
@@ -250,21 +286,12 @@
                             \set Staff.instrumentName =
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Guitar" }
-                            cs''2.
-                            ~
-
-                            \override Staff.Stem.stemlet-length = 0.75
-                            cs''8
-                            [
-
-                            \revert Staff.Stem.stemlet-length
-                            cs''8
-                            ]
+                            cs''4.
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 2]
 
-                            cs''2
+                            cs''4.
                             ~
 
                             \override Staff.Stem.stemlet-length = 0.75
@@ -283,69 +310,84 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 4]
 
+                            cs''8
+
                             r4
 
-                            cs''2.
+                            r4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 5]
 
-                            cs''8
-
-                            r8
-
-                            r4
-
-                            r8
-
-                            cs''8
-                            ~
-
                             cs''2
-                            ~
-
-                            \override Staff.Stem.stemlet-length = 0.75
-                            cs''8
-                            [
-
-                            \revert Staff.Stem.stemlet-length
-                            cs''8
-                            ]
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 6]
 
-                            cs''2
+                            cs''8
 
                             r4
-
-                            cs''4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 7]
 
-                            cs''2
-                            ~
-
-                            \override Staff.Stem.stemlet-length = 0.75
-                            cs''8
-                            [
-
-                            \revert Staff.Stem.stemlet-length
-                            cs''8
-                            ~
-                            ]
-
-                            cs''2
-                            ~
-
-                            cs''8
-
-                            r8
-                            \bar "||"
+                            cs''2.
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 8]
+
+                            cs''8
+
+                            cs''4.
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 2 measure 9]
+
+                            cs''4.
+
+                            cs''4.
+                            ~
+
+                            cs''4
+
+                            r8
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 2 measure 10]
+
+                            r8
+
+                            cs''4
+                            ~
+
+                            cs''4.
+                            ~
+
+                            cs''4
+
+                            r8
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 2 measure 11]
+
+                            r4
+
+                            r8
+
+                            cs''8
+                            ~
+
+                            cs''2
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 2 measure 12]
+
+                            cs''8
+
+                            r4
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 2 measure 13]
 
                             %! applying ending skips
                             \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
@@ -357,9 +399,10 @@
                             \once \override MultiMeasureRest.transparent = ##t
                             R1 * 1/8
                             %! applying ending skips
-                            ^ \markup \center-align \musicglyph #"scripts.ushortfermata" 
+                            ^ \markup \center-align \musicglyph #"scripts.uverylongfermata" 
+                            \bar "|."
                             %! applying ending skips
-                            \stopStaff \startStaff
+                            \stopStaff
 
                         }
 
@@ -389,80 +432,111 @@
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Percussion" }
                             \clef "percussion"
-                            cs'2
-                            ~
-
-                            cs'8
-
-                            r8
-
-                            r8
-
-                            cs'8
+                            cs'4.
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 2]
 
-                            cs'2.
+                            cs'4
+
+                            r8
+
+                            r4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 3]
 
-                            cs'2
+                            r4.
+
+                            cs'8
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 4]
 
-                            cs'4
-
-                            r2
+                            cs'4.
+                            ~
 
                             cs'4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 5]
 
-                            cs'4
-                            ~
-
                             cs'8
 
-                            r8
-
-                            r8
-
-                            cs'8
-                            ~
-
-                            cs'2.
+                            cs'4.
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 6]
 
-                            cs'2.
-
-                            cs'4
+                            cs'4.
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 7]
 
+                            r4.
+
+                            r8
+
                             cs'4
-                            ~
-
-                            cs'8
-
-                            r8
-
-                            r8
-
-                            cs'8
-                            ~
-
-                            cs'2.
-                            \bar "||"
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 8]
+
+                            cs'4.
+
+                            r8
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 3 measure 9]
+
+                            r8
+
+                            cs'4
+                            ~
+
+                            cs'4.
+                            ~
+
+                            cs'4
+
+                            cs'8
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 3 measure 10]
+
+                            cs'4.
+                            ~
+
+                            cs'4
+
+                            cs'8
+                            ~
+
+                            cs'4.
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 3 measure 11]
+
+                            cs'8
+
+                            r8
+
+                            r8
+
+                            cs'8
+                            ~
+
+                            cs'2
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 3 measure 12]
+
+                            cs'4
+
+                            r8
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 3 measure 13]
 
                             %! applying ending skips
                             \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
@@ -474,9 +548,10 @@
                             \once \override MultiMeasureRest.transparent = ##t
                             R1 * 1/8
                             %! applying ending skips
-                            ^ \markup \center-align \musicglyph #"scripts.ushortfermata" 
+                            ^ \markup \center-align \musicglyph #"scripts.uverylongfermata" 
+                            \bar "|."
                             %! applying ending skips
-                            \stopStaff \startStaff
+                            \stopStaff
 
                         }
 
@@ -504,90 +579,110 @@
                             \set Staff.instrumentName =
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Violin" }
-                            cs'2.
-
-                            r4
+                            cs'4.
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 2]
 
-                            r4
+                            cs'4.
 
-                            cs'2
+                            r4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 3]
 
-                            cs'8
+                            r4
 
-                            r8
-
-                            r8
-
-                            cs'8
+                            cs'4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 4]
 
-                            cs'2.
+                            cs'4.
 
-                            cs'4
+                            r4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 5]
 
-                            cs'2
+                            %! applying invisibility
+                            \once \override Rest.transparent = ##t
+                            r1 * 1/4
 
-                            cs'4
-                            ~
-
-                            cs'4
-                            ~
-
-                            cs'8
-
-                            r8
-
-                            r8
-
-                            cs'8
+                            R1 * 1/4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 6]
 
-                            cs'2.
-
-                            r4
+                            cs'4.
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 7]
 
-                            r4
-
-                            cs'2
+                            cs'4.
                             ~
 
-                            cs'4
+                            cs'8
 
-                            r2
-                            \bar "||"
+                            cs'4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 8]
+
+                            cs'2
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 4 measure 9]
+
+                            r4.
+
+                            r8
+
+                            cs'4
+                            ~
+
+                            cs'4.
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 4 measure 10]
+
+                            r4
+
+                            cs'8
+                            ~
+
+                            cs'2.
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 4 measure 11]
+
+                            cs'2.
+
+                            cs'4
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 4 measure 12]
+
+                            cs'4.
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 4 measure 13]
 
                             %! applying ending skips
                             \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff
                             %! applying ending skips
                             \once \override Rest.transparent = ##t
                             r1 * 1/8
+                            - \colophon
 
                             %! applying ending skips
                             \once \override MultiMeasureRest.transparent = ##t
                             R1 * 1/8
                             %! applying ending skips
-                            ^ \markup \center-align \musicglyph #"scripts.ushortfermata" 
+                            ^ \markup \center-align \musicglyph #"scripts.uverylongfermata" 
+                            \bar "|."
                             %! applying ending skips
-                            \stopStaff \startStaff
+                            \stopStaff
 
                         }
 
@@ -601,4 +696,3 @@
 
     >>
 %! abjad.LilyPondFile._get_formatted_blocks()
-}

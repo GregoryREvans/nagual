@@ -87,6 +87,11 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Global Context",
+            mark_100_cautionary,
+            abjad.select().leaf(9),
+        ),
+        evans.attach(
+            "Global Context",
             met_mod_100_66,
             abjad.select().leaf(10),
         ),
@@ -126,7 +131,7 @@ maker = evans.SegmentMaker(
     time_signatures=signatures_02,
     clef_handlers=None,
     tuplet_bracket_noteheads=False,
-    add_final_grand_pause=True,
+    add_final_grand_pause=False,
     score_includes=[
         "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily",
         "/Users/evansdsg2/Scores/nagual/nagual/build/score_stylesheet.ily",

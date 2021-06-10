@@ -206,7 +206,7 @@
                             \once \override MultiMeasureRest.transparent = ##t
                             R1 * 1/8
                             %! applying ending skips
-                            ^ \markup \center-align \musicglyph #"scripts.ufermata" 
+                            ^ \markup \center-align \musicglyph #"scripts.ushortfermata" 
                             %! applying ending skips
                             \stopStaff \startStaff
 
@@ -343,7 +343,7 @@
                             \once \override MultiMeasureRest.transparent = ##t
                             R1 * 1/8
                             %! applying ending skips
-                            ^ \markup \center-align \musicglyph #"scripts.ufermata" 
+                            ^ \markup \center-align \musicglyph #"scripts.ushortfermata" 
                             %! applying ending skips
                             \stopStaff \startStaff
 
@@ -460,7 +460,7 @@
                             \once \override MultiMeasureRest.transparent = ##t
                             R1 * 1/8
                             %! applying ending skips
-                            ^ \markup \center-align \musicglyph #"scripts.ufermata" 
+                            ^ \markup \center-align \musicglyph #"scripts.ushortfermata" 
                             %! applying ending skips
                             \stopStaff \startStaff
 
@@ -571,7 +571,7 @@
                             \once \override MultiMeasureRest.transparent = ##t
                             R1 * 1/8
                             %! applying ending skips
-                            ^ \markup \center-align \musicglyph #"scripts.ufermata" 
+                            ^ \markup \center-align \musicglyph #"scripts.ushortfermata" 
                             %! applying ending skips
                             \stopStaff \startStaff
 

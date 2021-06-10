@@ -135,10 +135,10 @@ accel_100_120 = evans.TempoSpannerHandler(
     forget=False,
 )
 
-rit_130_40 = evans.TempoSpannerHandler(
+rit_130_60 = evans.TempoSpannerHandler(
     tempo_list=[
         (2, 0, 1, "130"),
-        (2, 0, 1, "40"),
+        (2, 0, 1, "60"),
     ],
     boolean_vector=[1],
     padding=0.2,
@@ -169,6 +169,7 @@ met_mod_66_50 = evans.metric_modulation(
     left_note=(abjad.Note("c'4")),
     right_note=(abjad.Note("c'8.")),
     modulated_beat=(abjad.Note("c'4")),
+    rounded=True,
 )
 
 abjad.tweak(met_mod_66_50).padding = 6
@@ -223,6 +224,7 @@ met_mod_66_40 = evans.metric_modulation(
     left_note=(abjad.Note("c'4")),
     right_note=(abjad.Tuplet((3, 5), [abjad.Note("c'4")])),
     modulated_beat=(abjad.Note("c'4")),
+    rounded=True,
 )
 
 abjad.tweak(met_mod_66_40).padding = 6
@@ -232,6 +234,7 @@ met_mod_66_100 = evans.metric_modulation(
     left_note=(abjad.Tuplet((2, 3), [abjad.Note("c'4")])),
     right_note=(abjad.Note("c'4")),
     modulated_beat=(abjad.Note("c'4")),
+    rounded=True,
 )
 
 abjad.tweak(met_mod_66_100).padding = 6
@@ -266,11 +269,20 @@ abjad.tweak(met_mod_80_130).padding = 6
 met_mod_60_40 = evans.metric_modulation(
     metronome_mark=((1, 4), 60),
     left_note=(abjad.Note("c'4")),
-    right_note=(abjad.Tuplet((3, 5), [abjad.Note("c'4")])),
+    right_note=(abjad.Tuplet((2, 3), [abjad.Note("c'4")])),
     modulated_beat=(abjad.Note("c'4")),
 )
 
 abjad.tweak(met_mod_60_40).padding = 6
+
+met_mod_80_100 = evans.metric_modulation(
+    metronome_mark=((1, 4), 80),
+    left_note=(abjad.Note("c'4")),
+    right_note=(abjad.Tuplet((5, 4), [abjad.Note("c'4")])),
+    modulated_beat=(abjad.Note("c'4")),
+)
+
+abjad.tweak(met_mod_80_100).padding = 6
 
 
 def zero_padding_glissando(selections):
@@ -297,6 +309,15 @@ start_repeat = abjad.LilyPondLiteral(
     format_slot="after",
 )
 
+start_repeat_before = abjad.LilyPondLiteral(
+    [
+        r"\once \override Score.BarLine.X-extent = #'(0 . 3)",
+        r"\once \override Score.BarLine.thick-thickness = #4",
+        r'\bar ".|:"',
+    ],
+    format_slot="before",
+)
+
 stop_repeat = abjad.LilyPondLiteral(
     [
         r"\once \override Score.BarLine.X-extent = #'(0 . 1.5)",
@@ -304,6 +325,15 @@ stop_repeat = abjad.LilyPondLiteral(
         r'\bar ":|."',
     ],
     format_slot="after",
+)
+
+stop_repeat_before = abjad.LilyPondLiteral(
+    [
+        r"\once \override Score.BarLine.X-extent = #'(0 . 1.5)",
+        r"\once \override Score.BarLine.thick-thickness = #4",
+        r'\bar ":|."',
+    ],
+    format_slot="before",
 )
 
 red_start_repeat = abjad.LilyPondLiteral(

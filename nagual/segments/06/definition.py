@@ -114,7 +114,7 @@ maker = evans.SegmentMaker(
     time_signatures=signatures_06,
     clef_handlers=None,
     tuplet_bracket_noteheads=False,
-    add_final_grand_pause=True,
+    add_final_grand_pause=False,
     score_includes=[
         "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily",
         "/Users/evansdsg2/Scores/nagual/nagual/build/score_stylesheet.ily",
