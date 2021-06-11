@@ -95,35 +95,26 @@
                             \set Staff.instrumentName =
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Alto Flute" }
-                            %! applying invisibility
-                            \once \override Rest.transparent = ##t
-                            r1 * 3/8
-
-                            R1 * 3/8
+                            fs'2.
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 2]
 
-                            r2
-
-                            fs'2
+                            fs'1
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 3]
 
-                            fs'4.
+                            r2.
 
-                            fs'2.
+                            r8
+
+                            fs'4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 4]
 
-                            r4
-
-                            fs'8
-                            ~
-
-                            fs'4.
+                            fs'2.
                             ~
 
                             fs'8
@@ -171,57 +162,28 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 2]
 
-                            \override Staff.Stem.stemlet-length = 0.75
-                            cs''8
-                            [
-
-                            \revert Staff.Stem.stemlet-length
-                            cs''8
-                            ~
-                            ]
-
-                            cs''2
-                            ~
-
-                            cs''8
-
-                            r8
+                            cs''1
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 3]
 
                             r4.
 
-                            cs''4.
-                            ~
-
-                            cs''4
-
-                            r8
+                            cs''2.
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 4]
 
-                            r8
-
-                            cs''4
-                            ~
-
                             cs''4.
-                            ~
 
-                            cs''4
-
-                            r8
+                            r2.
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 5]
 
-                            %! applying invisibility
-                            \once \override Rest.transparent = ##t
-                            r1 * 1/4
+                            r4
 
-                            R1 * 1/4
+                            cs''4
                             \bar "||"
 
                         }
@@ -238,7 +200,6 @@
 
                         \context Voice = "Voice 3"
                         {
-                            %! applying indicators
                             \staff-line-count 1
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
@@ -252,46 +213,32 @@
                             \set Staff.instrumentName =
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Percussion" }
-                            %! applying invisibility
-                            \once \override Rest.transparent = ##t
-                            %! applying indicators
                             \clef "percussion"
-                            r1 * 3/8
-
-                            R1 * 3/8
+                            cs'2.
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 2]
 
-                            %! applying invisibility
-                            \once \override Rest.transparent = ##t
-                            r1 * 1/2
-
-                            R1 * 1/2
+                            cs'1
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 3]
 
-                            r4.
+                            r2.
 
                             r8
 
                             cs'4
-                            ~
-
-                            cs'4.
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 4]
 
+                            cs'2.
+                            ~
+
                             cs'8
 
                             cs'4
-                            ~
-
-                            cs'4.
-
-                            cs'4.
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 5]
@@ -330,14 +277,7 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 2]
 
-                            r4
-
-                            cs'2
-                            ~
-
-                            cs'8
-
-                            r8
+                            cs'1
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 3]
@@ -349,26 +289,17 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 4]
 
-                            cs'8
+                            r8
 
                             cs'4
                             ~
 
-                            cs'4.
-                            ~
-
-                            cs'8
-
-                            r4
+                            cs'2.
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 5]
 
-                            %! applying invisibility
-                            \once \override Rest.transparent = ##t
-                            r1 * 1/4
-
-                            R1 * 1/4
+                            cs'2
                             \bar "||"
 
                         }

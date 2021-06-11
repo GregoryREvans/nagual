@@ -61,13 +61,51 @@ voice_names = [specifier for specifier in music_specifiers]
 target_timespan_01 = abjad.Timespan(0, (17, 1))
 
 timespan_maker_01 = tsmakers.TaleaTimespanMaker(
-    initial_silence_talea=rmakers.Talea(counts=([5, 0, 9, 0]), denominator=4),
+    initial_silence_talea=rmakers.Talea(counts=([0]), denominator=4),
     playing_talea=rmakers.Talea(
-        counts=([7, 6, 5]),
-        denominator=8,
+        counts=(
+            [
+                22,  #
+                24,
+                11,
+                11,
+                3,  #
+                5,
+                4,
+                7,
+                12,
+                9,
+                6,
+                11,
+                11,
+                21,  #
+                25,
+                11,
+                11,
+                2,  #
+                1,
+                2,
+                1,
+                3,
+                1,
+                9,
+                5,
+                3,
+                5,
+                2,
+                3,
+                6,
+                3,
+                11,
+                1,
+                3,
+                1,
+                6,
+            ]
+        ),
+        denominator=4,
     ),
-    playing_groupings=([1, 1, 2]),
-    silence_talea=rmakers.Talea(counts=([0, 1, 2, 1]), denominator=4),
+    silence_talea=rmakers.Talea(counts=([0]), denominator=4),
 )
 
 timespan_list_01 = timespan_maker_01(
@@ -102,13 +140,43 @@ evans.timespan.intercalate_silences(rhythm_commands_01)
 target_timespan_02 = abjad.Timespan(0, (73, 8))
 
 timespan_maker_02 = tsmakers.TaleaTimespanMaker(
-    initial_silence_talea=rmakers.Talea(counts=([5, 0, 9, 0]), denominator=4),
+    initial_silence_talea=rmakers.Talea(counts=([0]), denominator=4),
     playing_talea=rmakers.Talea(
-        counts=([7, 6, 5]),
+        counts=(
+            [
+                25,  #
+                6,
+                8,
+                9,
+                9,
+                12,
+                4,
+                25,  #
+                6,
+                8,
+                18,
+                3,
+                4,
+                9,
+                25,  #
+                6,
+                8,
+                9,
+                9,
+                4,
+                3,
+                9,
+                25,  #
+                6,
+                8,
+                18,
+                12,
+                4,
+            ]
+        ),
         denominator=8,
     ),
-    playing_groupings=([1, 1, 2]),
-    silence_talea=rmakers.Talea(counts=([0, 1, 2, 1]), denominator=4),
+    silence_talea=rmakers.Talea(counts=([0]), denominator=4),
 )
 
 timespan_list_02 = timespan_maker_02(
@@ -143,13 +211,41 @@ evans.timespan.intercalate_silences(rhythm_commands_02)
 target_timespan_03 = abjad.Timespan(0, (14, 1))
 
 timespan_maker_03 = tsmakers.TaleaTimespanMaker(
-    initial_silence_talea=rmakers.Talea(counts=([5, 0, 9, 0]), denominator=4),
+    initial_silence_talea=rmakers.Talea(counts=([0]), denominator=4),
     playing_talea=rmakers.Talea(
-        counts=([7, 6, 5]),
-        denominator=8,
+        counts=(
+            [
+                33,  #
+                6,
+                4,
+                4,
+                2,
+                3,
+                4,
+                33,  #
+                6,
+                4,
+                4,
+                9,
+                33,  #
+                6,
+                4,
+                4,
+                3,
+                6,
+                33,  #
+                6,
+                4,
+                4,
+                2,
+                3,
+                4,
+            ]
+        ),
+        denominator=4,
     ),
     playing_groupings=([1, 1, 2]),
-    silence_talea=rmakers.Talea(counts=([0, 1, 2, 1]), denominator=4),
+    silence_talea=rmakers.Talea(counts=([0]), denominator=4),
 )
 
 timespan_list_03 = timespan_maker_03(
@@ -184,13 +280,33 @@ evans.timespan.intercalate_silences(rhythm_commands_03)
 target_timespan_04 = abjad.Timespan(0, (9, 2))
 
 timespan_maker_04 = tsmakers.TaleaTimespanMaker(
-    initial_silence_talea=rmakers.Talea(counts=([5, 0, 9, 0]), denominator=4),
+    initial_silence_talea=rmakers.Talea(counts=([0]), denominator=4),
     playing_talea=rmakers.Talea(
-        counts=([7, 6, 5]),
+        counts=(
+            [
+                14,  #
+                7,
+                9,
+                6,
+                14,  #
+                3,
+                9,
+                8,
+                2,
+                14,  #
+                7,
+                9,
+                6,
+                14,  #
+                3,
+                6,
+                1,
+                12,
+            ]
+        ),
         denominator=8,
     ),
-    playing_groupings=([1, 1, 2]),
-    silence_talea=rmakers.Talea(counts=([0, 1, 2, 1]), denominator=4),
+    silence_talea=rmakers.Talea(counts=([0]), denominator=4),
 )
 
 timespan_list_04 = timespan_maker_04(
@@ -225,13 +341,19 @@ evans.timespan.intercalate_silences(rhythm_commands_04)
 target_timespan_05 = abjad.Timespan(0, (5, 2))
 
 timespan_maker_05 = tsmakers.TaleaTimespanMaker(
-    initial_silence_talea=rmakers.Talea(counts=([5, 0, 0, 0]), denominator=4),
+    initial_silence_talea=rmakers.Talea(counts=([0]), denominator=4),
     playing_talea=rmakers.Talea(
-        counts=([7, 6, 5]),
-        denominator=8,
+        counts=(
+            [
+                10,  #
+                10,  #
+                10,  #
+                10,  #
+            ]
+        ),
+        denominator=4,
     ),
-    playing_groupings=([1, 1, 2]),
-    silence_talea=rmakers.Talea(counts=([0, 1, 2, 1]), denominator=4),
+    silence_talea=rmakers.Talea(counts=([0]), denominator=4),
 )
 
 timespan_list_05 = timespan_maker_05(
@@ -266,13 +388,27 @@ evans.timespan.intercalate_silences(rhythm_commands_05)
 target_timespan_06 = abjad.Timespan(0, (43, 8))
 
 timespan_maker_06 = tsmakers.TaleaTimespanMaker(
-    initial_silence_talea=rmakers.Talea(counts=([0, 0, 0, 0]), denominator=4),
+    initial_silence_talea=rmakers.Talea(counts=([0]), denominator=4),
     playing_talea=rmakers.Talea(
-        counts=([7, 6, 5, 2]),
+        counts=(
+            [
+                18,  #
+                10,
+                15,
+                18,  #
+                10,
+                15,
+                18,  #
+                10,
+                15,
+                18,  #
+                10,
+                15,
+            ]
+        ),
         denominator=8,
     ),
-    playing_groupings=([1]),
-    silence_talea=rmakers.Talea(counts=([0, 1, 2, 1]), denominator=4),
+    silence_talea=rmakers.Talea(counts=([0]), denominator=4),
 )
 
 timespan_list_06 = timespan_maker_06(
@@ -307,13 +443,30 @@ evans.timespan.intercalate_silences(rhythm_commands_06)
 target_timespan_07 = abjad.Timespan(0, (8, 1))
 
 timespan_maker_07 = tsmakers.TaleaTimespanMaker(
-    initial_silence_talea=rmakers.Talea(counts=([0, 0, 0, 0]), denominator=4),
+    initial_silence_talea=rmakers.Talea(counts=([0]), denominator=4),
     playing_talea=rmakers.Talea(
-        counts=([7, 6, 5]),
-        denominator=8,
+        counts=(
+            [
+                6,  #
+                6,
+                4,
+                5,
+                4,
+                7,
+                16,  #
+                5,
+                4,
+                7,
+                25,  #
+                7,
+                25,  #
+                4,
+                3,
+            ]
+        ),
+        denominator=4,
     ),
-    playing_groupings=([1, 1, 2]),
-    silence_talea=rmakers.Talea(counts=([0, 1, 2, 1]), denominator=4),
+    silence_talea=rmakers.Talea(counts=([0]), denominator=4),
 )
 
 timespan_list_07 = timespan_maker_07(
@@ -348,13 +501,45 @@ evans.timespan.intercalate_silences(rhythm_commands_07)
 target_timespan_08 = abjad.Timespan(0, (83, 8))
 
 timespan_maker_08 = tsmakers.TaleaTimespanMaker(
-    initial_silence_talea=rmakers.Talea(counts=([0, 0, 0, 0]), denominator=4),
+    initial_silence_talea=rmakers.Talea(counts=([0]), denominator=4),
     playing_talea=rmakers.Talea(
-        counts=([7, 6, 5]),
+        counts=(
+            [
+                55,  #
+                6,
+                6,
+                6,
+                2,
+                4,
+                4,
+                70,  #
+                9,
+                4,
+                5,  #
+                4,
+                3,
+                9,
+                9,
+                10,
+                8,
+                13,
+                5,
+                14,
+                3,
+                38,  #
+                6,
+                6,
+                8,
+                8,
+                3,
+                6,
+                4,
+                4,
+            ]
+        ),
         denominator=8,
     ),
-    playing_groupings=([1, 1, 2]),
-    silence_talea=rmakers.Talea(counts=([0, 1, 2, 1]), denominator=4),
+    silence_talea=rmakers.Talea(counts=([0]), denominator=4),
 )
 
 timespan_list_08 = timespan_maker_08(
@@ -389,13 +574,35 @@ evans.timespan.intercalate_silences(rhythm_commands_08)
 target_timespan_09 = abjad.Timespan(0, (29, 4))
 
 timespan_maker_09 = tsmakers.TaleaTimespanMaker(
-    initial_silence_talea=rmakers.Talea(counts=([5, 0, 0, 0]), denominator=4),
+    initial_silence_talea=rmakers.Talea(counts=([0]), denominator=4),
     playing_talea=rmakers.Talea(
-        counts=([7, 6, 5]),
-        denominator=8,
+        counts=(
+            [
+                7,  #
+                2,
+                4,
+                10,
+                6,
+                7,  #
+                2,
+                4,
+                10,
+                6,
+                7,  #
+                2,
+                4,
+                10,
+                6,
+                7,  #
+                2,
+                4,
+                10,
+                6,
+            ]
+        ),
+        denominator=4,
     ),
-    playing_groupings=([1, 1, 2]),
-    silence_talea=rmakers.Talea(counts=([0, 1, 2, 1]), denominator=4),
+    silence_talea=rmakers.Talea(counts=([0]), denominator=4),
 )
 
 timespan_list_09 = timespan_maker_09(
@@ -430,13 +637,39 @@ evans.timespan.intercalate_silences(rhythm_commands_09)
 target_timespan_10 = abjad.Timespan(0, (105, 8))
 
 timespan_maker_10 = tsmakers.TaleaTimespanMaker(
-    initial_silence_talea=rmakers.Talea(counts=([5, 0, 0, 0]), denominator=4),
+    initial_silence_talea=rmakers.Talea(counts=([0]), denominator=4),
     playing_talea=rmakers.Talea(
-        counts=([7, 6, 5]),
+        counts=(
+            [
+                75,  #
+                9,
+                5,
+                3,
+                7,
+                6,
+                75,  #
+                9,
+                5,
+                3,
+                7,
+                6,
+                75,  #
+                9,
+                5,
+                3,
+                7,
+                6,
+                75,  #
+                9,
+                5,
+                3,
+                7,
+                6,
+            ]
+        ),
         denominator=8,
     ),
-    playing_groupings=([1, 1, 2]),
-    silence_talea=rmakers.Talea(counts=([0, 1, 2, 1]), denominator=4),
+    silence_talea=rmakers.Talea(counts=([0]), denominator=4),
 )
 
 timespan_list_10 = timespan_maker_10(
@@ -471,13 +704,43 @@ evans.timespan.intercalate_silences(rhythm_commands_10)
 target_timespan_11 = abjad.Timespan(0, (25, 2))
 
 timespan_maker_11 = tsmakers.TaleaTimespanMaker(
-    initial_silence_talea=rmakers.Talea(counts=([5, 0, 0, 0]), denominator=4),
+    initial_silence_talea=rmakers.Talea(counts=([0]), denominator=4),
     playing_talea=rmakers.Talea(
-        counts=([7, 6, 5]),
-        denominator=8,
+        counts=(
+            [
+                14,  #
+                4,
+                4,
+                6,
+                6,
+                6,
+                6,
+                4,
+                14,  #
+                4,
+                4,
+                6,
+                18,
+                4,
+                14,  #
+                4,
+                4,
+                6,
+                12,
+                6,
+                4,
+                14,  #
+                4,
+                4,
+                6,
+                6,
+                12,
+                4,
+            ]
+        ),
+        denominator=4,
     ),
-    playing_groupings=([1, 1, 2]),
-    silence_talea=rmakers.Talea(counts=([0, 1, 2, 3, 2, 1]), denominator=8),
+    silence_talea=rmakers.Talea(counts=([0]), denominator=8),
 )
 
 timespan_list_11 = timespan_maker_11(
@@ -512,13 +775,44 @@ evans.timespan.intercalate_silences(rhythm_commands_11)
 target_timespan_12 = abjad.Timespan(0, (63, 8))
 
 timespan_maker_12 = tsmakers.TaleaTimespanMaker(
-    initial_silence_talea=rmakers.Talea(counts=([5, 0, 0, 0]), denominator=4),
+    initial_silence_talea=rmakers.Talea(counts=([0]), denominator=4),
     playing_talea=rmakers.Talea(
-        counts=([7, 6, 5]),
+        counts=(
+            [
+                24,  #
+                10,
+                29,
+                3,  #
+                9,
+                22,
+                9,
+                9,
+                8,
+                3,
+                17,  #
+                4,
+                3,
+                6,
+                33,
+                6,  #
+                4,
+                2,
+                3,
+                2,
+                4,
+                3,
+                10,
+                9,
+                14,
+                3,
+                1,
+                1,
+                1,
+            ]
+        ),
         denominator=8,
     ),
-    playing_groupings=([1, 1, 2]),
-    silence_talea=rmakers.Talea(counts=([0, 1, 2, 3, 2, 1]), denominator=4),
+    silence_talea=rmakers.Talea(counts=([0]), denominator=4),
 )
 
 timespan_list_12 = timespan_maker_12(

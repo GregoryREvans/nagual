@@ -3,11 +3,46 @@
 
 # from nagual.lib import WarbleFingerings
 from nagual.materials.pitch import demo_pitch_handler
-from nagual.materials.rhythm import note_rhythm_handler
+from nagual.materials.rhythm import note_rhythm_handler, silence_handler
 
 ## 01
 
 rhythm_materials_01 = [
+    silence_handler,  #
+    note_rhythm_handler,
+    note_rhythm_handler,
+    silence_handler,
+    silence_handler,  #
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    silence_handler,  #
+    note_rhythm_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,  #
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
     note_rhythm_handler,
 ]
 
@@ -18,6 +53,33 @@ pitch_materials_01 = [
 ## 02
 
 rhythm_materials_02 = [
+    note_rhythm_handler,  #
+    silence_handler,
+    note_rhythm_handler,
+    note_rhythm_handler,
+    silence_handler,
+    silence_handler,
+    note_rhythm_handler,
+    note_rhythm_handler,  #
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    note_rhythm_handler,  #
+    silence_handler,
+    note_rhythm_handler,
+    note_rhythm_handler,
+    silence_handler,
+    silence_handler,
+    note_rhythm_handler,
+    note_rhythm_handler,
+    note_rhythm_handler,  #
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    silence_handler,
     note_rhythm_handler,
 ]
 
@@ -28,7 +90,31 @@ pitch_materials_02 = [
 ## 03
 
 rhythm_materials_03 = [
+    note_rhythm_handler,  #
     note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,  #
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    note_rhythm_handler,
+    note_rhythm_handler,  #
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    note_rhythm_handler,  #
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
 ]
 
 pitch_materials_03 = [
@@ -38,6 +124,23 @@ pitch_materials_03 = [
 ## 04
 
 rhythm_materials_04 = [
+    note_rhythm_handler,  #
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,  #
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    note_rhythm_handler,  #
+    silence_handler,
+    note_rhythm_handler,
+    note_rhythm_handler,
+    note_rhythm_handler,  #
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
     note_rhythm_handler,
 ]
 
@@ -48,7 +151,10 @@ pitch_materials_04 = [
 ## 05
 
 rhythm_materials_05 = [
-    note_rhythm_handler,
+    note_rhythm_handler,  #
+    note_rhythm_handler,  #
+    note_rhythm_handler,  #
+    note_rhythm_handler,  #
 ]
 
 pitch_materials_05 = [
@@ -58,6 +164,17 @@ pitch_materials_05 = [
 ## 06
 
 rhythm_materials_06 = [
+    note_rhythm_handler,  #
+    note_rhythm_handler,
+    note_rhythm_handler,
+    note_rhythm_handler,  #
+    note_rhythm_handler,
+    note_rhythm_handler,
+    note_rhythm_handler,  #
+    note_rhythm_handler,
+    note_rhythm_handler,
+    note_rhythm_handler,  #
+    note_rhythm_handler,
     note_rhythm_handler,
 ]
 
@@ -68,6 +185,20 @@ pitch_materials_06 = [
 ## 07
 
 rhythm_materials_07 = [
+    note_rhythm_handler,  #
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    note_rhythm_handler,  #
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    note_rhythm_handler,  #
+    note_rhythm_handler,
+    note_rhythm_handler,  #
+    silence_handler,
     note_rhythm_handler,
 ]
 
@@ -78,7 +209,36 @@ pitch_materials_07 = [
 ## 08
 
 rhythm_materials_08 = [
+    silence_handler,  #
     note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    silence_handler,  #
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,  #
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,  #
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    note_rhythm_handler,
+    note_rhythm_handler,
+    silence_handler,
 ]
 
 pitch_materials_08 = [
@@ -88,6 +248,25 @@ pitch_materials_08 = [
 ## 09
 
 rhythm_materials_09 = [
+    note_rhythm_handler,  #
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    note_rhythm_handler,
+    note_rhythm_handler,  #
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    note_rhythm_handler,
+    note_rhythm_handler,  #
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    note_rhythm_handler,
+    note_rhythm_handler,  #
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
     note_rhythm_handler,
 ]
 
@@ -98,7 +277,30 @@ pitch_materials_09 = [
 ## 10
 
 rhythm_materials_10 = [
+    note_rhythm_handler,  #
     note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,  #
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,  #
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,  #
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    note_rhythm_handler,
+    silence_handler,
 ]
 
 pitch_materials_10 = [
@@ -108,6 +310,33 @@ pitch_materials_10 = [
 ## 11
 
 rhythm_materials_11 = [
+    note_rhythm_handler,  #
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    note_rhythm_handler,  #
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    note_rhythm_handler,
+    note_rhythm_handler,  #
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    note_rhythm_handler,  #
+    note_rhythm_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
     note_rhythm_handler,
 ]
 
@@ -118,7 +347,35 @@ pitch_materials_11 = [
 ## 12
 
 rhythm_materials_12 = [
+    silence_handler,  #
     note_rhythm_handler,
+    silence_handler,
+    silence_handler,  #
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    silence_handler,  #
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,  #
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
+    note_rhythm_handler,
+    silence_handler,
 ]
 
 pitch_materials_12 = [

@@ -109,6 +109,7 @@ rehearsal-mark-markup = #(
     \with-dimensions-from \null
     \halign #-1
     \override #'(box-padding . 0.5)
+    \override #'(font-name . "Bell MT Std")
     \box
     { \combine \halign #0 #string \halign #0 \transparent "O" }
     #}

@@ -9,24 +9,8 @@ handler_to_value = abjad.OrderedDict(
                         'state',
                         abjad.OrderedDict(
                             [
-                                ('divisions_consumed', 2),
-                                ('logical_ties_produced', 2),
-                                ]
-                            ),
-                        ),
-                    ]
-                ),
-            ),
-        (
-            'silence_maker',
-            abjad.OrderedDict(
-                [
-                    (
-                        'state',
-                        abjad.OrderedDict(
-                            [
-                                ('divisions_consumed', 1),
-                                ('logical_ties_produced', 1),
+                                ('divisions_consumed', 7),
+                                ('logical_ties_produced', 7),
                                 ]
                             ),
                         ),

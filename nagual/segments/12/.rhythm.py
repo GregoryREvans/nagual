@@ -2,7 +2,7 @@ import abjad
 handler_to_value = abjad.OrderedDict(
     [
         (
-            'silence_maker',
+            'silence_handler',
             abjad.OrderedDict(
                 [
                     (
@@ -25,8 +25,8 @@ handler_to_value = abjad.OrderedDict(
                         'state',
                         abjad.OrderedDict(
                             [
-                                ('divisions_consumed', 4),
-                                ('logical_ties_produced', 4),
+                                ('divisions_consumed', 1),
+                                ('logical_ties_produced', 1),
                                 ]
                             ),
                         ),
