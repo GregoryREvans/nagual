@@ -1,4 +1,4 @@
-\version "2.19.84"  %! LilyPondFile
+\version "2.23.2"  %! LilyPondFile
 \language "english" %! LilyPondFile
 
 \include "../score_stylesheet.ily"                                      %! LilyPondFile

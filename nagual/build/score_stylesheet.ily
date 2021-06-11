@@ -1,4 +1,4 @@
-\version "2.19.84"
+\version "2.23.2"
 \language "english"
 % preferred style
 #(set-default-paper-size "arch a")
@@ -19,7 +19,6 @@
 	breakbefore = ##t
 	dedication = \markup \override #'(font-name . "Bell MT Std") \fontsize #5.4 \center-column {"t o   E n s e m b l e   D a l   N i e n t e" \fontsize #3.4 \with-color #white "."}
 	title =  \markup \center-column {
-        %{ \center-align { %}
             \override #'(font-name . "Bell MT Std")
             \fontsize #16
             \line {
@@ -49,16 +48,12 @@
                 & \hspace #0.75
                 Violin
             }
-        %{ } %}
     }
-	%subtitle = \markup \center-column { \with-color #white "." \override #'(font-name . "Bell MT Std") \fontsize #5.27 "or, earth eats the sun" }
-	%subsubtitle = \markup \center-column { \with-color #white "." \override #'(font-name . "Bell MT Std") \fontsize #2.27 "for Flute, Guitar, Percussion, & Violin" }
 	composer = \markup \override #'(font-name . "Bell MT Std") \fontsize #5 {"Gregory Rowland Evans (*1995)"}
 	tagline = \markup { "" }
 }
 
 \layout {
-    %{ \accidentalStyle dodecaphonic %}
 	\accidentalStyle forget
 	indent = 0
     ragged-bottom = ##t
@@ -67,7 +62,6 @@
 	\context {
         \name TimeSignatureContext
         \type Engraver_group
-        %{ \numericTimeSignature %}
         \consists Axis_group_engraver
 		\consists Bar_number_engraver
         \consists Time_signature_engraver
@@ -97,15 +91,10 @@
 		\override TimeSignature.X-extent = ##f
         \override TimeSignature.break-align-symbol = #'left-edge
         \override TimeSignature.break-visibility = #end-of-line-invisible
-        \override TimeSignature.font-size = 3 % was 5 for STIXGeneral
+        \override TimeSignature.font-size = 3 % was 8 for Bell MT
         \override TimeSignature.space-alist.clef = #'(extra-space . 0.5)
         \override TimeSignature.style = #'numbered
-
-		%{ \override TimeSignature.padding = #7 %}
-        %{ \override TimeSignature.X-offset = #ly:self-alignment-interface::x-aligned-on-self %}
-        %{ \override TimeSignature.Y-extent = #'(0 . 0) %}
 		%{ \override TimeSignature.font-name = "Bell MT Std" %}
-        %{ \override TimeSignature.self-alignment-X = #center %}
 		\override TimeSignature.whiteout-style = #'outline
 		\override TimeSignature.whiteout = ##t
         \override VerticalAxisGroup.default-staff-staff-spacing = #'((basic-distance . 13) (minimum-distance . 13) (padding . 4) (stretchability . 0))
@@ -118,13 +107,11 @@
 		\accepts TimeSignatureContext
 		\override Accidental.X-extent = ##f % experimental
 		\override BarLine.bar-extent = #'(-2 . 2)
-		%{ \override BarLine.hair-thickness = #0.9 %}
 		\override BarLine.hair-thickness = 0.5
 		\override BarLine.X-extent = #'(0 . 0)
 		\override BarLine.thick-thickness = #8
 		\override Beam.breakable = ##t
 		\override Beam.damping = 99
-		%{ \override Beam.concaveness = #10000 %}
 		\override Clef.whiteout-style = #'outline
 		\override Clef.whiteout = 1
 		\override DynamicText.font-size = #-2
@@ -138,14 +125,10 @@
 		\override NoteColumn.ignore-collision = ##t
 		\shape #'((-2 . 0) (-1 . 0) (-0.5 . 0) (0 . 0)) RepeatTie
 		\override RepeatTie.X-extent = ##f
-		%{ \override SpacingSpanner.strict-grace-spacing = ##t
-		\override SpacingSpanner.strict-note-spacing = ##t
-		\override SpacingSpanner.uniform-stretching = ##t %}
 		\override SpacingSpanner.strict-grace-spacing = ##t % trevor
 		\override SpacingSpanner.strict-note-spacing = ##t % trevor
 		\override SpacingSpanner.uniform-stretching = ##t % trevor
 		\override StaffGrouper.staff-staff-spacing = #'((basic-distance . 0) (minimum-distance . 23) (padding . 0))
-		%{ \override StaffGrouper.staffgroup-staff-spacing = #'((basic-distance . 11) (minimum-distance . 11) (padding . 2)) %}
 		\override Stem.stemlet-length = #1.15
 		\override StemTremolo.beam-width = 1.5
         \override StemTremolo.flag-count = 4
@@ -161,9 +144,6 @@
         \override TupletNumber.font-size = 1 % was 0.5
 
 		\override TupletBracket.bracket-visibility = ##t
-		%{ \override TupletBracket.minimum-length = #3 %}
-		%{ \override TupletBracket.staff-padding = #1.55 %}
-		%{ \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods %}
 		\override TupletBracket.direction = #down
 		\override TupletNumber.text = #tuplet-number::calc-fraction-text
 		autoBeaming = ##f
@@ -180,9 +160,6 @@
 		\Staff
 		\numericTimeSignature
 		\remove Time_signature_engraver
-		%{ \override TimeSignature.whiteout-style = #'outline
-		\override TimeSignature.whiteout = ##t
-		\override TimeSignature.whiteout = 2 %}
 		fontSize = #-1
 		explicitClefVisibility = #end-of-line-invisible
 	}
@@ -197,12 +174,8 @@
 \paper {
 	system-separator-markup = \markup { \slashSeparator }
 
-	%{ indent = 20\mm %}
-    %{ short-indent = 15\mm %}
-    %{ bottom-margin = 10\mm %}
     left-margin = 20\mm
     right-margin = 15\mm
-    %{ top-margin = 10\mm %}
 
 	oddHeaderMarkup = \markup ""
 	evenHeaderMarkup = \markup ""
@@ -259,4 +232,13 @@
         (stretchability . 0)
     )
     top-margin = 0\mm
+
+	% experimental
+
+	%{ #(define fonts
+      (set-global-fonts
+       #:roman "Bell MT Std"
+       #:factor (/ staff-height pt 20)
+      )) %}
+
 }

@@ -3,6 +3,7 @@ import pathlib
 import abjad
 import baca
 import evans
+from abjadext import rmakers
 
 from nagual.lib import (  # , with_sharps, zero_padding_glissando
     accel_40_100,
@@ -52,10 +53,68 @@ maker = evans.SegmentMaker(
             abjad.select().components(abjad.Score),
         ),
         # evans.call(
-        #     "Staff 1",
+        #     "Voice 2",
         #     evans.annotate_leaves,
         #     abjad.select(),
         # ),
+        evans.call(
+            "Voice 2",
+            rmakers.UnbeamCommand(),
+            baca.selectors.leaves([_ for _ in range(22, 52)]),
+        ),
+        evans.call(
+            "Voice 2",
+            rmakers.FeatherBeamCommand(
+                beam_rests=True,
+                stemlet_length=0.75,
+            ),
+            baca.selectors.leaves([_ for _ in range(22, 32)]),
+        ),
+        evans.call(
+            "Voice 2",
+            rmakers.FeatherBeamCommand(
+                beam_rests=True,
+                stemlet_length=0.75,
+            ),
+            baca.selectors.leaves([_ for _ in range(32, 52)]),
+        ),
+        evans.call(
+            "Voice 4",
+            rmakers.UnbeamCommand(),
+            baca.selectors.leaves([_ for _ in range(29, 69)]),
+        ),
+        evans.call(
+            "Voice 4",
+            rmakers.FeatherBeamCommand(
+                beam_rests=True,
+                stemlet_length=0.75,
+            ),
+            baca.selectors.leaves([_ for _ in range(29, 39)]),
+        ),
+        evans.call(
+            "Voice 4",
+            rmakers.FeatherBeamCommand(
+                beam_rests=True,
+                stemlet_length=0.75,
+            ),
+            baca.selectors.leaves([_ for _ in range(41, 48)]),
+        ),
+        evans.call(
+            "Voice 4",
+            rmakers.FeatherBeamCommand(
+                beam_rests=True,
+                stemlet_length=0.75,
+            ),
+            baca.selectors.leaves([_ for _ in range(49, 59)]),
+        ),
+        evans.call(
+            "Voice 4",
+            rmakers.FeatherBeamCommand(
+                beam_rests=True,
+                stemlet_length=0.75,
+            ),
+            baca.selectors.leaves([_ for _ in range(59, 69)]),
+        ),
         evans.attach(
             "Staff 1",
             abjad.Markup(r"\normale-markup", literal=True, direction=abjad.Up),
@@ -164,6 +223,7 @@ maker = evans.SegmentMaker(
     rehearsal_mark="",
     fermata="scripts.ufermata",
     page_break_counts=[90],
+    # mm_rests=False,
 )
 
 maker.build_segment()

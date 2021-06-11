@@ -3,47 +3,53 @@
 
 # from nagual.lib import WarbleFingerings
 from nagual.materials.pitch import demo_pitch_handler
-from nagual.materials.rhythm import note_rhythm_handler, silence_handler
+from nagual.materials.rhythm import (
+    accelerando_handler_01,
+    helianthated_talea_handler_01,
+    note_rhythm_handler,
+    quarters_handler_01,
+    silence_handler,
+)
 
 ## 01
 
 rhythm_materials_01 = [
     silence_handler,  #
-    note_rhythm_handler,
-    note_rhythm_handler,
+    helianthated_talea_handler_01,
+    quarters_handler_01,
     silence_handler,
     silence_handler,  #
-    note_rhythm_handler,
+    helianthated_talea_handler_01,
     silence_handler,
-    note_rhythm_handler,
+    helianthated_talea_handler_01,
     silence_handler,
-    note_rhythm_handler,
+    accelerando_handler_01,
     silence_handler,
-    note_rhythm_handler,
+    quarters_handler_01,
     silence_handler,
     silence_handler,  #
-    note_rhythm_handler,
-    note_rhythm_handler,
+    helianthated_talea_handler_01,
+    quarters_handler_01,
     silence_handler,
-    note_rhythm_handler,  #
+    helianthated_talea_handler_01,  #
     silence_handler,
-    note_rhythm_handler,
+    helianthated_talea_handler_01,
     silence_handler,
-    note_rhythm_handler,
+    helianthated_talea_handler_01,
     silence_handler,
-    note_rhythm_handler,
+    helianthated_talea_handler_01,
     silence_handler,
-    note_rhythm_handler,
+    accelerando_handler_01,
     silence_handler,
-    note_rhythm_handler,
+    accelerando_handler_01,
     silence_handler,
-    note_rhythm_handler,
+    accelerando_handler_01,
     silence_handler,
-    note_rhythm_handler,
+    quarters_handler_01,
     silence_handler,
-    note_rhythm_handler,
+    helianthated_talea_handler_01,
     silence_handler,
-    note_rhythm_handler,
+    helianthated_talea_handler_01,
 ]
 
 pitch_materials_01 = [
