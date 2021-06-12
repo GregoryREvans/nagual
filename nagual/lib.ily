@@ -99,6 +99,8 @@ staff-line-count = #(
    (make-oval-markup
     (robust-bar-number-function barnum measure-pos alt-number context)))
 
+% rehearsal mark
+
 rehearsal-mark-markup = #(
     define-music-function
     (string font-size)
@@ -112,5 +114,23 @@ rehearsal-mark-markup = #(
     \override #'(font-name . "Bell MT Std")
     \box
     { \combine \halign #0 #string \halign #0 \transparent "O" }
+    #}
+    )
+
+% boxed markups
+
+boxed-markup = #(
+    define-music-function
+    (string font-size)
+    (string? number?)
+    #{
+    - \tweak font-size #font-size
+    ^ \markup
+    \override #'(style . "box")
+    \override #'(box-padding . 0.5)
+    \whiteout
+    \box
+    \italic
+    #string
     #}
     )

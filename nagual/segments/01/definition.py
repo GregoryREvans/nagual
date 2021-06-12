@@ -116,9 +116,31 @@ maker = evans.SegmentMaker(
             baca.selectors.leaves([_ for _ in range(59, 69)]),
         ),
         evans.attach(
-            "Staff 1",
-            abjad.Markup(r"\normale-markup", literal=True, direction=abjad.Up),
-            abjad.select().leaf(3, grace=False),
+            "Voice 1",
+            abjad.LilyPondLiteral(r'\boxed-markup "tone + air" 1', format_slot="after"),
+            baca.selectors.note(0),
+        ),
+        # evans.call(
+        #     "Voice 2",
+        #     evans.annotate_leaves,
+        #     abjad.select(),
+        # ),
+        evans.attach(
+            "Voice 2",
+            abjad.LilyPondLiteral(r'\boxed-markup "spazzolato" 1', format_slot="after"),
+            baca.selectors.note(0),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.LilyPondLiteral(
+                r'\boxed-markup "plucked + ponticello" 1', format_slot="after"
+            ),
+            baca.selectors.note(15),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.LilyPondLiteral(r'\boxed-markup "normale" 1', format_slot="after"),
+            baca.selectors.note(33),
         ),
         evans.attach(
             "Voice 3",
@@ -135,23 +157,59 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 3",
             abjad.LilyPondLiteral(
-                r"\staff-line-count #2", format_slot="absolute_before"
+                r'\boxed-markup "brushes + bass drum" 1', format_slot="after"
             ),
-            baca.selectors.note(2),
+            baca.selectors.note(0),
         ),
         evans.attach(
             "Voice 3",
             abjad.LilyPondLiteral(
-                r"\staff-line-count #3", format_slot="absolute_before"
+                r'\boxed-markup "brushes + cymbal" 1', format_slot="after"
             ),
-            baca.selectors.note(5),
+            baca.selectors.note(12),
         ),
         evans.attach(
             "Voice 3",
             abjad.LilyPondLiteral(
-                r"\staff-line-count #4", format_slot="absolute_before"
+                r'\boxed-markup "brushes + bass drum" 1', format_slot="after"
             ),
-            baca.selectors.note(7),
+            baca.selectors.note(19),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(
+                r'\boxed-markup "superball + bass drum" 1', format_slot="after"
+            ),
+            baca.selectors.note(26),
+        ),
+        # evans.call(
+        #     "Voice 4",
+        #     evans.annotate_leaves,
+        #     abjad.select(),
+        # ),
+        evans.attach(
+            "Voice 4",
+            abjad.LilyPondLiteral(r'\boxed-markup "spazzolato" 1', format_slot="after"),
+            baca.selectors.note(0),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.LilyPondLiteral(
+                r'\boxed-markup "col legno tratto" 1', format_slot="after"
+            ),
+            baca.selectors.note(24),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.LilyPondLiteral(
+                r'\boxed-markup "normale + ponticello" 1', format_slot="after"
+            ),
+            baca.selectors.note(47),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.LilyPondLiteral(r'\boxed-markup "spazzolato" 1', format_slot="after"),
+            baca.selectors.note(56),
         ),
         evans.attach(
             "Global Context",
@@ -193,11 +251,11 @@ maker = evans.SegmentMaker(
             met_70,
             abjad.select().leaf(13),
         ),
-        evans.attach(
-            "Global Context",
-            abjad.LilyPondLiteral(r"\break", format_slot="after"),
-            baca.selectors.leaf(-1),
-        ),
+        # evans.attach(
+        #     "Global Context",
+        #     abjad.LilyPondLiteral(r"\break", format_slot="after"),
+        #     baca.selectors.leaf(-1),
+        # ),
         # evans.call(
         #     "Global Context",
         #     evans.annotate_time,

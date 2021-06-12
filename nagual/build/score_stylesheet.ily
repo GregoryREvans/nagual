@@ -54,7 +54,10 @@
 }
 
 \layout {
-	\accidentalStyle forget
+	\accidentalStyle neo-modern % was forget
+	%{ accidentals are printed like with modern,
+	but they are printed again if the same note appears later in the same measure
+	– except if the note is immediately repeated. %}
 	indent = 0
     ragged-bottom = ##t
     ragged-last = ##t
@@ -125,6 +128,7 @@
 		\override NoteColumn.ignore-collision = ##t
 		\shape #'((-2 . 0) (-1 . 0) (-0.5 . 0) (0 . 0)) RepeatTie
 		\override RepeatTie.X-extent = ##f
+		%{ \override SpacingSpanner.spacing-increment = 1.25 %}
 		\override SpacingSpanner.strict-grace-spacing = ##t % trevor
 		\override SpacingSpanner.strict-note-spacing = ##t % trevor
 		\override SpacingSpanner.uniform-stretching = ##t % trevor
@@ -147,7 +151,7 @@
 		\override TupletBracket.direction = #down
 		\override TupletNumber.text = #tuplet-number::calc-fraction-text
 		autoBeaming = ##f
-		proportionalNotationDuration = #(ly:make-moment 1 17) % maybe 15? system breaks?
+		proportionalNotationDuration = #(ly:make-moment 1 20) % was 17
 		barNumberFormatter = #oval-bar-numbers
 		tupletFullLength = ##t
 	}

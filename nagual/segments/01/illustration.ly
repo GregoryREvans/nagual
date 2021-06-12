@@ -177,7 +177,6 @@
             \time 1/4
             s1 * 1/4
             \bacaStopTextSpanMM
-            \break
 
         }
 
@@ -237,8 +236,6 @@
                             %! applying invisibility
                             \once \override Rest.transparent = ##t
                             r1 * 1/2
-                            %! applying indicators
-                            ^ \normale-markup
 
                             R1 * 1/2
                             %! COMMENT_MEASURE_NUMBERS
@@ -264,6 +261,7 @@
                             % [Voice 1 measure 7]
 
                             fs'2
+                            \boxed-markup "tone + air" 1
 
                             fs'4
                             ~
@@ -364,16 +362,12 @@
 
                             fs'4
 
-                            fs'4
-
-                            fs'4
+                            fs'2
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 12]
 
-                            fs'4
-
-                            fs'4
+                            fs'2
 
                             fs'4
 
@@ -475,6 +469,7 @@
                             r4
 
                             cs''4
+                            \boxed-markup "spazzolato" 1
 
                             cs''4
                             ~
@@ -591,6 +586,7 @@
                                 \override Staff.Stem.stemlet-length = 0.75
                                 cs''16 * 15/8
                                 [
+                                \boxed-markup "plucked + ponticello" 1
 
                                 \revert Staff.Stem.stemlet-length
                                 cs''16 * 115/64
@@ -732,14 +728,17 @@
                                 % [Voice 2 measure 11]
 
                                 cs''4
+                                \boxed-markup "normale" 1
 
                                 cs''4
 
                                 cs''4
+                                ~
 
                                 cs''4
 
                                 cs''4
+                                ~
 
                             }
                             %! COMMENT_MEASURE_NUMBERS
@@ -759,9 +758,7 @@
 
                             cs''4
 
-                            cs''4
-
-                            cs''4
+                            cs''2
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 14]
@@ -886,13 +883,13 @@
                             r2.
 
                             cs'4
+                            \boxed-markup "brushes + bass drum" 1
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 7]
 
                             cs'4
                             ~
-                            \staff-line-count #2
 
                             \override Staff.Stem.stemlet-length = 0.75
                             cs'8
@@ -906,7 +903,6 @@
                             \override Staff.Stem.stemlet-length = 0.75
                             cs'8
                             [
-                            \staff-line-count #3
 
                             \revert Staff.Stem.stemlet-length
                             cs'8
@@ -915,7 +911,6 @@
 
                             cs'4
                             ~
-                            \staff-line-count #4
 
                             \override Staff.Stem.stemlet-length = 0.75
                             cs'8
@@ -941,6 +936,7 @@
                                 cs'4
 
                                 cs'2
+                                \boxed-markup "brushes + cymbal" 1
 
                                 cs'4.
                                 ~
@@ -973,6 +969,7 @@
                                 % [Voice 3 measure 10]
 
                                 cs'2.
+                                \boxed-markup "brushes + bass drum" 1
 
                                 cs'2
 
@@ -1000,29 +997,37 @@
                                 % [Voice 3 measure 11]
 
                                 cs'4
+                                \boxed-markup "superball + bass drum" 1
 
                                 cs'4
 
                                 cs'4
+                                ~
 
                             }
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 3 measure 12]
 
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 3/4
-                            {
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! abjad.SegmentMaker.comment_measure_numbers()
-                                % [Voice 3 measure 12]
+                            \override Staff.Stem.stemlet-length = 0.75
+                            cs'8.
+                            [
 
-                                cs'4
+                            \revert Staff.Stem.stemlet-length
+                            cs'16
+                            ~
+                            ]
 
-                                cs'4
+                            cs'4
+                            ~
 
-                                cs'4
+                            \override Staff.Stem.stemlet-length = 0.75
+                            cs'16
+                            [
 
-                                cs'4
-
-                            }
+                            \revert Staff.Stem.stemlet-length
+                            cs'8.
+                            ]
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 13]
@@ -1034,6 +1039,7 @@
                             cs'4
 
                             cs'4
+                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 14]
@@ -1109,6 +1115,7 @@
                             \override Staff.Stem.stemlet-length = 0.75
                             cs'8
                             [
+                            \boxed-markup "spazzolato" 1
 
                             \revert Staff.Stem.stemlet-length
                             cs'8
@@ -1271,6 +1278,7 @@
                                 \override Staff.Stem.stemlet-length = 0.75
                                 cs'16 * 15/8
                                 [
+                                \boxed-markup "col legno tratto" 1
 
                                 \revert Staff.Stem.stemlet-length
                                 cs'16 * 115/64
@@ -1523,25 +1531,16 @@
                             % [Voice 4 measure 11]
 
                             cs'4
+                            \boxed-markup "normale + ponticello" 1
 
                             cs'4
 
-                            cs'4
+                            cs'2
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 4 measure 12]
 
-                            cs'4
-
-                            \tweak text #tuplet-number::calc-fraction-text
-                            \times 3/2
-                            {
-                                %! COMMENT_MEASURE_NUMBERS
-                                %! abjad.SegmentMaker.comment_measure_numbers()
-                                % [Voice 4 measure 12]
-
-                                cs'4
-
-                                cs'4
-
-                            }
+                            cs'2.
 
                             \times 4/5
                             {
@@ -1558,6 +1557,7 @@
                                 cs'4
 
                                 cs'4
+                                ~
 
                             }
                             %! COMMENT_MEASURE_NUMBERS
@@ -1568,6 +1568,7 @@
 
                             cs'4
                             ~
+                            \boxed-markup "spazzolato" 1
 
                             \override Staff.Stem.stemlet-length = 0.75
                             cs'8

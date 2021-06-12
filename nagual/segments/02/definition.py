@@ -3,6 +3,7 @@ import pathlib
 import abjad
 import baca
 import evans
+from abjadext import rmakers
 
 from nagual.lib import (  # , with_sharps, zero_padding_glissando
     mark_100,
@@ -58,6 +59,41 @@ maker = evans.SegmentMaker(
         #     evans.annotate_leaves,
         #     abjad.select(),
         # ),
+        evans.call(
+            "Voice 2",
+            evans.annotate_leaves,
+            abjad.select(),
+        ),
+        evans.call(
+            "Voice 2",
+            rmakers.UnbeamCommand(),
+            baca.selectors.leaves([_ for _ in range(40)]),
+        ),
+        evans.call(
+            "Voice 2",
+            rmakers.FeatherBeamCommand(),
+            baca.selectors.leaves([_ for _ in range(5)]),
+        ),
+        evans.call(
+            "Voice 2",
+            rmakers.FeatherBeamCommand(),
+            baca.selectors.leaves([_ for _ in range(5, 13)]),
+        ),
+        evans.call(
+            "Voice 2",
+            rmakers.FeatherBeamCommand(),
+            baca.selectors.leaves([_ for _ in range(13, 23)]),
+        ),
+        evans.call(
+            "Voice 2",
+            rmakers.FeatherBeamCommand(),
+            baca.selectors.leaves([_ for _ in range(23, 34)]),
+        ),
+        evans.call(
+            "Voice 2",
+            rmakers.FeatherBeamCommand(),
+            baca.selectors.leaves([_ for _ in range(34, 40)]),
+        ),
         evans.attach(
             "Voice 3",
             abjad.Clef("percussion"),
@@ -69,6 +105,20 @@ maker = evans.SegmentMaker(
                 r"\staff-line-count 1", format_slot="absolute_before"
             ),
             baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(
+                r"\staff-line-count 3", format_slot="absolute_before"
+            ),
+            baca.selectors.leaf(16),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(
+                r'\boxed-markup "yarn mallets + wood blocks" 1', format_slot="after"
+            ),
+            baca.selectors.leaf(17),
         ),
         evans.attach(
             "Global Context",
