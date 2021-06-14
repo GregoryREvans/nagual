@@ -59,11 +59,11 @@ maker = evans.SegmentMaker(
         #     evans.annotate_leaves,
         #     abjad.select(),
         # ),
-        evans.call(
-            "Voice 2",
-            evans.annotate_leaves,
-            abjad.select(),
-        ),
+        # evans.call(
+        #     "Voice 2",
+        #     evans.annotate_leaves,
+        #     abjad.select(),
+        # ),
         evans.call(
             "Voice 2",
             rmakers.UnbeamCommand(),
@@ -95,6 +95,56 @@ maker = evans.SegmentMaker(
             baca.selectors.leaves([_ for _ in range(34, 40)]),
         ),
         evans.attach(
+            "Voice 2",
+            abjad.StartTrillSpan(),
+            baca.selectors.leaf(4),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.StopTrillSpan(),
+            baca.selectors.leaf(6),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.StartTrillSpan(),
+            baca.selectors.leaf(12),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.StopTrillSpan(),
+            baca.selectors.leaf(14),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.StartTrillSpan(),
+            baca.selectors.leaf(22),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.StopTrillSpan(),
+            baca.selectors.leaf(24),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.StartTrillSpan(),
+            baca.selectors.leaf(33),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.StopTrillSpan(),
+            baca.selectors.leaf(35),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.StartTrillSpan(),
+            baca.selectors.leaf(47),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.StopTrillSpan(),
+            baca.selectors.leaf(48),
+        ),
+        evans.attach(
             "Voice 3",
             abjad.Clef("percussion"),
             baca.selectors.leaf(0),
@@ -111,14 +161,14 @@ maker = evans.SegmentMaker(
             abjad.LilyPondLiteral(
                 r"\staff-line-count 3", format_slot="absolute_before"
             ),
-            baca.selectors.leaf(16),
+            baca.selectors.leaf(22),
         ),
         evans.attach(
             "Voice 3",
             abjad.LilyPondLiteral(
                 r'\boxed-markup "yarn mallets + wood blocks" 1', format_slot="after"
             ),
-            baca.selectors.leaf(17),
+            baca.selectors.leaf(23),
         ),
         evans.attach(
             "Global Context",

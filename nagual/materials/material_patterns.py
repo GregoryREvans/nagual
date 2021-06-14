@@ -6,11 +6,14 @@ from nagual.materials.pitch import demo_pitch_handler
 from nagual.materials.rhythm import (
     accelerando_handler_01,
     accelerando_handler_02,
+    even_division_handler_02,
     helianthated_talea_handler_01,
+    helianthated_talea_handler_01_segment_02,
     helianthated_talea_handler_02,
     note_rhythm_handler,
     quarters_handler_01,
     silence_handler,
+    tuplet_handler_02,
 )
 
 ## 01
@@ -64,27 +67,27 @@ rhythm_materials_02 = [
     helianthated_talea_handler_02,  #
     silence_handler,
     helianthated_talea_handler_02,
-    note_rhythm_handler,
+    helianthated_talea_handler_01_segment_02,
     silence_handler,
     silence_handler,
-    note_rhythm_handler,
+    helianthated_talea_handler_01_segment_02,
     accelerando_handler_02,  #
     silence_handler,
     helianthated_talea_handler_02,
     silence_handler,
-    note_rhythm_handler,
+    tuplet_handler_02,
     silence_handler,
-    note_rhythm_handler,
+    helianthated_talea_handler_01_segment_02,
     helianthated_talea_handler_02,  #
     silence_handler,
     helianthated_talea_handler_02,
-    note_rhythm_handler,
+    helianthated_talea_handler_01_segment_02,
     silence_handler,
     silence_handler,
-    note_rhythm_handler,
+    even_division_handler_02,
     helianthated_talea_handler_02,
     helianthated_talea_handler_02,  #
-    silence_handler,
+    helianthated_talea_handler_01_segment_02,
     helianthated_talea_handler_02,
     silence_handler,
     silence_handler,

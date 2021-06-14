@@ -146,6 +146,35 @@ accelerando_handler_02 = evans.RhythmHandler(
 
 #
 
+helianthated_talea_01_segment_02 = rmakers.stack(
+    rmakers.talea(
+        helianthated_talea_numerators,
+        16,
+        extra_counts=[0, -4, 0, 12, 8],
+        end_counts=[1, 1, 1, 1],
+    ),
+    rmakers.trivialize(abjad.select().tuplets()),
+    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+    rmakers.rewrite_sustained(abjad.select().tuplets()),
+    rmakers.extract_trivial(abjad.select().tuplets()),
+)
+
+helianthated_talea_handler_01_segment_02 = evans.RhythmHandler(
+    helianthated_talea_01_segment_02,
+    forget=False,
+    name="helianthated_talea_handler_01_segment_02",
+    state=abjad.OrderedDict(
+        [
+            ("divisions_consumed", 23),
+            ("incomplete_last_note", True),
+            ("logical_ties_produced", 66),
+            ("talea_weight_consumed", 380),
+        ]
+    ),
+)
+
+#
+
 helianthated_talea_02 = rmakers.stack(
     rmakers.talea(
         helianthated_talea_numerators,
@@ -163,4 +192,47 @@ helianthated_talea_handler_02 = evans.RhythmHandler(
     helianthated_talea_02,
     forget=False,
     name="helianthated_talea_handler_01",
+)
+
+#
+
+tuplet_maker_02 = rmakers.stack(
+    rmakers.tuplet(
+        [
+            (1, 2),
+        ]
+    ),
+    rmakers.trivialize(abjad.select().tuplets()),
+    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+    rmakers.rewrite_sustained(abjad.select().tuplets()),
+    rmakers.extract_trivial(abjad.select().tuplets()),
+)
+
+tuplet_handler_02 = evans.RhythmHandler(
+    tuplet_maker_02,
+    forget=False,
+    name="tuplet_handler_02",
+)
+
+#
+
+even_division_maker_02 = rmakers.stack(
+    rmakers.even_division(
+        [
+            16,
+            16,
+            8,
+        ],
+        extra_counts=[0, 2, 4, 2],
+    ),
+    rmakers.trivialize(abjad.select().tuplets()),
+    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+    rmakers.rewrite_sustained(abjad.select().tuplets()),
+    rmakers.extract_trivial(abjad.select().tuplets()),
+)
+
+even_division_handler_02 = evans.RhythmHandler(
+    even_division_maker_02,
+    forget=False,
+    name="even_division_handler_02",
 )

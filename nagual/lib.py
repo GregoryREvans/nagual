@@ -334,8 +334,8 @@ def with_sharps(selections):
 
 start_repeat = abjad.LilyPondLiteral(
     [
-        r"\once \override Score.BarLine.X-extent = #'(0 . 3)",
-        r"\once \override Score.BarLine.thick-thickness = #4",
+        r"\once \override Score.BarLine.X-extent = #'(0.5 . 3)",
+        r"\once \override Score.BarLine.thick-thickness = #3",
         r'\bar ".|:"',
     ],
     format_slot="after",
@@ -343,8 +343,8 @@ start_repeat = abjad.LilyPondLiteral(
 
 start_repeat_before = abjad.LilyPondLiteral(
     [
-        r"\once \override Score.BarLine.X-extent = #'(0 . 3)",
-        r"\once \override Score.BarLine.thick-thickness = #4",
+        r"\once \override Score.BarLine.X-extent = #'(0.5 . 3)",
+        r"\once \override Score.BarLine.thick-thickness = #3",
         r'\bar ".|:"',
     ],
     format_slot="before",
@@ -352,8 +352,8 @@ start_repeat_before = abjad.LilyPondLiteral(
 
 stop_repeat = abjad.LilyPondLiteral(
     [
-        r"\once \override Score.BarLine.X-extent = #'(0 . 1.5)",
-        r"\once \override Score.BarLine.thick-thickness = #4",
+        r"\once \override Score.BarLine.X-extent = #'(1 . 2)",
+        r"\once \override Score.BarLine.thick-thickness = #3",
         r'\bar ":|."',
     ],
     format_slot="after",
@@ -361,8 +361,8 @@ stop_repeat = abjad.LilyPondLiteral(
 
 stop_repeat_before = abjad.LilyPondLiteral(
     [
-        r"\once \override Score.BarLine.X-extent = #'(0 . 1.5)",
-        r"\once \override Score.BarLine.thick-thickness = #4",
+        r"\once \override Score.BarLine.X-extent = #'(1 . 2)",
+        r"\once \override Score.BarLine.thick-thickness = #3",
         r'\bar ":|."',
     ],
     format_slot="before",
@@ -372,8 +372,8 @@ red_start_repeat = abjad.LilyPondLiteral(
     [
         r"\once \override Score.BarLine.color = #red",
         r"\once \override Score.SpanBar.color = #red",
-        r"\once \override Score.BarLine.X-extent = #'(0 . 3)",
-        r"\once \override Score.BarLine.thick-thickness = #4",
+        r"\once \override Score.BarLine.X-extent = #'(0.5 . 3)",
+        r"\once \override Score.BarLine.thick-thickness = #3",
         r'\bar ".|:"',
     ],
     format_slot="after",
@@ -383,8 +383,8 @@ red_stop_repeat = abjad.LilyPondLiteral(
     [
         r"\once \override Score.BarLine.color = #red",
         r"\once \override Score.SpanBar.color = #red",
-        r"\once \override Score.BarLine.X-extent = #'(0 . 1.5)",
-        r"\once \override Score.BarLine.thick-thickness = #4",
+        r"\once \override Score.BarLine.X-extent = #'(1 . 2)",
+        r"\once \override Score.BarLine.thick-thickness = #3",
         r'\bar ":|."',
     ],
     format_slot="after",
