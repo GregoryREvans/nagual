@@ -12,7 +12,7 @@
             \time 3/8
             \mark \markup \bold {  }
             s1 * 3/8
-            - \rehearsal-mark-markup C 6
+            - \rehearsal-mark-markup C 6 -1
             \tweak padding 6
             ^ \markup {
               \override #'(font-size . 5.5)

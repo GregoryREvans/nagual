@@ -223,12 +223,12 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Global Context",
-            abjad.Markup(r"\rehearsal-mark-markup A 6", literal=True),
+            abjad.Markup(r"\rehearsal-mark-markup A 6 -2", literal=True),
             baca.selectors.leaf(6),
         ),
         evans.attach(
             "Global Context",
-            abjad.Markup(r"\rehearsal-mark-markup B 6", literal=True),
+            abjad.Markup(r"\rehearsal-mark-markup B 6 -2", literal=True),
             baca.selectors.leaf(10),
         ),
         evans.attach(

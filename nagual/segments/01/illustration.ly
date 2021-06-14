@@ -75,7 +75,7 @@
             %! scaling time signatures
             \time 6/4
             s1 * 3/2
-            - \rehearsal-mark-markup A 6
+            - \rehearsal-mark-markup A 6 -2
             %! COMMENT_MEASURE_NUMBERS
             %! abjad.SegmentMaker.comment_measure_numbers()
             % [Global Context measure 8]
@@ -105,7 +105,7 @@
             %! scaling time signatures
             \time 4/4
             s1 * 1
-            - \rehearsal-mark-markup B 6
+            - \rehearsal-mark-markup B 6 -2
             \tweak padding 6
             ^ \markup {
               \override #'(font-size . 5.5)

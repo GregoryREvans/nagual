@@ -73,7 +73,7 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Global Context",
-            abjad.Markup(r"\rehearsal-mark-markup N 6", literal=True),
+            abjad.Markup(r"\rehearsal-mark-markup N 6 -1", literal=True),
             baca.selectors.leaf(0),
         ),
         evans.attach(

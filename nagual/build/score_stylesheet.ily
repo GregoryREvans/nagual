@@ -72,12 +72,12 @@
 		\consists Metronome_mark_engraver
 		\consists Text_engraver
 		\consists Text_spanner_engraver
-		\override BarNumber.Y-extent = ##f
-		\override BarNumber.Y-offset = 0
+		%{ \override BarNumber.Y-extent = ##f %}
+		%{ \override BarNumber.Y-offset = 0
 		\override BarNumber.extra-offset = #'(-4 . -4)
         \override BarNumber.font-size = 1
 		\override BarNumber.padding = 4
-		\override BarNumber.font-name = "Bell MT Std"
+		\override BarNumber.font-name = "Bell MT Std" %}
 		\override MetronomeMark.stencil = ##f
 		\override RehearsalMark.X-extent = #'(0 . 0)
 		\override RehearsalMark.X-offset = 6
@@ -101,18 +101,26 @@
 		\override TimeSignature.whiteout-style = #'outline
 		\override TimeSignature.whiteout = ##t
         \override VerticalAxisGroup.default-staff-staff-spacing = #'((basic-distance . 13) (minimum-distance . 13) (padding . 4) (stretchability . 0))
+		%{ barNumberFormatter = #oval-bar-numbers %}
     }
 	\context {
 		\Score
 		\remove Metronome_mark_engraver
-		\remove Bar_number_engraver
 		\remove Mark_engraver
+		%{ \remove Bar_number_engraver %}
 		\accepts TimeSignatureContext
 		\override Accidental.X-extent = ##f % experimental
 		\override BarLine.bar-extent = #'(-2 . 2)
 		\override BarLine.hair-thickness = 0.5
 		\override BarLine.X-extent = #'(0 . 0)
 		\override BarLine.thick-thickness = #8
+
+		\override BarNumber.Y-extent = ##f % temporary: numbers missing in Global Context!
+		\override BarNumber.Y-offset = 0
+		\override BarNumber.extra-offset = #'(-4 . -4)
+        \override BarNumber.font-size = 1
+		\override BarNumber.padding = 4
+
 		\override Beam.breakable = ##t
 		\override Beam.damping = 99
 		\override Clef.whiteout-style = #'outline
@@ -151,8 +159,8 @@
 		\override TupletBracket.direction = #down
 		\override TupletNumber.text = #tuplet-number::calc-fraction-text
 		autoBeaming = ##f
-		proportionalNotationDuration = #(ly:make-moment 1 20) % was 17
 		barNumberFormatter = #oval-bar-numbers
+		proportionalNotationDuration = #(ly:make-moment 1 20) % was 17
 		tupletFullLength = ##t
 	}
 	\context {

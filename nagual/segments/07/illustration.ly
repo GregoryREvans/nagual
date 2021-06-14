@@ -29,7 +29,7 @@
             \time 6/4
             \mark \markup \bold {  }
             s1 * 3/2
-            - \rehearsal-mark-markup H 6
+            - \rehearsal-mark-markup H 6 -1
             \tweak padding 6
             ^ \markup {
               \override #'(font-size . 5.5)

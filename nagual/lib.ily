@@ -84,7 +84,8 @@ staff-line-count = #(
 #(define flare-tie
   (flared-tie '((0 . 0)(0.06 . 0.1) (0.94 . 0.1) (1.0 . 0.0))))
 
-  #(define-markup-command (oval layout props arg)
+
+#(define-markup-command (oval layout props arg)
    (markup?)
    #:properties ((thickness 1)
                  (font-size 0)
@@ -95,7 +96,7 @@ staff-line-count = #(
          (m (interpret-markup layout props (markup #:hcenter-in 4.0 arg))))
      (oval-stencil m th pad (* pad 8.0))))
 
-  #(define (oval-bar-numbers barnum measure-pos alt-number context)
+#(define (oval-bar-numbers barnum measure-pos alt-number context)
    (make-oval-markup
     (robust-bar-number-function barnum measure-pos alt-number context)))
 
@@ -103,13 +104,13 @@ staff-line-count = #(
 
 rehearsal-mark-markup = #(
     define-music-function
-    (string font-size)
-    (string? number?)
+    (string font-size h-align)
+    (string? number? number?)
     #{
     - \tweak font-size #font-size
     - \markup
     \with-dimensions-from \null
-    \halign #-1
+    \halign #h-align
     \override #'(box-padding . 0.5)
     \override #'(font-name . "Bell MT Std")
     \box
@@ -132,5 +133,29 @@ boxed-markup = #(
     \box
     \italic
     #string
+    #}
+    )
+
+% cautionary accidentals
+
+overhead-accidentals = #(
+    define-music-function
+    (font-size)
+    (number?)
+    #{
+    \set suggestAccidentals = ##t
+    \override Staff.AccidentalSuggestion.font-size = #font-size
+    \override Staff.AccidentalSuggestion.parenthesized = ##t
+    #}
+    )
+
+normal-accidentals = #(
+    define-music-function
+    (font-size)
+    (number?)
+    #{
+    \set suggestAccidentals = ##f
+    \revert Staff.AccidentalSuggestion.font-size
+    \revert Staff.AccidentalSuggestion.parenthesized
     #}
     )
