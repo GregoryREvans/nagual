@@ -159,3 +159,45 @@ normal-accidentals = #(
     \revert Staff.AccidentalSuggestion.parenthesized
     #}
     )
+
+double-diamond-parenthesized-top-markup =
+    \markup
+    \concat {
+        \general-align #Y #1.25
+        \override #'(baseline-skip . 1.75)
+        \scale #'(0.75 . 0.75)
+        \center-column
+        {
+            \concat {
+                \general-align #Y #0.75
+                "("
+                \general-align #Y #1
+                \musicglyph #"noteheads.s0harmonic"
+                \general-align #Y #0.75
+                ")"
+                }
+            \musicglyph #"noteheads.s0harmonic"
+        }
+    }
+
+diamond-parenthesized-double-diamond-markup =
+    \markup
+    \concat {
+        \general-align #Y #2.5
+        \scale #'(1 . 1.5)
+        "("
+        \hspace #-0.1
+        \general-align #Y #1.5
+        \override #'(baseline-skip . 1.75)
+        \scale #'(0.75 . 0.75)
+        \column
+        {
+            \musicglyph #"noteheads.s0harmonic"
+            \musicglyph #"noteheads.s0harmonic"
+            \musicglyph #"noteheads.s0harmonic"
+        }
+        \hspace #-0.15
+        \general-align #Y #2.5
+        \scale #'(1 . 1.5)
+        ")"
+    }

@@ -68,17 +68,103 @@
                             \set Staff.instrumentName =
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Alto Flute" }
-                            fs'1
+                            \override Staff.Stem.stemlet-length = 0.75
+                            fs'16
+                            [
+
+                            \revert Staff.Stem.stemlet-length
+                            fs'8.
+                            ~
+                            ]
+
+                            \override Staff.Stem.stemlet-length = 0.75
+                            fs'16
+                            [
+
+                            fs'16
+
+                            fs'16
+
+                            \revert Staff.Stem.stemlet-length
+                            fs'16
+                            ]
+
+                            r4
+
+                            \override Staff.Stem.stemlet-length = 0.75
+                            fs'8.
+                            [
+
+                            \revert Staff.Stem.stemlet-length
+                            fs'16
+                            ~
+                            ]
+
+                        }
+
+                        \context Voice = "Voice 1"
+                        {
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 2]
 
-                            fs'1
+                            \override Staff.Stem.stemlet-length = 0.75
+                            fs'16
+                            [
+
+                            fs'16
+
+                            fs'16
+
+                            \revert Staff.Stem.stemlet-length
+                            fs'16
+                            ]
+
+                            r2
+
+                            \times 2/3
+                            {
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                fs'8
+                                [
+
+                                fs'8
+
+                                \revert Staff.Stem.stemlet-length
+                                fs'8
+                                ~
+                                ]
+
+                            }
+
+                        }
+
+                        \context Voice = "Voice 1"
+                        {
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 3]
 
-                            fs'2
+                            \override Staff.Stem.stemlet-length = 0.75
+                            fs'8
+                            [
+
+                            \revert Staff.Stem.stemlet-length
+                            fs'8
+                            ]
+
+                            \override Staff.Stem.stemlet-length = 0.75
+                            fs'16
+                            [
+
+                            fs'16
+
+                            fs'16
+
+                            \revert Staff.Stem.stemlet-length
+                            fs'16
+                            ]
                             \bar "||"
 
                         }
@@ -95,29 +181,114 @@
 
                         \context Voice = "Voice 2"
                         {
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 2 measure 1]
 
-                            %! applying staff names and clefs
-                            \set Staff.shortInstrumentName =
-                            %! applying staff names and clefs
-                            \markup { \hcenter-in #12 "gt." }
-                            %! applying staff names and clefs
-                            \set Staff.instrumentName =
-                            %! applying staff names and clefs
-                            \markup { \hcenter-in #14 "Guitar" }
-                            cs''1
+                            \times 2/3
+                            {
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! abjad.SegmentMaker.comment_measure_numbers()
+                                % [Voice 2 measure 1]
+
+                                %! applying staff names and clefs
+                                \set Staff.shortInstrumentName =
+                                %! applying staff names and clefs
+                                \markup { \hcenter-in #12 "gt." }
+                                %! applying staff names and clefs
+                                \set Staff.instrumentName =
+                                %! applying staff names and clefs
+                                \markup { \hcenter-in #14 "Guitar" }
+                                cs''8
+
+                                cs''4.
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                cs''16
+                                [
+
+                                cs''16
+
+                                cs''16
+
+                                \revert Staff.Stem.stemlet-length
+                                cs''16
+                                ]
+
+                            }
+
+                            r2
+
+                        }
+
+                        \context Voice = "Voice 2"
+                        {
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 2]
 
-                            cs''1
+                            \override Staff.Stem.stemlet-length = 0.75
+                            cs''8
+                            [
+
+                            \revert Staff.Stem.stemlet-length
+                            cs''8
+                            ~
+                            ]
+
+                            \override Staff.Stem.stemlet-length = 0.75
+                            cs''16
+                            [
+
+                            cs''16
+
+                            cs''16
+
+                            \revert Staff.Stem.stemlet-length
+                            cs''16
+                            ]
+
+                            r4
+
+                            \override Staff.Stem.stemlet-length = 0.75
+                            cs''8
+                            [
+
+                            \revert Staff.Stem.stemlet-length
+                            cs''8
+                            ~
+                            ]
+
+                        }
+
+                        \context Voice = "Voice 2"
+                        {
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 3]
 
-                            cs''2
+                            \override Staff.Stem.stemlet-length = 0.75
+                            cs''16
+                            [
+
+                            cs''16
+                            ~
+
+                            cs''16
+
+                            \revert Staff.Stem.stemlet-length
+                            cs''16
+                            ~
+                            ]
+
+                            \override Staff.Stem.stemlet-length = 0.75
+                            cs''16
+                            [
+
+                            cs''16
+
+                            cs''16
+
+                            \revert Staff.Stem.stemlet-length
+                            cs''16
+                            ]
                             \bar "||"
 
                         }
@@ -134,31 +305,89 @@
 
                         \context Voice = "Voice 3"
                         {
-                            \staff-line-count 1
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 3 measure 1]
 
-                            %! applying staff names and clefs
-                            \set Staff.shortInstrumentName =
-                            %! applying staff names and clefs
-                            \markup { \hcenter-in #12 "pc." }
-                            %! applying staff names and clefs
-                            \set Staff.instrumentName =
-                            %! applying staff names and clefs
-                            \markup { \hcenter-in #14 "Percussion" }
-                            \clef "percussion"
-                            cs'1
+                            \times 2/3
+                            {
+                                \staff-line-count 1
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! abjad.SegmentMaker.comment_measure_numbers()
+                                % [Voice 3 measure 1]
+
+                                %! applying staff names and clefs
+                                \set Staff.shortInstrumentName =
+                                %! applying staff names and clefs
+                                \markup { \hcenter-in #12 "pc." }
+                                %! applying staff names and clefs
+                                \set Staff.instrumentName =
+                                %! applying staff names and clefs
+                                \markup { \hcenter-in #14 "Percussion" }
+                                \clef "percussion"
+                                \override Staff.Stem.stemlet-length = 0.75
+                                cs'8.
+                                [
+
+                                cs'8.
+
+                                cs'8
+
+                                cs'16
+
+                                cs'16
+
+                                cs'16
+
+                                \revert Staff.Stem.stemlet-length
+                                cs'16
+                                ]
+
+                            }
+
+                            r2
+
+                        }
+
+                        \context Voice = "Voice 3"
+                        {
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 2]
 
-                            cs'1
+                            \override Staff.Stem.stemlet-length = 0.75
+                            cs'8
+                            [
+
+                            \revert Staff.Stem.stemlet-length
+                            cs'8
+                            ~
+                            ]
+
+                            \override Staff.Stem.stemlet-length = 0.75
+                            cs'16
+                            [
+
+                            cs'16
+
+                            cs'16
+
+                            \revert Staff.Stem.stemlet-length
+                            cs'16
+                            ]
+
+                            r2
+
+                        }
+
+                        \context Voice = "Voice 3"
+                        {
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 3]
 
-                            cs'2
+                            %! applying invisibility
+                            \once \override Rest.transparent = ##t
+                            r1 * 1/4
+
+                            R1 * 1/4
                             \bar "||"
 
                         }
@@ -175,30 +404,106 @@
 
                         \context Voice = "Voice 4"
                         {
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 4 measure 1]
 
-                            %! applying staff names and clefs
-                            \set Staff.shortInstrumentName =
-                            %! applying staff names and clefs
-                            \markup { \hcenter-in #12 "vn." }
-                            %! applying staff names and clefs
-                            \set Staff.instrumentName =
-                            %! applying staff names and clefs
-                            \markup { \hcenter-in #14 "Violin" }
-                            cs'1
+                            \times 2/3
+                            {
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! abjad.SegmentMaker.comment_measure_numbers()
+                                % [Voice 4 measure 1]
+
+                                %! applying staff names and clefs
+                                \set Staff.shortInstrumentName =
+                                %! applying staff names and clefs
+                                \markup { \hcenter-in #12 "vn." }
+                                %! applying staff names and clefs
+                                \set Staff.instrumentName =
+                                %! applying staff names and clefs
+                                \markup { \hcenter-in #14 "Violin" }
+                                cs'4
+
+                                cs'4
+
+                                cs'4
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                cs'8.
+                                [
+
+                                cs'16
+
+                                cs'16
+
+                                \revert Staff.Stem.stemlet-length
+                                cs'16
+                                ]
+
+                            }
+
+                            r4
+
+                        }
+
+                        \context Voice = "Voice 4"
+                        {
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 2]
 
-                            cs'1
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 4 measure 3]
+                            r4
 
-                            cs'2
-                            \bar "||"
+                            \override Staff.Stem.stemlet-length = 0.75
+                            cs'16
+                            [
+
+                            \revert Staff.Stem.stemlet-length
+                            cs'8.
+                            ~
+                            ]
+
+                            \override Staff.Stem.stemlet-length = 0.75
+                            cs'16
+                            [
+
+                            cs'16
+
+                            cs'16
+
+                            \revert Staff.Stem.stemlet-length
+                            cs'16
+                            ]
+
+                            r4
+
+                        }
+
+                        \context Voice = "Voice 4"
+                        {
+
+                            \times 2/3
+                            {
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! abjad.SegmentMaker.comment_measure_numbers()
+                                % [Voice 4 measure 3]
+
+                                cs'4
+                                ~
+
+                                cs'16
+
+                                cs'4
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                cs'16
+                                [
+
+                                cs'16
+
+                                \revert Staff.Stem.stemlet-length
+                                cs'16
+                                ]
+                                \bar "||"
+
+                            }
 
                         }
 

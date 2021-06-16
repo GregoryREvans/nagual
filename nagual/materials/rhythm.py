@@ -191,7 +191,7 @@ helianthated_talea_02 = rmakers.stack(
 helianthated_talea_handler_02 = evans.RhythmHandler(
     helianthated_talea_02,
     forget=False,
-    name="helianthated_talea_handler_01",
+    name="helianthated_talea_handler_02",
 )
 
 #
@@ -235,4 +235,227 @@ even_division_handler_02 = evans.RhythmHandler(
     even_division_maker_02,
     forget=False,
     name="even_division_handler_02",
+)
+
+###
+### 03
+###
+
+rtm_03 = rmakers.stack(
+    evans.RTMMaker(
+        [
+            "(1 (1 1 1))",  #
+            "(1 (1))",
+            "(1 (1))",
+            "(1 (1 1 1))",
+            "(1 (1 1 1))",
+            "(1 (1))",
+            "(1 (1))",
+            "(1 (1 1 1))",
+            "(1 (1))",
+            "(1 (1 1 1))",
+            "(1 (1 1 1))",
+            "(1 (1))",
+            "(1 (1 1 1))",
+            "(1 (1))",
+            "(1 (1))",
+            "(1 (1 1 1))",
+            "(1 (1 1 1 1 1))",  #
+            "(1 (1))",
+            "(1 (1))",
+            "(1 (1 1 1 1 1))",
+            "(1 (1 1 1 1 1))",
+            "(1 (1))",
+            "(1 (1 1 1 1 1))",
+            "(1 (1))",
+            "(1 (1))",
+            "(1 (1 1 1 1 1))",
+            "(1 (1 1 1 1 1))",
+            "(1 (1))",
+            "(1 (1))",
+            "(1 (1 1 1 1 1))",
+            "(1 (1 1 1 1 1))",
+            "(1 (1))",
+            "(1 (1))",
+            "(1 (1 1 1 1 1))",
+            "(1 (1))",
+            "(1 (1 1))",  #
+            "(1 (1 1))",
+            "(1 (1 1))",
+            "(1 (1 1))",
+            "(1 (1 1))",
+            "(1 (1 1))",
+            "(1 (1 1))",
+            "(1 (1 1))",
+            "(1 (1 1))",
+            "(1 (1 1))",
+            "(1 (1 1))",
+            "(1 (1 1))",
+            "(1 (1 1))",
+            "(1 (1 1))",
+            "(1 (1 1))",
+            "(1 (1 1))",
+            "(1 (1 1))",
+            "(1 (1 1))",
+            "(1 (1 1 1 1))",  #
+            "(1 (1 1 1))",
+            "(1 (1 1))",
+            "(1 (1 1 1 1 1))",
+            "(1 (1 1 1 1))",
+            "(1 (1 1 1))",
+            "(1 (1 1))",
+            "(1 (1 1 1 1 1))",
+            "(1 (1 1 1 1))",
+            "(1 (1 1 1))",
+            "(1 (1 1))",
+            "(1 (1 1 1 1 1))",
+            "(1 (1 1 1 1))",
+            "(1 (1 1 1))",
+            "(1 (1 1))",
+            "(1 (1 1 1 1 1))",
+        ],
+    ),
+    rmakers.tie(select_periodic_ties_2_4_7_8_of_10),
+    rmakers.trivialize(abjad.select().tuplets()),
+    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+    rmakers.rewrite_sustained(abjad.select().tuplets()),
+    rmakers.extract_trivial(),
+)
+
+rtm_handler_03 = evans.RhythmHandler(
+    rtm_03,
+    forget=False,
+    name="rtm_handler_03",
+)
+
+sustain_03 = rmakers.stack(
+    evans.RTMMaker(
+        [
+            "(1 (1))",  #
+            "(1 (1))",
+            "(1 (1))",
+            "(1 (1))",  #
+            "(1 (1))",
+            "(1 (1 1 1 1 1 1))",  #
+            "(1 (1))",
+            "(1 (1))",
+            "(1 (1))",  #
+            "(1 (1))",
+            "(1 (1))",
+        ],
+    ),
+    rmakers.trivialize(abjad.select().tuplets()),
+    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+    rmakers.rewrite_sustained(abjad.select().tuplets()),
+    rmakers.extract_trivial(),
+)
+
+sustain_handler_03 = evans.RhythmHandler(
+    sustain_03,
+    forget=False,
+    name="sustain_handler_03",
+)
+
+###
+### 04
+###
+
+helianthated_talea_numerators_04 = (
+    evans.Sequence([[4, 4, 3, 2], [2], [6, 6, 4]]).helianthate(-1, 1).flatten(depth=-1)
+)
+
+helianthated_talea_01_segment_04 = rmakers.stack(
+    rmakers.talea(
+        helianthated_talea_numerators_04,
+        16,
+        extra_counts=[0, -4, 0, 12, 8],
+        end_counts=[1, 1, 1, 1, 1],
+    ),
+    rmakers.trivialize(abjad.select().tuplets()),
+    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+    rmakers.rewrite_sustained(abjad.select().tuplets()),
+    rmakers.extract_trivial(abjad.select().tuplets()),
+)
+
+helianthated_talea_handler_04 = evans.RhythmHandler(
+    helianthated_talea_01_segment_04,
+    forget=False,
+    name="helianthated_talea_handler_04",
+    state=abjad.OrderedDict(
+        [
+            ("divisions_consumed", 29),
+            ("incomplete_last_note", True),
+            ("logical_ties_produced", 91),
+            ("talea_weight_consumed", 462),
+        ],
+    ),
+)
+
+accelerando_handler_04 = accelerando_handler_01.make_persistent_copy(
+    abjad.OrderedDict(
+        [
+            ("divisions_consumed", 6),
+            ("logical_ties_produced", 67),
+        ],
+    ),
+)
+
+rtm_04 = rmakers.stack(
+    evans.RTMMaker(
+        [
+            "(1 (1 -1))",  #
+            "(1 (1 -1))",
+            "(1 (-1 1))",  #
+            "(1 (-1 1))",
+            "(1 (-2 1 -2 1))",  #
+            "(1 (-2 1 -2 1 -2))",
+            "(1 (-1))",
+            "(1 (1 -2 1))",
+            "(1 (-1 2 -1 2))",  #
+            "(1 (-1 2 -1 2 -1 1))",
+            "(1 (-1 2 -1 2 -1 1))",
+            "(1 (-1 2 -1))",
+        ],
+    ),
+    rmakers.trivialize(abjad.select().tuplets()),
+    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+    rmakers.rewrite_sustained(abjad.select().tuplets()),
+    rmakers.extract_trivial(),
+)
+
+rtm_handler_04 = evans.RhythmHandler(
+    rtm_04,
+    forget=False,
+    name="rtm_handler_04",
+)
+
+###
+### 05
+###
+
+helianthated_talea_01_segment_05 = rmakers.stack(
+    rmakers.talea(
+        helianthated_talea_numerators_04,
+        16,
+        extra_counts=[0, 4, 8, 6],
+        end_counts=[1, 1, 1],
+    ),
+    rmakers.trivialize(abjad.select().tuplets()),
+    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+    rmakers.rewrite_sustained(abjad.select().tuplets()),
+    rmakers.extract_trivial(abjad.select().tuplets()),
+)
+
+helianthated_talea_handler_05 = evans.RhythmHandler(
+    helianthated_talea_01_segment_05,
+    forget=False,
+    name="helianthated_talea_handler_05",
+    state=abjad.OrderedDict(
+        [
+            ("divisions_consumed", 36),
+            ("incomplete_last_note", True),
+            ("logical_ties_produced", 123),
+            ("talea_weight_consumed", 532),
+        ]
+    ),
 )

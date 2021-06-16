@@ -318,14 +318,15 @@ abjad.tweak(met_mod_80_100).padding = 6
 
 
 def zero_padding_glissando(selections):
-    abjad.glissando(selections[:], zero_padding=True, allow_repeats=True)
     for run in abjad.select(selections).runs():
         leaves = abjad.select(run).leaves()
-        for leaf in leaves:
-            abjad.tweak(leaf.note_head).Accidental.stencil = False
         for leaf in leaves[1:-1]:
+            abjad.tweak(leaf.note_head).Accidental.stencil = False
             abjad.tweak(leaf.note_head).transparent = True
             abjad.tweak(leaf.note_head).X_extent = (0, 0)
+            if abjad.get.has_indicator(leaf, abjad.Tie):
+                abjad.detach(abjad.Tie(), leaf)
+    abjad.glissando(selections[:], zero_padding=True, allow_repeats=True)
 
 
 def with_sharps(selections):
@@ -388,4 +389,70 @@ red_stop_repeat = abjad.LilyPondLiteral(
         r'\bar ":|."',
     ],
     format_slot="after",
+)
+
+grace_handler_03 = evans.OnBeatGraceHandler(
+    number_of_attacks=[
+        15,
+        9,
+        8,
+        15,
+        9,
+        9,
+        15,
+        9,
+        8,
+    ],
+    durations=[
+        2,
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
+        1,
+        1,
+    ],
+    font_size=-4,
+    leaf_duration=None,
+    attack_number_forget=False,
+    durations_forget=False,
+    boolean_vector=[1],
+    vector_forget=False,
+    name="On Beat Grace Handler",
+)
+
+grace_handler_04 = evans.OnBeatGraceHandler(
+    number_of_attacks=[
+        10,
+        12,
+        10,
+        12,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        6,
+        6,
+        4,
+        6,
+        4,
+        4,
+        4,
+        4,
+        6,
+    ],
+    durations=[
+        1,
+    ],
+    font_size=-4,
+    leaf_duration=(1, 35),
+    attack_number_forget=False,
+    durations_forget=False,
+    boolean_vector=[1],
+    vector_forget=False,
+    name="On Beat Grace Handler",
 )

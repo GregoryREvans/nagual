@@ -3,8 +3,10 @@ import pathlib
 import abjad
 import baca
 import evans
+from abjadext import rmakers
 
 from nagual.lib import (  # , with_sharps, zero_padding_glissando
+    grace_handler_04,
     met_60,
     met_120,
     met_mod_100_120,
@@ -54,6 +56,19 @@ maker = evans.SegmentMaker(
         #     evans.annotate_leaves,
         #     abjad.select(),
         # ),
+        evans.call(
+            "Voice 2",
+            rmakers.UnbeamCommand(),
+            baca.selectors.leaves([_ for _ in range(14, 20)]),
+        ),
+        evans.call(
+            "Voice 2",
+            rmakers.FeatherBeamCommand(
+                beam_rests=True,
+                stemlet_length=0.75,
+            ),
+            baca.selectors.leaves([_ for _ in range(14, 20)]),
+        ),
         evans.attach(
             "Global Context",
             met_120,
@@ -85,6 +100,26 @@ maker = evans.SegmentMaker(
                 r"\staff-line-count 1", format_slot="absolute_before"
             ),
             baca.selectors.leaf(0),
+        ),
+        evans.call(
+            "Voice 1",
+            grace_handler_04,
+            baca.selectors.leaves([0, 2]),
+        ),
+        evans.call(
+            "Voice 2",
+            grace_handler_04,
+            baca.selectors.leaves([1, 3]),
+        ),
+        evans.call(
+            "Voice 3",
+            grace_handler_04,
+            baca.selectors.leaves([1, 3, 5, 8, 26, 28]),
+        ),
+        evans.call(
+            "Voice 4",
+            grace_handler_04,
+            baca.selectors.leaves([1, 3, 5, 8, 10, 21, 24, 27, 29]),
         ),
         evans.attach(
             "Global Context",

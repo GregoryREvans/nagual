@@ -4,18 +4,20 @@ import abjad
 import baca
 import evans
 
-from nagual.lib import (  # , with_sharps, zero_padding_glissando
+from nagual.lib import (  # , with_sharps
+    grace_handler_03,
     met_50,
     met_100,
     met_mod_50_100,
     met_mod_66_50,
+    zero_padding_glissando,
 )
 from nagual.materials.instruments import instruments
 from nagual.materials.score_structure import score
 from nagual.materials.time_signatures import signatures_03
 from nagual.materials.timespans import handler_commands_03, rhythm_commands_03
 
-maker = evans.SegmentMaker(
+maker = evans.SegmentMaker(  #  don't forget accents!
     instruments=instruments,
     names=[
         '"Alto Flute"',
@@ -85,6 +87,59 @@ maker = evans.SegmentMaker(
                 r"\staff-line-count 1", format_slot="absolute_before"
             ),
             baca.selectors.leaf(0),
+        ),
+        evans.call(
+            "Voice 4",
+            zero_padding_glissando,
+            baca.selectors.leaves([_ for _ in range(56)]),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Markup(
+                r"\double-diamond-parenthesized-top-markup",
+                literal=True,
+                direction=abjad.Up,
+            ),
+            baca.selectors.note(0),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Markup(
+                r"\diamond-parenthesized-double-diamond-markup",
+                literal=True,
+                direction=abjad.Up,
+            ),
+            baca.selectors.note(14),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Markup(
+                r"\double-diamond-parenthesized-top-markup",
+                literal=True,
+                direction=abjad.Up,
+            ),
+            baca.selectors.note(32),
+        ),
+        evans.call(
+            "Voice 1",
+            grace_handler_03,
+            abjad.select().leaves().get([29, 31, 33]),
+        ),
+        evans.detach("Voice 2", abjad.Tie(), baca.selectors.leaf(47)),
+        evans.call(
+            "Voice 2",
+            grace_handler_03,
+            abjad.select().leaves().get([48, 50]),
+        ),
+        evans.call(
+            "Voice 3",
+            grace_handler_03,
+            abjad.select().leaves().get([35]),
+        ),
+        evans.call(
+            "Voice 4",
+            grace_handler_03,
+            abjad.select().leaves().get([56, 58, 60]),
         ),
         evans.attach(
             "Global Context",

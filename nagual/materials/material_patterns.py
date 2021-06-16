@@ -6,13 +6,19 @@ from nagual.materials.pitch import demo_pitch_handler
 from nagual.materials.rhythm import (
     accelerando_handler_01,
     accelerando_handler_02,
+    accelerando_handler_04,
     even_division_handler_02,
     helianthated_talea_handler_01,
     helianthated_talea_handler_01_segment_02,
     helianthated_talea_handler_02,
+    helianthated_talea_handler_04,
+    helianthated_talea_handler_05,
     note_rhythm_handler,
     quarters_handler_01,
+    rtm_handler_03,
+    rtm_handler_04,
     silence_handler,
+    sustain_handler_03,
     tuplet_handler_02,
 )
 
@@ -101,30 +107,91 @@ pitch_materials_02 = [
 ## 03
 
 rhythm_materials_03 = [
-    note_rhythm_handler,  #
-    note_rhythm_handler,
+    rtm_handler_03,  #
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    sustain_handler_03,
     silence_handler,
-    note_rhythm_handler,
+    sustain_handler_03,
     silence_handler,
-    note_rhythm_handler,
+    sustain_handler_03,
     silence_handler,
-    note_rhythm_handler,  #
-    note_rhythm_handler,
+    rtm_handler_03,  #
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    sustain_handler_03,
     silence_handler,
-    note_rhythm_handler,
-    note_rhythm_handler,
-    note_rhythm_handler,  #
-    note_rhythm_handler,
+    sustain_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,  #
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    sustain_handler_03,
+    sustain_handler_03,
     silence_handler,
-    note_rhythm_handler,
+    sustain_handler_03,
     silence_handler,
-    note_rhythm_handler,
-    note_rhythm_handler,  #
-    note_rhythm_handler,
+    rtm_handler_03,
+    rtm_handler_03,  #
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    rtm_handler_03,
+    sustain_handler_03,
     silence_handler,
-    note_rhythm_handler,
+    sustain_handler_03,
     silence_handler,
-    note_rhythm_handler,
+    sustain_handler_03,
     silence_handler,
 ]
 
@@ -135,24 +202,24 @@ pitch_materials_03 = [
 ## 04
 
 rhythm_materials_04 = [
-    note_rhythm_handler,  #
+    rtm_handler_04,  #
     silence_handler,
-    note_rhythm_handler,
+    helianthated_talea_handler_04,
     silence_handler,
-    note_rhythm_handler,  #
+    rtm_handler_04,  #
     silence_handler,
-    note_rhythm_handler,
+    helianthated_talea_handler_04,
     silence_handler,
-    note_rhythm_handler,
-    note_rhythm_handler,  #
+    accelerando_handler_04,
+    rtm_handler_04,  #
     silence_handler,
-    note_rhythm_handler,
-    note_rhythm_handler,
-    note_rhythm_handler,  #
+    helianthated_talea_handler_04,
+    rtm_handler_04,
+    rtm_handler_04,  #
     silence_handler,
-    note_rhythm_handler,
+    helianthated_talea_handler_04,
     silence_handler,
-    note_rhythm_handler,
+    rtm_handler_04,
 ]
 
 pitch_materials_04 = [
@@ -162,10 +229,10 @@ pitch_materials_04 = [
 ## 05
 
 rhythm_materials_05 = [
-    note_rhythm_handler,  #
-    note_rhythm_handler,  #
-    note_rhythm_handler,  #
-    note_rhythm_handler,  #
+    helianthated_talea_handler_05,  #
+    helianthated_talea_handler_05,  #
+    helianthated_talea_handler_05,  #
+    helianthated_talea_handler_05,  #
 ]
 
 pitch_materials_05 = [

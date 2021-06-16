@@ -215,25 +215,86 @@ timespan_maker_03 = tsmakers.TaleaTimespanMaker(
     playing_talea=rmakers.Talea(
         counts=(
             [
-                33,  #
+                2,  #
+                1,
+                2,
+                2,
+                2,
+                2,
+                1,
+                1,
+                3,
+                2,
+                2,
+                3,
+                3,
+                3,
+                2,
+                2,
                 6,
                 4,
                 4,
                 2,
                 3,
                 4,
-                33,  #
+                1,  #
+                2,
+                2,
+                2,
+                2,
+                2,
+                1,
+                1,
+                2,
+                3,
+                3,
+                2,
+                3,
+                3,
+                2,
+                2,
                 6,
                 4,
                 4,
                 9,
-                33,  #
-                6,
+                1,  #
+                2,
+                3,
+                1,
+                1,
+                3,
+                1,
+                1,
+                1,
+                4,
+                4,
+                1,
+                4,
+                2,
+                2,
+                2,
+                5,
+                1,
                 4,
                 4,
                 3,
                 6,
-                33,  #
+                3,  #
+                2,
+                2,
+                1,
+                3,
+                2,
+                2,
+                3,
+                1,
+                2,
+                2,
+                3,
+                3,
+                1,
+                2,
+                1,
                 6,
                 4,
                 4,
@@ -244,7 +305,6 @@ timespan_maker_03 = tsmakers.TaleaTimespanMaker(
         ),
         denominator=4,
     ),
-    playing_groupings=([1, 1, 2]),
     silence_talea=rmakers.Talea(counts=([0]), denominator=4),
 )
 
@@ -291,8 +351,8 @@ timespan_maker_04 = tsmakers.TaleaTimespanMaker(
                 14,  #
                 3,
                 9,
-                8,
-                2,
+                6,
+                4,
                 14,  #
                 7,
                 9,
@@ -345,15 +405,14 @@ timespan_maker_05 = tsmakers.TaleaTimespanMaker(
     playing_talea=rmakers.Talea(
         counts=(
             [
-                10,  #
-                10,  #
-                10,  #
-                10,  #
+                2,
+                2,
+                3,
             ]
         ),
         denominator=4,
     ),
-    silence_talea=rmakers.Talea(counts=([0]), denominator=4),
+    silence_talea=rmakers.Talea(counts=([1, 2, 2]), denominator=4),
 )
 
 timespan_list_05 = timespan_maker_05(
