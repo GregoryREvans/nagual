@@ -17,7 +17,7 @@ from nagual.materials.score_structure import score
 from nagual.materials.time_signatures import signatures_03
 from nagual.materials.timespans import handler_commands_03, rhythm_commands_03
 
-maker = evans.SegmentMaker(  #  don't forget accents!
+maker = evans.SegmentMaker(  # don't forget accents!
     instruments=instruments,
     names=[
         '"Alto Flute"',

@@ -2,7 +2,7 @@ import abjad
 handler_to_value = abjad.OrderedDict(
     [
         (
-            'helianthated_talea_handler_01',
+            'helianthated_talea_handler_02',
             abjad.OrderedDict(
                 [
                     (

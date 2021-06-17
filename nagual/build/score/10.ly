@@ -8,8 +8,8 @@
             % [Global Context measure 1]
 
             \tempo 4=100
-            \once \override Score.BarLine.X-extent = #'(0 . 3)
-            \once \override Score.BarLine.thick-thickness = #4
+            \once \override Score.BarLine.X-extent = #'(0.5 . 3)
+            \once \override Score.BarLine.thick-thickness = #3
             \bar ".|:"
             %! scaling time signatures
             \time 4/8

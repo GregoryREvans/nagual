@@ -5,6 +5,7 @@ import baca
 import evans
 
 from nagual.lib import (  # , with_sharps, zero_padding_glissando
+    grace_handler_06,
     met_40,
     met_66,
     met_66_duplicate,
@@ -100,6 +101,26 @@ maker = evans.SegmentMaker(
                 r"\staff-line-count 1", format_slot="absolute_before"
             ),
             baca.selectors.leaf(0),
+        ),
+        evans.call(
+            "Voice 1",
+            grace_handler_06,
+            baca.selectors.leaves([19, 21]),
+        ),
+        evans.call(
+            "Voice 2",
+            grace_handler_06,
+            baca.selectors.leaves([17, 19]),
+        ),
+        evans.call(
+            "Voice 3",
+            grace_handler_06,
+            baca.selectors.leaves([20, 22, 24, 26, 28]),
+        ),
+        evans.call(
+            "Voice 4",
+            grace_handler_06,
+            baca.selectors.leaves([18, 20, 22, 24]),
         ),
         evans.attach(
             "Global Context",

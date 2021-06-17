@@ -15,8 +15,10 @@ from nagual.materials.rhythm import (
     helianthated_talea_handler_05,
     note_rhythm_handler,
     quarters_handler_01,
+    quarters_handler_06,
     rtm_handler_03,
     rtm_handler_04,
+    rtm_handler_06,
     silence_handler,
     sustain_handler_03,
     tuplet_handler_02,
@@ -242,18 +244,44 @@ pitch_materials_05 = [
 ## 06
 
 rhythm_materials_06 = [
-    note_rhythm_handler,  #
-    note_rhythm_handler,
-    note_rhythm_handler,
-    note_rhythm_handler,  #
-    note_rhythm_handler,
-    note_rhythm_handler,
-    note_rhythm_handler,  #
-    note_rhythm_handler,
-    note_rhythm_handler,
-    note_rhythm_handler,  #
-    note_rhythm_handler,
-    note_rhythm_handler,
+    quarters_handler_06,  #
+    quarters_handler_06,
+    quarters_handler_06,
+    quarters_handler_06,
+    rtm_handler_06,
+    quarters_handler_06,
+    quarters_handler_06,
+    quarters_handler_06,
+    quarters_handler_06,
+    quarters_handler_06,  #
+    quarters_handler_06,
+    quarters_handler_06,
+    quarters_handler_06,
+    rtm_handler_06,
+    quarters_handler_06,
+    quarters_handler_06,
+    quarters_handler_06,
+    quarters_handler_06,
+    quarters_handler_06,  #
+    quarters_handler_06,
+    quarters_handler_06,
+    quarters_handler_06,
+    rtm_handler_06,
+    silence_handler,
+    rtm_handler_06,
+    quarters_handler_06,
+    quarters_handler_06,
+    quarters_handler_06,
+    quarters_handler_06,
+    quarters_handler_06,  #
+    quarters_handler_06,
+    quarters_handler_06,
+    quarters_handler_06,
+    rtm_handler_06,
+    quarters_handler_06,
+    quarters_handler_06,
+    quarters_handler_06,
+    quarters_handler_06,
 ]
 
 pitch_materials_06 = [

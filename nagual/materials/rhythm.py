@@ -93,7 +93,7 @@ helianthated_talea_handler_01 = evans.RhythmHandler(
 
 #
 
-quarters = rmakers.stack(
+quarters_01 = rmakers.stack(
     rmakers.even_division([4], extra_counts=[0, 0, -1, 1]),
     rmakers.trivialize(abjad.select().tuplets()),
     rmakers.tie(select_periodic_ties_2_4_of_8),
@@ -103,7 +103,7 @@ quarters = rmakers.stack(
 )
 
 quarters_handler_01 = evans.RhythmHandler(
-    quarters,
+    quarters_01,
     forget=False,
     name="quarters_handler_01",
 )
@@ -458,4 +458,84 @@ helianthated_talea_handler_05 = evans.RhythmHandler(
             ("talea_weight_consumed", 532),
         ]
     ),
+)
+
+###
+### 06
+###
+
+quarters_06 = rmakers.stack(
+    rmakers.even_division(
+        [8],
+        extra_counts=[
+            1,  #
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,  #
+            -1,
+            -1,
+            0,
+            -1,
+            -1,
+            0,
+            -1,
+            4,  #
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,  #
+            0,
+            0,
+            -1,
+            1,
+            0,
+            -1,
+            0,
+        ],
+    ),
+    rmakers.trivialize(abjad.select().tuplets()),
+    rmakers.tie(select_periodic_ties_2_4_of_8),
+    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+    rmakers.rewrite_sustained(abjad.select().tuplets()),
+    rmakers.extract_trivial(),
+)
+
+quarters_handler_06 = evans.RhythmHandler(
+    quarters_06,
+    forget=False,
+    name="quarters_handler_06",
+)
+
+rtm_06 = rmakers.stack(
+    evans.RTMMaker(
+        [
+            "(1 (1 -1))",  #
+            "(1 (1 -1))",
+            "(1 (-1 1))",  #
+            "(1 (-1 1))",
+            "(1 (2 -1 2))",  #
+            "(1 (1 -1 1 -1 1))",
+            "(1 (-1 2 -1))",
+            "(1 (1 -2 1 -1 1))",
+        ],
+    ),
+    rmakers.trivialize(abjad.select().tuplets()),
+    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+    rmakers.rewrite_sustained(abjad.select().tuplets()),
+    rmakers.extract_trivial(),
+)
+
+rtm_handler_06 = evans.RhythmHandler(
+    rtm_06,
+    forget=False,
+    name="rtm_handler_04",
 )

@@ -246,7 +246,6 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 7]
 
-                            \overhead-accidentals #-3
                             fs'2
                             \boxed-markup "tone + air" 1
 
@@ -274,7 +273,6 @@
                                 %! abjad.SegmentMaker.comment_measure_numbers()
                                 % [Voice 1 measure 8]
 
-                                \normal-accidentals #-3
                                 fs'8
 
                                 fs'4
@@ -415,7 +413,7 @@
                             \once \override MultiMeasureRest.transparent = ##t
                             R1 * 1/8
                             %! applying ending skips
-                            ^ \markup \center-align \musicglyph #"scripts.ufermata"
+                            ^ \markup \center-align \musicglyph #"scripts.ufermata" 
                             %! applying ending skips
                             \stopStaff \startStaff
 
@@ -789,7 +787,7 @@
                             \once \override MultiMeasureRest.transparent = ##t
                             R1 * 1/8
                             %! applying ending skips
-                            ^ \markup \center-align \musicglyph #"scripts.ufermata"
+                            ^ \markup \center-align \musicglyph #"scripts.ufermata" 
                             %! applying ending skips
                             \stopStaff \startStaff
 
@@ -1070,7 +1068,7 @@
                             \once \override MultiMeasureRest.transparent = ##t
                             R1 * 1/8
                             %! applying ending skips
-                            ^ \markup \center-align \musicglyph #"scripts.ufermata"
+                            ^ \markup \center-align \musicglyph #"scripts.ufermata" 
                             %! applying ending skips
                             \stopStaff \startStaff
 
@@ -1617,7 +1615,7 @@
                             \once \override MultiMeasureRest.transparent = ##t
                             R1 * 1/8
                             %! applying ending skips
-                            ^ \markup \center-align \musicglyph #"scripts.ufermata"
+                            ^ \markup \center-align \musicglyph #"scripts.ufermata" 
                             %! applying ending skips
                             \stopStaff \startStaff
 

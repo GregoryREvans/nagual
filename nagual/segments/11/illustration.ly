@@ -22,8 +22,8 @@
             % [Global Context measure 1]
 
             \tempo 4=130
-            \once \override Score.BarLine.X-extent = #'(0 . 1.5)
-            \once \override Score.BarLine.thick-thickness = #4
+            \once \override Score.BarLine.X-extent = #'(1 . 2)
+            \once \override Score.BarLine.thick-thickness = #3
             \bar ":|."
             %! scaling time signatures
             \time 5/4

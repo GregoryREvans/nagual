@@ -187,11 +187,6 @@
                             }
 
                             fs'4
-
-                        }
-
-                        \context Voice = "Voice 1"
-                        {
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 2]
@@ -211,11 +206,6 @@
 
                             }
 
-                        }
-
-                        \context Voice = "Voice 1"
-                        {
-
                             \times 2/3
                             {
                                 %! COMMENT_MEASURE_NUMBERS
@@ -232,11 +222,6 @@
                             }
 
                             fs'2
-
-                        }
-
-                        \context Voice = "Voice 1"
-                        {
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 4]
@@ -259,11 +244,6 @@
                                 ]
 
                             }
-
-                        }
-
-                        \context Voice = "Voice 1"
-                        {
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 5]
@@ -271,11 +251,6 @@
                             fs'2.
 
                             fs'2
-
-                        }
-
-                        \context Voice = "Voice 1"
-                        {
 
                             \times 2/3
                             {
@@ -293,11 +268,6 @@
                             }
 
                             fs'2.
-
-                        }
-
-                        \context Voice = "Voice 1"
-                        {
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 7]
@@ -308,11 +278,6 @@
 
                             fs'2.
                             ~
-
-                        }
-
-                        \context Voice = "Voice 1"
-                        {
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 8]
@@ -330,11 +295,6 @@
                                 fs'4
 
                             }
-
-                        }
-
-                        \context Voice = "Voice 1"
-                        {
 
                             <<
 
@@ -396,11 +356,6 @@
                                 }
 
                             >>
-
-                        }
-
-                        \context Voice = "Voice 1"
-                        {
                             %! applying indicators
                             \oneVoice
                             %! COMMENT_MEASURE_NUMBERS
@@ -412,11 +367,6 @@
                             r1 * 1/2
 
                             R1 * 1/2
-
-                        }
-
-                        \context Voice = "Voice 1"
-                        {
 
                             <<
 
@@ -466,11 +416,6 @@
                                 }
 
                             >>
-
-                        }
-
-                        \context Voice = "Voice 1"
-                        {
                             %! applying indicators
                             \oneVoice
                             %! COMMENT_MEASURE_NUMBERS
@@ -482,11 +427,6 @@
                             r1 * 1/4
 
                             R1 * 1/4
-
-                        }
-
-                        \context Voice = "Voice 1"
-                        {
 
                             <<
 
@@ -534,11 +474,6 @@
                                 }
 
                             >>
-
-                        }
-
-                        \context Voice = "Voice 1"
-                        {
                             %! applying indicators
                             \oneVoice
                             %! COMMENT_MEASURE_NUMBERS
@@ -600,11 +535,6 @@
                             }
 
                             cs''2
-
-                        }
-
-                        \context Voice = "Voice 2"
-                        {
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 2]
@@ -631,11 +561,6 @@
                                 ]
 
                             }
-
-                        }
-
-                        \context Voice = "Voice 2"
-                        {
 
                             \times 4/5
                             {
@@ -664,11 +589,6 @@
                             cs''2
                             ~
 
-                        }
-
-                        \context Voice = "Voice 2"
-                        {
-
                             \times 4/5
                             {
                                 %! COMMENT_MEASURE_NUMBERS
@@ -694,11 +614,6 @@
                             }
 
                             cs''4
-
-                        }
-
-                        \context Voice = "Voice 2"
-                        {
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 5]
@@ -724,11 +639,6 @@
 
                             }
 
-                        }
-
-                        \context Voice = "Voice 2"
-                        {
-
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5
                             {
@@ -751,11 +661,6 @@
                             }
 
                             cs''2
-
-                        }
-
-                        \context Voice = "Voice 2"
-                        {
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 7]
@@ -779,11 +684,6 @@
                                 cs''4
 
                             }
-
-                        }
-
-                        \context Voice = "Voice 2"
-                        {
 
                             \times 4/5
                             {
@@ -810,11 +710,6 @@
                             }
 
                             cs''2
-
-                        }
-
-                        \context Voice = "Voice 2"
-                        {
 
                             <<
 
@@ -876,11 +771,6 @@
                                 }
 
                             >>
-
-                        }
-
-                        \context Voice = "Voice 2"
-                        {
                             %! applying indicators
                             \oneVoice
                             %! COMMENT_MEASURE_NUMBERS
@@ -892,11 +782,6 @@
                             r1 * 1/2
 
                             R1 * 1/2
-
-                        }
-
-                        \context Voice = "Voice 2"
-                        {
 
                             <<
 
@@ -946,11 +831,6 @@
                                 }
 
                             >>
-
-                        }
-
-                        \context Voice = "Voice 2"
-                        {
                             %! abjad.on_beat_grace_container(5)
                             \oneVoice
                             %! COMMENT_MEASURE_NUMBERS
@@ -958,11 +838,6 @@
                             % [Voice 2 measure 12]
 
                             cs''2
-
-                        }
-
-                        \context Voice = "Voice 2"
-                        {
 
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5
@@ -984,11 +859,6 @@
                                 cs''4
 
                             }
-
-                        }
-
-                        \context Voice = "Voice 2"
-                        {
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 14]
@@ -1033,11 +903,6 @@
                             ]
 
                             cs'2
-
-                        }
-
-                        \context Voice = "Voice 3"
-                        {
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 2]
@@ -1052,11 +917,6 @@
                             cs'8
                             ~
                             ]
-
-                        }
-
-                        \context Voice = "Voice 3"
-                        {
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 3]
@@ -1076,11 +936,6 @@
                             ]
 
                             cs'4
-
-                        }
-
-                        \context Voice = "Voice 3"
-                        {
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 4]
@@ -1088,11 +943,6 @@
                             cs'4
 
                             cs'4
-
-                        }
-
-                        \context Voice = "Voice 3"
-                        {
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 5]
@@ -1110,11 +960,6 @@
                             ~
 
                             cs'2
-
-                        }
-
-                        \context Voice = "Voice 3"
-                        {
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 6]
@@ -1127,11 +972,6 @@
                             cs'4
 
                             cs'4
-
-                        }
-
-                        \context Voice = "Voice 3"
-                        {
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 7]
@@ -1142,11 +982,6 @@
 
                             cs'4
                             ~
-
-                        }
-
-                        \context Voice = "Voice 3"
-                        {
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 8]
@@ -1156,11 +991,6 @@
                             cs'4
 
                             cs'4
-
-                        }
-
-                        \context Voice = "Voice 3"
-                        {
 
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/6
@@ -1184,11 +1014,6 @@
                             }
 
                             cs'4
-
-                        }
-
-                        \context Voice = "Voice 3"
-                        {
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 10]
@@ -1198,11 +1023,6 @@
                             r1 * 1/2
 
                             R1 * 1/2
-
-                        }
-
-                        \context Voice = "Voice 3"
-                        {
 
                             <<
 
@@ -1252,11 +1072,6 @@
                                 }
 
                             >>
-
-                        }
-
-                        \context Voice = "Voice 3"
-                        {
                             %! applying indicators
                             \oneVoice
                             %! COMMENT_MEASURE_NUMBERS
@@ -1268,11 +1083,6 @@
                             r1 * 1/4
 
                             R1 * 1/4
-
-                        }
-
-                        \context Voice = "Voice 3"
-                        {
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 13]
@@ -1282,11 +1092,6 @@
                             cs'4
 
                             cs'4
-
-                        }
-
-                        \context Voice = "Voice 3"
-                        {
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 14]
@@ -1371,11 +1176,6 @@
                             %! abjad.glissando(7)
                             \glissando
 
-                        }
-
-                        \context Voice = "Voice 4"
-                        {
-
                             \times 2/3
                             {
                                 %! COMMENT_MEASURE_NUMBERS
@@ -1419,11 +1219,6 @@
                             - \abjad-zero-padding-glissando
                             %! abjad.glissando(7)
                             \glissando
-
-                        }
-
-                        \context Voice = "Voice 4"
-                        {
 
                             \times 4/5
                             {
@@ -1536,11 +1331,6 @@
                             %! abjad.glissando(7)
                             \glissando
 
-                        }
-
-                        \context Voice = "Voice 4"
-                        {
-
                             \times 2/3
                             {
                                 %! COMMENT_MEASURE_NUMBERS
@@ -1575,11 +1365,6 @@
                                 \glissando
 
                             }
-
-                        }
-
-                        \context Voice = "Voice 4"
-                        {
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 5]
@@ -1652,11 +1437,6 @@
                                 \glissando
 
                             }
-
-                        }
-
-                        \context Voice = "Voice 4"
-                        {
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 6]
@@ -1742,11 +1522,6 @@
                             - \abjad-zero-padding-glissando
                             %! abjad.glissando(7)
                             \glissando
-
-                        }
-
-                        \context Voice = "Voice 4"
-                        {
 
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5
@@ -1841,11 +1616,6 @@
                             - \abjad-zero-padding-glissando
                             %! abjad.glissando(7)
                             \glissando
-
-                        }
-
-                        \context Voice = "Voice 4"
-                        {
 
                             \times 2/3
                             {
@@ -1951,11 +1721,6 @@
 
                             }
 
-                        }
-
-                        \context Voice = "Voice 4"
-                        {
-
                             <<
 
                                 \context Voice = "On_Beat_Grace_Container"
@@ -2016,11 +1781,6 @@
                                 }
 
                             >>
-
-                        }
-
-                        \context Voice = "Voice 4"
-                        {
                             %! applying indicators
                             \oneVoice
                             %! COMMENT_MEASURE_NUMBERS
@@ -2032,11 +1792,6 @@
                             r1 * 1/2
 
                             R1 * 1/2
-
-                        }
-
-                        \context Voice = "Voice 4"
-                        {
 
                             <<
 
@@ -2086,11 +1841,6 @@
                                 }
 
                             >>
-
-                        }
-
-                        \context Voice = "Voice 4"
-                        {
                             %! applying indicators
                             \oneVoice
                             %! COMMENT_MEASURE_NUMBERS
@@ -2102,11 +1852,6 @@
                             r1 * 1/4
 
                             R1 * 1/4
-
-                        }
-
-                        \context Voice = "Voice 4"
-                        {
 
                             <<
 
@@ -2154,11 +1899,6 @@
                                 }
 
                             >>
-
-                        }
-
-                        \context Voice = "Voice 4"
-                        {
                             %! applying indicators
                             \oneVoice
                             %! COMMENT_MEASURE_NUMBERS
