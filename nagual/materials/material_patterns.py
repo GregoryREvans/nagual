@@ -13,9 +13,11 @@ from nagual.materials.rhythm import (
     helianthated_talea_handler_02,
     helianthated_talea_handler_04,
     helianthated_talea_handler_05,
+    helianthated_talea_handler_07,
     note_rhythm_handler,
     quarters_handler_01,
     quarters_handler_06,
+    quarters_handler_07,
     rtm_handler_03,
     rtm_handler_04,
     rtm_handler_06,
@@ -291,21 +293,52 @@ pitch_materials_06 = [
 ## 07
 
 rhythm_materials_07 = [
-    note_rhythm_handler,  #
-    note_rhythm_handler,
+    quarters_handler_07,  #
+    quarters_handler_07,
+    helianthated_talea_handler_07,
+    helianthated_talea_handler_07,
     silence_handler,
-    note_rhythm_handler,
+    helianthated_talea_handler_07,
+    helianthated_talea_handler_07,
     silence_handler,
-    note_rhythm_handler,
-    note_rhythm_handler,  #
-    note_rhythm_handler,
+    helianthated_talea_handler_07,
+    helianthated_talea_handler_07,
+    quarters_handler_07,  #
+    quarters_handler_07,
+    quarters_handler_07,
+    quarters_handler_07,
+    quarters_handler_07,
+    quarters_handler_07,
+    accelerando_handler_02,
     silence_handler,
-    note_rhythm_handler,
-    note_rhythm_handler,  #
-    note_rhythm_handler,
-    note_rhythm_handler,  #
+    accelerando_handler_02,
+    quarters_handler_07,  #
+    quarters_handler_07,
+    quarters_handler_07,
+    quarters_handler_07,
+    quarters_handler_07,
+    quarters_handler_07,
+    quarters_handler_07,
+    quarters_handler_07,
+    quarters_handler_07,
+    quarters_handler_07,
+    quarters_handler_07,
+    quarters_handler_07,
+    helianthated_talea_handler_07,
+    quarters_handler_07,  #
+    quarters_handler_07,
+    quarters_handler_07,
+    quarters_handler_07,
+    quarters_handler_07,
+    quarters_handler_07,
+    quarters_handler_07,
+    quarters_handler_07,
+    quarters_handler_07,
+    quarters_handler_07,
+    quarters_handler_07,
+    quarters_handler_07,
     silence_handler,
-    note_rhythm_handler,
+    helianthated_talea_handler_07,
 ]
 
 pitch_materials_07 = [

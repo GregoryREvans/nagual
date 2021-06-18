@@ -539,3 +539,84 @@ rtm_handler_06 = evans.RhythmHandler(
     forget=False,
     name="rtm_handler_04",
 )
+
+###
+### 07
+###
+
+quarters_07 = rmakers.stack(
+    rmakers.even_division(
+        [4],
+        extra_counts=[
+            1,  #
+            1,
+            1,  #
+            1,
+            0,
+            0,
+            1,
+            1,
+            0,  #
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,  #
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+        ],
+    ),
+    rmakers.trivialize(abjad.select().tuplets()),
+    rmakers.tie(select_periodic_ties_2_4_of_8),
+    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+    rmakers.rewrite_sustained(abjad.select().tuplets()),
+    rmakers.extract_trivial(),
+)
+
+quarters_handler_07 = evans.RhythmHandler(
+    quarters_07,
+    forget=False,
+    name="quarters_handler_07",
+)
+
+helianthated_talea_07 = rmakers.stack(
+    rmakers.talea(
+        helianthated_talea_numerators,
+        8,
+        extra_counts=[0],
+    ),
+    rmakers.trivialize(abjad.select().tuplets()),
+    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+    rmakers.rewrite_sustained(abjad.select().tuplets()),
+    rmakers.extract_trivial(abjad.select().tuplets()),
+)
+
+helianthated_talea_handler_07 = evans.RhythmHandler(
+    helianthated_talea_07,
+    forget=False,
+    name="helianthated_talea_handler_07",
+    state=abjad.OrderedDict(
+        [
+            ("divisions_consumed", 22),
+            ("incomplete_last_note", True),
+            ("logical_ties_produced", 19),
+            ("talea_weight_consumed", 128),
+        ]
+    ),
+)

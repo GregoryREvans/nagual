@@ -3,6 +3,7 @@ import pathlib
 import abjad
 import baca
 import evans
+from abjadext import rmakers
 
 from nagual.lib import (  # , with_sharps, zero_padding_glissando
     accel_100_120,
@@ -74,6 +75,26 @@ maker = evans.SegmentMaker(
             "Global Context",
             accel_100_120,
             baca.selectors.leaves([4, 5, 6]),
+        ),
+        evans.call(
+            "Voice 2",
+            rmakers.UnbeamCommand(),
+            baca.selectors.leaves([_ for _ in range(19, 59)]),
+        ),
+        evans.call(
+            "Voice 2",
+            rmakers.FeatherBeamCommand(),
+            baca.selectors.leaves([_ for _ in range(19, 35)]),
+        ),
+        evans.call(
+            "Voice 2",
+            rmakers.FeatherBeamCommand(),
+            baca.selectors.leaves([_ for _ in range(36, 49)]),
+        ),
+        evans.call(
+            "Voice 2",
+            rmakers.FeatherBeamCommand(),
+            baca.selectors.leaves([_ for _ in range(49, 59)]),
         ),
         evans.attach(
             "Voice 3",
