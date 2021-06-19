@@ -522,3 +522,20 @@ grace_handler_08 = evans.OnBeatGraceHandler(
     vector_forget=False,
     name="On Beat Grace Handler",
 )
+
+grace_handler_09 = evans.OnBeatGraceHandler(
+    number_of_attacks=[
+        10,
+        40,
+    ],
+    durations=[
+        1,
+    ],
+    font_size=-4,
+    leaf_duration=(1, 35),
+    attack_number_forget=False,
+    durations_forget=False,
+    boolean_vector=[1],
+    vector_forget=False,
+    name="On Beat Grace Handler",
+)

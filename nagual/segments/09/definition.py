@@ -4,7 +4,12 @@ import abjad
 import baca
 import evans
 
-from nagual.lib import met_80, met_mod_100_80  # , with_sharps, zero_padding_glissando
+from nagual.lib import (  # , with_sharps, zero_padding_glissando
+    grace_handler_09,
+    met_80,
+    met_mod_100_80,
+    zero_padding_glissando,
+)
 from nagual.materials.instruments import instruments
 from nagual.materials.score_structure import score
 from nagual.materials.time_signatures import signatures_09
@@ -44,11 +49,16 @@ maker = evans.SegmentMaker(
             evans.SegmentMaker.beam_score,
             abjad.select().components(abjad.Score),
         ),
-        # evans.call(
-        #     "Staff 1",
-        #     evans.annotate_leaves,
-        #     abjad.select(),
-        # ),
+        evans.call(
+            "Voice 4",
+            zero_padding_glissando,
+            baca.selectors.leaves([_ for _ in range(18)]),
+        ),
+        evans.call(
+            "Voice 4",
+            zero_padding_glissando,
+            baca.selectors.leaves([_ for _ in range(20, 38)]),
+        ),
         evans.attach(
             "Global Context",
             met_80,
@@ -70,6 +80,26 @@ maker = evans.SegmentMaker(
                 r"\staff-line-count 1", format_slot="absolute_before"
             ),
             baca.selectors.leaf(0),
+        ),
+        evans.call(
+            "Voice 1",
+            grace_handler_09,
+            baca.selectors.leaves([2, 6]),
+        ),
+        evans.call(
+            "Voice 2",
+            grace_handler_09,
+            baca.selectors.leaves([2, 6]),
+        ),
+        evans.call(
+            "Voice 3",
+            grace_handler_09,
+            baca.selectors.leaves([2, 6]),
+        ),
+        evans.call(
+            "Voice 4",
+            grace_handler_09,
+            baca.selectors.leaves([18, 38]),
         ),
         evans.attach(
             "Global Context",

@@ -648,3 +648,29 @@ rtm_handler_08 = evans.RhythmHandler(
     forget=False,
     name="rtm_handler_08",
 )
+
+###
+### 09
+###
+
+rtm_09 = rmakers.stack(
+    evans.RTMMaker(
+        [
+            "(1 ((1 (1 3 1)) (1 (1 1 1 1)) (1 (2 1))))",
+            "(1 ((1 (1 1 3)) (1 (1 1 1 1)) (1 (1 2))))",
+            "(1 ((3 (1 1 1)) (1 (1 1 1 2)) (1 (1 1))))",
+            "(1 ((1 (1 1 1)) (1 (1 1 2 1)) (1 (1 3))))",
+        ],
+    ),
+    # rmakers.tie(select_periodic_ties_2_4_7_8_of_10),
+    rmakers.trivialize(abjad.select().tuplets()),
+    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+    rmakers.rewrite_sustained(abjad.select().tuplets()),
+    rmakers.extract_trivial(),
+)
+
+rtm_handler_09 = evans.RhythmHandler(
+    rtm_09,
+    forget=False,
+    name="rtm_handler_09",
+)
