@@ -230,11 +230,79 @@
                             r1 * 7/16
 
                             R1 * 7/16
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 1 measure 10]
 
-                            fs'2.
+                            <<
+
+                                \context Voice = "On_Beat_Grace_Container"
+                                {
+                                    %! abjad.on_beat_grace_container(1)
+                                    \set fontSize = #-4
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! abjad.SegmentMaker.comment_measure_numbers()
+                                    % [Voice 1 measure 10]
+
+                                    %! abjad.on_beat_grace_container(2)
+                                    \slash
+                                    %! abjad.on_beat_grace_container(3)
+                                    \voiceOne
+                                    <f' fs'>16 * 16/35
+                                    [
+                                    (
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'8 * 8/35
+
+                                    f'16 * 16/35
+
+                                    f'8 * 8/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'8 * 8/35
+
+                                    f'16 * 16/35
+
+                                    f'8 * 8/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'8 * 8/35
+
+                                    f'16 * 16/35
+
+                                    f'8 * 8/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+                                    )
+                                    ]
+
+                                }
+
+                                \context Voice = "Voice 1"
+                                {
+
+                                    %! abjad.on_beat_grace_container(4)
+                                    \voiceTwo
+                                    fs'2.
+
+                                }
+
+                            >>
+                            %! applying indicators
+                            \oneVoice
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 11]
@@ -250,25 +318,185 @@
 
                             r8
 
-                            fs'4
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 1 measure 13]
+                            <<
 
-                            fs'4.
-                            ~
+                                \context Voice = "On_Beat_Grace_Container"
+                                {
+                                    %! abjad.on_beat_grace_container(1)
+                                    \set fontSize = #-4
 
-                            fs'8
+                                    %! abjad.on_beat_grace_container(2)
+                                    \slash
+                                    %! abjad.on_beat_grace_container(3)
+                                    \voiceOne
+                                    <f' fs'>16 * 16/35
+                                    [
+                                    (
+
+                                    f'8 * 8/35
+
+                                    f'16 * 16/35
+
+                                    f'8 * 8/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+                                    )
+                                    ]
+
+                                }
+
+                                \context Voice = "Voice 1"
+                                {
+
+                                    %! abjad.on_beat_grace_container(4)
+                                    \voiceTwo
+                                    fs'4
+
+                                }
+
+                            >>
+
+                            <<
+
+                                \context Voice = "On_Beat_Grace_Container"
+                                {
+                                    %! abjad.on_beat_grace_container(1)
+                                    \set fontSize = #-4
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! abjad.SegmentMaker.comment_measure_numbers()
+                                    % [Voice 1 measure 13]
+
+                                    %! abjad.on_beat_grace_container(2)
+                                    \slash
+                                    %! abjad.on_beat_grace_container(3)
+                                    \voiceOne
+                                    <f' fs'>8 * 8/35
+                                    [
+                                    (
+
+                                    f'16 * 16/35
+
+                                    f'8 * 8/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'8 * 8/35
+
+                                    f'16 * 16/35
+
+                                    f'8 * 8/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'8 * 8/35
+
+                                    f'16 * 16/35
+
+                                    f'8 * 8/35
+                                    )
+                                    ]
+
+                                }
+
+                                \context Voice = "Voice 1"
+                                {
+
+                                    %! abjad.on_beat_grace_container(4)
+                                    \voiceTwo
+                                    fs'4.
+                                    ~
+
+                                    fs'8
+
+                                }
+
+                            >>
+                            %! abjad.on_beat_grace_container(5)
+                            \oneVoice
 
                             r4
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 1 measure 14]
 
-                            fs'4.
-                            ~
+                            <<
 
-                            fs'8
+                                \context Voice = "On_Beat_Grace_Container"
+                                {
+                                    %! abjad.on_beat_grace_container(1)
+                                    \set fontSize = #-4
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! abjad.SegmentMaker.comment_measure_numbers()
+                                    % [Voice 1 measure 14]
+
+                                    %! abjad.on_beat_grace_container(2)
+                                    \slash
+                                    %! abjad.on_beat_grace_container(3)
+                                    \voiceOne
+                                    <f' fs'>16 * 16/35
+                                    [
+                                    (
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'8 * 8/35
+
+                                    f'16 * 16/35
+
+                                    f'8 * 8/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'8 * 8/35
+
+                                    f'16 * 16/35
+
+                                    f'8 * 8/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'8 * 8/35
+
+                                    f'16 * 16/35
+                                    )
+                                    ]
+
+                                }
+
+                                \context Voice = "Voice 1"
+                                {
+
+                                    %! abjad.on_beat_grace_container(4)
+                                    \voiceTwo
+                                    fs'4.
+                                    ~
+
+                                    fs'8
+
+                                }
+
+                            >>
+                            %! abjad.on_beat_grace_container(5)
+                            \oneVoice
 
                             r8
                             %! COMMENT_MEASURE_NUMBERS
@@ -418,18 +646,135 @@
 
                             r8
 
-                            cs''4
-                            ~
+                            <<
 
-                            cs''4.
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 2 measure 14]
+                                \context Voice = "On_Beat_Grace_Container"
+                                {
+                                    %! abjad.on_beat_grace_container(1)
+                                    \set fontSize = #-4
 
-                            cs''4.
-                            ~
+                                    %! abjad.on_beat_grace_container(2)
+                                    \slash
+                                    %! abjad.on_beat_grace_container(3)
+                                    \voiceOne
+                                    <c'' cs''>8 * 8/35
+                                    [
+                                    (
 
-                            cs''8
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''8 * 8/35
+
+                                    c''16 * 16/35
+
+                                    c''8 * 8/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+                                    )
+                                    ]
+
+                                }
+
+                                \context Voice = "Voice 2"
+                                {
+
+                                    %! abjad.on_beat_grace_container(4)
+                                    \voiceTwo
+                                    cs''4
+                                    ~
+
+                                    cs''4
+
+                                }
+
+                            >>
+
+                            <<
+
+                                \context Voice = "On_Beat_Grace_Container"
+                                {
+                                    %! abjad.on_beat_grace_container(1)
+                                    \set fontSize = #-4
+
+                                    %! abjad.on_beat_grace_container(2)
+                                    \slash
+                                    %! abjad.on_beat_grace_container(3)
+                                    \voiceOne
+                                    <c'' cs''>8 * 8/35
+                                    [
+                                    (
+
+                                    c''16 * 16/35
+
+                                    c''8 * 8/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''8 * 8/35
+
+                                    c''16 * 16/35
+
+                                    c''8 * 8/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''8 * 8/35
+
+                                    c''16 * 16/35
+
+                                    c''8 * 8/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''8 * 8/35
+
+                                    c''16 * 16/35
+                                    )
+                                    ]
+
+                                }
+
+                                \context Voice = "Voice 2"
+                                {
+
+                                    %! abjad.on_beat_grace_container(4)
+                                    \voiceTwo
+                                    cs''8
+                                    ~
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! abjad.SegmentMaker.comment_measure_numbers()
+                                    % [Voice 2 measure 14]
+
+                                    cs''4.
+                                    ~
+
+                                    cs''8
+
+                                }
+
+                            >>
+                            %! abjad.on_beat_grace_container(5)
+                            \oneVoice
 
                             r8
                             %! COMMENT_MEASURE_NUMBERS
@@ -457,24 +802,41 @@
 
                         \context Voice = "Voice 3"
                         {
-                            \staff-line-count 1
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 3 measure 1]
 
-                            %! applying staff names and clefs
-                            \set Staff.shortInstrumentName =
-                            %! applying staff names and clefs
-                            \markup { \hcenter-in #12 "pc." }
-                            %! applying staff names and clefs
-                            \set Staff.instrumentName =
-                            %! applying staff names and clefs
-                            \markup { \hcenter-in #14 "Percussion" }
-                            \clef "percussion"
-                            cs'4.
-                            ~
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 5/6
+                            {
+                                \staff-line-count 1
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! abjad.SegmentMaker.comment_measure_numbers()
+                                % [Voice 3 measure 1]
 
-                            cs'4
+                                %! applying staff names and clefs
+                                \set Staff.shortInstrumentName =
+                                %! applying staff names and clefs
+                                \markup { \hcenter-in #12 "pc." }
+                                %! applying staff names and clefs
+                                \set Staff.instrumentName =
+                                %! applying staff names and clefs
+                                \markup { \hcenter-in #14 "Percussion" }
+                                \clef "percussion"
+                                \override Staff.Stem.stemlet-length = 0.75
+                                cs'8
+                                [
+
+                                cs'8
+
+                                cs'8
+
+                                cs'8
+
+                                cs'8
+
+                                \revert Staff.Stem.stemlet-length
+                                cs'8
+                                ]
+
+                            }
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 2]
@@ -488,7 +850,21 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 3]
 
-                            cs'4.
+                            \override Staff.Stem.stemlet-length = 0.75
+                            cs'16
+                            [
+
+                            cs'16
+
+                            cs'16
+
+                            cs'16
+
+                            cs'16
+
+                            \revert Staff.Stem.stemlet-length
+                            cs'16
+                            ]
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 4]
@@ -502,10 +878,53 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 5]
 
-                            cs'2.
-                            ~
+                            \override Staff.Stem.stemlet-length = 0.75
+                            cs'16
+                            [
 
-                            cs'4.
+                            cs'16
+
+                            cs'16
+
+                            cs'16
+
+                            cs'16
+
+                            \revert Staff.Stem.stemlet-length
+                            cs'16
+                            ]
+
+                            \override Staff.Stem.stemlet-length = 0.75
+                            cs'16
+                            [
+
+                            cs'16
+
+                            cs'16
+
+                            cs'16
+
+                            cs'16
+
+                            \revert Staff.Stem.stemlet-length
+                            cs'16
+                            ]
+
+                            \override Staff.Stem.stemlet-length = 0.75
+                            cs'16
+                            [
+
+                            cs'16
+
+                            cs'16
+
+                            cs'16
+
+                            cs'16
+
+                            \revert Staff.Stem.stemlet-length
+                            cs'16
+                            ]
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 6]
@@ -521,15 +940,52 @@
 
                             r4
 
-                            cs'8
-                            ~
+                            \override Staff.Stem.stemlet-length = 0.75
+                            cs'16
+                            [
 
-                            cs'4.
+                            \revert Staff.Stem.stemlet-length
+                            cs'16
+                            ]
+
+                            \override Staff.Stem.stemlet-length = 0.75
+                            cs'16
+                            [
+
+                            cs'16
+
+                            cs'16
+
+                            cs'16
+
+                            cs'16
+
+                            \revert Staff.Stem.stemlet-length
+                            cs'16
+                            ]
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 8]
 
-                            cs'2
+                            \override Staff.Stem.stemlet-length = 0.75
+                            cs'16
+                            [
+
+                            cs'16
+
+                            cs'16
+
+                            cs'16
+
+                            cs'16
+
+                            cs'16
+
+                            cs'16
+
+                            \revert Staff.Stem.stemlet-length
+                            cs'16
+                            ]
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 9]
@@ -548,14 +1004,25 @@
                             r1 * 3/8
 
                             R1 * 3/8
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 3 measure 11]
 
-                            cs'4.
-                            ~
+                            \tweak text #tuplet-number::calc-fraction-text
+                            \times 5/4
+                            {
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! abjad.SegmentMaker.comment_measure_numbers()
+                                % [Voice 3 measure 11]
 
-                            cs'4
+                                cs'8
+                                [
+
+                                cs'8
+
+                                cs'8
+
+                                cs'8
+                                ]
+
+                            }
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 12]
@@ -587,7 +1054,21 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 15]
 
-                            cs'4.
+                            \override Staff.Stem.stemlet-length = 0.75
+                            cs'16
+                            [
+
+                            cs'16
+
+                            cs'16
+
+                            cs'16
+
+                            cs'16
+
+                            \revert Staff.Stem.stemlet-length
+                            cs'16
+                            ]
                             \bar "||"
 
                         }
@@ -666,11 +1147,89 @@
                             r1 * 1/2
 
                             R1 * 1/2
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 4 measure 7]
 
-                            cs'2.
+                            <<
+
+                                \context Voice = "On_Beat_Grace_Container"
+                                {
+                                    %! abjad.on_beat_grace_container(1)
+                                    \set fontSize = #-4
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! abjad.SegmentMaker.comment_measure_numbers()
+                                    % [Voice 4 measure 7]
+
+                                    %! abjad.on_beat_grace_container(2)
+                                    \slash
+                                    %! abjad.on_beat_grace_container(3)
+                                    \voiceOne
+                                    <c' cs'>8 * 8/35
+                                    [
+                                    (
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'8 * 8/35
+
+                                    c'16 * 16/35
+
+                                    c'8 * 8/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'8 * 8/35
+
+                                    c'16 * 16/35
+
+                                    c'8 * 8/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'8 * 8/35
+
+                                    c'16 * 16/35
+
+                                    c'8 * 8/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'8 * 8/35
+
+                                    c'16 * 16/35
+
+                                    c'8 * 8/35
+                                    )
+                                    ]
+
+                                }
+
+                                \context Voice = "Voice 4"
+                                {
+
+                                    %! abjad.on_beat_grace_container(4)
+                                    \voiceTwo
+                                    cs'2.
+
+                                }
+
+                            >>
+                            %! applying indicators
+                            \oneVoice
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 8]
@@ -686,15 +1245,141 @@
 
                             r4
 
-                            cs'8
-                            ~
+                            <<
 
-                            cs'2
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 4 measure 10]
+                                \context Voice = "On_Beat_Grace_Container"
+                                {
+                                    %! abjad.on_beat_grace_container(1)
+                                    \set fontSize = #-4
 
-                            cs'4.
+                                    %! abjad.on_beat_grace_container(2)
+                                    \slash
+                                    %! abjad.on_beat_grace_container(3)
+                                    \voiceOne
+                                    <c' cs'>16 * 16/35
+                                    [
+                                    (
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+                                    )
+                                    ]
+
+                                }
+
+                                \context Voice = "Voice 4"
+                                {
+
+                                    %! abjad.on_beat_grace_container(4)
+                                    \voiceTwo
+                                    cs'8
+
+                                }
+
+                            >>
+
+                            <<
+
+                                \context Voice = "On_Beat_Grace_Container"
+                                {
+                                    %! abjad.on_beat_grace_container(1)
+                                    \set fontSize = #-4
+
+                                    %! abjad.on_beat_grace_container(2)
+                                    \slash
+                                    %! abjad.on_beat_grace_container(3)
+                                    \voiceOne
+                                    <c' cs'>8 * 8/35
+                                    [
+                                    (
+
+                                    c'16 * 16/35
+
+                                    c'8 * 8/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'8 * 8/35
+
+                                    c'16 * 16/35
+
+                                    c'8 * 8/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'8 * 8/35
+
+                                    c'16 * 16/35
+
+                                    c'8 * 8/35
+
+                                    c'16 * 16/35
+                                    )
+                                    ]
+
+                                }
+
+                                \context Voice = "Voice 4"
+                                {
+
+                                    %! abjad.on_beat_grace_container(4)
+                                    \voiceTwo
+                                    cs'2
+                                    ~
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! abjad.SegmentMaker.comment_measure_numbers()
+                                    % [Voice 4 measure 10]
+
+                                    cs'4
+
+                                }
+
+                            >>
+
+                            <<
+
+                                \context Voice = "On_Beat_Grace_Container"
+                                {
+                                    %! abjad.on_beat_grace_container(1)
+                                    \set fontSize = #-4
+
+                                    %! abjad.on_beat_grace_container(2)
+                                    \slash
+                                    %! abjad.on_beat_grace_container(3)
+                                    \voiceOne
+                                    <c' cs'>16 * 16/35
+                                    [
+                                    (
+
+                                    c'16 * 16/35
+
+                                    c'8 * 8/35
+                                    )
+                                    ]
+
+                                }
+
+                                \context Voice = "Voice 4"
+                                {
+
+                                    %! abjad.on_beat_grace_container(4)
+                                    \voiceTwo
+                                    cs'8
+
+                                }
+
+                            >>
+                            %! abjad.on_beat_grace_container(5)
+                            \oneVoice
 
                             r4.
                             %! COMMENT_MEASURE_NUMBERS
@@ -706,24 +1391,152 @@
                             r1 * 5/16
 
                             R1 * 5/16
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 4 measure 12]
 
-                            cs'4.
+                            <<
+
+                                \context Voice = "On_Beat_Grace_Container"
+                                {
+                                    %! abjad.on_beat_grace_container(1)
+                                    \set fontSize = #-4
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! abjad.SegmentMaker.comment_measure_numbers()
+                                    % [Voice 4 measure 12]
+
+                                    %! abjad.on_beat_grace_container(2)
+                                    \slash
+                                    %! abjad.on_beat_grace_container(3)
+                                    \voiceOne
+                                    <c' cs'>16 * 16/35
+                                    [
+                                    (
+
+                                    c'8 * 8/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'8 * 8/35
+
+                                    c'16 * 16/35
+
+                                    c'8 * 8/35
+                                    )
+                                    ]
+
+                                }
+
+                                \context Voice = "Voice 4"
+                                {
+
+                                    %! abjad.on_beat_grace_container(4)
+                                    \voiceTwo
+                                    cs'4.
+
+                                }
+
+                            >>
+                            %! abjad.on_beat_grace_container(5)
+                            \oneVoice
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 13]
 
-                            cs'2.
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 4 measure 14]
+                            \override Staff.Stem.stemlet-length = 0.75
+                            cs'16
+                            [
 
-                            cs'4.
+                            cs'16
                             ~
 
-                            cs'8
+                            cs'8.
+
+                            \revert Staff.Stem.stemlet-length
+                            cs'16
+                            ~
+                            ]
+
+                            \override Staff.Stem.stemlet-length = 0.75
+                            cs'8.
+                            [
+
+                            cs'16
+
+                            cs'16
+
+                            \revert Staff.Stem.stemlet-length
+                            cs'16
+                            ]
+
+                            <<
+
+                                \context Voice = "On_Beat_Grace_Container"
+                                {
+                                    %! abjad.on_beat_grace_container(1)
+                                    \set fontSize = #-4
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! abjad.SegmentMaker.comment_measure_numbers()
+                                    % [Voice 4 measure 14]
+
+                                    %! abjad.on_beat_grace_container(2)
+                                    \slash
+                                    %! abjad.on_beat_grace_container(3)
+                                    \voiceOne
+                                    <c' cs'>16 * 16/35
+                                    [
+                                    (
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'8 * 8/35
+
+                                    c'16 * 16/35
+
+                                    c'8 * 8/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'8 * 8/35
+
+                                    c'16 * 16/35
+
+                                    c'8 * 8/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'8 * 8/35
+                                    )
+                                    ]
+
+                                }
+
+                                \context Voice = "Voice 4"
+                                {
+
+                                    %! abjad.on_beat_grace_container(4)
+                                    \voiceTwo
+                                    cs'4.
+                                    ~
+
+                                    cs'8
+
+                                }
+
+                            >>
+                            %! abjad.on_beat_grace_container(5)
+                            \oneVoice
 
                             r8
                             %! COMMENT_MEASURE_NUMBERS

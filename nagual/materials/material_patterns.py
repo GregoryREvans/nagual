@@ -21,6 +21,7 @@ from nagual.materials.rhythm import (
     rtm_handler_03,
     rtm_handler_04,
     rtm_handler_06,
+    rtm_handler_08,
     silence_handler,
     sustain_handler_03,
     tuplet_handler_02,
@@ -349,34 +350,34 @@ pitch_materials_07 = [
 
 rhythm_materials_08 = [
     silence_handler,  #
-    note_rhythm_handler,
+    helianthated_talea_handler_07,
     silence_handler,
-    note_rhythm_handler,
+    helianthated_talea_handler_07,
     silence_handler,
-    note_rhythm_handler,
+    helianthated_talea_handler_07,
     silence_handler,
     silence_handler,  #
-    note_rhythm_handler,
+    helianthated_talea_handler_07,
     silence_handler,
-    note_rhythm_handler,  #
+    rtm_handler_08,  #
     silence_handler,
-    note_rhythm_handler,
+    rtm_handler_08,
     silence_handler,
-    note_rhythm_handler,
+    rtm_handler_08,
     silence_handler,
-    note_rhythm_handler,
+    rtm_handler_08,
     silence_handler,
-    note_rhythm_handler,
+    rtm_handler_08,
     silence_handler,
-    note_rhythm_handler,
+    rtm_handler_08,
     silence_handler,  #
-    note_rhythm_handler,
+    helianthated_talea_handler_07,
     silence_handler,
-    note_rhythm_handler,
+    helianthated_talea_handler_07,
     silence_handler,
-    note_rhythm_handler,
-    note_rhythm_handler,
-    note_rhythm_handler,
+    helianthated_talea_handler_07,
+    helianthated_talea_handler_05,
+    helianthated_talea_handler_07,
     silence_handler,
 ]
 

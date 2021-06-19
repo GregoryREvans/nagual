@@ -537,7 +537,7 @@ rtm_06 = rmakers.stack(
 rtm_handler_06 = evans.RhythmHandler(
     rtm_06,
     forget=False,
-    name="rtm_handler_04",
+    name="rtm_handler_06",
 )
 
 ###
@@ -619,4 +619,32 @@ helianthated_talea_handler_07 = evans.RhythmHandler(
             ("talea_weight_consumed", 128),
         ]
     ),
+)
+
+###
+### 08
+###
+
+rtm_08 = rmakers.stack(
+    evans.RTMMaker(
+        [
+            "(1 (1 1 1 1 1 1))",  #
+            "(1 (1 1 1 1 1 1))",
+            "(1 (1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1))",
+            "(1 (1 1 1 1 1 1 1 1))",
+            "(1 (1 1 1 1 1 1 1 1))",
+            "(1 (1 1 1 1))",
+            "(1 (1 1 1 1 1 1))",
+        ],
+    ),
+    rmakers.trivialize(abjad.select().tuplets()),
+    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+    rmakers.rewrite_sustained(abjad.select().tuplets()),
+    rmakers.extract_trivial(),
+)
+
+rtm_handler_08 = evans.RhythmHandler(
+    rtm_08,
+    forget=False,
+    name="rtm_handler_08",
 )

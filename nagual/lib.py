@@ -333,6 +333,12 @@ def with_sharps(selections):
     abjad.iterpitches.respell_with_sharps(selections)
 
 
+def toggle_tuplet_prolation(selection):
+    tuplet = selection[0]
+    tuplet.toggle_prolation()
+    tuplet.set_minimum_denominator(4)
+
+
 start_repeat = abjad.LilyPondLiteral(
     [
         r"\once \override Score.BarLine.X-extent = #'(0.5 . 3)",
@@ -475,6 +481,38 @@ grace_handler_06 = evans.OnBeatGraceHandler(
     ],
     durations=[
         1,
+    ],
+    font_size=-4,
+    leaf_duration=(1, 35),
+    attack_number_forget=False,
+    durations_forget=False,
+    boolean_vector=[1],
+    vector_forget=False,
+    name="On Beat Grace Handler",
+)
+
+grace_handler_08 = evans.OnBeatGraceHandler(
+    number_of_attacks=[
+        20,  #
+        7,
+        15,
+        17,
+        10,  #
+        20,
+        25,  #
+        3,
+        16,
+        3,
+        8,
+        16,
+    ],
+    durations=[
+        1,
+        1,
+        1,
+        2,
+        1,
+        2,
     ],
     font_size=-4,
     leaf_duration=(1, 35),

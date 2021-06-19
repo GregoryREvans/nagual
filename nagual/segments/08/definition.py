@@ -4,7 +4,12 @@ import abjad
 import baca
 import evans
 
-from nagual.lib import met_100, met_mod_120_100  # , with_sharps, zero_padding_glissando
+from nagual.lib import (  # , with_sharps, zero_padding_glissando
+    grace_handler_08,
+    met_100,
+    met_mod_120_100,
+    toggle_tuplet_prolation,
+)
 from nagual.materials.instruments import instruments
 from nagual.materials.score_structure import score
 from nagual.materials.time_signatures import signatures_08
@@ -70,6 +75,31 @@ maker = evans.SegmentMaker(
                 r"\staff-line-count 1", format_slot="absolute_before"
             ),
             baca.selectors.leaf(0),
+        ),
+        evans.call(
+            "Voice 3",
+            toggle_tuplet_prolation,
+            abjad.select().components(abjad.Tuplet).get([-1]),
+        ),
+        evans.call(
+            "Voice 3",
+            abjad.beam,
+            baca.selectors.leaves([53, 54, 55, 56]),
+        ),
+        evans.call(
+            "Voice 1",
+            grace_handler_08,
+            baca.selectors.leaves([12, 16, 17, 20]),
+        ),
+        evans.call(
+            "Voice 2",
+            grace_handler_08,
+            baca.selectors.leaves([17, 19]),
+        ),
+        evans.call(
+            "Voice 4",
+            grace_handler_08,
+            baca.selectors.leaves([9, 12, 13, 15, 19, 28]),
         ),
         evans.attach(
             "Global Context",
