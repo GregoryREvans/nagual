@@ -12,6 +12,11 @@ def select_outer_ties(argument):
     return result
 
 
+def select_last_tie_leaf(argument):
+    result = abjad.select(argument).logical_ties()[:-1]
+    return [abjad.select(_).leaf(-1) for _ in result]
+
+
 def select_across_divisions(argument):
     result = abjad.select(argument).tuplets()[:-1]
     return [abjad.select(_).leaf(-1) for _ in result]
@@ -673,4 +678,20 @@ rtm_handler_09 = evans.RhythmHandler(
     rtm_09,
     forget=False,
     name="rtm_handler_09",
+)
+
+
+###
+### 10
+###
+
+drone_maker = note_rhythm_maker = rmakers.stack(
+    rmakers.NoteRhythmMaker(),
+    rmakers.tie(select_last_tie_leaf),
+)
+
+drone_handler = evans.RhythmHandler(
+    drone_maker,
+    forget=False,
+    name="drone_handler",
 )

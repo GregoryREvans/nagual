@@ -7,6 +7,7 @@ from nagual.materials.rhythm import (
     accelerando_handler_01,
     accelerando_handler_02,
     accelerando_handler_04,
+    drone_handler,
     even_division_handler_02,
     helianthated_talea_handler_01,
     helianthated_talea_handler_01_segment_02,
@@ -418,25 +419,25 @@ pitch_materials_09 = [
 ## 10
 
 rhythm_materials_10 = [
-    note_rhythm_handler,  #
+    drone_handler,  #
     note_rhythm_handler,
     silence_handler,
     note_rhythm_handler,
     note_rhythm_handler,
     silence_handler,
-    note_rhythm_handler,  #
+    drone_handler,  #
     note_rhythm_handler,
     silence_handler,
     note_rhythm_handler,
     note_rhythm_handler,
     silence_handler,
-    note_rhythm_handler,  #
+    drone_handler,  #
     note_rhythm_handler,
     silence_handler,
     note_rhythm_handler,
     note_rhythm_handler,
     silence_handler,
-    note_rhythm_handler,  #
+    rtm_handler_09,  #
     note_rhythm_handler,
     silence_handler,
     note_rhythm_handler,

@@ -2,6 +2,22 @@ import abjad
 handler_to_value = abjad.OrderedDict(
     [
         (
+            'drone_handler',
+            abjad.OrderedDict(
+                [
+                    (
+                        'state',
+                        abjad.OrderedDict(
+                            [
+                                ('divisions_consumed', 36),
+                                ('logical_ties_produced', 36),
+                                ]
+                            ),
+                        ),
+                    ]
+                ),
+            ),
+        (
             'note_rhythm_handler',
             abjad.OrderedDict(
                 [
@@ -9,8 +25,8 @@ handler_to_value = abjad.OrderedDict(
                         'state',
                         abjad.OrderedDict(
                             [
-                                ('divisions_consumed', 2),
-                                ('logical_ties_produced', 2),
+                                ('divisions_consumed', 3),
+                                ('logical_ties_produced', 3),
                                 ]
                             ),
                         ),
@@ -30,6 +46,14 @@ handler_to_value = abjad.OrderedDict(
                                 ]
                             ),
                         ),
+                    ]
+                ),
+            ),
+        (
+            'rtm_handler_09',
+            abjad.OrderedDict(
+                [
+                    ('state', 3),
                     ]
                 ),
             ),
