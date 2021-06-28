@@ -208,14 +208,20 @@
                             \set Staff.instrumentName =
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Alto Flute" }
-                            fs'2
-                            ~
+                            %! applying invisibility
+                            \once \override Rest.transparent = ##t
+                            r1 * 1/4
+
+                            R1 * 1/4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 2]
 
-                            fs'4.
-                            ~
+                            %! applying invisibility
+                            \once \override Rest.transparent = ##t
+                            r1 * 3/16
+
+                            R1 * 3/16
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 3]
@@ -233,25 +239,29 @@
                             ~
 
                             fs'4.
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 5]
 
-                            fs'1
-                            ~
+                            %! applying invisibility
+                            \once \override Rest.transparent = ##t
+                            r1 * 1/2
+
+                            R1 * 1/2
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 6]
 
                             fs'2.
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 7]
 
-                            fs'2
-                            ~
+                            %! applying invisibility
+                            \once \override Rest.transparent = ##t
+                            r1 * 1/4
+
+                            R1 * 1/4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 8]
@@ -287,34 +297,238 @@
                             ~
 
                             fs'4.
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 1 measure 13]
 
-                            fs'2.
-                            ~
+                            <<
 
-                            fs'4.
+                                \context Voice = "On_Beat_Grace_Container"
+                                {
+                                    %! abjad.on_beat_grace_container(1)
+                                    \set fontSize = #-4
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! abjad.SegmentMaker.comment_measure_numbers()
+                                    % [Voice 1 measure 13]
+
+                                    %! abjad.on_beat_grace_container(2)
+                                    \slash
+                                    %! abjad.on_beat_grace_container(3)
+                                    \voiceOne
+                                    <f' fs'>16 * 16/35
+                                    [
+                                    (
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+                                    )
+                                    ]
+
+                                }
+
+                                \context Voice = "Voice 1"
+                                {
+
+                                    %! abjad.on_beat_grace_container(4)
+                                    \voiceTwo
+                                    fs'2.
+                                    ~
+
+                                    fs'4.
+
+                                }
+
+                            >>
+                            %! abjad.on_beat_grace_container(5)
+                            \oneVoice
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 14]
 
                             r8
 
-                            fs'4
-                            ~
+                            \times 4/5
+                            {
 
-                            fs'4
+                                \override Staff.Stem.stemlet-length = 0.75
+                                fs'8
+                                [
+
+                                fs'8
+
+                                fs'8
+
+                                fs'8
+
+                                \revert Staff.Stem.stemlet-length
+                                fs'8
+                                ]
+
+                            }
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 15]
 
-                            fs'4.
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 1 measure 16]
+                            \override Staff.Stem.stemlet-length = 0.75
+                            fs'8
+                            [
 
-                            fs'2..
+                            fs'8
+
+                            \revert Staff.Stem.stemlet-length
+                            fs'8
+                            ]
+
+                            <<
+
+                                \context Voice = "On_Beat_Grace_Container"
+                                {
+                                    %! abjad.on_beat_grace_container(1)
+                                    \set fontSize = #-4
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! abjad.SegmentMaker.comment_measure_numbers()
+                                    % [Voice 1 measure 16]
+
+                                    %! abjad.on_beat_grace_container(2)
+                                    \slash
+                                    %! abjad.on_beat_grace_container(3)
+                                    \voiceOne
+                                    <f' fs'>16 * 16/35
+                                    [
+                                    (
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    f'16 * 16/35
+                                    )
+                                    ]
+
+                                }
+
+                                \context Voice = "Voice 1"
+                                {
+
+                                    %! abjad.on_beat_grace_container(4)
+                                    \voiceTwo
+                                    fs'2..
+
+                                }
+
+                            >>
+                            %! applying indicators
+                            \oneVoice
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 17]
@@ -352,32 +566,38 @@
                             \set Staff.instrumentName =
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Guitar" }
-                            cs''2
-                            ~
+                            %! applying invisibility
+                            \once \override Rest.transparent = ##t
+                            r1 * 1/4
+
+                            R1 * 1/4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 2]
 
-                            cs''4.
-                            ~
+                            %! applying invisibility
+                            \once \override Rest.transparent = ##t
+                            r1 * 3/16
+
+                            R1 * 3/16
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 3]
 
-                            cs''4.
-                            ~
+                            %! applying invisibility
+                            \once \override Rest.transparent = ##t
+                            r1 * 5/16
 
-                            cs''4
-                            ~
+                            R1 * 5/16
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 4]
 
-                            cs''2.
-                            ~
+                            %! applying invisibility
+                            \once \override Rest.transparent = ##t
+                            r1 * 9/16
 
-                            cs''4.
-                            ~
+                            R1 * 9/16
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 5]
@@ -404,13 +624,15 @@
                             ~
 
                             cs''4.
-                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 9]
 
-                            cs''1
-                            ~
+                            %! applying invisibility
+                            \once \override Rest.transparent = ##t
+                            r1 * 1/2
+
+                            R1 * 1/2
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 10]
@@ -431,34 +653,230 @@
                             ~
 
                             cs''4.
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 2 measure 13]
 
-                            cs''2.
-                            ~
+                            <<
 
-                            cs''4.
+                                \context Voice = "On_Beat_Grace_Container"
+                                {
+                                    %! abjad.on_beat_grace_container(1)
+                                    \set fontSize = #-4
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! abjad.SegmentMaker.comment_measure_numbers()
+                                    % [Voice 2 measure 13]
+
+                                    %! abjad.on_beat_grace_container(2)
+                                    \slash
+                                    %! abjad.on_beat_grace_container(3)
+                                    \voiceOne
+                                    <c'' cs''>16 * 16/35
+                                    [
+                                    (
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+                                    )
+                                    ]
+
+                                }
+
+                                \context Voice = "Voice 2"
+                                {
+
+                                    %! abjad.on_beat_grace_container(4)
+                                    \voiceTwo
+                                    cs''2.
+                                    ~
+
+                                    cs''4.
+
+                                }
+
+                            >>
+                            %! abjad.on_beat_grace_container(5)
+                            \oneVoice
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 14]
 
                             r8
 
-                            cs''4
-                            ~
+                            \times 2/3
+                            {
 
-                            cs''4
+                                cs''4
+
+                                cs''4
+
+                                cs''4
+
+                            }
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 15]
 
-                            cs''4.
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 2 measure 16]
+                            \override Staff.Stem.stemlet-length = 0.75
+                            cs''8
+                            [
 
-                            cs''2..
+                            cs''8
+
+                            \revert Staff.Stem.stemlet-length
+                            cs''8
+                            ]
+
+                            <<
+
+                                \context Voice = "On_Beat_Grace_Container"
+                                {
+                                    %! abjad.on_beat_grace_container(1)
+                                    \set fontSize = #-4
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! abjad.SegmentMaker.comment_measure_numbers()
+                                    % [Voice 2 measure 16]
+
+                                    %! abjad.on_beat_grace_container(2)
+                                    \slash
+                                    %! abjad.on_beat_grace_container(3)
+                                    \voiceOne
+                                    <c'' cs''>16 * 16/35
+                                    [
+                                    (
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+
+                                    c''16 * 16/35
+                                    )
+                                    ]
+
+                                }
+
+                                \context Voice = "Voice 2"
+                                {
+
+                                    %! abjad.on_beat_grace_container(4)
+                                    \voiceTwo
+                                    cs''2..
+
+                                }
+
+                            >>
+                            %! applying indicators
+                            \oneVoice
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 17]
@@ -484,6 +902,7 @@
 
                         \context Voice = "Voice 3"
                         {
+                            %! applying indicators
                             \staff-line-count 1
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
@@ -497,45 +916,58 @@
                             \set Staff.instrumentName =
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Percussion" }
+                            %! applying invisibility
+                            \once \override Rest.transparent = ##t
+                            %! applying indicators
                             \clef "percussion"
-                            cs'2
-                            ~
+                            r1 * 1/4
+
+                            R1 * 1/4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 2]
 
-                            cs'4.
-                            ~
+                            %! applying invisibility
+                            \once \override Rest.transparent = ##t
+                            r1 * 3/16
+
+                            R1 * 3/16
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 3]
 
-                            cs'4.
-                            ~
+                            %! applying invisibility
+                            \once \override Rest.transparent = ##t
+                            r1 * 5/16
 
-                            cs'4
-                            ~
+                            R1 * 5/16
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 4]
 
-                            cs'2.
-                            ~
+                            %! applying invisibility
+                            \once \override Rest.transparent = ##t
+                            r1 * 9/16
 
-                            cs'4.
-                            ~
+                            R1 * 9/16
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 5]
 
-                            cs'1
-                            ~
+                            %! applying invisibility
+                            \once \override Rest.transparent = ##t
+                            r1 * 1/2
+
+                            R1 * 1/2
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 6]
 
-                            cs'2.
-                            ~
+                            %! applying invisibility
+                            \once \override Rest.transparent = ##t
+                            r1 * 3/8
+
+                            R1 * 3/8
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 7]
@@ -577,34 +1009,235 @@
                             ~
 
                             cs'4.
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 3 measure 13]
 
-                            cs'2.
-                            ~
+                            <<
 
-                            cs'4.
+                                \context Voice = "On_Beat_Grace_Container"
+                                {
+                                    %! abjad.on_beat_grace_container(1)
+                                    \set fontSize = #-4
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! abjad.SegmentMaker.comment_measure_numbers()
+                                    % [Voice 3 measure 13]
+
+                                    %! abjad.on_beat_grace_container(2)
+                                    \slash
+                                    %! abjad.on_beat_grace_container(3)
+                                    \voiceOne
+                                    <c' cs'>16 * 16/35
+                                    [
+                                    (
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+                                    )
+                                    ]
+
+                                }
+
+                                \context Voice = "Voice 3"
+                                {
+
+                                    %! abjad.on_beat_grace_container(4)
+                                    \voiceTwo
+                                    cs'2.
+                                    ~
+
+                                    cs'4.
+
+                                }
+
+                            >>
+                            %! abjad.on_beat_grace_container(5)
+                            \oneVoice
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 14]
 
                             r8
 
-                            cs'4
-                            ~
+                            \override Staff.Stem.stemlet-length = 0.75
+                            cs'8
+                            [
 
-                            cs'4
+                            \revert Staff.Stem.stemlet-length
+                            cs'8
+                            ]
+
+                            \override Staff.Stem.stemlet-length = 0.75
+                            cs'8
+                            [
+
+                            \revert Staff.Stem.stemlet-length
+                            cs'8
+                            ]
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 15]
 
-                            cs'4.
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 3 measure 16]
+                            \override Staff.Stem.stemlet-length = 0.75
+                            cs'8
+                            [
 
-                            cs'2..
+                            cs'8
+
+                            \revert Staff.Stem.stemlet-length
+                            cs'8
+                            ]
+
+                            <<
+
+                                \context Voice = "On_Beat_Grace_Container"
+                                {
+                                    %! abjad.on_beat_grace_container(1)
+                                    \set fontSize = #-4
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! abjad.SegmentMaker.comment_measure_numbers()
+                                    % [Voice 3 measure 16]
+
+                                    %! abjad.on_beat_grace_container(2)
+                                    \slash
+                                    %! abjad.on_beat_grace_container(3)
+                                    \voiceOne
+                                    <c' cs'>16 * 16/35
+                                    [
+                                    (
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+                                    )
+                                    ]
+
+                                }
+
+                                \context Voice = "Voice 3"
+                                {
+
+                                    %! abjad.on_beat_grace_container(4)
+                                    \voiceTwo
+                                    cs'2..
+
+                                }
+
+                            >>
+                            %! applying indicators
+                            \oneVoice
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 17]
@@ -651,29 +1284,89 @@
                                     \override Staff.Stem.stemlet-length = 0.75
                                     cs'16
                                     [
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'8.
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'16
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
                                 }
 
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'16
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'16
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'16
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
                                 \revert Staff.Stem.stemlet-length
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'16
                                 ]
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
                                 \times 2/3
                                 {
 
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'4
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'8
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
                                 }
 
@@ -686,39 +1379,102 @@
                                 % [Voice 4 measure 2]
 
                                 \override Staff.Stem.stemlet-length = 0.75
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'32
                                 [
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'32
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
                                 \revert Staff.Stem.stemlet-length
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'16.
                                 ]
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
                             }
 
                             \override Staff.Stem.stemlet-length = 0.75
+                            \tweak Accidental.stencil ##f
+                            \tweak X-extent #'(0 . 0)
+                            \tweak transparent ##t
                             cs'32
                             [
+                            %! abjad.glissando(7)
+                            - \abjad-zero-padding-glissando
+                            %! abjad.glissando(7)
+                            \glissando
 
+                            \tweak Accidental.stencil ##f
+                            \tweak X-extent #'(0 . 0)
+                            \tweak transparent ##t
                             cs'32
+                            %! abjad.glissando(7)
+                            - \abjad-zero-padding-glissando
+                            %! abjad.glissando(7)
+                            \glissando
 
+                            \tweak Accidental.stencil ##f
+                            \tweak X-extent #'(0 . 0)
+                            \tweak transparent ##t
                             cs'32
+                            %! abjad.glissando(7)
+                            - \abjad-zero-padding-glissando
+                            %! abjad.glissando(7)
+                            \glissando
 
                             \revert Staff.Stem.stemlet-length
+                            \tweak Accidental.stencil ##f
+                            \tweak X-extent #'(0 . 0)
+                            \tweak transparent ##t
                             cs'32
                             ]
+                            %! abjad.glissando(7)
+                            - \abjad-zero-padding-glissando
+                            %! abjad.glissando(7)
+                            \glissando
 
                             \times 2/3
                             {
 
                                 \override Staff.Stem.stemlet-length = 0.75
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'16
                                 [
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
                                 \revert Staff.Stem.stemlet-length
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'8
                                 ]
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
                             }
                             %! COMMENT_MEASURE_NUMBERS
@@ -726,39 +1482,102 @@
                             % [Voice 4 measure 3]
 
                             \override Staff.Stem.stemlet-length = 0.75
+                            \tweak Accidental.stencil ##f
+                            \tweak X-extent #'(0 . 0)
+                            \tweak transparent ##t
                             cs'8
                             [
+                            %! abjad.glissando(7)
+                            - \abjad-zero-padding-glissando
+                            %! abjad.glissando(7)
+                            \glissando
 
+                            \tweak Accidental.stencil ##f
+                            \tweak X-extent #'(0 . 0)
+                            \tweak transparent ##t
                             cs'8
+                            %! abjad.glissando(7)
+                            - \abjad-zero-padding-glissando
+                            %! abjad.glissando(7)
+                            \glissando
 
                             \revert Staff.Stem.stemlet-length
+                            \tweak Accidental.stencil ##f
+                            \tweak X-extent #'(0 . 0)
+                            \tweak transparent ##t
                             cs'8
                             ]
+                            %! abjad.glissando(7)
+                            - \abjad-zero-padding-glissando
+                            %! abjad.glissando(7)
+                            \glissando
 
                             \times 4/5
                             {
 
                                 \override Staff.Stem.stemlet-length = 0.75
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'32
                                 [
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'32
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'32
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
                                 \revert Staff.Stem.stemlet-length
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'16
                                 ]
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
                             }
 
                             \override Staff.Stem.stemlet-length = 0.75
+                            \tweak Accidental.stencil ##f
+                            \tweak X-extent #'(0 . 0)
+                            \tweak transparent ##t
                             cs'16
                             [
+                            %! abjad.glissando(7)
+                            - \abjad-zero-padding-glissando
+                            %! abjad.glissando(7)
+                            \glissando
 
                             \revert Staff.Stem.stemlet-length
+                            \tweak Accidental.stencil ##f
+                            \tweak X-extent #'(0 . 0)
+                            \tweak transparent ##t
                             cs'16
                             ]
+                            %! abjad.glissando(7)
+                            - \abjad-zero-padding-glissando
+                            %! abjad.glissando(7)
+                            \glissando
 
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/4
@@ -770,11 +1589,32 @@
                                     %! abjad.SegmentMaker.comment_measure_numbers()
                                     % [Voice 4 measure 4]
 
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'4
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'4
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'4
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
                                 }
 
@@ -782,26 +1622,68 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'8
                                     [
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
                                     \revert Staff.Stem.stemlet-length
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'8
                                     ]
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'4
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
                                     \override Staff.Stem.stemlet-length = 0.75
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'8
                                     [
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
                                 }
 
                                 \revert Staff.Stem.stemlet-length
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'8
                                 ]
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'4.
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
                             }
 
@@ -814,32 +1696,95 @@
                                     %! abjad.SegmentMaker.comment_measure_numbers()
                                     % [Voice 4 measure 5]
 
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'8
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'4.
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
                                     \override Staff.Stem.stemlet-length = 0.75
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'8
                                     [
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
                                 }
 
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'8
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'8
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'8
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
                                 \revert Staff.Stem.stemlet-length
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'8
                                 ]
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
                                 \times 2/3
                                 {
 
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'2
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'4
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
                                 }
 
@@ -852,39 +1797,102 @@
                                 % [Voice 4 measure 6]
 
                                 \override Staff.Stem.stemlet-length = 0.75
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'16
                                 [
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'16
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
                                 \revert Staff.Stem.stemlet-length
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'8.
                                 ]
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
                             }
 
                             \override Staff.Stem.stemlet-length = 0.75
+                            \tweak Accidental.stencil ##f
+                            \tweak X-extent #'(0 . 0)
+                            \tweak transparent ##t
                             cs'16
                             [
+                            %! abjad.glissando(7)
+                            - \abjad-zero-padding-glissando
+                            %! abjad.glissando(7)
+                            \glissando
 
                             \revert Staff.Stem.stemlet-length
+                            \tweak Accidental.stencil ##f
+                            \tweak X-extent #'(0 . 0)
+                            \tweak transparent ##t
                             cs'16
                             ]
+                            %! abjad.glissando(7)
+                            - \abjad-zero-padding-glissando
+                            %! abjad.glissando(7)
+                            \glissando
 
                             \override Staff.Stem.stemlet-length = 0.75
+                            \tweak Accidental.stencil ##f
+                            \tweak X-extent #'(0 . 0)
+                            \tweak transparent ##t
                             cs'16
                             [
+                            %! abjad.glissando(7)
+                            - \abjad-zero-padding-glissando
+                            %! abjad.glissando(7)
+                            \glissando
 
                             \revert Staff.Stem.stemlet-length
+                            \tweak Accidental.stencil ##f
+                            \tweak X-extent #'(0 . 0)
+                            \tweak transparent ##t
                             cs'16
                             ]
+                            %! abjad.glissando(7)
+                            - \abjad-zero-padding-glissando
+                            %! abjad.glissando(7)
+                            \glissando
 
                             \times 2/3
                             {
 
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'8
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'4
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
                             }
 
@@ -895,31 +1903,94 @@
                                 % [Voice 4 measure 7]
 
                                 \override Staff.Stem.stemlet-length = 0.75
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'8
                                 [
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'8
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'8
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
                                 \times 4/5
                                 {
 
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'32
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'32
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'32
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'16
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
                                 }
 
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'16
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
                                 \revert Staff.Stem.stemlet-length
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'16
                                 ]
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
                             }
 
@@ -933,11 +2004,32 @@
                                     %! abjad.SegmentMaker.comment_measure_numbers()
                                     % [Voice 4 measure 8]
 
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'4
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'4
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'4
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
                                 }
 
@@ -945,26 +2037,68 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'8
                                     [
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
                                     \revert Staff.Stem.stemlet-length
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'8
                                     ]
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'4
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
                                     \override Staff.Stem.stemlet-length = 0.75
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'8
                                     [
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
                                 }
 
                                 \revert Staff.Stem.stemlet-length
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'8
                                 ]
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'4.
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
                             }
 
@@ -977,32 +2111,95 @@
                                     %! abjad.SegmentMaker.comment_measure_numbers()
                                     % [Voice 4 measure 9]
 
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'8
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'4.
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
                                     \override Staff.Stem.stemlet-length = 0.75
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'8
                                     [
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
                                 }
 
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'8
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'8
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'8
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
                                 \revert Staff.Stem.stemlet-length
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'8
                                 ]
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
                                 \times 2/3
                                 {
 
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'2
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'4
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
                                 }
 
@@ -1015,39 +2212,102 @@
                                 % [Voice 4 measure 10]
 
                                 \override Staff.Stem.stemlet-length = 0.75
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'16
                                 [
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'16
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
                                 \revert Staff.Stem.stemlet-length
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'8.
                                 ]
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
                             }
 
                             \override Staff.Stem.stemlet-length = 0.75
+                            \tweak Accidental.stencil ##f
+                            \tweak X-extent #'(0 . 0)
+                            \tweak transparent ##t
                             cs'16
                             [
+                            %! abjad.glissando(7)
+                            - \abjad-zero-padding-glissando
+                            %! abjad.glissando(7)
+                            \glissando
 
                             \revert Staff.Stem.stemlet-length
+                            \tweak Accidental.stencil ##f
+                            \tweak X-extent #'(0 . 0)
+                            \tweak transparent ##t
                             cs'16
                             ]
+                            %! abjad.glissando(7)
+                            - \abjad-zero-padding-glissando
+                            %! abjad.glissando(7)
+                            \glissando
 
                             \override Staff.Stem.stemlet-length = 0.75
+                            \tweak Accidental.stencil ##f
+                            \tweak X-extent #'(0 . 0)
+                            \tweak transparent ##t
                             cs'16
                             [
+                            %! abjad.glissando(7)
+                            - \abjad-zero-padding-glissando
+                            %! abjad.glissando(7)
+                            \glissando
 
                             \revert Staff.Stem.stemlet-length
+                            \tweak Accidental.stencil ##f
+                            \tweak X-extent #'(0 . 0)
+                            \tweak transparent ##t
                             cs'16
                             ]
+                            %! abjad.glissando(7)
+                            - \abjad-zero-padding-glissando
+                            %! abjad.glissando(7)
+                            \glissando
 
                             \times 2/3
                             {
 
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'8
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'4
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
                             }
 
@@ -1058,31 +2318,94 @@
                                 % [Voice 4 measure 11]
 
                                 \override Staff.Stem.stemlet-length = 0.75
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'8
                                 [
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'8
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'8
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
                                 \times 4/5
                                 {
 
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'32
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'32
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'32
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'16
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
                                 }
 
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'16
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
                                 \revert Staff.Stem.stemlet-length
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'16
                                 ]
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
                             }
 
@@ -1096,11 +2419,32 @@
                                     %! abjad.SegmentMaker.comment_measure_numbers()
                                     % [Voice 4 measure 12]
 
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'4
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'4
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'4
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
                                 }
 
@@ -1108,56 +2452,387 @@
                                 {
 
                                     \override Staff.Stem.stemlet-length = 0.75
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'8
                                     [
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
                                     \revert Staff.Stem.stemlet-length
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'8
                                     ]
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'4
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
                                     \override Staff.Stem.stemlet-length = 0.75
+                                    \tweak Accidental.stencil ##f
+                                    \tweak X-extent #'(0 . 0)
+                                    \tweak transparent ##t
                                     cs'8
                                     [
+                                    %! abjad.glissando(7)
+                                    - \abjad-zero-padding-glissando
+                                    %! abjad.glissando(7)
+                                    \glissando
 
                                 }
 
                                 \revert Staff.Stem.stemlet-length
+                                \tweak Accidental.stencil ##f
+                                \tweak X-extent #'(0 . 0)
+                                \tweak transparent ##t
                                 cs'8
                                 ]
+                                %! abjad.glissando(7)
+                                - \abjad-zero-padding-glissando
+                                %! abjad.glissando(7)
+                                \glissando
 
                                 cs'4.
 
                             }
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 4 measure 13]
 
-                            cs'2.
-                            ~
+                            <<
 
-                            cs'4.
+                                \context Voice = "On_Beat_Grace_Container"
+                                {
+                                    %! abjad.on_beat_grace_container(1)
+                                    \set fontSize = #-4
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! abjad.SegmentMaker.comment_measure_numbers()
+                                    % [Voice 4 measure 13]
+
+                                    %! abjad.on_beat_grace_container(2)
+                                    \slash
+                                    %! abjad.on_beat_grace_container(3)
+                                    \voiceOne
+                                    <c' cs'>16 * 16/35
+                                    [
+                                    (
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+                                    )
+                                    ]
+
+                                }
+
+                                \context Voice = "Voice 4"
+                                {
+
+                                    %! abjad.on_beat_grace_container(4)
+                                    \voiceTwo
+                                    cs'2.
+                                    ~
+
+                                    cs'4.
+
+                                }
+
+                            >>
+                            %! abjad.on_beat_grace_container(5)
+                            \oneVoice
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 14]
 
                             r8
 
-                            cs'4
-                            ~
+                            \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                {
+                                    \new Score
+                                    \with
+                                    {
+                                        \override SpacingSpanner.spacing-increment = 0.5
+                                        proportionalNotationDuration = ##f
+                                    }
+                                    <<
+                                        \new RhythmicStaff
+                                        \with
+                                        {
+                                            \remove Time_signature_engraver
+                                            \remove Staff_symbol_engraver
+                                            \override Stem.direction = #up
+                                            \override Stem.length = 5
+                                            \override TupletBracket.bracket-visibility = ##t
+                                            \override TupletBracket.direction = #up
+                                            \override TupletBracket.minimum-length = 4
+                                            \override TupletBracket.padding = 1.25
+                                            \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                            \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                            \override TupletNumber.font-size = 0
+                                            \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                            tupletFullLength = ##t
+                                        }
+                                        {
+                                            c'2
+                                        }
+                                    >>
+                                    \layout
+                                    {
+                                        indent = 0
+                                        ragged-right = ##t
+                                    }
+                                }
+                            \times 1/1
+                            {
 
-                            cs'4
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 4 measure 15]
+                                \once \override Beam.grow-direction = #right
+                                \override Staff.Stem.stemlet-length = 0.75
+                                cs'16 * 63/32
+                                [
 
-                            cs'4.
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 4 measure 16]
+                                \revert Staff.Stem.stemlet-length
+                                cs'16 * 115/64
 
-                            cs'2..
+                                r16 * 91/64
+
+                                cs'16 * 35/32
+
+                                r16 * 29/32
+
+                                \revert Staff.Stem.stemlet-length
+                                cs'16 * 13/16
+                                ~
+                                ]
+
+                            }
+                            \revert TupletNumber.text
+
+                            \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                {
+                                    \new Score
+                                    \with
+                                    {
+                                        \override SpacingSpanner.spacing-increment = 0.5
+                                        proportionalNotationDuration = ##f
+                                    }
+                                    <<
+                                        \new RhythmicStaff
+                                        \with
+                                        {
+                                            \remove Time_signature_engraver
+                                            \remove Staff_symbol_engraver
+                                            \override Stem.direction = #up
+                                            \override Stem.length = 5
+                                            \override TupletBracket.bracket-visibility = ##t
+                                            \override TupletBracket.direction = #up
+                                            \override TupletBracket.minimum-length = 4
+                                            \override TupletBracket.padding = 1.25
+                                            \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                            \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                            \override TupletNumber.font-size = 0
+                                            \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                            tupletFullLength = ##t
+                                        }
+                                        {
+                                            c'4.
+                                        }
+                                    >>
+                                    \layout
+                                    {
+                                        indent = 0
+                                        ragged-right = ##t
+                                    }
+                                }
+                            \times 1/1
+                            {
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! abjad.SegmentMaker.comment_measure_numbers()
+                                % [Voice 4 measure 15]
+
+                                \once \override Beam.grow-direction = #left
+                                \override Staff.Stem.stemlet-length = 0.75
+                                cs'16 * 5/8
+                                [
+
+                                r16 * 43/64
+
+                                r16 * 51/64
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                cs'16 * 65/64
+
+                                cs'16 * 85/64
+
+                                \revert Staff.Stem.stemlet-length
+                                cs'16 * 25/16
+                                ]
+
+                            }
+                            \revert TupletNumber.text
+
+                            <<
+
+                                \context Voice = "On_Beat_Grace_Container"
+                                {
+                                    %! abjad.on_beat_grace_container(1)
+                                    \set fontSize = #-4
+                                    %! COMMENT_MEASURE_NUMBERS
+                                    %! abjad.SegmentMaker.comment_measure_numbers()
+                                    % [Voice 4 measure 16]
+
+                                    %! abjad.on_beat_grace_container(2)
+                                    \slash
+                                    %! abjad.on_beat_grace_container(3)
+                                    \voiceOne
+                                    <c' cs'>16 * 16/35
+                                    [
+                                    (
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+
+                                    c'16 * 16/35
+                                    )
+                                    ]
+
+                                }
+
+                                \context Voice = "Voice 4"
+                                {
+
+                                    %! abjad.on_beat_grace_container(4)
+                                    \voiceTwo
+                                    cs'2..
+
+                                }
+
+                            >>
+                            %! applying indicators
+                            \oneVoice
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 17]

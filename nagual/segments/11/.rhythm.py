@@ -33,5 +33,21 @@ handler_to_value = abjad.OrderedDict(
                     ]
                 ),
             ),
+        (
+            'accelerando_handler_01',
+            abjad.OrderedDict(
+                [
+                    (
+                        'state',
+                        abjad.OrderedDict(
+                            [
+                                ('divisions_consumed', 7),
+                                ('logical_ties_produced', 106),
+                                ]
+                            ),
+                        ),
+                    ]
+                ),
+            ),
         ]
     )

@@ -3,6 +3,7 @@ import pathlib
 import abjad
 import baca
 import evans
+from abjadext import rmakers
 
 from nagual.lib import met_40, met_mod_60_40  # , with_sharps, zero_padding_glissando
 from nagual.materials.instruments import instruments
@@ -70,6 +71,96 @@ maker = evans.SegmentMaker(
                 r"\staff-line-count 1", format_slot="absolute_before"
             ),
             baca.selectors.leaf(0),
+        ),
+        evans.call(
+            "Voice 2",
+            rmakers.UnbeamCommand(),
+            baca.selectors.leaves([_ for _ in range(1, 52)]),
+        ),
+        evans.call(
+            "Voice 2",
+            rmakers.FeatherBeamCommand(
+                beam_rests=True,
+                stemlet_length=0.75,
+            ),
+            baca.selectors.leaves([_ for _ in range(1, 10)]),
+        ),
+        evans.call(
+            "Voice 2",
+            rmakers.FeatherBeamCommand(
+                beam_rests=True,
+                stemlet_length=0.75,
+            ),
+            baca.selectors.leaves([_ for _ in range(10, 16)]),
+        ),
+        evans.call(
+            "Voice 2",
+            rmakers.FeatherBeamCommand(
+                beam_rests=True,
+                stemlet_length=0.75,
+            ),
+            baca.selectors.leaves([_ for _ in range(22, 37)]),
+        ),
+        evans.call(
+            "Voice 2",
+            rmakers.FeatherBeamCommand(
+                beam_rests=True,
+                stemlet_length=0.75,
+            ),
+            baca.selectors.leaves([_ for _ in range(39, 52)]),
+        ),
+        evans.call(
+            "Voice 4",
+            rmakers.UnbeamCommand(),
+            baca.selectors.leaves([_ for _ in range(0, 44)]),
+        ),
+        evans.call(
+            "Voice 4",
+            rmakers.FeatherBeamCommand(
+                beam_rests=True,
+                stemlet_length=0.75,
+            ),
+            baca.selectors.leaves([_ for _ in range(0, 6)]),
+        ),
+        evans.call(
+            "Voice 4",
+            rmakers.FeatherBeamCommand(
+                beam_rests=True,
+                stemlet_length=0.75,
+            ),
+            baca.selectors.leaves([_ for _ in range(6, 11)]),
+        ),
+        evans.call(
+            "Voice 4",
+            rmakers.FeatherBeamCommand(
+                beam_rests=True,
+                stemlet_length=0.75,
+            ),
+            baca.selectors.leaves([_ for _ in range(13, 17)]),
+        ),
+        evans.call(
+            "Voice 4",
+            rmakers.FeatherBeamCommand(
+                beam_rests=True,
+                stemlet_length=0.75,
+            ),
+            baca.selectors.leaves([_ for _ in range(18, 21)]),
+        ),
+        evans.call(
+            "Voice 4",
+            rmakers.FeatherBeamCommand(
+                beam_rests=True,
+                stemlet_length=0.75,
+            ),
+            baca.selectors.leaves([_ for _ in range(22, 28)]),
+        ),
+        evans.call(
+            "Voice 4",
+            rmakers.FeatherBeamCommand(
+                beam_rests=True,
+                stemlet_length=0.75,
+            ),
+            baca.selectors.leaves([_ for _ in range(30, 44)]),
         ),
         evans.attach(
             "Global Context",

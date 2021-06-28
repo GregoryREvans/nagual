@@ -3,6 +3,7 @@ import pathlib
 import abjad
 import baca
 import evans
+from abjadext import rmakers
 
 from nagual.lib import (  # , with_sharps, zero_padding_glissando
     met_95,
@@ -45,11 +46,11 @@ maker = evans.SegmentMaker(
         #     with_sharps,
         #     abjad.select().components(abjad.Score),
         # ),
-        evans.call(
-            "score",
-            evans.SegmentMaker.beam_score,
-            abjad.select().components(abjad.Score),
-        ),
+        # evans.call(
+        #     "score",
+        #     evans.SegmentMaker.beam_score,
+        #     abjad.select().components(abjad.Score),
+        # ),
         # evans.call(
         #     "Staff 1",
         #     evans.annotate_leaves,
@@ -75,6 +76,62 @@ maker = evans.SegmentMaker(
             "Voice 3",
             abjad.Clef("percussion"),
             baca.selectors.leaf(0),
+        ),
+        evans.call(
+            "Voice 1",
+            rmakers.FeatherBeamCommand(
+                beam_rests=True,
+                stemlet_length=0.75,
+            ),
+            baca.selectors.leaves([_ for _ in range(9, 28)]),
+        ),
+        evans.call(
+            "Voice 1",
+            rmakers.FeatherBeamCommand(
+                beam_rests=True,
+                stemlet_length=0.75,
+            ),
+            baca.selectors.leaves([_ for _ in range(29, 43)]),
+        ),
+        evans.call(
+            "Voice 2",
+            rmakers.FeatherBeamCommand(
+                beam_rests=True,
+                stemlet_length=0.75,
+            ),
+            baca.selectors.leaves([_ for _ in range(11, 24)]),
+        ),
+        evans.call(
+            "Voice 3",
+            rmakers.FeatherBeamCommand(
+                beam_rests=True,
+                stemlet_length=0.75,
+            ),
+            baca.selectors.leaves([_ for _ in range(11, 25)]),
+        ),
+        evans.call(
+            "Voice 4",
+            rmakers.FeatherBeamCommand(
+                beam_rests=True,
+                stemlet_length=0.75,
+            ),
+            baca.selectors.leaves([_ for _ in range(5, 18)]),
+        ),
+        evans.call(
+            "Voice 4",
+            rmakers.FeatherBeamCommand(
+                beam_rests=True,
+                stemlet_length=0.75,
+            ),
+            baca.selectors.leaves([_ for _ in range(20, 40)]),
+        ),
+        evans.call(
+            "Voice 4",
+            rmakers.FeatherBeamCommand(
+                beam_rests=True,
+                stemlet_length=0.75,
+            ),
+            baca.selectors.leaves([_ for _ in range(42, 55)]),
         ),
         evans.attach(
             "Voice 3",

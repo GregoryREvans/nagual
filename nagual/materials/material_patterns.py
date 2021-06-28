@@ -7,6 +7,7 @@ from nagual.materials.rhythm import (
     accelerando_handler_01,
     accelerando_handler_02,
     accelerando_handler_04,
+    accelerando_handler_12,
     drone_handler,
     even_division_handler_02,
     helianthated_talea_handler_01,
@@ -15,6 +16,7 @@ from nagual.materials.rhythm import (
     helianthated_talea_handler_04,
     helianthated_talea_handler_05,
     helianthated_talea_handler_07,
+    helianthated_talea_handler_12,
     note_rhythm_handler,
     quarters_handler_01,
     quarters_handler_06,
@@ -24,6 +26,7 @@ from nagual.materials.rhythm import (
     rtm_handler_06,
     rtm_handler_08,
     rtm_handler_09,
+    rtm_handler_10,
     silence_handler,
     sustain_handler_03,
     tuplet_handler_02,
@@ -419,28 +422,37 @@ pitch_materials_09 = [
 ## 10
 
 rhythm_materials_10 = [
-    drone_handler,  #
+    silence_handler,  #
+    drone_handler,
+    silence_handler,
+    drone_handler,
+    silence_handler,
+    drone_handler,
     note_rhythm_handler,
     silence_handler,
-    note_rhythm_handler,
-    note_rhythm_handler,
-    silence_handler,
-    drone_handler,  #
+    rtm_handler_10,
     note_rhythm_handler,
     silence_handler,
-    note_rhythm_handler,
+    silence_handler,  #
+    drone_handler,
+    silence_handler,
+    drone_handler,
     note_rhythm_handler,
     silence_handler,
-    drone_handler,  #
+    rtm_handler_10,
     note_rhythm_handler,
     silence_handler,
+    silence_handler,  #
+    drone_handler,
     note_rhythm_handler,
+    silence_handler,
+    rtm_handler_10,
     note_rhythm_handler,
     silence_handler,
     rtm_handler_09,  #
     note_rhythm_handler,
     silence_handler,
-    note_rhythm_handler,
+    accelerando_handler_01,
     note_rhythm_handler,
     silence_handler,
 ]
@@ -457,29 +469,29 @@ rhythm_materials_11 = [
     note_rhythm_handler,
     silence_handler,
     note_rhythm_handler,
-    note_rhythm_handler,
+    accelerando_handler_01,
     silence_handler,
-    note_rhythm_handler,
+    accelerando_handler_01,
     note_rhythm_handler,  #
     silence_handler,
     note_rhythm_handler,
     silence_handler,
     note_rhythm_handler,
-    note_rhythm_handler,
+    accelerando_handler_01,
     note_rhythm_handler,  #
     silence_handler,
     note_rhythm_handler,
     silence_handler,
     note_rhythm_handler,
     silence_handler,
-    note_rhythm_handler,
+    accelerando_handler_01,
     note_rhythm_handler,  #
-    note_rhythm_handler,
-    note_rhythm_handler,
-    silence_handler,
+    accelerando_handler_01,
     note_rhythm_handler,
     silence_handler,
-    note_rhythm_handler,
+    accelerando_handler_01,
+    silence_handler,
+    accelerando_handler_01,
 ]
 
 pitch_materials_11 = [
@@ -490,33 +502,33 @@ pitch_materials_11 = [
 
 rhythm_materials_12 = [
     silence_handler,  #
-    note_rhythm_handler,
+    helianthated_talea_handler_12,
     silence_handler,
     silence_handler,  #
-    note_rhythm_handler,
+    accelerando_handler_12,
     silence_handler,
-    note_rhythm_handler,
+    accelerando_handler_12,
     silence_handler,
-    note_rhythm_handler,
+    accelerando_handler_12,
     silence_handler,
     silence_handler,  #
-    note_rhythm_handler,
+    helianthated_talea_handler_12,
     silence_handler,
-    note_rhythm_handler,
+    helianthated_talea_handler_12,
     silence_handler,
-    note_rhythm_handler,  #
+    accelerando_handler_12,  #
     silence_handler,
-    note_rhythm_handler,
+    accelerando_handler_12,
     silence_handler,
-    note_rhythm_handler,
+    accelerando_handler_12,
     silence_handler,
-    note_rhythm_handler,
+    accelerando_handler_12,
     silence_handler,
-    note_rhythm_handler,
+    accelerando_handler_12,
     silence_handler,
-    note_rhythm_handler,
+    helianthated_talea_handler_12,
     silence_handler,
-    note_rhythm_handler,
+    helianthated_talea_handler_12,
     silence_handler,
 ]
 

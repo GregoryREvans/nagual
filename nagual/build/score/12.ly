@@ -195,12 +195,28 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 7]
 
-                            fs'2.
+                            fs'4.
+                            ~
+
+                            fs'8
+
+                            fs'4
+                            ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 8]
 
-                            fs'2
+                            fs'4
+
+                            \override Staff.Stem.stemlet-length = 0.75
+                            fs'8
+                            [
+
+                            fs'16
+
+                            \revert Staff.Stem.stemlet-length
+                            fs'16
+                            ]
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 9]
@@ -287,19 +303,142 @@
                             r1 * 3/16
 
                             R1 * 3/16
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 2 measure 2]
 
-                            cs''4.
-                            ~
+                            \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                {
+                                    \new Score
+                                    \with
+                                    {
+                                        \override SpacingSpanner.spacing-increment = 0.5
+                                        proportionalNotationDuration = ##f
+                                    }
+                                    <<
+                                        \new RhythmicStaff
+                                        \with
+                                        {
+                                            \remove Time_signature_engraver
+                                            \remove Staff_symbol_engraver
+                                            \override Stem.direction = #up
+                                            \override Stem.length = 5
+                                            \override TupletBracket.bracket-visibility = ##t
+                                            \override TupletBracket.direction = #up
+                                            \override TupletBracket.minimum-length = 4
+                                            \override TupletBracket.padding = 1.25
+                                            \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                            \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                            \override TupletNumber.font-size = 0
+                                            \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                            tupletFullLength = ##t
+                                        }
+                                        {
+                                            c'2
+                                            ~
+                                            c'8
+                                        }
+                                    >>
+                                    \layout
+                                    {
+                                        indent = 0
+                                        ragged-right = ##t
+                                    }
+                                }
+                            \times 1/1
+                            {
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! abjad.SegmentMaker.comment_measure_numbers()
+                                % [Voice 2 measure 2]
 
-                            cs''4
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 2 measure 3]
+                                \once \override Beam.grow-direction = #left
+                                \override Staff.Stem.stemlet-length = 0.75
+                                cs''16 * 45/64
+                                [
 
-                            cs''2
+                                \revert Staff.Stem.stemlet-length
+                                cs''16 * 23/32
+
+                                r16 * 25/32
+
+                                cs''16 * 55/64
+
+                                r16 * 1
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                cs''16 * 75/64
+
+                                \revert Staff.Stem.stemlet-length
+                                cs''16 * 89/64
+
+                                r16 * 103/64
+
+                                \revert Staff.Stem.stemlet-length
+                                r16 * 113/64
+                                ]
+
+                            }
+                            \revert TupletNumber.text
+
+                            \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                {
+                                    \new Score
+                                    \with
+                                    {
+                                        \override SpacingSpanner.spacing-increment = 0.5
+                                        proportionalNotationDuration = ##f
+                                    }
+                                    <<
+                                        \new RhythmicStaff
+                                        \with
+                                        {
+                                            \remove Time_signature_engraver
+                                            \remove Staff_symbol_engraver
+                                            \override Stem.direction = #up
+                                            \override Stem.length = 5
+                                            \override TupletBracket.bracket-visibility = ##t
+                                            \override TupletBracket.direction = #up
+                                            \override TupletBracket.minimum-length = 4
+                                            \override TupletBracket.padding = 1.25
+                                            \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                            \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                            \override TupletNumber.font-size = 0
+                                            \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                            tupletFullLength = ##t
+                                        }
+                                        {
+                                            c'2
+                                        }
+                                    >>
+                                    \layout
+                                    {
+                                        indent = 0
+                                        ragged-right = ##t
+                                    }
+                                }
+                            \times 1/1
+                            {
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! abjad.SegmentMaker.comment_measure_numbers()
+                                % [Voice 2 measure 3]
+
+                                \once \override Beam.grow-direction = #right
+                                \override Staff.Stem.stemlet-length = 0.75
+                                cs''16 * 63/32
+                                [
+
+                                cs''16 * 115/64
+
+                                \revert Staff.Stem.stemlet-length
+                                cs''16 * 91/64
+
+                                r16 * 35/32
+
+                                cs''16 * 29/32
+
+                                \revert Staff.Stem.stemlet-length
+                                r16 * 13/16
+                                ]
+
+                            }
+                            \revert TupletNumber.text
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 4]
@@ -345,14 +484,93 @@
                             r1 * 1/4
 
                             R1 * 1/4
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 2 measure 9]
 
-                            cs''2.
-                            ~
+                            \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                {
+                                    \new Score
+                                    \with
+                                    {
+                                        \override SpacingSpanner.spacing-increment = 0.5
+                                        proportionalNotationDuration = ##f
+                                    }
+                                    <<
+                                        \new RhythmicStaff
+                                        \with
+                                        {
+                                            \remove Time_signature_engraver
+                                            \remove Staff_symbol_engraver
+                                            \override Stem.direction = #up
+                                            \override Stem.length = 5
+                                            \override TupletBracket.bracket-visibility = ##t
+                                            \override TupletBracket.direction = #up
+                                            \override TupletBracket.minimum-length = 4
+                                            \override TupletBracket.padding = 1.25
+                                            \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                            \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                            \override TupletNumber.font-size = 0
+                                            \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                            tupletFullLength = ##t
+                                        }
+                                        {
+                                            c'1
+                                            ~
+                                            c'8
+                                        }
+                                    >>
+                                    \layout
+                                    {
+                                        indent = 0
+                                        ragged-right = ##t
+                                    }
+                                }
+                            \times 1/1
+                            {
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! abjad.SegmentMaker.comment_measure_numbers()
+                                % [Voice 2 measure 9]
 
-                            cs''4.
+                                \once \override Beam.grow-direction = #left
+                                \override Staff.Stem.stemlet-length = 0.75
+                                cs''16 * 49/64
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                cs''16 * 25/32
+
+                                r16 * 51/64
+
+                                cs''16 * 53/64
+
+                                r16 * 55/64
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                cs''16 * 59/64
+
+                                \revert Staff.Stem.stemlet-length
+                                cs''16 * 63/64
+
+                                r16 * 69/64
+
+                                r16 * 19/16
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                cs''16 * 83/64
+
+                                cs''16 * 23/16
+
+                                \revert Staff.Stem.stemlet-length
+                                cs''16 * 101/64
+
+                                r16 * 55/32
+
+                                cs''16 * 59/32
+
+                                \revert Staff.Stem.stemlet-length
+                                r16 * 123/64
+                                ]
+
+                            }
+                            \revert TupletNumber.text
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 10]
@@ -362,11 +580,87 @@
                             r1 * 9/16
 
                             R1 * 9/16
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 2 measure 11]
 
-                            cs''1
+                            \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                {
+                                    \new Score
+                                    \with
+                                    {
+                                        \override SpacingSpanner.spacing-increment = 0.5
+                                        proportionalNotationDuration = ##f
+                                    }
+                                    <<
+                                        \new RhythmicStaff
+                                        \with
+                                        {
+                                            \remove Time_signature_engraver
+                                            \remove Staff_symbol_engraver
+                                            \override Stem.direction = #up
+                                            \override Stem.length = 5
+                                            \override TupletBracket.bracket-visibility = ##t
+                                            \override TupletBracket.direction = #up
+                                            \override TupletBracket.minimum-length = 4
+                                            \override TupletBracket.padding = 1.25
+                                            \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                            \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                            \override TupletNumber.font-size = 0
+                                            \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                            tupletFullLength = ##t
+                                        }
+                                        {
+                                            c'1
+                                        }
+                                    >>
+                                    \layout
+                                    {
+                                        indent = 0
+                                        ragged-right = ##t
+                                    }
+                                }
+                            \times 1/1
+                            {
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! abjad.SegmentMaker.comment_measure_numbers()
+                                % [Voice 2 measure 11]
+
+                                \once \override Beam.grow-direction = #right
+                                \override Staff.Stem.stemlet-length = 0.75
+                                cs''16 * 123/64
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                cs''16 * 15/8
+
+                                r16 * 7/4
+
+                                cs''16 * 51/32
+
+                                r16 * 45/32
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                cs''16 * 5/4
+
+                                \revert Staff.Stem.stemlet-length
+                                cs''16 * 71/64
+
+                                r16 * 1
+
+                                r16 * 29/32
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                cs''16 * 27/32
+
+                                cs''16 * 51/64
+
+                                \revert Staff.Stem.stemlet-length
+                                cs''16 * 25/32
+
+                                \revert Staff.Stem.stemlet-length
+                                r16 * 49/64
+                                ]
+
+                            }
+                            \revert TupletNumber.text
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 12]
@@ -461,7 +755,17 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 5]
 
-                            cs'2
+                            cs'8
+
+                            cs'4
+
+                            \override Staff.Stem.stemlet-length = 0.75
+                            cs'16
+                            [
+
+                            \revert Staff.Stem.stemlet-length
+                            cs'16
+                            ]
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 6]
@@ -475,7 +779,20 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 7]
 
-                            cs'2.
+                            cs'8
+
+                            cs'4
+                            ~
+
+                            cs'4
+
+                            \override Staff.Stem.stemlet-length = 0.75
+                            cs'16
+                            [
+
+                            \revert Staff.Stem.stemlet-length
+                            cs'16
+                            ]
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 8]
@@ -554,24 +871,139 @@
 
                         \context Voice = "Voice 4"
                         {
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 4 measure 1]
 
-                            %! applying staff names and clefs
-                            \set Staff.shortInstrumentName =
-                            %! applying staff names and clefs
-                            \markup { \hcenter-in #12 "vn." }
-                            %! applying staff names and clefs
-                            \set Staff.instrumentName =
-                            %! applying staff names and clefs
-                            \markup { \hcenter-in #14 "Violin" }
-                            cs'4.
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 4 measure 2]
+                            \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                {
+                                    \new Score
+                                    \with
+                                    {
+                                        \override SpacingSpanner.spacing-increment = 0.5
+                                        proportionalNotationDuration = ##f
+                                    }
+                                    <<
+                                        \new RhythmicStaff
+                                        \with
+                                        {
+                                            \remove Time_signature_engraver
+                                            \remove Staff_symbol_engraver
+                                            \override Stem.direction = #up
+                                            \override Stem.length = 5
+                                            \override TupletBracket.bracket-visibility = ##t
+                                            \override TupletBracket.direction = #up
+                                            \override TupletBracket.minimum-length = 4
+                                            \override TupletBracket.padding = 1.25
+                                            \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                            \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                            \override TupletNumber.font-size = 0
+                                            \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                            tupletFullLength = ##t
+                                        }
+                                        {
+                                            c'4.
+                                        }
+                                    >>
+                                    \layout
+                                    {
+                                        indent = 0
+                                        ragged-right = ##t
+                                    }
+                                }
+                            \times 1/1
+                            {
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! abjad.SegmentMaker.comment_measure_numbers()
+                                % [Voice 4 measure 1]
 
-                            cs'4.
+                                %! applying staff names and clefs
+                                \set Staff.shortInstrumentName =
+                                %! applying staff names and clefs
+                                \markup { \hcenter-in #12 "vn." }
+                                %! applying staff names and clefs
+                                \set Staff.instrumentName =
+                                %! applying staff names and clefs
+                                \markup { \hcenter-in #14 "Violin" }
+                                \once \override Beam.grow-direction = #left
+                                \override Staff.Stem.stemlet-length = 0.75
+                                cs'16 * 5/8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                cs'16 * 43/64
+
+                                r16 * 51/64
+
+                                cs'16 * 65/64
+
+                                r16 * 85/64
+
+                                \revert Staff.Stem.stemlet-length
+                                cs'16 * 25/16
+                                ~
+                                ]
+
+                            }
+                            \revert TupletNumber.text
+
+                            \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                {
+                                    \new Score
+                                    \with
+                                    {
+                                        \override SpacingSpanner.spacing-increment = 0.5
+                                        proportionalNotationDuration = ##f
+                                    }
+                                    <<
+                                        \new RhythmicStaff
+                                        \with
+                                        {
+                                            \remove Time_signature_engraver
+                                            \remove Staff_symbol_engraver
+                                            \override Stem.direction = #up
+                                            \override Stem.length = 5
+                                            \override TupletBracket.bracket-visibility = ##t
+                                            \override TupletBracket.direction = #up
+                                            \override TupletBracket.minimum-length = 4
+                                            \override TupletBracket.padding = 1.25
+                                            \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                            \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                            \override TupletNumber.font-size = 0
+                                            \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                            tupletFullLength = ##t
+                                        }
+                                        {
+                                            c'4.
+                                        }
+                                    >>
+                                    \layout
+                                    {
+                                        indent = 0
+                                        ragged-right = ##t
+                                    }
+                                }
+                            \times 1/1
+                            {
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! abjad.SegmentMaker.comment_measure_numbers()
+                                % [Voice 4 measure 2]
+
+                                \once \override Beam.grow-direction = #right
+                                \override Staff.Stem.stemlet-length = 0.75
+                                cs'16 * 117/64
+                                [
+
+                                r16 * 99/64
+
+                                r16 * 69/64
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                cs'16 * 13/16
+
+                                \revert Staff.Stem.stemlet-length
+                                cs'16 * 47/64
+                                ]
+
+                            }
+                            \revert TupletNumber.text
 
                             r4
                             %! COMMENT_MEASURE_NUMBERS
@@ -580,14 +1012,120 @@
 
                             r4
 
-                            cs'4
+                            \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                {
+                                    \new Score
+                                    \with
+                                    {
+                                        \override SpacingSpanner.spacing-increment = 0.5
+                                        proportionalNotationDuration = ##f
+                                    }
+                                    <<
+                                        \new RhythmicStaff
+                                        \with
+                                        {
+                                            \remove Time_signature_engraver
+                                            \remove Staff_symbol_engraver
+                                            \override Stem.direction = #up
+                                            \override Stem.length = 5
+                                            \override TupletBracket.bracket-visibility = ##t
+                                            \override TupletBracket.direction = #up
+                                            \override TupletBracket.minimum-length = 4
+                                            \override TupletBracket.padding = 1.25
+                                            \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                            \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                            \override TupletNumber.font-size = 0
+                                            \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                            tupletFullLength = ##t
+                                        }
+                                        {
+                                            c'4
+                                        }
+                                    >>
+                                    \layout
+                                    {
+                                        indent = 0
+                                        ragged-right = ##t
+                                    }
+                                }
+                            \times 1/1
+                            {
+
+                                \once \override Beam.grow-direction = #left
+                                \override Staff.Stem.stemlet-length = 0.75
+                                cs'16 * 43/64
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                cs'16 * 49/64
+
+                                r16 * 17/16
+
+                                \revert Staff.Stem.stemlet-length
+                                cs'16 * 3/2
+                                ]
+
+                            }
+                            \revert TupletNumber.text
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 4]
 
                             r4.
 
-                            cs'4
+                            \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                {
+                                    \new Score
+                                    \with
+                                    {
+                                        \override SpacingSpanner.spacing-increment = 0.5
+                                        proportionalNotationDuration = ##f
+                                    }
+                                    <<
+                                        \new RhythmicStaff
+                                        \with
+                                        {
+                                            \remove Time_signature_engraver
+                                            \remove Staff_symbol_engraver
+                                            \override Stem.direction = #up
+                                            \override Stem.length = 5
+                                            \override TupletBracket.bracket-visibility = ##t
+                                            \override TupletBracket.direction = #up
+                                            \override TupletBracket.minimum-length = 4
+                                            \override TupletBracket.padding = 1.25
+                                            \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                            \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                            \override TupletNumber.font-size = 0
+                                            \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                            tupletFullLength = ##t
+                                        }
+                                        {
+                                            c'4
+                                        }
+                                    >>
+                                    \layout
+                                    {
+                                        indent = 0
+                                        ragged-right = ##t
+                                    }
+                                }
+                            \times 1/1
+                            {
+
+                                \once \override Beam.grow-direction = #right
+                                \override Staff.Stem.stemlet-length = 0.75
+                                cs'16 * 15/8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                cs'16 * 21/16
+
+                                \revert Staff.Stem.stemlet-length
+                                r16 * 13/16
+                                ]
+
+                            }
+                            \revert TupletNumber.text
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 5]
@@ -597,11 +1135,69 @@
                             r1 * 1/4
 
                             R1 * 1/4
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 4 measure 6]
 
-                            cs'4.
+                            \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                {
+                                    \new Score
+                                    \with
+                                    {
+                                        \override SpacingSpanner.spacing-increment = 0.5
+                                        proportionalNotationDuration = ##f
+                                    }
+                                    <<
+                                        \new RhythmicStaff
+                                        \with
+                                        {
+                                            \remove Time_signature_engraver
+                                            \remove Staff_symbol_engraver
+                                            \override Stem.direction = #up
+                                            \override Stem.length = 5
+                                            \override TupletBracket.bracket-visibility = ##t
+                                            \override TupletBracket.direction = #up
+                                            \override TupletBracket.minimum-length = 4
+                                            \override TupletBracket.padding = 1.25
+                                            \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                            \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                            \override TupletNumber.font-size = 0
+                                            \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                            tupletFullLength = ##t
+                                        }
+                                        {
+                                            c'4.
+                                        }
+                                    >>
+                                    \layout
+                                    {
+                                        indent = 0
+                                        ragged-right = ##t
+                                    }
+                                }
+                            \times 1/1
+                            {
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! abjad.SegmentMaker.comment_measure_numbers()
+                                % [Voice 4 measure 6]
+
+                                \once \override Beam.grow-direction = #left
+                                \override Staff.Stem.stemlet-length = 0.75
+                                cs'16 * 5/8
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                cs'16 * 43/64
+
+                                r16 * 51/64
+
+                                cs'16 * 65/64
+
+                                r16 * 85/64
+
+                                \revert Staff.Stem.stemlet-length
+                                cs'16 * 25/16
+                                ]
+
+                            }
+                            \revert TupletNumber.text
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 7]
@@ -620,14 +1216,91 @@
                             r1 * 1/4
 
                             R1 * 1/4
-                            %! COMMENT_MEASURE_NUMBERS
-                            %! abjad.SegmentMaker.comment_measure_numbers()
-                            % [Voice 4 measure 9]
 
-                            cs'2.
-                            ~
+                            \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
+                                {
+                                    \new Score
+                                    \with
+                                    {
+                                        \override SpacingSpanner.spacing-increment = 0.5
+                                        proportionalNotationDuration = ##f
+                                    }
+                                    <<
+                                        \new RhythmicStaff
+                                        \with
+                                        {
+                                            \remove Time_signature_engraver
+                                            \remove Staff_symbol_engraver
+                                            \override Stem.direction = #up
+                                            \override Stem.length = 5
+                                            \override TupletBracket.bracket-visibility = ##t
+                                            \override TupletBracket.direction = #up
+                                            \override TupletBracket.minimum-length = 4
+                                            \override TupletBracket.padding = 1.25
+                                            \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                            \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                            \override TupletNumber.font-size = 0
+                                            \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                            tupletFullLength = ##t
+                                        }
+                                        {
+                                            c'1
+                                            ~
+                                            c'8
+                                        }
+                                    >>
+                                    \layout
+                                    {
+                                        indent = 0
+                                        ragged-right = ##t
+                                    }
+                                }
+                            \times 1/1
+                            {
+                                %! COMMENT_MEASURE_NUMBERS
+                                %! abjad.SegmentMaker.comment_measure_numbers()
+                                % [Voice 4 measure 9]
 
-                            cs'4.
+                                \once \override Beam.grow-direction = #right
+                                \override Staff.Stem.stemlet-length = 0.75
+                                cs'16 * 127/64
+                                [
+
+                                \revert Staff.Stem.stemlet-length
+                                cs'16 * 31/16
+
+                                r16 * 59/32
+
+                                cs'16 * 109/64
+
+                                r16 * 49/32
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                cs'16 * 11/8
+
+                                \revert Staff.Stem.stemlet-length
+                                cs'16 * 79/64
+
+                                r16 * 71/64
+
+                                r16 * 65/64
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                cs'16 * 15/16
+
+                                cs'16 * 7/8
+
+                                \revert Staff.Stem.stemlet-length
+                                cs'16 * 27/32
+
+                                r16 * 13/16
+
+                                \revert Staff.Stem.stemlet-length
+                                cs'16 * 51/64
+                                ]
+
+                            }
+                            \revert TupletNumber.text
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 10]
@@ -646,16 +1319,29 @@
                             r8
 
                             cs'8
-                            ~
 
-                            cs'4
+                            \override Staff.Stem.stemlet-length = 0.75
+                            cs'8
+                            [
+
+                            cs'16
+
+                            \revert Staff.Stem.stemlet-length
+                            cs'16
+                            ]
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 12]
 
                             r8
 
-                            cs'8
+                            \override Staff.Stem.stemlet-length = 0.75
+                            cs'16
+                            [
+
+                            \revert Staff.Stem.stemlet-length
+                            cs'16
+                            ]
 
                             r8
                             %! COMMENT_MEASURE_NUMBERS

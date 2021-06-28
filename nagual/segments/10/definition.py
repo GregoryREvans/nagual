@@ -3,13 +3,16 @@ import pathlib
 import abjad
 import baca
 import evans
+from abjadext import rmakers
 
 from nagual.lib import (  # , with_sharps, zero_padding_glissando
+    grace_handler_10,
     met_80,
     met_100,
     met_mod_80_100,
     met_mod_100_80,
     start_repeat_before,
+    zero_padding_glissando,
 )
 from nagual.materials.instruments import instruments
 from nagual.materials.score_structure import score
@@ -106,6 +109,52 @@ maker = evans.SegmentMaker(
                 r"\staff-line-count 1", format_slot="absolute_before"
             ),
             baca.selectors.leaf(0),
+        ),
+        evans.call(
+            "Voice 4",
+            zero_padding_glissando,
+            baca.selectors.leaves([_ for _ in range(108)]),
+        ),
+        evans.call(
+            "Voice 4",
+            rmakers.UnbeamCommand(),
+            baca.selectors.leaves([_ for _ in range(111, 123)]),
+        ),
+        evans.call(
+            "Voice 4",
+            rmakers.FeatherBeamCommand(
+                beam_rests=True,
+                stemlet_length=0.75,
+            ),
+            baca.selectors.leaves([_ for _ in range(111, 117)]),
+        ),
+        evans.call(
+            "Voice 4",
+            rmakers.FeatherBeamCommand(
+                beam_rests=True,
+                stemlet_length=0.75,
+            ),
+            baca.selectors.leaves([_ for _ in range(117, 123)]),
+        ),
+        evans.call(
+            "Voice 1",
+            grace_handler_10,
+            baca.selectors.leaves([16, 27]),
+        ),
+        evans.call(
+            "Voice 2",
+            grace_handler_10,
+            baca.selectors.leaves([16, 25]),
+        ),
+        evans.call(
+            "Voice 3",
+            grace_handler_10,
+            baca.selectors.leaves([16, 26]),
+        ),
+        evans.call(
+            "Voice 4",
+            grace_handler_10,
+            baca.selectors.leaves([108, 123]),
         ),
         evans.attach(
             "Global Context",

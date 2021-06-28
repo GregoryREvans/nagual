@@ -757,19 +757,28 @@ timespan_maker_10 = tsmakers.TaleaTimespanMaker(
     playing_talea=rmakers.Talea(
         counts=(
             [
-                75,  #
+                7,  #
+                14,
+                8,
+                6,
+                4,
+                36,
                 9,
                 1,
                 7,
                 7,
                 6,
-                75,  #
+                21,  #
+                27,
+                8,
+                19,
                 9,
                 1,
                 7,
                 7,
                 6,
-                75,  #
+                35,  #
+                40,
                 9,
                 1,
                 7,
