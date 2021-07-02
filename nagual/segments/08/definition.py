@@ -76,6 +76,11 @@ maker = evans.SegmentMaker(
             ),
             baca.selectors.leaf(0),
         ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(r'\boxed-markup "bass drum" 1', format_slot="after"),
+            baca.selectors.leaf(0),
+        ),
         evans.call(
             "Voice 3",
             toggle_tuplet_prolation,

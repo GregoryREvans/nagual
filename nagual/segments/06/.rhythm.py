@@ -18,7 +18,7 @@ handler_to_value = abjad.OrderedDict(
                 ),
             ),
         (
-            'rtm_handler_04',
+            'rtm_handler_06',
             abjad.OrderedDict(
                 [
                     ('state', 7),

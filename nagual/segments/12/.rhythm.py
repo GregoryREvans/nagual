@@ -25,10 +25,10 @@ handler_to_value = abjad.OrderedDict(
                         'state',
                         abjad.OrderedDict(
                             [
-                                ('divisions_consumed', 6),
+                                ('divisions_consumed', 7),
                                 ('incomplete_last_note', True),
-                                ('logical_ties_produced', 15),
-                                ('talea_weight_consumed', 48),
+                                ('logical_ties_produced', 17),
+                                ('talea_weight_consumed', 56),
                                 ]
                             ),
                         ),

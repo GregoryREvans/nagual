@@ -5,6 +5,7 @@ import baca
 import evans
 
 from nagual.lib import (  # , with_sharps, zero_padding_glissando
+    clef_whitespace,
     grace_handler_09,
     met_80,
     met_mod_100_80,
@@ -71,14 +72,26 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 3",
-            abjad.Clef("percussion"),
+            abjad.LilyPondLiteral(
+                r"\staff-line-count 5", format_slot="absolute_before"
+            ),
             baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 3",
             abjad.LilyPondLiteral(
-                r"\staff-line-count 1", format_slot="absolute_before"
+                r'\boxed-markup "yarn mallets + vibraphone" 1', format_slot="after"
             ),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.Clef("treble"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 3",
+            clef_whitespace,
             baca.selectors.leaf(0),
         ),
         evans.call(

@@ -119,6 +119,8 @@ accelerando_01 = rmakers.stack(
     rmakers.accelerando(
         [(1, 8), (1, 20), (1, 16)],
         [(1, 20), (1, 8), (1, 16)],
+        [(1, 8), (1, 20), (1, 32)],
+        [(1, 20), (1, 8), (1, 32)],
     ),
     rmakers.force_rest(select_periodic_ties_2_4_7_8_of_10),
     rmakers.duration_bracket(),
@@ -720,6 +722,36 @@ rtm_handler_10 = evans.RhythmHandler(
     name="rtm_handler_10",
 )
 
+rtm_09_segment_10 = rmakers.stack(
+    evans.RTMMaker(
+        [
+            "(1 (1 1 (1 (1 1))))",  # reduced
+            "(1 ((1 (1 1)) 1 1))",  # reduced
+            "(1 (1 1 1 1))",  # reduced
+            "(1 ((1 (1 1 1)) (1 (1 1 2 1)) (1 (1 3))))",
+            "(1 ((1 (1 3 1)) (1 (1 1 1 1)) (1 (2 1))))",
+            "(1 ((1 (1 1 3)) (1 (1 1 1 1)) (1 (1 2))))",
+            "(1 (1 1 1 (1 (1 1)) 1))",  # reduced
+            "(1 ((1 (1 1 1)) (1 (1 1 2 1)) (1 (1 3))))",
+            "(1 ((1 (1 3 1)) (1 (1 1 1 1)) (1 (2 1))))",
+            "(1 ((1 (1 1 3)) (1 (1 1 1 1)) (1 (1 2))))",
+            "(1 (1 1 (1 (1 1))))",  # reduced
+            "(1 ((1 (1 1 1)) (1 (1 1 2 1)) (1 (1 3))))",
+        ],
+    ),
+    # rmakers.tie(select_periodic_ties_2_4_7_8_of_10),
+    rmakers.trivialize(abjad.select().tuplets()),
+    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+    rmakers.rewrite_sustained(abjad.select().tuplets()),
+    rmakers.extract_trivial(),
+)
+
+rtm_handler_09_segment_10 = evans.RhythmHandler(
+    rtm_09_segment_10,
+    forget=False,
+    name="rtm_handler_09_segment_10",
+)
+
 ###
 ### 11
 ###
@@ -750,6 +782,10 @@ helianthated_talea_handler_12 = evans.RhythmHandler(
 
 accelerando_12 = rmakers.stack(
     rmakers.accelerando(
+        [(1, 20), (1, 8), (1, 32)],
+        [(1, 8), (1, 20), (1, 32)],
+        [(1, 20), (1, 8), (1, 32)],
+        [(1, 8), (1, 20), (1, 32)],
         [(1, 20), (1, 8), (1, 16)],
         [(1, 8), (1, 20), (1, 16)],
     ),

@@ -26,6 +26,7 @@ from nagual.materials.rhythm import (
     rtm_handler_06,
     rtm_handler_08,
     rtm_handler_09,
+    rtm_handler_09_segment_10,
     rtm_handler_10,
     silence_handler,
     sustain_handler_03,
@@ -449,7 +450,7 @@ rhythm_materials_10 = [
     rtm_handler_10,
     note_rhythm_handler,
     silence_handler,
-    rtm_handler_09,  #
+    rtm_handler_09_segment_10,  #
     note_rhythm_handler,
     silence_handler,
     accelerando_handler_01,
@@ -525,6 +526,9 @@ rhythm_materials_12 = [
     accelerando_handler_12,
     silence_handler,
     accelerando_handler_12,
+    silence_handler,
+    helianthated_talea_handler_12,
+    silence_handler,
     silence_handler,
     helianthated_talea_handler_12,
     silence_handler,

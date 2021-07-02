@@ -5,6 +5,7 @@ import baca
 import evans
 
 from nagual.lib import (  # , with_sharps
+    clef_whitespace,
     grace_handler_03,
     met_50,
     met_100,
@@ -84,9 +85,86 @@ maker = evans.SegmentMaker(  # don't forget accents!
         evans.attach(
             "Voice 3",
             abjad.LilyPondLiteral(
-                r"\staff-line-count 1", format_slot="absolute_before"
+                r"\staff-line-count 3", format_slot="absolute_before"
             ),
             baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(r'\boxed-markup "gongs" 1', format_slot="after"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(
+                r"\staff-line-count 5", format_slot="absolute_before"
+            ),
+            baca.selectors.leaf(3),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(
+                r'\boxed-markup "bow + vibraphone" 1', format_slot="after"
+            ),
+            baca.selectors.leaf(3),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.Clef("treble"),
+            baca.selectors.leaf(3),
+        ),
+        evans.attach(
+            "Voice 3",
+            clef_whitespace,
+            baca.selectors.leaf(3),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(
+                r"\staff-line-count 1", format_slot="absolute_before"
+            ),
+            baca.selectors.leaf(27),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(r'\boxed-markup "bass drum" 1', format_slot="after"),
+            baca.selectors.leaf(27),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.Clef("percussion"),
+            baca.selectors.leaf(27),
+        ),
+        evans.attach(
+            "Voice 3",
+            clef_whitespace,
+            baca.selectors.leaf(27),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(
+                r"\staff-line-count 3", format_slot="absolute_before"
+            ),
+            baca.selectors.leaf(35),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(r'\boxed-markup "gongs" 1', format_slot="after"),
+            baca.selectors.leaf(35),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(
+                r"\staff-line-count 1", format_slot="absolute_before"
+            ),
+            baca.selectors.leaf(37),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(
+                r'\boxed-markup "bow + cymbal" 1', format_slot="after"
+            ),
+            baca.selectors.leaf(38),
         ),
         evans.call(
             "Voice 4",

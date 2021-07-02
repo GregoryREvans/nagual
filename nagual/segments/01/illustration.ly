@@ -883,7 +883,7 @@
                             r2.
 
                             cs'4
-                            \boxed-markup "brushes + bass drum" 1
+                            \boxed-markup "sandpaper blocks" 1
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 7]
@@ -1276,31 +1276,31 @@
 
                                 \once \override Beam.grow-direction = #right
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs'16 * 15/8
+                                cs'32 * 15/4
                                 [
                                 \boxed-markup "col legno tratto" 1
 
                                 \revert Staff.Stem.stemlet-length
-                                cs'16 * 115/64
+                                cs'32 * 115/32
 
-                                r16 * 103/64
+                                r32 * 103/32
 
-                                cs'16 * 11/8
+                                cs'32 * 11/4
 
-                                r16 * 37/32
+                                r32 * 37/16
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs'16 * 1
+                                cs'32 * 2
 
                                 \revert Staff.Stem.stemlet-length
-                                cs'16 * 7/8
+                                cs'32 * 7/4
 
-                                r16 * 13/16
+                                r32 * 13/8
 
-                                r16 * 49/64
+                                r32 * 49/32
 
                                 \revert Staff.Stem.stemlet-length
-                                cs'16 * 47/64
+                                cs'32 * 47/32
                                 ]
 
                             }
@@ -1354,23 +1354,23 @@
 
                                 \once \override Beam.grow-direction = #left
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs'16 * 3/4
+                                cs'32 * 3/2
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                cs'16 * 25/32
+                                cs'32 * 25/16
 
-                                r16 * 7/8
+                                r32 * 7/4
 
-                                cs'16 * 65/64
+                                cs'32 * 65/32
 
-                                r16 * 79/64
+                                r32 * 79/32
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs'16 * 49/32
+                                cs'32 * 49/16
 
                                 \revert Staff.Stem.stemlet-length
-                                cs'16 * 29/16
+                                cs'32 * 29/8
                                 ]
 
                             }

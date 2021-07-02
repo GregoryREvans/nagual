@@ -812,7 +812,7 @@
 
                         \context Voice = "Voice 3"
                         {
-                            \staff-line-count 1
+                            \staff-line-count 4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 1]
@@ -828,6 +828,7 @@
                             \clef "percussion"
                             cs'4.
                             ~
+                            \boxed-markup "yarn mallets + wood blocks" 1
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 2]
@@ -870,12 +871,14 @@
                             r1 * 3/8
 
                             R1 * 3/8
+                            \staff-line-count 1
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 7]
 
                             cs'2.
                             ~
+                            \boxed-markup "superball + bass drum" 1
 
                             \override Staff.Stem.stemlet-length = 0.75
                             cs'8
@@ -898,6 +901,7 @@
                             \override Staff.Stem.stemlet-length = 0.75
                             cs'8
                             [
+                            \boxed-markup "brushes + bass drum" 1
 
                             cs'16
 
@@ -926,7 +930,7 @@
                             r1 * 3/16
 
                             R1 * 3/16
-                            \staff-line-count 3
+                            \staff-line-count 4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 11]

@@ -493,33 +493,33 @@
 
                                 \once \override Beam.grow-direction = #right
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs''16 * 123/64
+                                cs''32 * 123/32
                                 [
 
-                                cs''16 * 15/8
+                                cs''32 * 15/4
 
-                                r16 * 7/4
+                                r32 * 7/2
 
-                                cs''16 * 51/32
+                                cs''32 * 51/16
 
-                                r16 * 45/32
+                                r32 * 45/16
 
-                                cs''16 * 5/4
+                                cs''32 * 5/2
 
-                                cs''16 * 71/64
+                                cs''32 * 71/32
 
-                                r16 * 1
+                                r32 * 2
 
-                                r16 * 29/32
+                                r32 * 29/16
 
-                                cs''16 * 27/32
+                                cs''32 * 27/16
 
-                                cs''16 * 51/64
+                                cs''32 * 51/32
 
-                                cs''16 * 25/32
+                                cs''32 * 25/16
 
                                 \revert Staff.Stem.stemlet-length
-                                r16 * 49/64
+                                r32 * 49/32
                                 ]
                                 \bar "||"
 
@@ -540,7 +540,6 @@
 
                         \context Voice = "Voice 3"
                         {
-                            \staff-line-count 1
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 1]
@@ -654,41 +653,43 @@
                                 }
                             \times 1/1
                             {
+                                \staff-line-count 3
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! abjad.SegmentMaker.comment_measure_numbers()
                                 % [Voice 3 measure 11]
 
                                 \once \override Beam.grow-direction = #left
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs'16 * 23/32
+                                cs'32 * 23/16
                                 [
+                                \boxed-markup "gongs" 1
 
-                                cs'16 * 23/32
+                                cs'32 * 23/16
 
-                                r16 * 3/4
+                                r32 * 3/2
 
-                                cs'16 * 25/32
+                                cs'32 * 25/16
 
-                                r16 * 53/64
+                                r32 * 53/32
 
-                                cs'16 * 57/64
+                                cs'32 * 57/32
 
-                                cs'16 * 63/64
+                                cs'32 * 63/32
 
-                                r16 * 69/64
+                                r32 * 69/32
 
-                                r16 * 77/64
+                                r32 * 77/32
 
-                                cs'16 * 43/32
+                                cs'32 * 43/16
 
-                                cs'16 * 3/2
+                                cs'32 * 3
 
-                                cs'16 * 105/64
+                                cs'32 * 105/32
 
-                                r16 * 7/4
+                                r32 * 7/2
 
                                 \revert Staff.Stem.stemlet-length
-                                cs'16 * 29/16
+                                cs'32 * 29/8
                                 ]
                                 \bar "||"
 
@@ -983,33 +984,33 @@
 
                                 \once \override Beam.grow-direction = #right
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs'16 * 123/64
+                                cs'32 * 123/32
                                 [
 
-                                cs'16 * 15/8
+                                cs'32 * 15/4
 
-                                r16 * 7/4
+                                r32 * 7/2
 
-                                cs'16 * 51/32
+                                cs'32 * 51/16
 
-                                r16 * 45/32
+                                r32 * 45/16
 
-                                cs'16 * 5/4
+                                cs'32 * 5/2
 
-                                cs'16 * 71/64
+                                cs'32 * 71/32
 
-                                r16 * 1
+                                r32 * 2
 
-                                r16 * 29/32
+                                r32 * 29/16
 
-                                cs'16 * 27/32
+                                cs'32 * 27/16
 
-                                cs'16 * 51/64
+                                cs'32 * 51/32
 
-                                cs'16 * 25/32
+                                cs'32 * 25/16
 
                                 \revert Staff.Stem.stemlet-length
-                                r16 * 49/64
+                                r32 * 49/32
                                 ]
                                 \bar "||"
 

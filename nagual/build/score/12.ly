@@ -350,28 +350,28 @@
 
                                 \once \override Beam.grow-direction = #left
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs''16 * 45/64
+                                cs''32 * 45/32
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                cs''16 * 23/32
+                                cs''32 * 23/16
 
-                                r16 * 25/32
+                                r32 * 25/16
 
-                                cs''16 * 55/64
+                                cs''32 * 55/32
 
-                                r16 * 1
+                                r32 * 2
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs''16 * 75/64
+                                cs''32 * 75/32
 
                                 \revert Staff.Stem.stemlet-length
-                                cs''16 * 89/64
+                                cs''32 * 89/32
 
-                                r16 * 103/64
+                                r32 * 103/32
 
                                 \revert Staff.Stem.stemlet-length
-                                r16 * 113/64
+                                r32 * 113/32
                                 ]
 
                             }
@@ -421,20 +421,20 @@
 
                                 \once \override Beam.grow-direction = #right
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs''16 * 63/32
+                                cs''32 * 63/16
                                 [
 
-                                cs''16 * 115/64
+                                cs''32 * 115/32
 
                                 \revert Staff.Stem.stemlet-length
-                                cs''16 * 91/64
+                                cs''32 * 91/32
 
-                                r16 * 35/32
+                                r32 * 35/16
 
-                                cs''16 * 29/32
+                                cs''32 * 29/16
 
                                 \revert Staff.Stem.stemlet-length
-                                r16 * 13/16
+                                r32 * 13/8
                                 ]
 
                             }
@@ -531,42 +531,42 @@
 
                                 \once \override Beam.grow-direction = #left
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs''16 * 49/64
+                                cs''32 * 49/32
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                cs''16 * 25/32
+                                cs''32 * 25/16
 
-                                r16 * 51/64
+                                r32 * 51/32
 
-                                cs''16 * 53/64
+                                cs''32 * 53/32
 
-                                r16 * 55/64
-
-                                \override Staff.Stem.stemlet-length = 0.75
-                                cs''16 * 59/64
-
-                                \revert Staff.Stem.stemlet-length
-                                cs''16 * 63/64
-
-                                r16 * 69/64
-
-                                r16 * 19/16
+                                r32 * 55/32
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs''16 * 83/64
-
-                                cs''16 * 23/16
+                                cs''32 * 59/32
 
                                 \revert Staff.Stem.stemlet-length
-                                cs''16 * 101/64
+                                cs''32 * 63/32
 
-                                r16 * 55/32
+                                r32 * 69/32
 
-                                cs''16 * 59/32
+                                r32 * 19/8
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                cs''32 * 83/32
+
+                                cs''32 * 23/8
 
                                 \revert Staff.Stem.stemlet-length
-                                r16 * 123/64
+                                cs''32 * 101/32
+
+                                r32 * 55/16
+
+                                cs''32 * 59/16
+
+                                \revert Staff.Stem.stemlet-length
+                                r32 * 123/32
                                 ]
 
                             }
@@ -625,38 +625,38 @@
 
                                 \once \override Beam.grow-direction = #right
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs''16 * 123/64
+                                cs''32 * 123/32
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                cs''16 * 15/8
+                                cs''32 * 15/4
 
-                                r16 * 7/4
+                                r32 * 7/2
 
-                                cs''16 * 51/32
+                                cs''32 * 51/16
 
-                                r16 * 45/32
-
-                                \override Staff.Stem.stemlet-length = 0.75
-                                cs''16 * 5/4
-
-                                \revert Staff.Stem.stemlet-length
-                                cs''16 * 71/64
-
-                                r16 * 1
-
-                                r16 * 29/32
+                                r32 * 45/16
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs''16 * 27/32
-
-                                cs''16 * 51/64
+                                cs''32 * 5/2
 
                                 \revert Staff.Stem.stemlet-length
-                                cs''16 * 25/32
+                                cs''32 * 71/32
+
+                                r32 * 2
+
+                                r32 * 29/16
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                cs''32 * 27/16
+
+                                cs''32 * 51/32
 
                                 \revert Staff.Stem.stemlet-length
-                                r16 * 49/64
+                                cs''32 * 25/16
+
+                                \revert Staff.Stem.stemlet-length
+                                r32 * 49/32
                                 ]
 
                             }
@@ -703,8 +703,6 @@
 
                         \context Voice = "Voice 3"
                         {
-                            %! applying indicators
-                            \staff-line-count 1
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 1]
@@ -751,11 +749,13 @@
                             r1 * 5/16
 
                             R1 * 5/16
+                            \staff-line-count 1
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 5]
 
                             cs'8
+                            \boxed-markup "sandpaper blocks" 1
 
                             cs'4
 
@@ -1053,16 +1053,16 @@
 
                                 \once \override Beam.grow-direction = #left
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs'16 * 43/64
+                                cs'32 * 43/32
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                cs'16 * 49/64
+                                cs'32 * 49/32
 
-                                r16 * 17/16
+                                r32 * 17/8
 
                                 \revert Staff.Stem.stemlet-length
-                                cs'16 * 3/2
+                                cs'32 * 3
                                 ]
 
                             }
@@ -1114,14 +1114,14 @@
 
                                 \once \override Beam.grow-direction = #right
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs'16 * 15/8
+                                cs'32 * 15/4
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                cs'16 * 21/16
+                                cs'32 * 21/8
 
                                 \revert Staff.Stem.stemlet-length
-                                r16 * 13/16
+                                r32 * 13/8
                                 ]
 
                             }
@@ -1180,20 +1180,20 @@
 
                                 \once \override Beam.grow-direction = #left
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs'16 * 5/8
+                                cs'32 * 5/4
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                cs'16 * 43/64
+                                cs'32 * 43/32
 
-                                r16 * 51/64
+                                r32 * 51/32
 
-                                cs'16 * 65/64
+                                cs'32 * 65/32
 
-                                r16 * 85/64
+                                r32 * 85/32
 
                                 \revert Staff.Stem.stemlet-length
-                                cs'16 * 25/16
+                                cs'32 * 25/8
                                 ]
 
                             }
@@ -1263,40 +1263,40 @@
 
                                 \once \override Beam.grow-direction = #right
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs'16 * 127/64
+                                cs'32 * 127/32
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                cs'16 * 31/16
+                                cs'32 * 31/8
 
-                                r16 * 59/32
+                                r32 * 59/16
 
-                                cs'16 * 109/64
+                                cs'32 * 109/32
 
-                                r16 * 49/32
-
-                                \override Staff.Stem.stemlet-length = 0.75
-                                cs'16 * 11/8
-
-                                \revert Staff.Stem.stemlet-length
-                                cs'16 * 79/64
-
-                                r16 * 71/64
-
-                                r16 * 65/64
+                                r32 * 49/16
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs'16 * 15/16
-
-                                cs'16 * 7/8
+                                cs'32 * 11/4
 
                                 \revert Staff.Stem.stemlet-length
-                                cs'16 * 27/32
+                                cs'32 * 79/32
 
-                                r16 * 13/16
+                                r32 * 71/32
+
+                                r32 * 65/32
+
+                                \override Staff.Stem.stemlet-length = 0.75
+                                cs'32 * 15/8
+
+                                cs'32 * 7/4
 
                                 \revert Staff.Stem.stemlet-length
-                                cs'16 * 51/64
+                                cs'32 * 27/16
+
+                                r32 * 13/8
+
+                                \revert Staff.Stem.stemlet-length
+                                cs'32 * 51/32
                                 ]
 
                             }
@@ -1305,11 +1305,21 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 10]
 
-                            %! applying invisibility
-                            \once \override Rest.transparent = ##t
-                            r1 * 9/16
+                            r4.
 
-                            R1 * 9/16
+                            cs'8
+
+                            cs'4
+
+                            \override Staff.Stem.stemlet-length = 0.75
+                            cs'16
+                            [
+
+                            \revert Staff.Stem.stemlet-length
+                            cs'16
+                            ]
+
+                            r4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 11]
@@ -1319,6 +1329,7 @@
                             r8
 
                             cs'8
+                            ~
 
                             \override Staff.Stem.stemlet-length = 0.75
                             cs'8

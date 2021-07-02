@@ -102,6 +102,41 @@ maker = evans.SegmentMaker(
             ),
             baca.selectors.leaf(0),
         ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(
+                r'\boxed-markup "brushes + brake drum" 1', format_slot="after"
+            ),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(
+                r"\staff-line-count 4", format_slot="absolute_before"
+            ),
+            baca.selectors.leaf(20),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(
+                r'\boxed-markup "yarn mallets + wood blocks" 1', format_slot="after"
+            ),
+            baca.selectors.leaf(20),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(
+                r"\staff-line-count 1", format_slot="absolute_before"
+            ),
+            baca.selectors.leaf(29),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(
+                r'\boxed-markup "brushes + brake drum" 1', format_slot="after"
+            ),
+            baca.selectors.leaf(29),
+        ),
         evans.call(
             "Voice 1",
             grace_handler_06,

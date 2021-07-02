@@ -65,13 +65,6 @@ maker = evans.SegmentMaker(
             abjad.Clef("percussion"),
             baca.selectors.leaf(0),
         ),
-        evans.attach(
-            "Voice 3",
-            abjad.LilyPondLiteral(
-                r"\staff-line-count 1", format_slot="absolute_before"
-            ),
-            baca.selectors.leaf(0),
-        ),
         evans.call(
             "Voice 2",
             rmakers.UnbeamCommand(),
@@ -161,6 +154,20 @@ maker = evans.SegmentMaker(
                 stemlet_length=0.75,
             ),
             baca.selectors.leaves([_ for _ in range(30, 44)]),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(
+                r"\staff-line-count 1", format_slot="absolute_before"
+            ),
+            baca.selectors.note(0),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(
+                r'\boxed-markup "sandpaper blocks" 1', format_slot="after"
+            ),
+            baca.selectors.note(0),
         ),
         evans.attach(
             "Global Context",

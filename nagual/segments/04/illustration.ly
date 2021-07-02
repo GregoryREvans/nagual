@@ -503,20 +503,20 @@
 
                                 \once \override Beam.grow-direction = #right
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs''16 * 63/32
+                                cs''32 * 63/16
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                cs''16 * 115/64
+                                cs''32 * 115/32
 
-                                r16 * 91/64
+                                r32 * 91/32
 
-                                cs''16 * 35/32
+                                cs''32 * 35/16
 
-                                r16 * 29/32
+                                r32 * 29/16
 
                                 \revert Staff.Stem.stemlet-length
-                                cs''16 * 13/16
+                                cs''32 * 13/8
                                 ]
                                 \bar "||"
 
@@ -537,7 +537,7 @@
 
                         \context Voice = "Voice 3"
                         {
-                            \staff-line-count 1
+                            \staff-line-count 3
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 1]
@@ -584,6 +584,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs'8
+                                    \boxed-markup "yarn mallets + wood blocks" 1
 
                                 }
 
@@ -717,6 +718,7 @@
                             \oneVoice
 
                             r4
+                            \staff-line-count 1
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 3]
@@ -728,6 +730,7 @@
                             \override Staff.Stem.stemlet-length = 0.75
                             cs'8
                             [
+                            \boxed-markup "brushes + brake drum" 1
 
                             \revert Staff.Stem.stemlet-length
                             cs'8
@@ -801,10 +804,12 @@
 
                                 \context Voice = "Voice 3"
                                 {
+                                    \staff-line-count 3
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs'8
+                                    \boxed-markup "yarn mallets + wood blocks" 1
 
                                 }
 

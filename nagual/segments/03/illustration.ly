@@ -880,7 +880,7 @@
 
                         \context Voice = "Voice 3"
                         {
-                            \staff-line-count 1
+                            \staff-line-count 3
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 1]
@@ -897,17 +897,22 @@
                             \override Staff.Stem.stemlet-length = 0.75
                             cs'8
                             [
+                            \boxed-markup "gongs" 1
 
                             \revert Staff.Stem.stemlet-length
                             cs'8
                             ]
 
                             cs'2
+                            \staff-line-count 5
+                            \once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 2]
 
+                            \clef "treble"
                             cs'2.
+                            \boxed-markup "bow + vibraphone" 1
 
                             \override Staff.Stem.stemlet-length = 0.75
                             cs'8
@@ -995,11 +1000,15 @@
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 5/6
                             {
+                                \staff-line-count 1
+                                \once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)
                                 %! COMMENT_MEASURE_NUMBERS
                                 %! abjad.SegmentMaker.comment_measure_numbers()
                                 % [Voice 3 measure 9]
 
+                                \clef "percussion"
                                 cs'4
+                                \boxed-markup "bass drum" 1
 
                                 cs'4
 
@@ -1064,10 +1073,12 @@
 
                                 \context Voice = "Voice 3"
                                 {
+                                    \staff-line-count 3
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs'1
+                                    \boxed-markup "gongs" 1
 
                                 }
 
@@ -1090,6 +1101,7 @@
                             r4
 
                             cs'4
+                            \boxed-markup "bow + cymbal" 1
 
                             cs'4
                             %! COMMENT_MEASURE_NUMBERS

@@ -104,9 +104,28 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 3",
             abjad.LilyPondLiteral(
-                r"\staff-line-count 1", format_slot="absolute_before"
+                r"\staff-line-count 3", format_slot="absolute_before"
             ),
             baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(r'\boxed-markup "gongs" 1', format_slot="after"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(
+                r"\staff-line-count 1", format_slot="absolute_before"
+            ),
+            baca.selectors.leaf(25),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(
+                r'\boxed-markup "superball + tam tam" 1', format_slot="after"
+            ),
+            baca.selectors.leaf(25),
         ),
         evans.attach(
             "Global Context",

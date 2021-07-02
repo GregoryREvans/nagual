@@ -152,14 +152,42 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 3",
             abjad.LilyPondLiteral(
-                r"\staff-line-count 1", format_slot="absolute_before"
+                r"\staff-line-count 4", format_slot="absolute_before"
             ),
             baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 3",
             abjad.LilyPondLiteral(
-                r"\staff-line-count 3", format_slot="absolute_before"
+                r'\boxed-markup "yarn mallets + wood blocks" 1', format_slot="after"
+            ),
+            baca.selectors.note(0),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(
+                r"\staff-line-count 1", format_slot="absolute_before"
+            ),
+            baca.selectors.leaf(8),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(
+                r'\boxed-markup "superball + bass drum" 1', format_slot="after"
+            ),
+            baca.selectors.leaf(8),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(
+                r'\boxed-markup "brushes + bass drum" 1', format_slot="after"
+            ),
+            baca.selectors.leaf(13),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(
+                r"\staff-line-count 4", format_slot="absolute_before"
             ),
             baca.selectors.leaf(22),
         ),

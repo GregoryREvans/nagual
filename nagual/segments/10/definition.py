@@ -12,6 +12,7 @@ from nagual.lib import (  # , with_sharps, zero_padding_glissando
     met_mod_80_100,
     met_mod_100_80,
     start_repeat_before,
+    toggle_tuplet_prolation,
     zero_padding_glissando,
 )
 from nagual.materials.instruments import instruments
@@ -110,15 +111,72 @@ maker = evans.SegmentMaker(
             ),
             baca.selectors.leaf(0),
         ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(
+                r'\boxed-markup "superball + tam tam" 1', format_slot="after"
+            ),
+            baca.selectors.leaf(8),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(
+                r"\staff-line-count 4", format_slot="absolute_before"
+            ),
+            baca.selectors.leaf(16),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(
+                r'\boxed-markup "yarn mallets + wood blocks" 1', format_slot="after"
+            ),
+            baca.selectors.leaf(16),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(
+                r"\staff-line-count 1", format_slot="absolute_before"
+            ),
+            baca.selectors.leaf(18),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(r'\boxed-markup "bass drum" 1', format_slot="after"),
+            baca.selectors.leaf(19),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(
+                r"\staff-line-count 4", format_slot="absolute_before"
+            ),
+            baca.selectors.leaf(26),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(
+                r'\boxed-markup "yarn mallets + wood blocks" 1', format_slot="after"
+            ),
+            baca.selectors.leaf(26),
+        ),
+        evans.call(
+            "Voice 4",
+            toggle_tuplet_prolation,
+            baca.selectors.tuplets([1]),
+        ),
+        evans.call(
+            "Voice 4",
+            abjad.beam,
+            baca.selectors.tuplets([1]),
+        ),
         evans.call(
             "Voice 4",
             zero_padding_glissando,
-            baca.selectors.leaves([_ for _ in range(108)]),
+            baca.selectors.leaves([_ for _ in range(85)]),
         ),
         evans.call(
             "Voice 4",
             rmakers.UnbeamCommand(),
-            baca.selectors.leaves([_ for _ in range(111, 123)]),
+            baca.selectors.leaves([_ for _ in range(88, 100)]),
         ),
         evans.call(
             "Voice 4",
@@ -126,7 +184,7 @@ maker = evans.SegmentMaker(
                 beam_rests=True,
                 stemlet_length=0.75,
             ),
-            baca.selectors.leaves([_ for _ in range(111, 117)]),
+            baca.selectors.leaves([_ for _ in range(88, 94)]),
         ),
         evans.call(
             "Voice 4",
@@ -134,7 +192,7 @@ maker = evans.SegmentMaker(
                 beam_rests=True,
                 stemlet_length=0.75,
             ),
-            baca.selectors.leaves([_ for _ in range(117, 123)]),
+            baca.selectors.leaves([_ for _ in range(94, 100)]),
         ),
         evans.call(
             "Voice 1",
@@ -154,7 +212,7 @@ maker = evans.SegmentMaker(
         evans.call(
             "Voice 4",
             grace_handler_10,
-            baca.selectors.leaves([108, 123]),
+            baca.selectors.leaves([85, 100]),
         ),
         evans.attach(
             "Global Context",

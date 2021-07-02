@@ -552,7 +552,7 @@
 
                         \context Voice = "Voice 3"
                         {
-                            \staff-line-count 1
+                            \staff-line-count 3
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 1]
@@ -567,6 +567,7 @@
                             \markup { \hcenter-in #14 "Percussion" }
                             \clef "percussion"
                             cs'4
+                            \boxed-markup "gongs" 1
 
                             cs'4
 
@@ -650,11 +651,13 @@
                             cs'4
 
                             cs'4
+                            \staff-line-count 1
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 5]
 
                             cs'4
+                            \boxed-markup "superball + tam tam" 1
 
                             cs'2
 

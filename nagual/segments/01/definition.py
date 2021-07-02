@@ -157,7 +157,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 3",
             abjad.LilyPondLiteral(
-                r'\boxed-markup "brushes + bass drum" 1', format_slot="after"
+                r'\boxed-markup "sandpaper blocks" 1', format_slot="after"
             ),
             baca.selectors.note(0),
         ),

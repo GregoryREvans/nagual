@@ -565,7 +565,8 @@
 
                         \context Voice = "Voice 3"
                         {
-                            \staff-line-count 1
+                            \staff-line-count 5
+                            \once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 1]
@@ -578,8 +579,9 @@
                             \set Staff.instrumentName =
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Percussion" }
-                            \clef "percussion"
+                            \clef "treble"
                             cs'1
+                            \boxed-markup "yarn mallets + vibraphone" 1
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 2]

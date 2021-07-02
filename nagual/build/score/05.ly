@@ -305,6 +305,7 @@
                                 \override Staff.Stem.stemlet-length = 0.75
                                 cs'8.
                                 [
+                                \boxed-markup "brushes + bass drum" 1
 
                                 cs'8.
 

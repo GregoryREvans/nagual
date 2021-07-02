@@ -72,6 +72,13 @@ maker = evans.SegmentMaker(
             baca.selectors.leaf(0),
         ),
         evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(
+                r'\boxed-markup "brushes + bass drum" 1', format_slot="after"
+            ),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
             "Global Context",
             abjad.Markup(r"\rehearsal-mark-markup F 6 -1", literal=True),
             baca.selectors.leaf(0),

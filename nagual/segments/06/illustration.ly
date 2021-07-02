@@ -702,6 +702,7 @@
                                 \override Staff.Stem.stemlet-length = 0.75
                                 cs'8
                                 [
+                                \boxed-markup "brushes + brake drum" 1
 
                                 cs'8
 
@@ -794,10 +795,12 @@
 
                                     \context Voice = "Voice 3"
                                     {
+                                        \staff-line-count 4
 
                                         %! abjad.on_beat_grace_container(4)
                                         \voiceTwo
                                         cs'4
+                                        \boxed-markup "yarn mallets + wood blocks" 1
 
                                     }
 
@@ -971,6 +974,7 @@
                                 >>
 
                             }
+                            \staff-line-count 1
                             %! abjad.on_beat_grace_container(5)
                             \oneVoice
                             %! COMMENT_MEASURE_NUMBERS
@@ -980,6 +984,7 @@
                             \override Staff.Stem.stemlet-length = 0.75
                             cs'8
                             [
+                            \boxed-markup "brushes + brake drum" 1
 
                             \revert Staff.Stem.stemlet-length
                             cs'8
