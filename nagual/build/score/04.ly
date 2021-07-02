@@ -523,7 +523,7 @@
 
                         \context Voice = "Voice 3"
                         {
-                            \staff-line-count 3
+                            \staff-line-count 4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 1]
@@ -790,7 +790,7 @@
 
                                 \context Voice = "Voice 3"
                                 {
-                                    \staff-line-count 3
+                                    \staff-line-count 4
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo

@@ -1094,6 +1094,7 @@
                             r1 * 1/4
 
                             R1 * 1/4
+                            \staff-line-count 1
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 13]

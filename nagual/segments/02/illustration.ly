@@ -911,11 +911,11 @@
 
                             cs'4.
                             ~
+                            \boxed-markup "brushes + bass drum" 1
 
                             \override Staff.Stem.stemlet-length = 0.75
                             cs'8
                             [
-                            \boxed-markup "brushes + bass drum" 1
 
                             cs'16
 
