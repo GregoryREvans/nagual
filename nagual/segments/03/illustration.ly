@@ -178,6 +178,7 @@
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Alto Flute" }
                                 fs'4
+                                \pp
 
                                 fs'4
 
@@ -352,6 +353,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     fs'1.
+                                    \ff
 
                                 }
 
@@ -518,6 +520,7 @@
                                 \markup { \hcenter-in #14 "Guitar" }
                                 \override Staff.Stem.stemlet-length = 0.75
                                 cs''16
+                                \pp
                                 [
 
                                 cs''16
@@ -618,6 +621,7 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 5]
 
+                            \hauptStimmeStart
                             cs''2
                             ~
 
@@ -665,6 +669,7 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 7]
 
+                            \hauptStimmeStop
                             cs''2.
 
                             \tweak text #tuplet-number::calc-fraction-text
@@ -780,6 +785,8 @@
                             %! applying invisibility
                             \once \override Rest.transparent = ##t
                             r1 * 1/2
+                            %! applying indicators
+                            \ff
 
                             R1 * 1/2
 
@@ -896,6 +903,7 @@
                             \clef "percussion"
                             \override Staff.Stem.stemlet-length = 0.75
                             cs'8
+                            \pp
                             [
                             \boxed-markup "gongs" 1
 
@@ -1008,6 +1016,7 @@
 
                                 \clef "percussion"
                                 cs'4
+                                \f
                                 \boxed-markup "bass drum" 1
 
                                 cs'4
@@ -1078,6 +1087,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs'1
+                                    \ff
                                     \boxed-markup "gongs" 1
 
                                 }
@@ -1140,6 +1150,7 @@
                             \markup { \hcenter-in #14 "Violin" }
                             \override Staff.Stem.stemlet-length = 0.75
                             cs'8.
+                            \mf
                             ^ \double-diamond-parenthesized-top-markup
                             [
                             %! abjad.glissando(7)
@@ -1790,6 +1801,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs'1.
+                                    \ff
 
                                 }
 

@@ -12,7 +12,7 @@
             \time 3/8
             \mark \markup \bold {  }
             s1 * 3/8
-            - \rehearsal-mark-markup N 6 -1
+            - \rehearsal-mark-markup O 6 -1
             \tweak padding 6
             ^ \markup {
               \override #'(font-size . 5.5)
@@ -136,11 +136,11 @@
                             %! applying staff names and clefs
                             \set Staff.shortInstrumentName =
                             %! applying staff names and clefs
-                            \markup { \hcenter-in #12 "alt. fl." }
+                            \markup { \hcenter-in #12 "bs. fl." }
                             %! applying staff names and clefs
                             \set Staff.instrumentName =
                             %! applying staff names and clefs
-                            \markup { \hcenter-in #14 "Alto Flute" }
+                            \markup { \hcenter-in #14 "Bass Flute" }
                             %! applying invisibility
                             \once \override Rest.transparent = ##t
                             r1 * 3/16
@@ -196,6 +196,9 @@
                             % [Voice 1 measure 7]
 
                             fs'4.
+                            \p
+                            - \tweak stencil #abjad-flared-hairpin
+                            \<
                             ~
 
                             fs'8
@@ -213,6 +216,8 @@
                             [
 
                             fs'16
+                            \mf
+                            - \accent
 
                             \revert Staff.Stem.stemlet-length
                             fs'16
@@ -351,6 +356,7 @@
                                 \once \override Beam.grow-direction = #left
                                 \override Staff.Stem.stemlet-length = 0.75
                                 cs''32 * 45/32
+                                \p
                                 [
 
                                 \revert Staff.Stem.stemlet-length
@@ -755,12 +761,17 @@
                             % [Voice 3 measure 5]
 
                             cs'8
+                            \p
+                            - \tweak stencil #abjad-flared-hairpin
+                            \<
                             \boxed-markup "sandpaper blocks" 1
 
                             cs'4
 
                             \override Staff.Stem.stemlet-length = 0.75
                             cs'16
+                            \mf
+                            - \accent
                             [
 
                             \revert Staff.Stem.stemlet-length
@@ -780,6 +791,9 @@
                             % [Voice 3 measure 7]
 
                             cs'8
+                            \p
+                            - \tweak stencil #abjad-flared-hairpin
+                            \<
 
                             cs'4
                             ~
@@ -788,6 +802,8 @@
 
                             \override Staff.Stem.stemlet-length = 0.75
                             cs'16
+                            \mf
+                            - \accent
                             [
 
                             \revert Staff.Stem.stemlet-length
@@ -917,14 +933,16 @@
                                 %! applying staff names and clefs
                                 \set Staff.shortInstrumentName =
                                 %! applying staff names and clefs
-                                \markup { \hcenter-in #12 "vn." }
+                                \markup { \hcenter-in #12 "va." }
                                 %! applying staff names and clefs
                                 \set Staff.instrumentName =
                                 %! applying staff names and clefs
-                                \markup { \hcenter-in #14 "Violin" }
+                                \markup { \hcenter-in #14 "Viola" }
                                 \once \override Beam.grow-direction = #left
+                                \clef "alto"
                                 \override Staff.Stem.stemlet-length = 0.75
                                 cs'16 * 5/8
+                                \p
                                 [
 
                                 \revert Staff.Stem.stemlet-length
@@ -1308,11 +1326,16 @@
                             r4.
 
                             cs'8
+                            \p
+                            - \tweak stencil #abjad-flared-hairpin
+                            \<
 
                             cs'4
 
                             \override Staff.Stem.stemlet-length = 0.75
                             cs'16
+                            \f
+                            - \accent
                             [
 
                             \revert Staff.Stem.stemlet-length
@@ -1329,6 +1352,9 @@
                             r8
 
                             cs'8
+                            \p
+                            - \tweak stencil #abjad-flared-hairpin
+                            \<
                             ~
 
                             \override Staff.Stem.stemlet-length = 0.75
@@ -1336,6 +1362,8 @@
                             [
 
                             cs'16
+                            \f
+                            - \accent
 
                             \revert Staff.Stem.stemlet-length
                             cs'16
@@ -1348,10 +1376,12 @@
 
                             \override Staff.Stem.stemlet-length = 0.75
                             cs'16
+                            \mf
                             [
 
                             \revert Staff.Stem.stemlet-length
                             cs'16
+                            - \accent
                             ]
 
                             r8

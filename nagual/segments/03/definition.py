@@ -52,11 +52,6 @@ maker = evans.SegmentMaker(  # don't forget accents!
             evans.SegmentMaker.beam_score,
             abjad.select().components(abjad.Score),
         ),
-        # evans.call(
-        #     "Staff 1",
-        #     evans.annotate_leaves,
-        #     abjad.select(),
-        # ),
         evans.attach(
             "Global Context",
             met_50,
@@ -78,6 +73,36 @@ maker = evans.SegmentMaker(  # don't forget accents!
             baca.selectors.leaf(8),
         ),
         evans.attach(
+            "Voice 1",
+            abjad.Dynamic("pp"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.Dynamic("ff"),
+            baca.selectors.leaf(29),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.Dynamic("pp"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.Dynamic("ff"),
+            baca.selectors.leaf(49),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.LilyPondLiteral(r"\hauptStimmeStart", format_slot="before"),
+            baca.selectors.leaf(24),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.LilyPondLiteral(r"\hauptStimmeStop", format_slot="before"),
+            baca.selectors.leaf(36),
+        ),
+        evans.attach(
             "Voice 3",
             abjad.Clef("percussion"),
             baca.selectors.leaf(0),
@@ -93,6 +118,21 @@ maker = evans.SegmentMaker(  # don't forget accents!
             "Voice 3",
             abjad.LilyPondLiteral(r'\boxed-markup "gongs" 1', format_slot="after"),
             baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.Dynamic("pp"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.Dynamic("f"),
+            baca.selectors.leaf(27),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.Dynamic("ff"),
+            baca.selectors.leaf(35),
         ),
         evans.attach(
             "Voice 3",
@@ -165,6 +205,16 @@ maker = evans.SegmentMaker(  # don't forget accents!
                 r'\boxed-markup "bow + cymbal" 1', format_slot="after"
             ),
             baca.selectors.leaf(38),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Dynamic("mf"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Dynamic("ff"),
+            baca.selectors.leaf(56),
         ),
         evans.call(
             "Voice 4",

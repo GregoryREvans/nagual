@@ -247,6 +247,9 @@
                             % [Voice 1 measure 7]
 
                             fs'2
+                            \mp
+                            - \tweak stencil #abjad-flared-hairpin
+                            \<
                             \boxed-markup "tone + air" 1
 
                             fs'4
@@ -333,6 +336,8 @@
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 fs'16
+                                \mf
+                                - \accent
                                 [
 
                                 \revert Staff.Stem.stemlet-length
@@ -345,17 +350,28 @@
                             % [Voice 1 measure 11]
 
                             fs'4
+                            :32
+                            \fz
+                            \boxed-markup "normale" 1
 
                             fs'4
+                            :32
+                            \fz
 
                             fs'2
+                            :32
+                            \fz
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 12]
 
                             fs'2
+                            :32
+                            \fz
 
                             fs'4
+                            :32
+                            \fz
 
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 4/3
@@ -365,10 +381,16 @@
                                 % [Voice 1 measure 13]
 
                                 fs'4
+                                :32
+                                \fz
 
                                 fs'4
+                                :32
+                                \fz
 
                                 fs'4
+                                :32
+                                \fz
 
                             }
                             %! COMMENT_MEASURE_NUMBERS
@@ -455,6 +477,9 @@
                             r4
 
                             cs''4
+                            \mp
+                            - \tweak stencil #abjad-flared-hairpin
+                            \<
                             \boxed-markup "spazzolato" 1
 
                             cs''4
@@ -472,6 +497,8 @@
                             [
 
                             cs''16
+                            \mf
+                            - \accent
 
                             \revert Staff.Stem.stemlet-length
                             cs''16
@@ -485,6 +512,9 @@
                             r2.
 
                             cs''4
+                            \p
+                            - \tweak stencil #abjad-flared-hairpin
+                            \<
                             ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
@@ -508,6 +538,8 @@
                             [
 
                             cs''16
+                            \f
+                            - \accent
 
                             \revert Staff.Stem.stemlet-length
                             cs''16
@@ -571,6 +603,7 @@
                                 \once \override Beam.grow-direction = #right
                                 \override Staff.Stem.stemlet-length = 0.75
                                 cs''16 * 15/8
+                                \mp
                                 [
                                 \boxed-markup "plucked + ponticello" 1
 
@@ -714,16 +747,25 @@
                                 % [Voice 2 measure 11]
 
                                 cs''4
+                                :32
+                                \fz
                                 \boxed-markup "normale" 1
 
                                 cs''4
+                                :32
+                                \fz
 
                                 cs''4
+                                :32
+                                \fz
                                 ~
 
                                 cs''4
+                                :32
 
                                 cs''4
+                                :32
+                                \fz
                                 ~
 
                             }
@@ -732,19 +774,30 @@
                             % [Voice 2 measure 12]
 
                             cs''4
+                            :32
 
                             cs''4
+                            :32
+                            \fz
 
                             cs''4
+                            :32
+                            \fz
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 13]
 
                             cs''4
+                            :32
+                            \fz
 
                             cs''4
+                            :32
+                            \fz
 
                             cs''2
+                            :32
+                            \fz
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 14]
@@ -869,6 +922,9 @@
                             r2.
 
                             cs'4
+                            \mp
+                            - \tweak stencil #abjad-flared-hairpin
+                            \<
                             \boxed-markup "sandpaper blocks" 1
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
@@ -968,6 +1024,8 @@
                                 [
 
                                 cs'16
+                                \mf
+                                - \accent
 
                                 \revert Staff.Stem.stemlet-length
                                 cs'16
@@ -983,11 +1041,14 @@
                                 % [Voice 3 measure 11]
 
                                 cs'4
+                                \fz
                                 \boxed-markup "superball + bass drum" 1
 
                                 cs'4
+                                \fz
 
                                 cs'4
+                                \fz
                                 ~
 
                             }
@@ -1001,6 +1062,7 @@
 
                             \revert Staff.Stem.stemlet-length
                             cs'16
+                            \fz
                             ~
                             ]
 
@@ -1013,18 +1075,23 @@
 
                             \revert Staff.Stem.stemlet-length
                             cs'8.
+                            \fz
                             ]
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 13]
 
                             cs'4
+                            \fz
 
                             cs'4
+                            \fz
 
                             cs'4
+                            \fz
 
                             cs'4
+                            \fz
                             ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
@@ -1100,6 +1167,9 @@
                             \markup { \hcenter-in #14 "Violin" }
                             \override Staff.Stem.stemlet-length = 0.75
                             cs'8
+                            \mp
+                            - \tweak stencil #abjad-flared-hairpin
+                            \<
                             [
                             \boxed-markup "spazzolato" 1
 
@@ -1113,6 +1183,8 @@
                             [
 
                             cs'16
+                            \mf
+                            - \accent
 
                             \revert Staff.Stem.stemlet-length
                             cs'16
@@ -1125,6 +1197,9 @@
 
                             \override Staff.Stem.stemlet-length = 0.75
                             cs'8
+                            \mp
+                            - \tweak stencil #abjad-flared-hairpin
+                            \<
                             [
 
                             \revert Staff.Stem.stemlet-length
@@ -1137,6 +1212,8 @@
                             [
 
                             cs'16
+                            \mf
+                            - \accent
 
                             \revert Staff.Stem.stemlet-length
                             cs'16
@@ -1152,9 +1229,14 @@
                             {
 
                                 cs'4.
+                                \p
+                                - \tweak stencil #abjad-flared-hairpin
+                                \<
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 cs'16
+                                \f
+                                - \accent
                                 [
 
                                 \revert Staff.Stem.stemlet-length
@@ -1169,6 +1251,9 @@
                             r4
 
                             cs'2
+                            \p
+                            - \tweak stencil #abjad-flared-hairpin
+                            \<
                             ~
 
                             \override Staff.Stem.stemlet-length = 0.75
@@ -1209,6 +1294,8 @@
                             [
 
                             cs'16
+                            \f
+                            - \accent
 
                             \revert Staff.Stem.stemlet-length
                             cs'16
@@ -1263,6 +1350,7 @@
                                 \once \override Beam.grow-direction = #right
                                 \override Staff.Stem.stemlet-length = 0.75
                                 cs'32 * 15/4
+                                \mf
                                 [
                                 \boxed-markup "col legno tratto" 1
 
@@ -1517,16 +1605,24 @@
                             % [Voice 4 measure 11]
 
                             cs'4
+                            :32
+                            \fz
                             \boxed-markup "normale + ponticello" 1
 
                             cs'4
+                            :32
+                            \fz
 
                             cs'2
+                            :32
+                            \fz
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 12]
 
                             cs'2.
+                            :32
+                            \fz
 
                             \times 4/5
                             {
@@ -1535,14 +1631,24 @@
                                 % [Voice 4 measure 13]
 
                                 cs'4
+                                :32
+                                \fz
 
                                 cs'4
+                                :32
+                                \fz
 
                                 cs'4
+                                :32
+                                \fz
 
                                 cs'4
+                                :32
+                                \fz
 
                                 cs'4
+                                :32
+                                \fz
                                 ~
 
                             }
@@ -1553,6 +1659,9 @@
                             r4
 
                             cs'4
+                            \p
+                            - \tweak stencil #abjad-flared-hairpin
+                            \<
                             ~
                             \boxed-markup "spazzolato" 1
 
@@ -1570,6 +1679,8 @@
                             [
 
                             cs'16
+                            \f
+                            - \accent
 
                             \revert Staff.Stem.stemlet-length
                             cs'16
@@ -1581,6 +1692,9 @@
                             r4
 
                             cs'4
+                            \mp
+                            - \tweak stencil #abjad-flared-hairpin
+                            \<
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 16]
@@ -1596,6 +1710,8 @@
                             [
 
                             cs'16
+                            \mf
+                            - \accent
 
                             \revert Staff.Stem.stemlet-length
                             cs'16

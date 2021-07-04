@@ -199,6 +199,7 @@
                                 \markup { \hcenter-in #14 "Alto Flute" }
                                 \override Staff.Stem.stemlet-length = 0.75
                                 fs'8
+                                \mp
                                 [
 
                                 fs'8
@@ -208,6 +209,8 @@
                                 ]
 
                                 fs'4
+                                \p
+                                \<
                                 ~
 
                             }
@@ -255,6 +258,7 @@
                                 fs'2
 
                                 fs'4
+                                \ff
 
                             }
                             %! COMMENT_MEASURE_NUMBERS
@@ -274,10 +278,13 @@
                                 % [Voice 1 measure 7]
 
                                 fs'4
+                                \p
+                                \<
 
                                 fs'2
 
                                 fs'2
+                                \ff
 
                             }
 
@@ -289,6 +296,9 @@
                                 % [Voice 1 measure 8]
 
                                 fs'4
+                                \p
+                                - \tweak stencil #abjad-flared-hairpin
+                                \<
 
                                 fs'2.
 
@@ -300,6 +310,8 @@
                                 [
 
                                 fs'16
+                                \ff
+                                - \accent
 
                                 fs'16
 
@@ -351,9 +363,14 @@
                             % [Voice 1 measure 13]
 
                             fs'4
+                            \mp
+                            - \tweak stencil #abjad-flared-hairpin
+                            \<
 
                             \override Staff.Stem.stemlet-length = 0.75
                             fs'16
+                            \mf
+                            - \accent
                             [
 
                             fs'16
@@ -432,6 +449,8 @@
                                 \once \override Beam.grow-direction = #right
                                 \override Staff.Stem.stemlet-length = 0.75
                                 cs''16 * 117/64
+                                \pp
+                                \<
                                 [
 
                                 cs''16 * 99/64
@@ -726,6 +745,7 @@
 
                                 \revert Staff.Stem.stemlet-length
                                 cs''16 * 13/16
+                                \ff
                                 ]
 
                             }
@@ -744,6 +764,8 @@
                             % [Voice 2 measure 7]
 
                             cs''1
+                            \p
+                            \<
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 8]
@@ -751,6 +773,8 @@
                             %! applying invisibility
                             \once \override Rest.transparent = ##t
                             r1 * 9/16
+                            %! applying indicators
+                            \ff
 
                             R1 * 9/16
                             %! COMMENT_MEASURE_NUMBERS
@@ -767,6 +791,7 @@
                             % [Voice 2 measure 10]
 
                             cs''8
+                            \mf
 
                             cs''4
                             \startTrillSpan
@@ -786,6 +811,7 @@
                             % [Voice 2 measure 12]
 
                             cs''4.
+                            \p
                             ~
 
                             \override Staff.Stem.stemlet-length = 0.75
@@ -826,7 +852,7 @@
 
                         \context Voice = "Voice 3"
                         {
-                            \staff-line-count 4
+                            \staff-line-count 3
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 1]
@@ -841,8 +867,10 @@
                             \markup { \hcenter-in #14 "Percussion" }
                             \clef "percussion"
                             cs'4.
+                            \pp
+                            \<
                             ~
-                            \boxed-markup "yarn mallets + wood blocks" 1
+                            \boxed-markup "toms" 1
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 2]
@@ -876,6 +904,7 @@
                             % [Voice 3 measure 5]
 
                             cs'2
+                            \ff
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 6]
@@ -891,6 +920,8 @@
                             % [Voice 3 measure 7]
 
                             cs'2.
+                            \p
+                            \<
                             ~
                             \boxed-markup "superball + bass drum" 1
 
@@ -900,24 +931,30 @@
 
                             \revert Staff.Stem.stemlet-length
                             cs'8
+                            \ff
                             ]
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 8]
 
                             cs'8
+                            \p
+                            - \tweak stencil #abjad-flared-hairpin
+                            \<
+                            \boxed-markup "brushes + bass drum" 1
 
                             cs'4
 
                             cs'4.
                             ~
-                            \boxed-markup "brushes + bass drum" 1
 
                             \override Staff.Stem.stemlet-length = 0.75
                             cs'8
                             [
 
                             cs'16
+                            \f
+                            - \accent
 
                             cs'16
 
@@ -953,6 +990,7 @@
 
                             \override Staff.Stem.stemlet-length = 0.75
                             cs'16
+                            \f
                             [
                             \boxed-markup "yarn mallets + wood blocks" 1
 
@@ -972,6 +1010,7 @@
                             % [Voice 3 measure 12]
 
                             cs'4.
+                            \p
                             ~
 
                             cs'4
@@ -1016,6 +1055,8 @@
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Violin" }
                             cs'4.
+                            \pp
+                            \<
                             ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
@@ -1052,11 +1093,16 @@
                             cs'4
 
                             cs'4
+                            \ff
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 6]
 
                             cs'4
+                            \p
+                            - \tweak stencil #abjad-flared-hairpin
+                            \<
+                            \boxed-markup "spazzolato" 1
 
                             cs'8
                             ~
@@ -1066,6 +1112,8 @@
                             [
 
                             cs'16
+                            \f
+                            - \accent
 
                             cs'16
 
@@ -1082,10 +1130,13 @@
                                 % [Voice 4 measure 7]
 
                                 cs'8
+                                \p
+                                \<
 
                                 cs'1
 
                                 cs'8
+                                \ff
 
                             }
                             %! COMMENT_MEASURE_NUMBERS
@@ -1138,6 +1189,7 @@
                             % [Voice 4 measure 13]
 
                             cs'4.
+                            \p
 
                             cs'8
 

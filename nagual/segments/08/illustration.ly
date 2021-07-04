@@ -26,7 +26,7 @@
             \time 5/8
             \mark \markup \bold {  }
             s1 * 5/8
-            - \rehearsal-mark-markup J 6 -1
+            - \rehearsal-mark-markup K 6 -1
             \tweak padding 6
             ^ \markup {
               \override #'(font-size . 5.5)
@@ -162,14 +162,16 @@
                             %! applying staff names and clefs
                             \set Staff.shortInstrumentName =
                             %! applying staff names and clefs
-                            \markup { \hcenter-in #12 "alt. fl." }
+                            \markup { \hcenter-in #12 "bs. fl." }
                             %! applying staff names and clefs
                             \set Staff.instrumentName =
                             %! applying staff names and clefs
-                            \markup { \hcenter-in #14 "Alto Flute" }
+                            \markup { \hcenter-in #14 "Bass Flute" }
                             %! applying invisibility
                             \once \override Rest.transparent = ##t
                             r1 * 5/16
+                            %! applying indicators
+                            \boxed-markup "change to Bass Flute" 1
 
                             R1 * 5/16
                             %! COMMENT_MEASURE_NUMBERS
@@ -259,47 +261,47 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <f' fs'>16 * 16/35
+                                    <c'' cs''>16 * 16/35
                                     [
                                     (
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'8 * 8/35
+                                    c''8 * 8/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'8 * 8/35
+                                    c''8 * 8/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'8 * 8/35
+                                    c''8 * 8/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'8 * 8/35
+                                    c''8 * 8/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'8 * 8/35
+                                    c''8 * 8/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'8 * 8/35
+                                    c''8 * 8/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
                                     )
                                     ]
 
@@ -310,7 +312,10 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    fs'2.
+                                    cs''2.
+                                    \p
+                                    - \tweak stencil #constante-hairpin
+                                    \<
 
                                 }
 
@@ -324,6 +329,8 @@
                             %! applying invisibility
                             \once \override Rest.transparent = ##t
                             r1 * 5/16
+                            %! applying indicators
+                            \!
 
                             R1 * 5/16
                             %! COMMENT_MEASURE_NUMBERS
@@ -343,21 +350,21 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <f' fs'>16 * 16/35
+                                    <c'' cs''>16 * 16/35
                                     [
                                     (
 
-                                    f'8 * 8/35
+                                    c''8 * 8/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'8 * 8/35
+                                    c''8 * 8/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
                                     )
                                     ]
 
@@ -368,7 +375,10 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    fs'4
+                                    cs''4
+                                    \mp
+                                    - \tweak stencil #constante-hairpin
+                                    \<
 
                                 }
 
@@ -388,37 +398,37 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <f' fs'>8 * 8/35
+                                    <c'' cs''>8 * 8/35
                                     [
                                     (
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'8 * 8/35
+                                    c''8 * 8/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'8 * 8/35
+                                    c''8 * 8/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'8 * 8/35
+                                    c''8 * 8/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'8 * 8/35
+                                    c''8 * 8/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'8 * 8/35
+                                    c''8 * 8/35
                                     )
                                     ]
 
@@ -429,10 +439,10 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    fs'4.
+                                    cs''4.
                                     ~
 
-                                    fs'8
+                                    cs''8
 
                                 }
 
@@ -441,6 +451,7 @@
                             \oneVoice
 
                             r4
+                            \!
 
                             <<
 
@@ -456,41 +467,41 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <f' fs'>16 * 16/35
+                                    <c'' cs''>16 * 16/35
                                     [
                                     (
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'8 * 8/35
+                                    c''8 * 8/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'8 * 8/35
+                                    c''8 * 8/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'8 * 8/35
+                                    c''8 * 8/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'8 * 8/35
+                                    c''8 * 8/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'8 * 8/35
+                                    c''8 * 8/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
                                     )
                                     ]
 
@@ -501,10 +512,13 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    fs'4.
+                                    cs''4.
+                                    \mf
+                                    - \tweak stencil #constante-hairpin
+                                    \<
                                     ~
 
-                                    fs'8
+                                    cs''8
 
                                 }
 
@@ -513,6 +527,7 @@
                             \oneVoice
 
                             r8
+                            \!
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 15]
@@ -703,6 +718,9 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs''4
+                                    \mf
+                                    - \tweak stencil #constante-hairpin
+                                    \<
                                     ~
 
                                     cs''4
@@ -791,6 +809,7 @@
                             \oneVoice
 
                             r8
+                            \!
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 15]
@@ -836,6 +855,8 @@
                                 \clef "percussion"
                                 \override Staff.Stem.stemlet-length = 0.75
                                 cs'8
+                                \f
+                                - \accent
                                 [
                                 \boxed-markup "bass drum" 1
 
@@ -867,6 +888,7 @@
 
                             \override Staff.Stem.stemlet-length = 0.75
                             cs'16
+                            - \accent
                             [
 
                             cs'16
@@ -895,6 +917,7 @@
 
                             \override Staff.Stem.stemlet-length = 0.75
                             cs'16
+                            - \accent
                             [
 
                             cs'16
@@ -957,6 +980,7 @@
 
                             \override Staff.Stem.stemlet-length = 0.75
                             cs'16
+                            - \accent
                             [
 
                             \revert Staff.Stem.stemlet-length
@@ -1028,6 +1052,7 @@
                                 % [Voice 3 measure 11]
 
                                 cs'8
+                                - \accent
                                 [
 
                                 cs'8
@@ -1071,6 +1096,7 @@
 
                             \override Staff.Stem.stemlet-length = 0.75
                             cs'16
+                            - \accent
                             [
 
                             cs'16
@@ -1107,14 +1133,16 @@
                             %! applying staff names and clefs
                             \set Staff.shortInstrumentName =
                             %! applying staff names and clefs
-                            \markup { \hcenter-in #12 "vn." }
+                            \markup { \hcenter-in #12 "va." }
                             %! applying staff names and clefs
                             \set Staff.instrumentName =
                             %! applying staff names and clefs
-                            \markup { \hcenter-in #14 "Violin" }
+                            \markup { \hcenter-in #14 "Viola" }
                             %! applying invisibility
                             \once \override Rest.transparent = ##t
                             r1 * 5/16
+                            %! applying indicators
+                            \boxed-markup "change to Viola" 1
 
                             R1 * 5/16
                             %! COMMENT_MEASURE_NUMBERS
@@ -1236,9 +1264,13 @@
                                 \context Voice = "Voice 4"
                                 {
 
+                                    \clef "alto"
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs'2.
+                                    \p
+                                    - \tweak stencil #constante-hairpin
+                                    \<
 
                                 }
 
@@ -1252,6 +1284,8 @@
                             %! applying invisibility
                             \once \override Rest.transparent = ##t
                             r1 * 1/4
+                            %! applying indicators
+                            \!
 
                             R1 * 1/4
                             %! COMMENT_MEASURE_NUMBERS
@@ -1289,6 +1323,9 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs'8
+                                    \mp
+                                    - \tweak stencil #constante-hairpin
+                                    \<
 
                                 }
 
@@ -1397,6 +1434,7 @@
                             \oneVoice
 
                             r4.
+                            \!
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 11]
@@ -1449,6 +1487,9 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs'4.
+                                    \mf
+                                    - \tweak stencil #constante-hairpin
+                                    \<
 
                                 }
 
@@ -1461,7 +1502,9 @@
 
                             \override Staff.Stem.stemlet-length = 0.75
                             cs'16
+                            \>
                             [
+                            \boxed-markup "spazzolato" 1
 
                             cs'16
                             ~
@@ -1478,6 +1521,8 @@
                             [
 
                             cs'16
+                            \pp
+                            - \accent
 
                             cs'16
 
@@ -1543,7 +1588,11 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs'4.
+                                    \f
+                                    - \tweak stencil #constante-hairpin
+                                    \<
                                     ~
+                                    \boxed-markup "normale" 1
 
                                     cs'8
 
@@ -1554,6 +1603,7 @@
                             \oneVoice
 
                             r8
+                            \!
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 15]

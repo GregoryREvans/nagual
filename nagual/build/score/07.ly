@@ -330,6 +330,8 @@
                                 \once \override Beam.grow-direction = #right
                                 \override Staff.Stem.stemlet-length = 0.75
                                 cs''16 * 125/64
+                                \p
+                                \<
                                 [
 
                                 cs''16 * 123/64
@@ -362,6 +364,7 @@
 
                                 \revert Staff.Stem.stemlet-length
                                 cs''16 * 49/64
+                                \f
                                 ]
 
                             }
@@ -421,6 +424,8 @@
                                 \once \override Beam.grow-direction = #right
                                 \override Staff.Stem.stemlet-length = 0.75
                                 cs''16 * 123/64
+                                \p
+                                \<
                                 [
 
                                 cs''16 * 15/8
@@ -518,6 +523,7 @@
 
                                 \revert Staff.Stem.stemlet-length
                                 cs''16 * 47/64
+                                \f
                                 ]
                                 \bar "||"
 

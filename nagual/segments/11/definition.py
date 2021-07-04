@@ -12,24 +12,24 @@ from nagual.lib import (  # , with_sharps, zero_padding_glissando
     rit_130_60,
     stop_repeat_before,
 )
-from nagual.materials.instruments import instruments
+from nagual.materials.instruments import alt_instruments
 from nagual.materials.score_structure import score
 from nagual.materials.time_signatures import signatures_11
 from nagual.materials.timespans import handler_commands_11, rhythm_commands_11
 
 maker = evans.SegmentMaker(
-    instruments=instruments,
+    instruments=alt_instruments,
     names=[
-        '"Alto Flute"',
+        '"Bass Flute"',
         '"Guitar"',
         '"Percussion"',
-        '"Violin"',
+        '"Viola"',
     ],
     abbreviations=[
-        '"alt. fl."',
+        '"bs. fl."',
         '"gt."',
         '"pc."',
-        '"vn."',
+        '"va."',
     ],
     name_staves=True,
     commands=[
@@ -50,11 +50,6 @@ maker = evans.SegmentMaker(
         #     "score",
         #     evans.SegmentMaker.beam_score,
         #     abjad.select().components(abjad.Score),
-        # ),
-        # evans.call(
-        #     "Staff 1",
-        #     evans.annotate_leaves,
-        #     abjad.select(),
         # ),
         evans.attach(
             "Global Context",
@@ -109,6 +104,11 @@ maker = evans.SegmentMaker(
             ),
             baca.selectors.leaves([_ for _ in range(11, 25)]),
         ),
+        evans.attach(
+            "Voice 4",
+            abjad.Clef("alto"),
+            baca.selectors.leaf(0),
+        ),
         evans.call(
             "Voice 4",
             rmakers.FeatherBeamCommand(
@@ -146,8 +146,218 @@ maker = evans.SegmentMaker(
             baca.selectors.leaf(11),
         ),
         evans.attach(
+            "Voice 1",
+            abjad.Dynamic("mf"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.StartHairpin(">"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.Dynamic("pp"),
+            baca.selectors.leaf(4),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.Dynamic("mf"),
+            baca.selectors.leaf(8),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.StartHairpin(">"),
+            baca.selectors.leaf(8),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.Dynamic("p"),
+            baca.selectors.leaf(9),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.StartHairpin("<"),
+            baca.selectors.leaf(9),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.Dynamic("f"),
+            baca.selectors.leaf(25),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.Dynamic("p"),
+            baca.selectors.leaf(29),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.StartHairpin("<"),
+            baca.selectors.leaf(29),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.Dynamic("f"),
+            baca.selectors.leaf(42),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.Dynamic("mf"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.StartHairpin(">"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.Dynamic("pp"),
+            baca.selectors.leaf(4),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.Dynamic("mf"),
+            baca.selectors.leaf(8),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.StartHairpin(">"),
+            baca.selectors.leaf(8),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.Dynamic("pp"),
+            baca.selectors.leaf(10),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.Dynamic("p"),
+            baca.selectors.leaf(11),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.StartHairpin("<"),
+            baca.selectors.leaf(11),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.Dynamic("f"),
+            baca.selectors.leaf(22),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.Dynamic("mf"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.StartHairpin(">"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.Dynamic("pp"),
+            baca.selectors.leaf(4),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.Dynamic("mf"),
+            baca.selectors.leaf(8),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.StartHairpin(">"),
+            baca.selectors.leaf(8),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.Dynamic("pp"),
+            baca.selectors.leaf(9),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.Dynamic("p"),
+            baca.selectors.leaf(11),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.StartHairpin("<"),
+            baca.selectors.leaf(11),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.Dynamic("f"),
+            baca.selectors.leaf(24),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Dynamic("mf"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.StartHairpin(">"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Dynamic("pp"),
+            baca.selectors.leaf(4),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Dynamic("mf"),
+            baca.selectors.leaf(5),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.StartHairpin("<"),
+            baca.selectors.leaf(5),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Dynamic("f"),
+            baca.selectors.leaf(16),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Dynamic("sp"),
+            baca.selectors.leaf(18),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Dynamic("mf"),
+            baca.selectors.leaf(20),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.StartHairpin("<"),
+            baca.selectors.leaf(20),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Dynamic("f"),
+            baca.selectors.leaf(39),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Dynamic("p"),
+            baca.selectors.leaf(42),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.StartHairpin("<"),
+            baca.selectors.leaf(42),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Dynamic("f"),
+            baca.selectors.leaf(53),
+        ),
+        evans.attach(
             "Global Context",
-            abjad.Markup(r"\rehearsal-mark-markup M 6 -1", literal=True),
+            abjad.Markup(r"\rehearsal-mark-markup N 6 -1", literal=True),
             baca.selectors.leaf(0),
         ),
         evans.attach(

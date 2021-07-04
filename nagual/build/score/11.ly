@@ -15,7 +15,7 @@
             \time 5/4
             \mark \markup \bold {  }
             s1 * 5/4
-            - \rehearsal-mark-markup M 6 -1
+            - \rehearsal-mark-markup N 6 -1
             \tweak padding 6
             ^ \markup {
               \override #'(font-size . 5.5)
@@ -136,30 +136,33 @@
                             %! applying staff names and clefs
                             \set Staff.shortInstrumentName =
                             %! applying staff names and clefs
-                            \markup { \hcenter-in #12 "alt. fl." }
+                            \markup { \hcenter-in #12 "bs. fl." }
                             %! applying staff names and clefs
                             \set Staff.instrumentName =
                             %! applying staff names and clefs
-                            \markup { \hcenter-in #14 "Alto Flute" }
-                            fs'2.
+                            \markup { \hcenter-in #14 "Bass Flute" }
+                            cs''2.
+                            \mf
+                            \>
                             ~
 
-                            fs'2
+                            cs''2
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 2]
 
-                            fs'2.
+                            cs''2.
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 3]
 
-                            fs'2
+                            cs''2
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 4]
 
-                            fs'1
+                            cs''1
+                            \pp
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 5]
@@ -173,7 +176,7 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 6]
 
-                            fs'1
+                            cs''1
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 7]
@@ -187,7 +190,9 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 8]
 
-                            fs'1.
+                            cs''1.
+                            \mf
+                            \>
 
                             \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
                                 {
@@ -233,40 +238,43 @@
 
                                 \once \override Beam.grow-direction = #right
                                 \override Staff.Stem.stemlet-length = 0.75
-                                fs'16 * 63/32
+                                cs''16 * 63/32
+                                \p
+                                \<
                                 [
 
-                                fs'16 * 125/64
+                                cs''16 * 125/64
 
                                 r16 * 121/64
 
-                                fs'16 * 115/64
+                                cs''16 * 115/64
 
                                 r16 * 27/16
 
-                                fs'16 * 101/64
+                                cs''16 * 101/64
 
-                                fs'16 * 93/64
+                                cs''16 * 93/64
 
                                 r16 * 43/32
 
                                 r16 * 79/64
 
-                                fs'16 * 73/64
+                                cs''16 * 73/64
 
-                                fs'16 * 17/16
+                                cs''16 * 17/16
 
-                                fs'16 * 1
+                                cs''16 * 1
 
                                 r16 * 15/16
 
-                                fs'16 * 57/64
+                                cs''16 * 57/64
 
                                 r16 * 55/64
 
-                                fs'16 * 53/64
+                                cs''16 * 53/64
 
-                                fs'16 * 13/16
+                                cs''16 * 13/16
+                                \f
 
                                 r16 * 51/64
 
@@ -330,35 +338,38 @@
 
                                 \once \override Beam.grow-direction = #left
                                 \override Staff.Stem.stemlet-length = 0.75
-                                fs'16 * 23/32
+                                cs''16 * 23/32
+                                \p
+                                \<
                                 [
 
-                                fs'16 * 23/32
+                                cs''16 * 23/32
 
                                 r16 * 3/4
 
-                                fs'16 * 25/32
+                                cs''16 * 25/32
 
                                 r16 * 53/64
 
-                                fs'16 * 57/64
+                                cs''16 * 57/64
 
-                                fs'16 * 63/64
+                                cs''16 * 63/64
 
                                 r16 * 69/64
 
                                 r16 * 77/64
 
-                                fs'16 * 43/32
+                                cs''16 * 43/32
 
-                                fs'16 * 3/2
+                                cs''16 * 3/2
 
-                                fs'16 * 105/64
+                                cs''16 * 105/64
 
                                 r16 * 7/4
 
                                 \revert Staff.Stem.stemlet-length
-                                fs'16 * 29/16
+                                cs''16 * 29/16
+                                \f
                                 ]
                                 \bar "||"
 
@@ -392,6 +403,8 @@
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Guitar" }
                             cs''2.
+                            \mf
+                            \>
                             ~
 
                             cs''2
@@ -410,6 +423,7 @@
                             % [Voice 2 measure 4]
 
                             cs''1
+                            \pp
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 5]
@@ -438,6 +452,8 @@
                             % [Voice 2 measure 8]
 
                             cs''1.
+                            \mf
+                            \>
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 9]
@@ -448,6 +464,7 @@
                             % [Voice 2 measure 10]
 
                             cs''1.
+                            \pp
 
                             \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
                                 {
@@ -494,6 +511,8 @@
                                 \once \override Beam.grow-direction = #right
                                 \override Staff.Stem.stemlet-length = 0.75
                                 cs''32 * 123/32
+                                \p
+                                \<
                                 [
 
                                 cs''32 * 15/4
@@ -517,6 +536,7 @@
                                 cs''32 * 51/32
 
                                 cs''32 * 25/16
+                                \f
 
                                 \revert Staff.Stem.stemlet-length
                                 r32 * 49/32
@@ -554,6 +574,8 @@
                             \markup { \hcenter-in #14 "Percussion" }
                             \clef "percussion"
                             cs'2.
+                            \mf
+                            \>
                             ~
 
                             cs'2
@@ -572,6 +594,7 @@
                             % [Voice 3 measure 4]
 
                             cs'1
+                            \pp
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 5]
@@ -600,11 +623,14 @@
                             % [Voice 3 measure 8]
 
                             cs'1.
+                            \mf
+                            \>
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 9]
 
                             cs'1.
+                            \pp
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 10]
@@ -661,6 +687,8 @@
                                 \once \override Beam.grow-direction = #left
                                 \override Staff.Stem.stemlet-length = 0.75
                                 cs'32 * 23/16
+                                \p
+                                \<
                                 [
                                 \boxed-markup "gongs" 1
 
@@ -690,6 +718,7 @@
 
                                 \revert Staff.Stem.stemlet-length
                                 cs'32 * 29/8
+                                \f
                                 ]
                                 \bar "||"
 
@@ -717,12 +746,15 @@
                             %! applying staff names and clefs
                             \set Staff.shortInstrumentName =
                             %! applying staff names and clefs
-                            \markup { \hcenter-in #12 "vn." }
+                            \markup { \hcenter-in #12 "va." }
                             %! applying staff names and clefs
                             \set Staff.instrumentName =
                             %! applying staff names and clefs
-                            \markup { \hcenter-in #14 "Violin" }
+                            \markup { \hcenter-in #14 "Viola" }
+                            \clef "alto"
                             cs'2.
+                            \mf
+                            \>
                             ~
 
                             cs'2
@@ -741,6 +773,7 @@
                             % [Voice 4 measure 4]
 
                             cs'1
+                            \pp
 
                             \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
                                 {
@@ -787,6 +820,8 @@
                                 \once \override Beam.grow-direction = #right
                                 \override Staff.Stem.stemlet-length = 0.75
                                 cs'16 * 123/64
+                                \mf
+                                \<
                                 [
 
                                 cs'16 * 15/8
@@ -810,6 +845,7 @@
                                 cs'16 * 51/64
 
                                 cs'16 * 25/32
+                                \f
 
                                 \revert Staff.Stem.stemlet-length
                                 r16 * 49/64
@@ -822,6 +858,7 @@
                             % [Voice 4 measure 6]
 
                             cs'1
+                            \sp
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 7]
@@ -877,6 +914,8 @@
                                 \once \override Beam.grow-direction = #left
                                 \override Staff.Stem.stemlet-length = 0.75
                                 cs'16 * 49/64
+                                \mf
+                                \<
                                 [
 
                                 cs'16 * 49/64
@@ -917,6 +956,7 @@
 
                                 \revert Staff.Stem.stemlet-length
                                 cs'16 * 61/32
+                                \f
                                 ]
 
                             }
@@ -985,6 +1025,8 @@
                                 \once \override Beam.grow-direction = #right
                                 \override Staff.Stem.stemlet-length = 0.75
                                 cs'32 * 123/32
+                                \p
+                                \<
                                 [
 
                                 cs'32 * 15/4
@@ -1008,6 +1050,7 @@
                                 cs'32 * 51/32
 
                                 cs'32 * 25/16
+                                \f
 
                                 \revert Staff.Stem.stemlet-length
                                 r32 * 49/32

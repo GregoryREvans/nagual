@@ -55,11 +55,6 @@ maker = evans.SegmentMaker(
             evans.SegmentMaker.beam_score,
             abjad.select().components(abjad.Score),
         ),
-        # evans.call(
-        #     "Staff 1",
-        #     evans.annotate_leaves,
-        #     abjad.select(),
-        # ),
         evans.attach(
             "Global Context",
             met_66,
@@ -89,6 +84,46 @@ maker = evans.SegmentMaker(
             "Global Context",
             met_mod_40_66,
             baca.selectors.leaf(4),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.Dynamic("ff"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.Dynamic("mf"),
+            baca.selectors.leaf(19),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.Dynamic("f"),
+            baca.selectors.leaf(21),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.Dynamic("ff"),
+            baca.selectors.leaf(23),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.Dynamic("ff"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.Dynamic("mf"),
+            baca.selectors.leaf(17),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.Dynamic("f"),
+            baca.selectors.leaf(19),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.Dynamic("ff"),
+            baca.selectors.leaf(20),
         ),
         evans.attach(
             "Voice 3",
@@ -136,6 +171,71 @@ maker = evans.SegmentMaker(
                 r'\boxed-markup "brushes + brake drum" 1', format_slot="after"
             ),
             baca.selectors.leaf(29),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.Dynamic("ff"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.Dynamic("p"),
+            baca.selectors.leaf(20),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.Dynamic("mp"),
+            baca.selectors.leaf(22),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.Dynamic("mf"),
+            baca.selectors.leaf(24),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.Dynamic("mp"),
+            baca.selectors.leaf(26),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.Dynamic("mf"),
+            baca.selectors.leaf(28),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.Dynamic("ff"),
+            baca.selectors.leaf(29),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Dynamic("ff"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Dynamic("p"),
+            baca.selectors.leaf(18),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Dynamic("mp"),
+            baca.selectors.leaf(20),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Dynamic("mf"),
+            baca.selectors.leaf(22),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Dynamic("f"),
+            baca.selectors.leaf(24),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Dynamic("ff"),
+            baca.selectors.leaf(25),
         ),
         evans.call(
             "Voice 1",

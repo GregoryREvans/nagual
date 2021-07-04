@@ -152,6 +152,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     fs'4.
+                                    \mf
 
                                 }
 
@@ -211,6 +212,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     fs'2
+                                    \f
 
                                 }
 
@@ -229,6 +231,8 @@
 
                             \override Staff.Stem.stemlet-length = 0.75
                             fs'8.
+                            \f
+                            \>
                             [
 
                             \revert Staff.Stem.stemlet-length
@@ -258,6 +262,8 @@
                             [
 
                             fs'16
+                            \p
+                            - \tenuto
 
                             fs'16
 
@@ -356,6 +362,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs''4.
+                                    \mf
 
                                 }
 
@@ -415,6 +422,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs''2
+                                    \f
 
                                 }
 
@@ -432,6 +440,8 @@
                             {
 
                                 cs''4.
+                                \f
+                                \>
 
                                 cs''8
                                 ~
@@ -446,6 +456,8 @@
                             [
 
                             cs''16
+                            \p
+                            - \tenuto
 
                             cs''16
 
@@ -504,6 +516,7 @@
                                 \once \override Beam.grow-direction = #right
                                 \override Staff.Stem.stemlet-length = 0.75
                                 cs''32 * 63/16
+                                \mp
                                 [
 
                                 \revert Staff.Stem.stemlet-length
@@ -584,6 +597,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs'8
+                                    \p
                                     \boxed-markup "yarn mallets + wood blocks" 1
 
                                 }
@@ -625,6 +639,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs'8
+                                    \mp
 
                                 }
 
@@ -668,6 +683,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs'8
+                                    \mf
 
                                 }
 
@@ -710,6 +726,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs'8
+                                    \f
 
                                 }
 
@@ -729,6 +746,8 @@
 
                             \override Staff.Stem.stemlet-length = 0.75
                             cs'8
+                            \f
+                            \>
                             [
                             \boxed-markup "brushes + brake drum" 1
 
@@ -762,6 +781,8 @@
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 cs'16
+                                \p
+                                - \tenuto
                                 [
 
                                 cs'16
@@ -809,6 +830,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs'8
+                                    \mf
                                     \boxed-markup "yarn mallets + wood blocks" 1
 
                                 }
@@ -846,6 +868,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs'8
+                                    \f
                                     \bar "||"
 
                                 }
@@ -915,6 +938,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs'4
+                                    \mp
 
                                 }
 
@@ -959,6 +983,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs'4
+                                    \mf
 
                                 }
 
@@ -1002,6 +1027,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs'8
+                                    \f
                                     ~
 
                                     cs'8
@@ -1049,6 +1075,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs'4
+                                    \mf
 
                                 }
 
@@ -1089,6 +1116,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs'8
+                                    \f
 
                                 }
 
@@ -1103,6 +1131,8 @@
 
                             \override Staff.Stem.stemlet-length = 0.75
                             cs'8.
+                            \f
+                            \>
                             [
 
                             \revert Staff.Stem.stemlet-length
@@ -1115,6 +1145,8 @@
                             [
 
                             cs'16
+                            \p
+                            - \tenuto
 
                             cs'16
 
@@ -1162,6 +1194,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs'8
+                                    \p
                                     ~
 
                                     cs'8
@@ -1205,6 +1238,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs'8
+                                    \mp
                                     ~
 
                                     cs'8
@@ -1248,6 +1282,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs'8
+                                    \mf
 
                                 }
 
@@ -1291,6 +1326,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs'4
+                                    \f
 
                                 }
 

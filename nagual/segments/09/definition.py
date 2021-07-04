@@ -11,24 +11,24 @@ from nagual.lib import (  # , with_sharps, zero_padding_glissando
     met_mod_100_80,
     zero_padding_glissando,
 )
-from nagual.materials.instruments import instruments
+from nagual.materials.instruments import alt_instruments
 from nagual.materials.score_structure import score
 from nagual.materials.time_signatures import signatures_09
 from nagual.materials.timespans import handler_commands_09, rhythm_commands_09
 
 maker = evans.SegmentMaker(
-    instruments=instruments,
+    instruments=alt_instruments,
     names=[
-        '"Alto Flute"',
+        '"Bass Flute"',
         '"Guitar"',
         '"Percussion"',
-        '"Violin"',
+        '"Viola"',
     ],
     abbreviations=[
-        '"alt. fl."',
+        '"bs. fl."',
         '"gt."',
         '"pc."',
-        '"vn."',
+        '"va."',
     ],
     name_staves=True,
     commands=[
@@ -71,6 +71,46 @@ maker = evans.SegmentMaker(
             baca.selectors.leaf(0),
         ),
         evans.attach(
+            "Voice 1",
+            abjad.Dynamic("p"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.Dynamic("f"),
+            baca.selectors.leaf(2),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.Dynamic("p"),
+            baca.selectors.leaf(4),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.Dynamic("f"),
+            baca.selectors.leaf(6),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.Dynamic("p"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.Dynamic("f"),
+            baca.selectors.leaf(2),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.Dynamic("p"),
+            baca.selectors.leaf(4),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.Dynamic("f"),
+            baca.selectors.leaf(6),
+        ),
+        evans.attach(
             "Voice 3",
             abjad.LilyPondLiteral(
                 r"\staff-line-count 5", format_slot="absolute_before"
@@ -94,6 +134,61 @@ maker = evans.SegmentMaker(
             clef_whitespace,
             baca.selectors.leaf(0),
         ),
+        evans.attach(
+            "Voice 3",
+            abjad.Dynamic("p"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.Dynamic("f"),
+            baca.selectors.leaf(2),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.Dynamic("p"),
+            baca.selectors.leaf(4),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.Dynamic("f"),
+            baca.selectors.leaf(6),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Clef("alto"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Dynamic("mf"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.StartHairpin("<"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Dynamic("f"),
+            baca.selectors.leaf(18),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Dynamic("mf"),
+            baca.selectors.leaf(20),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.StartHairpin("<"),
+            baca.selectors.leaf(20),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Dynamic("f"),
+            baca.selectors.leaf(38),
+        ),
         evans.call(
             "Voice 1",
             grace_handler_09,
@@ -116,7 +211,7 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Global Context",
-            abjad.Markup(r"\rehearsal-mark-markup K 6 -1", literal=True),
+            abjad.Markup(r"\rehearsal-mark-markup L 6 -1", literal=True),
             baca.selectors.leaf(0),
         ),
         # evans.call(

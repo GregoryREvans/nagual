@@ -51,11 +51,6 @@ maker = evans.SegmentMaker(
             evans.SegmentMaker.beam_score,
             abjad.select().components(abjad.Score),
         ),
-        # evans.call(
-        #     "Staff 1",
-        #     evans.annotate_leaves,
-        #     abjad.select(),
-        # ),
         evans.attach(
             "Global Context",
             met_100,
@@ -95,6 +90,36 @@ maker = evans.SegmentMaker(
             "Voice 2",
             rmakers.FeatherBeamCommand(),
             baca.selectors.leaves([_ for _ in range(49, 59)]),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.Dynamic("p"),
+            baca.selectors.leaf(19),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.StartHairpin("<"),
+            baca.selectors.leaf(19),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.Dynamic("f"),
+            baca.selectors.leaf(34),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.Dynamic("p"),
+            baca.selectors.leaf(36),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.StartHairpin("<"),
+            baca.selectors.leaf(36),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.Dynamic("f"),
+            baca.selectors.leaf(58),
         ),
         evans.attach(
             "Voice 3",

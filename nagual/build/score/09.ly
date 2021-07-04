@@ -12,7 +12,7 @@
             \time 4/4
             \mark \markup \bold {  }
             s1 * 1
-            - \rehearsal-mark-markup K 6 -1
+            - \rehearsal-mark-markup L 6 -1
             \tweak padding 6
             ^ \markup {
               \override #'(font-size . 5.5)
@@ -100,17 +100,18 @@
                             %! applying staff names and clefs
                             \set Staff.shortInstrumentName =
                             %! applying staff names and clefs
-                            \markup { \hcenter-in #12 "alt. fl." }
+                            \markup { \hcenter-in #12 "bs. fl." }
                             %! applying staff names and clefs
                             \set Staff.instrumentName =
                             %! applying staff names and clefs
-                            \markup { \hcenter-in #14 "Alto Flute" }
-                            fs'1
+                            \markup { \hcenter-in #14 "Bass Flute" }
+                            cs''1
+                            \p
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 2]
 
-                            fs'2.
+                            cs''2.
 
                             <<
 
@@ -126,27 +127,27 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <f' fs'>16 * 16/35
+                                    <c'' cs''>16 * 16/35
                                     [
                                     (
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
                                     )
                                     ]
 
@@ -157,7 +158,8 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    fs'2
+                                    cs''2
+                                    \f
 
                                 }
 
@@ -177,12 +179,13 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 5]
 
-                            fs'1.
+                            cs''1.
+                            \p
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 6]
 
-                            fs'1
+                            cs''1
 
                             <<
 
@@ -198,87 +201,87 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <f' fs'>16 * 16/35
+                                    <c'' cs''>16 * 16/35
                                     [
                                     (
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
 
-                                    f'16 * 16/35
+                                    c''16 * 16/35
                                     )
                                     ]
 
@@ -289,7 +292,8 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    fs'1.
+                                    cs''1.
+                                    \f
                                     \bar "||"
 
                                 }
@@ -342,6 +346,7 @@
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Guitar" }
                             cs''1
+                            \p
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 2]
@@ -394,6 +399,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs''2
+                                    \f
 
                                 }
 
@@ -414,6 +420,7 @@
                             % [Voice 2 measure 5]
 
                             cs''1.
+                            \p
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 6]
@@ -526,6 +533,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs''1.
+                                    \f
                                     \bar "||"
 
                                 }
@@ -581,6 +589,7 @@
                             \markup { \hcenter-in #14 "Percussion" }
                             \clef "treble"
                             cs'1
+                            \p
                             \boxed-markup "yarn mallets + vibraphone" 1
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
@@ -634,6 +643,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs'2
+                                    \f
 
                                 }
 
@@ -654,6 +664,7 @@
                             % [Voice 3 measure 5]
 
                             cs'1.
+                            \p
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 6]
@@ -766,6 +777,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs'1.
+                                    \f
                                     \bar "||"
 
                                 }
@@ -818,12 +830,15 @@
                                     %! applying staff names and clefs
                                     \set Staff.shortInstrumentName =
                                     %! applying staff names and clefs
-                                    \markup { \hcenter-in #12 "vn." }
+                                    \markup { \hcenter-in #12 "va." }
                                     %! applying staff names and clefs
                                     \set Staff.instrumentName =
                                     %! applying staff names and clefs
-                                    \markup { \hcenter-in #14 "Violin" }
+                                    \markup { \hcenter-in #14 "Viola" }
+                                    \clef "alto"
                                     cs'8
+                                    \mf
+                                    \<
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
@@ -1055,6 +1070,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs'2
+                                    \f
 
                                 }
 
@@ -1079,6 +1095,8 @@
                                 % [Voice 4 measure 5]
 
                                 cs'2
+                                \mf
+                                \<
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -1373,6 +1391,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs'1.
+                                    \f
                                     \bar "||"
 
                                 }

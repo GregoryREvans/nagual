@@ -142,6 +142,7 @@
                                 \markup { \hcenter-in #14 "Alto Flute" }
                                 \override Staff.Stem.stemlet-length = 0.75
                                 fs'8
+                                \ff
                                 [
 
                                 fs'8
@@ -252,6 +253,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     fs'4
+                                    \mf
 
                                 }
 
@@ -301,6 +303,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     fs'4.
+                                    \f
 
                                 }
 
@@ -318,6 +321,7 @@
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 fs'8
+                                \ff
                                 [
 
                                 fs'8
@@ -409,6 +413,7 @@
                             \markup { \hcenter-in #14 "Guitar" }
                             \override Staff.Stem.stemlet-length = 0.75
                             cs''8
+                            \ff
                             [
 
                             cs''8
@@ -524,6 +529,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs''4
+                                    \mf
 
                                 }
 
@@ -575,6 +581,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs''4.
+                                    \f
 
                                 }
 
@@ -591,6 +598,7 @@
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 cs''8
+                                \ff
                                 [
 
                                 cs''8
@@ -687,6 +695,7 @@
                                 \clef "percussion"
                                 \override Staff.Stem.stemlet-length = 0.75
                                 cs'8
+                                \ff
                                 [
                                 \boxed-markup "brushes + brake drum" 1
 
@@ -786,6 +795,7 @@
                                         %! abjad.on_beat_grace_container(4)
                                         \voiceTwo
                                         cs'4
+                                        \p
                                         \boxed-markup "yarn mallets + wood blocks" 1
 
                                     }
@@ -827,6 +837,7 @@
                                         %! abjad.on_beat_grace_container(4)
                                         \voiceTwo
                                         cs'4
+                                        \mp
 
                                     }
 
@@ -876,6 +887,7 @@
                                         %! abjad.on_beat_grace_container(4)
                                         \voiceTwo
                                         cs'4
+                                        \mf
 
                                     }
 
@@ -916,6 +928,7 @@
                                         %! abjad.on_beat_grace_container(4)
                                         \voiceTwo
                                         cs'4
+                                        \mp
 
                                     }
 
@@ -954,6 +967,7 @@
                                         %! abjad.on_beat_grace_container(4)
                                         \voiceTwo
                                         cs'4
+                                        \mf
 
                                     }
 
@@ -969,6 +983,7 @@
 
                             \override Staff.Stem.stemlet-length = 0.75
                             cs'8
+                            \ff
                             [
                             \boxed-markup "brushes + brake drum" 1
 
@@ -1043,6 +1058,7 @@
                                 \markup { \hcenter-in #14 "Violin" }
                                 \override Staff.Stem.stemlet-length = 0.75
                                 cs'8
+                                \ff
                                 [
 
                                 cs'8
@@ -1145,6 +1161,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs'4
+                                    \p
 
                                 }
 
@@ -1188,6 +1205,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs'8
+                                    \mp
 
                                 }
 
@@ -1228,6 +1246,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs'8
+                                    \mf
 
                                 }
 
@@ -1266,6 +1285,7 @@
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     cs'8
+                                    \f
 
                                 }
 
@@ -1281,6 +1301,7 @@
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 cs'8
+                                \ff
                                 [
 
                                 cs'8

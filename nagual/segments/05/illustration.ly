@@ -84,6 +84,7 @@
                             \markup { \hcenter-in #14 "Alto Flute" }
                             \override Staff.Stem.stemlet-length = 0.75
                             fs'16
+                            \pp
                             [
 
                             \revert Staff.Stem.stemlet-length
@@ -96,6 +97,7 @@
                             [
 
                             fs'16
+                            - \espressivo
 
                             fs'16
 
@@ -122,6 +124,7 @@
                             [
 
                             fs'16
+                            - \espressivo
 
                             fs'16
 
@@ -163,6 +166,7 @@
                             [
 
                             fs'16
+                            - \espressivo
 
                             fs'16
 
@@ -201,6 +205,7 @@
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Guitar" }
                                 cs''8
+                                \pp
 
                                 cs''4.
 
@@ -209,6 +214,7 @@
                                 [
 
                                 cs''16
+                                - \espressivo
 
                                 cs''16
 
@@ -237,6 +243,7 @@
                             [
 
                             cs''16
+                            - \espressivo
 
                             cs''16
 
@@ -277,6 +284,7 @@
                             [
 
                             cs''16
+                            - \espressivo
 
                             cs''16
 
@@ -318,6 +326,7 @@
                                 \clef "percussion"
                                 \override Staff.Stem.stemlet-length = 0.75
                                 cs'8.
+                                \pp
                                 [
                                 \boxed-markup "brushes + bass drum" 1
 
@@ -328,6 +337,7 @@
                                 cs'16
 
                                 cs'16
+                                - \espressivo
 
                                 cs'16
 
@@ -356,6 +366,7 @@
                             [
 
                             cs'16
+                            - \espressivo
 
                             cs'16
 
@@ -405,6 +416,7 @@
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Violin" }
                                 cs'4
+                                \pp
 
                                 cs'4
 
@@ -415,6 +427,7 @@
                                 [
 
                                 cs'16
+                                - \espressivo
 
                                 cs'16
 
@@ -445,6 +458,7 @@
                             [
 
                             cs'16
+                            - \espressivo
 
                             cs'16
 
@@ -469,6 +483,7 @@
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 cs'16
+                                - \espressivo
                                 [
 
                                 cs'16
