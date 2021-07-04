@@ -246,26 +246,26 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 7]
 
-                            fs'2
+                            f'2
                             \mp
                             - \tweak stencil #abjad-flared-hairpin
                             \<
                             \boxed-markup "tone + air" 1
 
-                            fs'4
+                            f'4
                             ~
 
-                            fs'4
+                            f'4
 
-                            fs'4
+                            f'4
                             ~
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            fs'8
+                            f'8
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            fs'8
+                            f'8
                             ~
                             ]
 
@@ -276,13 +276,13 @@
                                 %! abjad.SegmentMaker.comment_measure_numbers()
                                 % [Voice 1 measure 8]
 
-                                fs'8
+                                f'8
 
-                                fs'4
+                                f'4
 
-                                fs'2.
+                                f'2.
 
-                                fs'8
+                                f'8
                                 ~
 
                             }
@@ -290,31 +290,31 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 9]
 
-                            fs'2
+                            f'2
                             ~
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            fs'8
+                            f'8
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            fs'8
+                            f'8
                             ~
                             ]
 
-                            fs'4
+                            f'4
                             ~
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            fs'8
+                            f'8
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            fs'8
+                            f'8
                             ~
                             ]
 
-                            fs'4
+                            f'4
                             ~
 
                             \tweak text #tuplet-number::calc-fraction-text
@@ -324,24 +324,24 @@
                                 %! abjad.SegmentMaker.comment_measure_numbers()
                                 % [Voice 1 measure 10]
 
-                                fs'4.
+                                f'4.
 
-                                fs'2
+                                f'2
 
-                                fs'2.
+                                f'2.
 
-                                fs'2
+                                f'2
 
-                                fs'4
+                                f'4
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                fs'16
+                                f'16
                                 \mf
                                 - \accent
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                fs'16
+                                f'16
                                 ]
 
                             }
@@ -349,27 +349,27 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 11]
 
-                            fs'4
+                            f'4
                             :32
                             \fz
                             \boxed-markup "normale" 1
 
-                            fs'4
+                            f'4
                             :32
                             \fz
 
-                            fs'2
+                            f'2
                             :32
                             \fz
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 12]
 
-                            fs'2
+                            f'2
                             :32
                             \fz
 
-                            fs'4
+                            f'4
                             :32
                             \fz
 
@@ -380,15 +380,15 @@
                                 %! abjad.SegmentMaker.comment_measure_numbers()
                                 % [Voice 1 measure 13]
 
-                                fs'4
+                                f'4
                                 :32
                                 \fz
 
-                                fs'4
+                                f'4
                                 :32
                                 \fz
 
-                                fs'4
+                                f'4
                                 :32
                                 \fz
 
@@ -476,32 +476,32 @@
 
                             r4
 
-                            cs''4
+                            c''4
                             \mp
                             - \tweak stencil #abjad-flared-hairpin
                             \<
                             \boxed-markup "spazzolato" 1
 
-                            cs''4
+                            c''4
                             ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 3]
 
-                            cs''4
+                            c''4
 
-                            cs''4
+                            c''4
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs''8
+                            c''8
                             [
 
-                            cs''16
+                            c''16
                             \mf
                             - \accent
 
                             \revert Staff.Stem.stemlet-length
-                            cs''16
+                            c''16
                             ]
 
                             r4
@@ -511,7 +511,7 @@
 
                             r2.
 
-                            cs''4
+                            c''4
                             \p
                             - \tweak stencil #abjad-flared-hairpin
                             \<
@@ -520,29 +520,29 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 5]
 
-                            cs''4
+                            c''4
 
-                            cs''2
+                            c''2
                             ~
 
-                            cs''4
+                            c''4
 
-                            cs''4
+                            c''4
                             ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 6]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs''8
+                            c''8
                             [
 
-                            cs''16
+                            c''16
                             \f
                             - \accent
 
                             \revert Staff.Stem.stemlet-length
-                            cs''16
+                            c''16
                             ]
 
                             r2.
@@ -602,32 +602,32 @@
 
                                 \once \override Beam.grow-direction = #right
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs''16 * 15/8
+                                c''16 * 15/8
                                 \mp
                                 [
                                 \boxed-markup "plucked + ponticello" 1
 
                                 \revert Staff.Stem.stemlet-length
-                                cs''16 * 115/64
+                                c''16 * 115/64
 
                                 r16 * 103/64
 
-                                cs''16 * 11/8
+                                c''16 * 11/8
 
                                 r16 * 37/32
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs''16 * 1
+                                c''16 * 1
 
                                 \revert Staff.Stem.stemlet-length
-                                cs''16 * 7/8
+                                c''16 * 7/8
 
                                 r16 * 13/16
 
                                 r16 * 49/64
 
                                 \revert Staff.Stem.stemlet-length
-                                cs''16 * 47/64
+                                c''16 * 47/64
                                 ~
                                 ]
 
@@ -678,54 +678,54 @@
 
                                 \once \override Beam.grow-direction = #left
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs''16 * 49/64
+                                c''16 * 49/64
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                cs''16 * 49/64
+                                c''16 * 49/64
 
                                 r16 * 25/32
 
-                                cs''16 * 51/64
+                                c''16 * 51/64
 
                                 r16 * 13/16
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs''16 * 27/32
+                                c''16 * 27/32
 
                                 \revert Staff.Stem.stemlet-length
-                                cs''16 * 7/8
+                                c''16 * 7/8
 
                                 r16 * 59/64
 
                                 r16 * 63/64
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs''16 * 67/64
+                                c''16 * 67/64
 
-                                cs''16 * 71/64
+                                c''16 * 71/64
 
                                 \revert Staff.Stem.stemlet-length
-                                cs''16 * 77/64
+                                c''16 * 77/64
 
                                 r16 * 83/64
 
-                                cs''16 * 89/64
+                                c''16 * 89/64
 
                                 r16 * 3/2
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs''16 * 103/64
+                                c''16 * 103/64
 
                                 \revert Staff.Stem.stemlet-length
-                                cs''16 * 55/32
+                                c''16 * 55/32
 
                                 r16 * 115/64
 
                                 r16 * 15/8
 
                                 \revert Staff.Stem.stemlet-length
-                                cs''16 * 61/32
+                                c''16 * 61/32
                                 ]
 
                             }
@@ -746,24 +746,24 @@
                                 %! abjad.SegmentMaker.comment_measure_numbers()
                                 % [Voice 2 measure 11]
 
-                                cs''4
+                                c''4
                                 :32
                                 \fz
                                 \boxed-markup "normale" 1
 
-                                cs''4
+                                c''4
                                 :32
                                 \fz
 
-                                cs''4
+                                c''4
                                 :32
                                 \fz
                                 ~
 
-                                cs''4
+                                c''4
                                 :32
 
-                                cs''4
+                                c''4
                                 :32
                                 \fz
                                 ~
@@ -773,29 +773,29 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 12]
 
-                            cs''4
+                            c''4
                             :32
 
-                            cs''4
+                            c''4
                             :32
                             \fz
 
-                            cs''4
+                            c''4
                             :32
                             \fz
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 13]
 
-                            cs''4
+                            c''4
                             :32
                             \fz
 
-                            cs''4
+                            c''4
                             :32
                             \fz
 
-                            cs''2
+                            c''2
                             :32
                             \fz
                             %! COMMENT_MEASURE_NUMBERS
@@ -1166,7 +1166,7 @@
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Violin" }
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs'8
+                            c'8
                             \mp
                             - \tweak stencil #abjad-flared-hairpin
                             \<
@@ -1174,20 +1174,20 @@
                             \boxed-markup "spazzolato" 1
 
                             \revert Staff.Stem.stemlet-length
-                            cs'8
+                            c'8
                             ~
                             ]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs'8
+                            c'8
                             [
 
-                            cs'16
+                            c'16
                             \mf
                             - \accent
 
                             \revert Staff.Stem.stemlet-length
-                            cs'16
+                            c'16
                             ]
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
@@ -1196,27 +1196,27 @@
                             r4
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs'8
+                            c'8
                             \mp
                             - \tweak stencil #abjad-flared-hairpin
                             \<
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            cs'8
+                            c'8
                             ~
                             ]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs'8
+                            c'8
                             [
 
-                            cs'16
+                            c'16
                             \mf
                             - \accent
 
                             \revert Staff.Stem.stemlet-length
-                            cs'16
+                            c'16
                             ]
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
@@ -1228,19 +1228,19 @@
                             \times 3/2
                             {
 
-                                cs'4.
+                                c'4.
                                 \p
                                 - \tweak stencil #abjad-flared-hairpin
                                 \<
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs'16
+                                c'16
                                 \f
                                 - \accent
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                cs'16
+                                c'16
                                 ]
 
                             }
@@ -1250,18 +1250,18 @@
 
                             r4
 
-                            cs'2
+                            c'2
                             \p
                             - \tweak stencil #abjad-flared-hairpin
                             \<
                             ~
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs'8
+                            c'8
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            cs'8
+                            c'8
                             ~
                             ]
 
@@ -1272,16 +1272,16 @@
                                 %! abjad.SegmentMaker.comment_measure_numbers()
                                 % [Voice 4 measure 5]
 
-                                cs'4.
+                                c'4.
 
-                                cs'2.
+                                c'2.
 
-                                cs'2
+                                c'2
 
-                                cs'2
+                                c'2
                                 ~
 
-                                cs'8
+                                c'8
                                 ~
 
                             }
@@ -1290,15 +1290,15 @@
                             % [Voice 4 measure 6]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs'8
+                            c'8
                             [
 
-                            cs'16
+                            c'16
                             \f
                             - \accent
 
                             \revert Staff.Stem.stemlet-length
-                            cs'16
+                            c'16
                             ]
 
                             r2.
@@ -1349,32 +1349,32 @@
 
                                 \once \override Beam.grow-direction = #right
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs'32 * 15/4
+                                c'32 * 15/4
                                 \mf
                                 [
                                 \boxed-markup "col legno tratto" 1
 
                                 \revert Staff.Stem.stemlet-length
-                                cs'32 * 115/32
+                                c'32 * 115/32
 
                                 r32 * 103/32
 
-                                cs'32 * 11/4
+                                c'32 * 11/4
 
                                 r32 * 37/16
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs'32 * 2
+                                c'32 * 2
 
                                 \revert Staff.Stem.stemlet-length
-                                cs'32 * 7/4
+                                c'32 * 7/4
 
                                 r32 * 13/8
 
                                 r32 * 49/32
 
                                 \revert Staff.Stem.stemlet-length
-                                cs'32 * 47/32
+                                c'32 * 47/32
                                 ]
 
                             }
@@ -1428,23 +1428,23 @@
 
                                 \once \override Beam.grow-direction = #left
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs'32 * 3/2
+                                c'32 * 3/2
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                cs'32 * 25/16
+                                c'32 * 25/16
 
                                 r32 * 7/4
 
-                                cs'32 * 65/32
+                                c'32 * 65/32
 
                                 r32 * 79/32
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs'32 * 49/16
+                                c'32 * 49/16
 
                                 \revert Staff.Stem.stemlet-length
-                                cs'32 * 29/8
+                                c'32 * 29/8
                                 ]
 
                             }
@@ -1496,30 +1496,30 @@
 
                                 \once \override Beam.grow-direction = #right
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs'16 * 15/8
+                                c'16 * 15/8
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                cs'16 * 115/64
+                                c'16 * 115/64
 
                                 r16 * 103/64
 
-                                cs'16 * 11/8
+                                c'16 * 11/8
 
                                 r16 * 37/32
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs'16 * 1
+                                c'16 * 1
 
                                 \revert Staff.Stem.stemlet-length
-                                cs'16 * 7/8
+                                c'16 * 7/8
 
                                 r16 * 13/16
 
                                 r16 * 49/64
 
                                 \revert Staff.Stem.stemlet-length
-                                cs'16 * 47/64
+                                c'16 * 47/64
                                 ~
                                 ]
 
@@ -1570,30 +1570,30 @@
 
                                 \once \override Beam.grow-direction = #left
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs'16 * 51/64
+                                c'16 * 51/64
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                cs'16 * 51/64
+                                c'16 * 51/64
 
                                 r16 * 27/32
 
-                                cs'16 * 29/32
+                                c'16 * 29/32
 
                                 r16 * 65/64
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs'16 * 73/64
+                                c'16 * 73/64
 
                                 \revert Staff.Stem.stemlet-length
-                                cs'16 * 21/16
+                                c'16 * 21/16
 
                                 r16 * 97/64
 
                                 r16 * 111/64
 
                                 \revert Staff.Stem.stemlet-length
-                                cs'16 * 31/16
+                                c'16 * 31/16
                                 ]
 
                             }
@@ -1604,23 +1604,23 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 11]
 
-                            cs'4
+                            c'4
                             :32
                             \fz
                             \boxed-markup "normale + ponticello" 1
 
-                            cs'4
+                            c'4
                             :32
                             \fz
 
-                            cs'2
+                            c'2
                             :32
                             \fz
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 12]
 
-                            cs'2.
+                            c'2.
                             :32
                             \fz
 
@@ -1630,23 +1630,23 @@
                                 %! abjad.SegmentMaker.comment_measure_numbers()
                                 % [Voice 4 measure 13]
 
-                                cs'4
+                                c'4
                                 :32
                                 \fz
 
-                                cs'4
+                                c'4
                                 :32
                                 \fz
 
-                                cs'4
+                                c'4
                                 :32
                                 \fz
 
-                                cs'4
+                                c'4
                                 :32
                                 \fz
 
-                                cs'4
+                                c'4
                                 :32
                                 \fz
                                 ~
@@ -1658,7 +1658,7 @@
 
                             r4
 
-                            cs'4
+                            c'4
                             \p
                             - \tweak stencil #abjad-flared-hairpin
                             \<
@@ -1666,24 +1666,24 @@
                             \boxed-markup "spazzolato" 1
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs'8
+                            c'8
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            cs'8
+                            c'8
                             ~
                             ]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs'8
+                            c'8
                             [
 
-                            cs'16
+                            c'16
                             \f
                             - \accent
 
                             \revert Staff.Stem.stemlet-length
-                            cs'16
+                            c'16
                             ]
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
@@ -1691,7 +1691,7 @@
 
                             r4
 
-                            cs'4
+                            c'4
                             \mp
                             - \tweak stencil #abjad-flared-hairpin
                             \<
@@ -1699,22 +1699,22 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 16]
 
-                            cs'2
+                            c'2
 
-                            cs'4
+                            c'4
 
-                            cs'4
+                            c'4
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs'8
+                            c'8
                             [
 
-                            cs'16
+                            c'16
                             \mf
                             - \accent
 
                             \revert Staff.Stem.stemlet-length
-                            cs'16
+                            c'16
                             ]
                             \bar "||"
                             %! COMMENT_MEASURE_NUMBERS

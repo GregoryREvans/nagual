@@ -2,7 +2,22 @@
 # import evans
 
 # from nagual.lib import WarbleFingerings
-from nagual.materials.pitch import demo_pitch_handler
+from nagual.materials.pitch import (
+    demo_pitch_handler,
+    percussion_pitch_handler_01,
+    percussion_pitch_handler_02,
+    percussion_pitch_handler_03,
+    percussion_pitch_handler_04,
+    percussion_pitch_handler_05,
+    percussion_pitch_handler_06,
+    percussion_pitch_handler_07,
+    percussion_pitch_handler_08,
+    percussion_pitch_handler_09,
+    percussion_pitch_handler_10,
+    percussion_pitch_handler_11,
+    percussion_pitch_handler_12,
+    percussion_pitch_handler_13,
+)
 from nagual.materials.rhythm import (
     accelerando_handler_01,
     accelerando_handler_02,
@@ -75,6 +90,41 @@ rhythm_materials_01 = [
 ]
 
 pitch_materials_01 = [
+    silence_handler,  #
+    demo_pitch_handler,
+    demo_pitch_handler,
+    silence_handler,
+    silence_handler,  #
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
+    silence_handler,  #
+    percussion_pitch_handler_01,
+    percussion_pitch_handler_01,
+    silence_handler,
+    demo_pitch_handler,  #
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
     demo_pitch_handler,
 ]
 
@@ -112,6 +162,33 @@ rhythm_materials_02 = [
 ]
 
 pitch_materials_02 = [
+    demo_pitch_handler,  #
+    silence_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    silence_handler,
+    silence_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,  #
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    percussion_pitch_handler_02,  #
+    silence_handler,
+    percussion_pitch_handler_02,
+    percussion_pitch_handler_02,
+    silence_handler,
+    silence_handler,
+    percussion_pitch_handler_02,
+    percussion_pitch_handler_02,
+    demo_pitch_handler,  #
+    demo_pitch_handler,
+    demo_pitch_handler,
+    silence_handler,
+    silence_handler,
     demo_pitch_handler,
 ]
 
@@ -207,7 +284,92 @@ rhythm_materials_03 = [
 ]
 
 pitch_materials_03 = [
+    demo_pitch_handler,  #
     demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,  #
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    percussion_pitch_handler_03,  #
+    percussion_pitch_handler_03,
+    percussion_pitch_handler_03,
+    percussion_pitch_handler_03,
+    percussion_pitch_handler_03,
+    percussion_pitch_handler_03,
+    percussion_pitch_handler_03,
+    percussion_pitch_handler_03,
+    percussion_pitch_handler_03,
+    percussion_pitch_handler_03,
+    percussion_pitch_handler_03,
+    percussion_pitch_handler_03,
+    percussion_pitch_handler_03,
+    percussion_pitch_handler_03,
+    percussion_pitch_handler_03,
+    percussion_pitch_handler_03,
+    percussion_pitch_handler_03,
+    percussion_pitch_handler_03,
+    silence_handler,
+    percussion_pitch_handler_03,
+    silence_handler,
+    percussion_pitch_handler_03,
+    demo_pitch_handler,  #
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
 ]
 
 ## 04
@@ -234,6 +396,23 @@ rhythm_materials_04 = [
 ]
 
 pitch_materials_04 = [
+    demo_pitch_handler,  #
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,  #
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    percussion_pitch_handler_04,  #
+    silence_handler,
+    percussion_pitch_handler_04,
+    percussion_pitch_handler_04,
+    demo_pitch_handler,  #
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
     demo_pitch_handler,
 ]
 
@@ -247,7 +426,10 @@ rhythm_materials_05 = [
 ]
 
 pitch_materials_05 = [
-    demo_pitch_handler,
+    demo_pitch_handler,  #
+    demo_pitch_handler,  #
+    percussion_pitch_handler_05,  #
+    demo_pitch_handler,  #
 ]
 
 ## 06
@@ -294,6 +476,43 @@ rhythm_materials_06 = [
 ]
 
 pitch_materials_06 = [
+    demo_pitch_handler,  #
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,  #
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    percussion_pitch_handler_06,  #
+    percussion_pitch_handler_06,
+    percussion_pitch_handler_06,
+    percussion_pitch_handler_06,
+    percussion_pitch_handler_06,
+    silence_handler,
+    percussion_pitch_handler_06,
+    percussion_pitch_handler_06,
+    percussion_pitch_handler_06,
+    percussion_pitch_handler_06,
+    percussion_pitch_handler_06,
+    demo_pitch_handler,  #
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
     demo_pitch_handler,
 ]
 
@@ -349,6 +568,51 @@ rhythm_materials_07 = [
 ]
 
 pitch_materials_07 = [
+    demo_pitch_handler,  #
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,  #
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    percussion_pitch_handler_07,  #
+    percussion_pitch_handler_07,
+    percussion_pitch_handler_07,
+    percussion_pitch_handler_07,
+    percussion_pitch_handler_07,
+    percussion_pitch_handler_07,
+    percussion_pitch_handler_07,
+    percussion_pitch_handler_07,
+    percussion_pitch_handler_07,
+    percussion_pitch_handler_07,
+    percussion_pitch_handler_07,
+    percussion_pitch_handler_07,
+    percussion_pitch_handler_07,
+    demo_pitch_handler,  #
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    silence_handler,
     demo_pitch_handler,
 ]
 
@@ -388,7 +652,36 @@ rhythm_materials_08 = [
 ]
 
 pitch_materials_08 = [
+    silence_handler,  #
     demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
+    silence_handler,  #
+    demo_pitch_handler,
+    silence_handler,
+    percussion_pitch_handler_08,  #
+    silence_handler,
+    percussion_pitch_handler_08,
+    silence_handler,
+    percussion_pitch_handler_08,
+    silence_handler,
+    percussion_pitch_handler_08,
+    silence_handler,
+    percussion_pitch_handler_08,
+    silence_handler,
+    percussion_pitch_handler_08,
+    silence_handler,  #
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    silence_handler,
 ]
 
 ## 09
@@ -417,6 +710,25 @@ rhythm_materials_09 = [
 ]
 
 pitch_materials_09 = [
+    demo_pitch_handler,  #
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,  #
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    percussion_pitch_handler_09,  #
+    percussion_pitch_handler_09,
+    silence_handler,
+    percussion_pitch_handler_09,
+    percussion_pitch_handler_09,
+    demo_pitch_handler,  #
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
     demo_pitch_handler,
 ]
 
@@ -459,7 +771,39 @@ rhythm_materials_10 = [
 ]
 
 pitch_materials_10 = [
+    silence_handler,  #
     demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    silence_handler,
+    silence_handler,  #
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    silence_handler,
+    silence_handler,  #
+    percussion_pitch_handler_10,
+    percussion_pitch_handler_10,
+    silence_handler,
+    percussion_pitch_handler_10,
+    percussion_pitch_handler_10,
+    silence_handler,
+    demo_pitch_handler,  #
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    silence_handler,
 ]
 
 ## 11
@@ -496,6 +840,33 @@ rhythm_materials_11 = [
 ]
 
 pitch_materials_11 = [
+    demo_pitch_handler,  #
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,  #
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    demo_pitch_handler,
+    percussion_pitch_handler_11,  #
+    silence_handler,
+    percussion_pitch_handler_11,
+    silence_handler,
+    percussion_pitch_handler_11,
+    silence_handler,
+    percussion_pitch_handler_11,
+    demo_pitch_handler,  #
+    demo_pitch_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
     demo_pitch_handler,
 ]
 
@@ -537,7 +908,38 @@ rhythm_materials_12 = [
 ]
 
 pitch_materials_12 = [
+    silence_handler,  #
     demo_pitch_handler,
+    silence_handler,
+    silence_handler,  #
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
+    silence_handler,  #
+    percussion_pitch_handler_12,
+    silence_handler,
+    percussion_pitch_handler_12,
+    silence_handler,
+    demo_pitch_handler,  #
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
+    demo_pitch_handler,
+    silence_handler,
 ]
 
 ## 13
@@ -550,5 +952,8 @@ rhythm_materials_13 = [
 ]
 
 pitch_materials_13 = [
-    demo_pitch_handler,
+    demo_pitch_handler,  #
+    demo_pitch_handler,  #
+    percussion_pitch_handler_13,  #
+    demo_pitch_handler,  #
 ]

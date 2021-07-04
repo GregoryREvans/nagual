@@ -155,40 +155,40 @@
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Alto Flute" }
                                 \override Staff.Stem.stemlet-length = 0.75
-                                fs'8
+                                f'8
                                 \ff
                                 [
 
-                                fs'8
+                                f'8
 
-                                fs'8
+                                f'8
                                 ~
 
-                                fs'8
+                                f'8
 
                                 \revert Staff.Stem.stemlet-length
-                                fs'8
+                                f'8
                                 ~
                                 ]
 
                             }
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            fs'8
+                            f'8
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            fs'8
+                            f'8
                             ]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            fs'8
+                            f'8
                             [
 
-                            fs'8
+                            f'8
 
                             \revert Staff.Stem.stemlet-length
-                            fs'8
+                            f'8
                             ]
 
                             \times 4/5
@@ -198,34 +198,34 @@
                                 % [Voice 1 measure 2]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                fs'8
+                                f'8
                                 ~
                                 [
 
-                                fs'8
+                                f'8
 
-                                fs'8
+                                f'8
                                 ~
 
-                                fs'8
+                                f'8
 
                                 \revert Staff.Stem.stemlet-length
-                                fs'8
+                                f'8
                                 ]
 
                             }
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            fs'8
+                            f'8
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            fs'8
+                            f'8
                             ]
 
-                            fs'8
+                            f'8
 
-                            fs'4
+                            f'4
 
                             <<
 
@@ -241,7 +241,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <f' fs'>16 * 16/35
+                                    <f'>16 * 16/35
                                     [
                                     (
 
@@ -266,7 +266,7 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    fs'4
+                                    f'4
                                     \mf
 
                                 }
@@ -291,7 +291,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <f' fs'>16 * 16/35
+                                    <f'>16 * 16/35
                                     [
                                     (
 
@@ -316,7 +316,7 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    fs'4.
+                                    f'4.
                                     \f
 
                                 }
@@ -334,46 +334,46 @@
                                 % [Voice 1 measure 5]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                fs'8
+                                f'8
                                 \ff
                                 [
 
-                                fs'8
+                                f'8
 
-                                fs'8
+                                f'8
                                 ~
 
-                                fs'8
+                                f'8
 
                                 \revert Staff.Stem.stemlet-length
-                                fs'8
+                                f'8
                                 ~
                                 ]
 
                             }
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            fs'8
+                            f'8
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            fs'8
+                            f'8
                             ]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            fs'8
+                            f'8
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            fs'8
+                            f'8
                             ]
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 6]
 
-                            fs'8
+                            f'8
 
-                            fs'4
+                            f'4
 
                             \times 4/5
                             {
@@ -382,18 +382,18 @@
                                 % [Voice 1 measure 7]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                fs'8
+                                f'8
                                 ~
                                 [
 
-                                fs'8
+                                f'8
 
-                                fs'8
+                                f'8
 
-                                fs'8
+                                f'8
 
                                 \revert Staff.Stem.stemlet-length
-                                fs'8
+                                f'8
                                 ]
                                 \bar "||"
 
@@ -426,23 +426,23 @@
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Guitar" }
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs''8
+                            c''8
                             \ff
                             [
 
-                            cs''8
+                            c''8
 
                             \revert Staff.Stem.stemlet-length
-                            cs''8
+                            c''8
                             ~
                             ]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs''8
+                            c''8
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            cs''8
+                            c''8
                             ~
                             ]
 
@@ -451,13 +451,13 @@
                             {
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs''8
+                                c''8
                                 [
 
-                                cs''8
+                                c''8
 
                                 \revert Staff.Stem.stemlet-length
-                                cs''8
+                                c''8
                                 ]
 
                             }
@@ -470,35 +470,35 @@
                                 % [Voice 2 measure 2]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs''8
+                                c''8
                                 [
 
-                                cs''8
+                                c''8
 
                                 \revert Staff.Stem.stemlet-length
-                                cs''8
+                                c''8
                                 ~
                                 ]
 
                             }
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs''8
+                            c''8
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            cs''8
+                            c''8
                             ~
                             ]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs''8
+                            c''8
                             [
 
-                            cs''8
+                            c''8
 
                             \revert Staff.Stem.stemlet-length
-                            cs''8
+                            c''8
                             ]
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
@@ -517,7 +517,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c'' cs''>16 * 16/35
+                                    <c''>16 * 16/35
                                     [
                                     (
 
@@ -542,7 +542,7 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    cs''4
+                                    c''4
                                     \mf
 
                                 }
@@ -567,7 +567,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c'' cs''>16 * 16/35
+                                    <c''>16 * 16/35
                                     [
                                     (
 
@@ -594,7 +594,7 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    cs''4.
+                                    c''4.
                                     \f
 
                                 }
@@ -611,14 +611,14 @@
                                 % [Voice 2 measure 5]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs''8
+                                c''8
                                 \ff
                                 [
 
-                                cs''8
+                                c''8
 
                                 \revert Staff.Stem.stemlet-length
-                                cs''8
+                                c''8
                                 ~
                                 ]
 
@@ -629,14 +629,14 @@
                             {
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs''8
+                                c''8
                                 [
 
-                                cs''8
+                                c''8
                                 ~
 
                                 \revert Staff.Stem.stemlet-length
-                                cs''8
+                                c''8
                                 ]
 
                             }
@@ -645,13 +645,13 @@
                             % [Voice 2 measure 6]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs''8
+                            c''8
                             [
 
-                            cs''8
+                            c''8
 
                             \revert Staff.Stem.stemlet-length
-                            cs''8
+                            c''8
                             ]
 
                             \tweak text #tuplet-number::calc-fraction-text
@@ -662,14 +662,14 @@
                                 % [Voice 2 measure 7]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs''8
+                                c''8
                                 [
 
-                                cs''8
+                                c''8
                                 ~
 
                                 \revert Staff.Stem.stemlet-length
-                                cs''8
+                                c''8
                                 ]
                                 \bar "||"
 
@@ -708,67 +708,67 @@
                                 \markup { \hcenter-in #14 "Percussion" }
                                 \clef "percussion"
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs'8
+                                c'8
                                 \ff
                                 [
                                 \boxed-markup "brushes + brake drum" 1
 
-                                cs'8
+                                c'8
 
-                                cs'8
+                                c'8
                                 ~
 
-                                cs'8
+                                c'8
 
-                                cs'8
+                                c'8
                                 ~
 
-                                cs'8
+                                c'8
 
-                                cs'8
+                                c'8
 
-                                cs'8
+                                c'8
 
                                 \revert Staff.Stem.stemlet-length
-                                cs'8
+                                c'8
                                 ]
 
                             }
 
-                            cs'8
+                            c'8
 
-                            cs'4
+                            c'4
 
-                            cs'8
+                            c'8
                             ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 2]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs'8
+                            c'8
                             [
 
-                            cs'8
+                            c'8
 
                             \revert Staff.Stem.stemlet-length
-                            cs'8
+                            c'8
                             ]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs'8
+                            c'8
                             [
 
-                            cs'8
+                            c'8
 
                             \revert Staff.Stem.stemlet-length
-                            cs'8
+                            c'8
                             ~
                             ]
 
-                            cs'8
+                            c'8
 
-                            cs'4
+                            c'4
 
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5
@@ -788,7 +788,7 @@
                                         \slash
                                         %! abjad.on_beat_grace_container(3)
                                         \voiceOne
-                                        <c' cs'>16 * 16/21
+                                        <c' d'>16 * 16/21
                                         [
                                         (
 
@@ -808,7 +808,7 @@
 
                                         %! abjad.on_beat_grace_container(4)
                                         \voiceTwo
-                                        cs'4
+                                        d'4
                                         \p
                                         \boxed-markup "yarn mallets + wood blocks" 1
 
@@ -831,7 +831,7 @@
                                         \slash
                                         %! abjad.on_beat_grace_container(3)
                                         \voiceOne
-                                        <c' cs'>16 * 16/21
+                                        <b c'>16 * 16/21
                                         [
                                         (
 
@@ -850,7 +850,7 @@
 
                                         %! abjad.on_beat_grace_container(4)
                                         \voiceTwo
-                                        cs'4
+                                        b4
                                         \mp
 
                                     }
@@ -881,7 +881,7 @@
                                         \slash
                                         %! abjad.on_beat_grace_container(3)
                                         \voiceOne
-                                        <c' cs'>16 * 16/21
+                                        <g c'>16 * 16/21
                                         [
                                         (
 
@@ -900,7 +900,7 @@
 
                                         %! abjad.on_beat_grace_container(4)
                                         \voiceTwo
-                                        cs'4
+                                        g4
                                         \mf
 
                                     }
@@ -922,7 +922,7 @@
                                         \slash
                                         %! abjad.on_beat_grace_container(3)
                                         \voiceOne
-                                        <c' cs'>16 * 16/21
+                                        <c' f'>16 * 16/21
                                         [
                                         (
 
@@ -941,7 +941,7 @@
 
                                         %! abjad.on_beat_grace_container(4)
                                         \voiceTwo
-                                        cs'4
+                                        f'4
                                         \mp
 
                                     }
@@ -963,7 +963,7 @@
                                         \slash
                                         %! abjad.on_beat_grace_container(3)
                                         \voiceOne
-                                        <c' cs'>16 * 16/21
+                                        <b c'>16 * 16/21
                                         [
                                         (
 
@@ -980,7 +980,7 @@
 
                                         %! abjad.on_beat_grace_container(4)
                                         \voiceTwo
-                                        cs'4
+                                        b4
                                         \mf
 
                                     }
@@ -996,49 +996,49 @@
                             % [Voice 3 measure 5]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs'8
+                            c'8
                             \ff
                             [
                             \boxed-markup "brushes + brake drum" 1
 
                             \revert Staff.Stem.stemlet-length
-                            cs'8
+                            c'8
                             ]
 
-                            cs'4
+                            c'4
 
-                            cs'4
+                            c'4
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs'8
+                            c'8
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            cs'8
+                            c'8
                             ]
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 6]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs'8
+                            c'8
                             [
 
-                            cs'8
+                            c'8
 
                             \revert Staff.Stem.stemlet-length
-                            cs'8
+                            c'8
                             ~
                             ]
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 7]
 
-                            cs'8
+                            c'8
 
-                            cs'4
+                            c'4
 
-                            cs'8
+                            c'8
                             \bar "||"
 
                         }
@@ -1071,56 +1071,56 @@
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Violin" }
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs'8
+                                c'8
                                 \ff
                                 [
 
-                                cs'8
+                                c'8
 
-                                cs'8
+                                c'8
                                 ~
 
-                                cs'8
+                                c'8
 
                                 \revert Staff.Stem.stemlet-length
-                                cs'8
+                                c'8
                                 ~
                                 ]
 
                             }
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs'8
+                            c'8
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            cs'8
+                            c'8
                             ]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs'8
+                            c'8
                             [
 
-                            cs'8
+                            c'8
 
                             \revert Staff.Stem.stemlet-length
-                            cs'8
+                            c'8
                             ]
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 2]
 
-                            cs'4
+                            c'4
 
-                            cs'8
+                            c'8
                             ~
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs'8
+                            c'8
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            cs'8
+                            c'8
                             ]
 
                             \tweak text #tuplet-number::calc-fraction-text
@@ -1128,13 +1128,13 @@
                             {
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs'8
+                                c'8
                                 [
 
-                                cs'8
+                                c'8
 
                                 \revert Staff.Stem.stemlet-length
-                                cs'8
+                                c'8
                                 ]
 
                             }
@@ -1155,7 +1155,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c' cs'>16 * 16/35
+                                    <c'>16 * 16/35
                                     [
                                     (
 
@@ -1174,7 +1174,7 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    cs'4
+                                    c'4
                                     \p
 
                                 }
@@ -1199,7 +1199,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c' cs'>16 * 16/35
+                                    <c'>16 * 16/35
                                     [
                                     (
 
@@ -1218,7 +1218,7 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    cs'8
+                                    c'8
                                     \mp
 
                                 }
@@ -1240,7 +1240,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c' cs'>16 * 16/35
+                                    <c'>16 * 16/35
                                     [
                                     (
 
@@ -1259,7 +1259,7 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    cs'8
+                                    c'8
                                     \mf
 
                                 }
@@ -1281,7 +1281,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c' cs'>16 * 16/35
+                                    <c'>16 * 16/35
                                     [
                                     (
 
@@ -1298,7 +1298,7 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    cs'8
+                                    c'8
                                     \f
 
                                 }
@@ -1314,60 +1314,60 @@
                                 % [Voice 4 measure 5]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs'8
+                                c'8
                                 \ff
                                 [
 
-                                cs'8
+                                c'8
 
-                                cs'8
+                                c'8
                                 ~
 
-                                cs'8
+                                c'8
 
                                 \revert Staff.Stem.stemlet-length
-                                cs'8
+                                c'8
                                 ~
                                 ]
 
                             }
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs'8
+                            c'8
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            cs'8
+                            c'8
                             ]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs'8
+                            c'8
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            cs'8
+                            c'8
                             ]
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 6]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs'8.
+                            c'8.
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            cs'8.
+                            c'8.
                             ~
                             ]
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 7]
 
-                            cs'8
+                            c'8
 
-                            cs'4
+                            c'4
 
-                            cs'8
+                            c'8
                             \bar "||"
 
                         }

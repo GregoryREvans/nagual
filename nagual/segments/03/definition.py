@@ -90,7 +90,7 @@ maker = evans.SegmentMaker(  # don't forget accents!
         evans.attach(
             "Voice 2",
             abjad.Dynamic("ff"),
-            baca.selectors.leaf(49),
+            baca.selectors.leaf(48),
         ),
         evans.attach(
             "Voice 2",

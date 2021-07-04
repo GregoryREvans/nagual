@@ -105,79 +105,79 @@
                             \set Staff.instrumentName =
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Alto Flute" }
-                            fs'1
+                            f'1
                             \fff
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 2]
 
-                            fs'8
+                            f'8
 
                             r8
 
                             r8
 
-                            fs'8
+                            f'8
                             ~
 
-                            fs'2.
+                            f'2.
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 3]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            fs'8
+                            f'8
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            fs'8
+                            f'8
                             ~
                             ]
 
-                            fs'2
+                            f'2
                             ~
 
-                            fs'8
+                            f'8
 
                             r8
 
                             r8.
 
-                            fs'16
+                            f'16
                             ~
 
-                            fs'4
+                            f'4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 4]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            fs'8.
+                            f'8.
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            fs'16
+                            f'16
                             ~
                             ]
 
-                            fs'2
+                            f'2
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 5]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            fs'16
+                            f'16
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            fs'8.
+                            f'8.
                             ~
                             ]
 
-                            fs'2
+                            f'2
                             ~
 
-                            fs'8.
+                            f'8.
 
                             r16
 
@@ -185,31 +185,31 @@
 
                             r8
 
-                            fs'8
+                            f'8
                             ~
 
-                            fs'4
+                            f'4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 6]
 
-                            fs'4
+                            f'4
 
-                            fs'2
+                            f'2
 
                             r4
 
                             r16
 
-                            fs'8.
+                            f'8.
                             ~
 
-                            fs'4
+                            f'4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 7]
 
-                            fs'8.
+                            f'8.
 
                             r16
 
@@ -217,27 +217,27 @@
 
                             r16
 
-                            fs'8.
+                            f'8.
                             ~
 
-                            fs'4
+                            f'4
                             ~
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            fs'16
+                            f'16
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            fs'8.
+                            f'8.
                             ]
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 8]
 
-                            fs'2
+                            f'2
                             ~
 
-                            fs'8.
+                            f'8.
 
                             r16
 
@@ -272,18 +272,18 @@
                             \markup { \hcenter-in #14 "Guitar" }
                             r4
 
-                            cs''2.
+                            c''2.
                             \fff
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 2]
 
-                            cs''4
+                            c''4
 
-                            cs''2
+                            c''2
                             ~
 
-                            cs''4
+                            c''4
 
                             r4
                             %! COMMENT_MEASURE_NUMBERS
@@ -292,72 +292,72 @@
 
                             r4
 
-                            cs''2
+                            c''2
 
-                            cs''2.
+                            c''2.
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 4]
 
-                            cs''4
+                            c''4
                             ~
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs''8
+                            c''8
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            cs''8
+                            c''8
                             ~
                             ]
 
-                            cs''4
+                            c''4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 5]
 
-                            cs''4
+                            c''4
 
                             r2
 
                             r16
 
-                            cs''8.
+                            c''8.
                             ~
 
-                            cs''4
+                            c''4
                             ~
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs''8.
+                            c''8.
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            cs''16
+                            c''16
                             ~
                             ]
 
-                            cs''4
+                            c''4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 6]
 
-                            cs''8.
+                            c''8.
 
                             r16
 
                             r8.
 
-                            cs''16
+                            c''16
                             ~
 
-                            cs''4
+                            c''4
                             ~
 
-                            cs''2
+                            c''2
                             ~
 
-                            cs''16
+                            c''16
 
                             r8.
                             %! COMMENT_MEASURE_NUMBERS
@@ -368,30 +368,30 @@
 
                             r16
 
-                            cs''8.
+                            c''8.
                             ~
 
-                            cs''4
+                            c''4
                             ~
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs''8.
+                            c''8.
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            cs''16
+                            c''16
                             ~
                             ]
 
-                            cs''4
+                            c''4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 8]
 
-                            cs''4
+                            c''4
                             ~
 
-                            cs''8.
+                            c''8.
 
                             r16
 
@@ -430,26 +430,26 @@
 
                             r8
 
-                            cs'8
+                            c'8
                             \fff
                             ~
                             \boxed-markup "superball + bass drum" 1
 
-                            cs'4
+                            c'4
                             ~
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs'8
+                            c'8
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            cs'8
+                            c'8
                             ]
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 2]
 
-                            cs'1
+                            c'1
 
                             r4
                             %! COMMENT_MEASURE_NUMBERS
@@ -460,78 +460,78 @@
 
                             r16
 
-                            cs'8.
+                            c'8.
                             ~
                             \boxed-markup "superball + tam tam" 1
 
-                            cs'4
+                            c'4
                             ~
 
-                            cs'2
+                            c'2
                             ~
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs'16
+                            c'16
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            cs'8.
+                            c'8.
                             ]
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 4]
 
-                            cs'4
+                            c'4
                             ~
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs'16
+                            c'16
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            cs'8.
+                            c'8.
                             ~
                             ]
 
-                            cs'4
+                            c'4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 5]
 
-                            cs'2
+                            c'2
                             ~
 
-                            cs'8.
+                            c'8.
 
                             r16
 
                             r8.
 
-                            cs'16
+                            c'16
                             ~
                             \boxed-markup "superball + bass drum" 1
 
-                            cs'4
+                            c'4
                             ~
 
-                            cs'2
+                            c'2
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 6]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs'8.
+                            c'8.
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            cs'16
+                            c'16
                             ~
                             ]
 
-                            cs'2
+                            c'2
                             ~
 
-                            cs'8.
+                            c'8.
 
                             r16
 
@@ -539,39 +539,39 @@
 
                             r16
 
-                            cs'8.
+                            c'8.
                             \boxed-markup "superball + tam tam" 1
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 7]
 
-                            cs'4
+                            c'4
                             ~
 
-                            cs'8.
+                            c'8.
 
                             r16
 
                             r4
 
-                            cs'2
+                            c'2
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 8]
 
-                            cs'4
+                            c'4
                             ~
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs'8
+                            c'8
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            cs'8
+                            c'8
                             ~
                             ]
 
-                            cs'2
+                            c'2
                             \bar "||"
 
                         }
@@ -602,68 +602,68 @@
                             \markup { \hcenter-in #14 "Violin" }
                             r8
 
-                            cs'8
+                            c'8
                             \fff
                             ~
 
-                            cs'4
+                            c'4
                             ~
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs'8
+                            c'8
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            cs'8
+                            c'8
                             ~
                             ]
 
-                            cs'4
+                            c'4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 2]
 
-                            cs'2.
+                            c'2.
 
                             r4
 
                             r8.
 
-                            cs'16
+                            c'16
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 3]
 
-                            cs'2.
+                            c'2.
                             ~
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs'8.
+                            c'8.
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            cs'16
+                            c'16
                             ~
                             ]
 
-                            cs'2
+                            c'2
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 4]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs'8.
+                            c'8.
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            cs'16
+                            c'16
                             ~
                             ]
 
-                            cs'4
+                            c'4
                             ~
 
-                            cs'8.
+                            c'8.
 
                             r16
                             %! COMMENT_MEASURE_NUMBERS
@@ -672,28 +672,28 @@
 
                             r8.
 
-                            cs'16
+                            c'16
                             ~
 
-                            cs'2
+                            c'2
                             ~
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs'16
+                            c'16
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            cs'8.
+                            c'8.
                             ~
                             ]
 
-                            cs'4
+                            c'4
                             ~
 
-                            cs'4
+                            c'4
                             ~
 
-                            cs'8.
+                            c'8.
 
                             r16
                             %! COMMENT_MEASURE_NUMBERS
@@ -702,36 +702,36 @@
 
                             r4
 
-                            cs'2
+                            c'2
                             ~
 
-                            cs'8
+                            c'8
 
                             r8
 
                             r8.
 
-                            cs'16
+                            c'16
                             ~
 
-                            cs'4
+                            c'4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 7]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs'8.
+                            c'8.
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            cs'16
+                            c'16
                             ~
                             ]
 
-                            cs'2
+                            c'2
                             ~
 
-                            cs'16
+                            c'16
 
                             r8.
 
@@ -742,13 +742,13 @@
 
                             r8
 
-                            cs'8
+                            c'8
                             ~
 
-                            cs'4
+                            c'4
                             ~
 
-                            cs'8
+                            c'8
 
                             r8
 

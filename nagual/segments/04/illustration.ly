@@ -120,7 +120,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <f' fs'>16 * 16/35
+                                    <f'>16 * 16/35
                                     [
                                     (
 
@@ -151,7 +151,7 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    fs'4.
+                                    f'4.
                                     \mf
 
                                 }
@@ -176,7 +176,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <f' fs'>16 * 16/35
+                                    <f'>16 * 16/35
                                     [
                                     (
 
@@ -211,7 +211,7 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    fs'2
+                                    f'2
                                     \f
 
                                 }
@@ -230,13 +230,13 @@
                             r8
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            fs'8.
+                            f'8.
                             \f
                             \>
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            fs'16
+                            f'16
                             ~
                             ]
                             %! COMMENT_MEASURE_NUMBERS
@@ -244,39 +244,39 @@
                             % [Voice 1 measure 4]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            fs'16
+                            f'16
                             [
 
-                            fs'16
+                            f'16
                             ~
 
-                            fs'8.
+                            f'8.
 
                             \revert Staff.Stem.stemlet-length
-                            fs'16
+                            f'16
                             ~
                             ]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            fs'8.
+                            f'8.
                             [
 
-                            fs'16
+                            f'16
                             \p
                             - \tenuto
 
-                            fs'16
+                            f'16
 
                             \revert Staff.Stem.stemlet-length
-                            fs'16
+                            f'16
                             ]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            fs'16
+                            f'16
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            fs'16
+                            f'16
                             ]
 
                             r4
@@ -330,7 +330,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c'' cs''>16 * 16/35
+                                    <c''>16 * 16/35
                                     [
                                     (
 
@@ -361,7 +361,7 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    cs''4.
+                                    c''4.
                                     \mf
 
                                 }
@@ -386,7 +386,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c'' cs''>16 * 16/35
+                                    <c''>16 * 16/35
                                     [
                                     (
 
@@ -421,7 +421,7 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    cs''2
+                                    c''2
                                     \f
 
                                 }
@@ -439,11 +439,11 @@
                             \times 3/2
                             {
 
-                                cs''4.
+                                c''4.
                                 \f
                                 \>
 
-                                cs''8
+                                c''8
                                 ~
 
                             }
@@ -452,21 +452,21 @@
                             % [Voice 2 measure 4]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs''16
+                            c''16
                             [
 
-                            cs''16
+                            c''16
                             \p
                             - \tenuto
 
-                            cs''16
+                            c''16
 
-                            cs''16
+                            c''16
 
-                            cs''16
+                            c''16
 
                             \revert Staff.Stem.stemlet-length
-                            cs''16
+                            c''16
                             ]
 
                             r2.
@@ -515,21 +515,21 @@
 
                                 \once \override Beam.grow-direction = #right
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs''32 * 63/16
+                                c''32 * 63/16
                                 \mp
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                cs''32 * 115/32
+                                c''32 * 115/32
 
                                 r32 * 91/32
 
-                                cs''32 * 35/16
+                                c''32 * 35/16
 
                                 r32 * 29/16
 
                                 \revert Staff.Stem.stemlet-length
-                                cs''32 * 13/8
+                                c''32 * 13/8
                                 ]
                                 \bar "||"
 
@@ -577,7 +577,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c' cs'>16 * 16/35
+                                    <g c'>16 * 16/35
                                     [
                                     (
 
@@ -596,7 +596,7 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    cs'8
+                                    g8
                                     \p
                                     \boxed-markup "yarn mallets + wood blocks" 1
 
@@ -619,7 +619,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c' cs'>16 * 16/35
+                                    <b c'>16 * 16/35
                                     [
                                     (
 
@@ -638,7 +638,7 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    cs'8
+                                    b8
                                     \mp
 
                                 }
@@ -663,7 +663,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c' cs'>16 * 16/35
+                                    <b c'>16 * 16/35
                                     [
                                     (
 
@@ -682,7 +682,7 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    cs'8
+                                    b8
                                     \mf
 
                                 }
@@ -706,7 +706,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c' cs'>16 * 16/35
+                                    <c' d'>16 * 16/35
                                     [
                                     (
 
@@ -725,7 +725,7 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    cs'8
+                                    d'8
                                     \f
 
                                 }
@@ -745,14 +745,14 @@
                             r8
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs'8
+                            c'8
                             \f
                             \>
                             [
                             \boxed-markup "brushes + brake drum" 1
 
                             \revert Staff.Stem.stemlet-length
-                            cs'8
+                            c'8
                             ~
                             ]
 
@@ -763,36 +763,36 @@
                                 %! abjad.SegmentMaker.comment_measure_numbers()
                                 % [Voice 3 measure 4]
 
-                                cs'8
+                                c'8
 
-                                cs'4
+                                c'4
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs'8.
+                                c'8.
                                 [
 
-                                cs'8
+                                c'8
 
                                 \revert Staff.Stem.stemlet-length
-                                cs'8
+                                c'8
                                 ]
 
-                                cs'4
+                                c'4
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                cs'16
+                                c'16
                                 \p
                                 - \tenuto
                                 [
 
-                                cs'16
+                                c'16
 
-                                cs'16
+                                c'16
 
-                                cs'16
+                                c'16
 
                                 \revert Staff.Stem.stemlet-length
-                                cs'16
+                                c'16
                                 ]
 
                             }
@@ -813,7 +813,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c' cs'>16 * 16/35
+                                    <c' d'>16 * 16/35
                                     [
                                     (
 
@@ -829,7 +829,7 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    cs'8
+                                    d'8
                                     \mf
                                     \boxed-markup "yarn mallets + wood blocks" 1
 
@@ -852,7 +852,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c' cs'>16 * 16/35
+                                    <c' f'>16 * 16/35
                                     [
                                     (
 
@@ -867,7 +867,7 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    cs'8
+                                    f'8
                                     \f
                                     \bar "||"
 
@@ -914,7 +914,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c' cs'>16 * 16/35
+                                    <c'>16 * 16/35
                                     [
                                     (
 
@@ -937,7 +937,7 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    cs'4
+                                    c'4
                                     \mp
 
                                 }
@@ -959,7 +959,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c' cs'>16 * 16/35
+                                    <c'>16 * 16/35
                                     [
                                     (
 
@@ -982,7 +982,7 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    cs'4
+                                    c'4
                                     \mf
 
                                 }
@@ -1007,7 +1007,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c' cs'>16 * 16/35
+                                    <c'>16 * 16/35
                                     [
                                     (
 
@@ -1026,11 +1026,11 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    cs'8
+                                    c'8
                                     \f
                                     ~
 
-                                    cs'8
+                                    c'8
 
                                 }
 
@@ -1051,7 +1051,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c' cs'>16 * 16/35
+                                    <c'>16 * 16/35
                                     [
                                     (
 
@@ -1074,7 +1074,7 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    cs'4
+                                    c'4
                                     \mf
 
                                 }
@@ -1096,7 +1096,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c' cs'>16 * 16/35
+                                    <c'>16 * 16/35
                                     [
                                     (
 
@@ -1115,7 +1115,7 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    cs'8
+                                    c'8
                                     \f
 
                                 }
@@ -1130,32 +1130,32 @@
                             r4.
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs'8.
+                            c'8.
                             \f
                             \>
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            cs'8.
+                            c'8.
                             ~
                             ]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs'16
+                            c'16
                             [
 
-                            cs'16
+                            c'16
                             \p
                             - \tenuto
 
-                            cs'16
+                            c'16
 
-                            cs'16
+                            c'16
 
-                            cs'16
+                            c'16
 
                             \revert Staff.Stem.stemlet-length
-                            cs'16
+                            c'16
                             ]
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
@@ -1174,7 +1174,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c' cs'>16 * 16/35
+                                    <c'>16 * 16/35
                                     [
                                     (
 
@@ -1193,11 +1193,11 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    cs'8
+                                    c'8
                                     \p
                                     ~
 
-                                    cs'8
+                                    c'8
 
                                 }
 
@@ -1218,7 +1218,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c' cs'>16 * 16/35
+                                    <c'>16 * 16/35
                                     [
                                     (
 
@@ -1237,11 +1237,11 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    cs'8
+                                    c'8
                                     \mp
                                     ~
 
-                                    cs'8
+                                    c'8
 
                                 }
 
@@ -1262,7 +1262,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c' cs'>16 * 16/35
+                                    <c'>16 * 16/35
                                     [
                                     (
 
@@ -1281,7 +1281,7 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    cs'8
+                                    c'8
                                     \mf
 
                                 }
@@ -1306,7 +1306,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c' cs'>16 * 16/35
+                                    <c'>16 * 16/35
                                     [
                                     (
 
@@ -1325,7 +1325,7 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    cs'4
+                                    c'4
                                     \f
 
                                 }

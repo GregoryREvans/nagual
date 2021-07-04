@@ -154,7 +154,9 @@
         \override TupletBracket.full-length-to-extent = ##f
         \override TupletBracket.padding = 2 % was 1.55
         \override TupletNumber.font-size = 1 % was 0.5
-
+		\override TupletBracket.padding = #1.5 % experimental
+		\override TupletBracket.staff-padding = #3 % experimental
+        %{ \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods % experimental %}
 		\override TupletBracket.bracket-visibility = ##t
 		\override TupletBracket.direction = #down
 		\override TupletNumber.text = #tuplet-number::calc-fraction-text
