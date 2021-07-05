@@ -17,6 +17,10 @@ from nagual.materials.pitch import (
     percussion_pitch_handler_11,
     percussion_pitch_handler_12,
     percussion_pitch_handler_13,
+    spazzolato_pitch_handler_01,
+    perforated_pitch_handler_01,
+    tremolo_pitch_handler_01,
+    trill_pitch_handler_01,
 )
 from nagual.materials.rhythm import (
     accelerando_handler_01,
@@ -91,41 +95,41 @@ rhythm_materials_01 = [
 
 pitch_materials_01 = [
     silence_handler,  #
-    demo_pitch_handler,
-    demo_pitch_handler,
+    spazzolato_pitch_handler_01,
+    tremolo_pitch_handler_01,
     silence_handler,
     silence_handler,  #
-    demo_pitch_handler,
+    spazzolato_pitch_handler_01,
     silence_handler,
-    demo_pitch_handler,
+    spazzolato_pitch_handler_01,
     silence_handler,
-    demo_pitch_handler,
+    perforated_pitch_handler_01,
     silence_handler,
-    demo_pitch_handler,
+    tremolo_pitch_handler_01,
     silence_handler,
     silence_handler,  #
     percussion_pitch_handler_01,
     percussion_pitch_handler_01,
     silence_handler,
-    demo_pitch_handler,  #
+    spazzolato_pitch_handler_01,  #
     silence_handler,
-    demo_pitch_handler,
+    spazzolato_pitch_handler_01,
     silence_handler,
-    demo_pitch_handler,
+    spazzolato_pitch_handler_01,
     silence_handler,
-    demo_pitch_handler,
+    spazzolato_pitch_handler_01,
     silence_handler,
-    demo_pitch_handler,
+    perforated_pitch_handler_01,
     silence_handler,
-    demo_pitch_handler,
+    perforated_pitch_handler_01,
     silence_handler,
-    demo_pitch_handler,
+    perforated_pitch_handler_01,
     silence_handler,
-    demo_pitch_handler,
+    tremolo_pitch_handler_01,
     silence_handler,
-    demo_pitch_handler,
+    spazzolato_pitch_handler_01,
     silence_handler,
-    demo_pitch_handler,
+    spazzolato_pitch_handler_01,
 ]
 
 ## 02
@@ -162,14 +166,14 @@ rhythm_materials_02 = [
 ]
 
 pitch_materials_02 = [
-    demo_pitch_handler,  #
+    trill_pitch_handler_01,  #
     silence_handler,
     demo_pitch_handler,
     demo_pitch_handler,
     silence_handler,
     silence_handler,
     demo_pitch_handler,
-    demo_pitch_handler,  #
+    trill_pitch_handler_01,  #
     silence_handler,
     demo_pitch_handler,
     silence_handler,
@@ -184,7 +188,7 @@ pitch_materials_02 = [
     silence_handler,
     percussion_pitch_handler_02,
     percussion_pitch_handler_02,
-    demo_pitch_handler,  #
+    trill_pitch_handler_01,  #
     demo_pitch_handler,
     demo_pitch_handler,
     silence_handler,

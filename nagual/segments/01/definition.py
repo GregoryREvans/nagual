@@ -13,6 +13,10 @@ from nagual.lib import (  # , with_sharps, zero_padding_glissando
     met_70,
     met_mod_40_66,
     tremolo_handler,
+    octave_up,
+    half_down,
+    quarter_up,
+    quarter_down,
 )
 from nagual.materials.instruments import instruments
 from nagual.materials.score_structure import score
@@ -43,11 +47,26 @@ maker = evans.SegmentMaker(
         ),
         "skips",
         handler_commands_01,
-        # evans.call(
-        #     "score",
-        #     with_sharps,
-        #     abjad.select().components(abjad.Score),
-        # ),
+        evans.call(
+            "Voice 1",
+            quarter_up,
+            baca.selectors.leaf(30),
+        ),
+        evans.call(
+            "Voice 2",
+            quarter_up,
+            baca.selectors.leaves([15, 16]),
+        ),
+        evans.call(
+            "Voice 2",
+            quarter_down,
+            baca.selectors.leaves([2, 6, 8, 13, 14]),
+        ),
+        evans.call(
+            "Voice 4",
+            octave_up,
+            baca.selectors.leaf(93),
+        ),
         evans.call(
             "score",
             evans.SegmentMaker.beam_score,
@@ -143,42 +162,42 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 1",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(31),
         ),
         evans.attach(
             "Voice 1",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(32),
         ),
         evans.attach(
             "Voice 1",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(33),
         ),
         evans.attach(
             "Voice 1",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(34),
         ),
         evans.attach(
             "Voice 1",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(35),
         ),
         evans.attach(
             "Voice 1",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(36),
         ),
         evans.attach(
             "Voice 1",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(37),
         ),
         evans.attach(
             "Voice 1",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(38),
         ),
         evans.call(
@@ -201,7 +220,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 2",
             abjad.LilyPondLiteral(r'\boxed-markup "normale" 1', format_slot="after"),
-            baca.selectors.note(33),
+            baca.selectors.leaf(53),
         ),
         evans.attach(
             "Voice 2",
@@ -250,47 +269,47 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 2",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(53),
         ),
         evans.attach(
             "Voice 2",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(54),
         ),
         evans.attach(
             "Voice 2",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(55),
         ),
         evans.attach(
             "Voice 2",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(57),
         ),
         evans.attach(
             "Voice 2",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(59),
         ),
         evans.attach(
             "Voice 2",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(60),
         ),
         evans.attach(
             "Voice 2",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(61),
         ),
         evans.attach(
             "Voice 2",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(62),
         ),
         evans.attach(
             "Voice 2",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(63),
         ),
         evans.call(
@@ -360,72 +379,72 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 3",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(33),
         ),
         evans.attach(
             "Voice 3",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(34),
         ),
         evans.attach(
             "Voice 3",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(35),
         ),
         evans.attach(
             "Voice 3",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(37),
         ),
         evans.attach(
             "Voice 3",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(40),
         ),
         evans.attach(
             "Voice 3",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(41),
         ),
         evans.attach(
             "Voice 3",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(42),
         ),
         evans.attach(
             "Voice 3",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(43),
         ),
         evans.attach(
             "Voice 3",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(44),
         ),
         evans.attach(
             "Voice 4",
             abjad.LilyPondLiteral(r'\boxed-markup "spazzolato" 1', format_slot="after"),
-            baca.selectors.note(0),
+            baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 4",
             abjad.LilyPondLiteral(
                 r'\boxed-markup "col legno tratto" 1', format_slot="after"
             ),
-            baca.selectors.note(24),
+            baca.selectors.leaf(29),
         ),
         evans.attach(
             "Voice 4",
             abjad.LilyPondLiteral(
                 r'\boxed-markup "normale + ponticello" 1', format_slot="after"
             ),
-            baca.selectors.note(47),
+            baca.selectors.leaf(70),
         ),
         evans.attach(
             "Voice 4",
             abjad.LilyPondLiteral(r'\boxed-markup "spazzolato" 1', format_slot="after"),
-            baca.selectors.note(56),
+            baca.selectors.leaf(80),
         ),
         evans.attach(
             "Voice 4",
@@ -514,47 +533,47 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 4",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(70),
         ),
         evans.attach(
             "Voice 4",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(71),
         ),
         evans.attach(
             "Voice 4",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(72),
         ),
         evans.attach(
             "Voice 4",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(73),
         ),
         evans.attach(
             "Voice 4",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(74),
         ),
         evans.attach(
             "Voice 4",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(75),
         ),
         evans.attach(
             "Voice 4",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(76),
         ),
         evans.attach(
             "Voice 4",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(77),
         ),
         evans.attach(
             "Voice 4",
-            abjad.Dynamic("fz"),
+            abjad.Dynamic("sfz"),
             baca.selectors.leaf(78),
         ),
         evans.attach(

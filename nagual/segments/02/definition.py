@@ -14,6 +14,9 @@ from nagual.lib import (  # , with_sharps, zero_padding_glissando
     red_stop_repeat,
     start_repeat,
     stop_repeat,
+    trill_handler,
+    octave_up,
+    octave_down,
 )
 from nagual.materials.instruments import instruments
 from nagual.materials.score_structure import score
@@ -50,6 +53,21 @@ maker = evans.SegmentMaker(
         #     abjad.select().components(abjad.Score),
         # ),
         evans.call(
+            "Voice 1",
+            octave_up,
+            baca.selectors.leaves([_ for _ in range(13)]),
+        ),
+        evans.call(
+            "Voice 2",
+            octave_down,
+            baca.selectors.leaves([_ for _ in range(40)]),
+        ),
+        evans.call(
+            "Voice 4",
+            octave_up,
+            baca.selectors.leaves([_ for _ in range(8)]),
+        ),
+        evans.call(
             "score",
             evans.SegmentMaker.beam_score,
             abjad.select().components(abjad.Score),
@@ -83,6 +101,16 @@ maker = evans.SegmentMaker(
             "Voice 2",
             rmakers.FeatherBeamCommand(),
             baca.selectors.leaves([_ for _ in range(34, 40)]),
+        ),
+        evans.call(
+            "Voice 1",
+            trill_handler,
+            baca.selectors.leaves([_ for _ in range(13)]),
+        ),
+        evans.call(
+            "Voice 4",
+            trill_handler,
+            abjad.select(),
         ),
         evans.attach(
             "Voice 1",
@@ -256,7 +284,37 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 3",
             abjad.LilyPondLiteral(r'\boxed-markup "toms" 1', format_slot="after"),
-            baca.selectors.note(0),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.StartTrillSpan(),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.StopTrillSpan(),
+            baca.selectors.leaf(4),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.StartTrillSpan(),
+            baca.selectors.leaf(4),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.StopTrillSpan(),
+            baca.selectors.leaf(5),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.StartTrillSpan(),
+            baca.selectors.leaf(5),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.StopTrillSpan(),
+            baca.selectors.leaf(7),
         ),
         evans.attach(
             "Voice 3",

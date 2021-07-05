@@ -565,3 +565,20 @@ clef_whitespace = abjad.LilyPondLiteral(
 tremolo_handler = evans.ArticulationHandler(
     ["tremolo"],
 )
+
+### Transposition Handlers ###
+
+octave_up = evans.TranspositionHandler([abjad.NumberedInterval(12)])
+octave_down = evans.TranspositionHandler([abjad.NumberedInterval(-12)])
+two_octaves_up = evans.TranspositionHandler([abjad.NumberedInterval(24)])
+two_octaves_down = evans.TranspositionHandler([abjad.NumberedInterval(-24)])
+three_octaves_up = evans.TranspositionHandler([abjad.NumberedInterval(36)])
+three_octaves_down = evans.TranspositionHandler([abjad.NumberedInterval(-36)])
+
+quarter_up = evans.TranspositionHandler([abjad.NumberedInterval(0.5)])
+quarter_down = evans.TranspositionHandler([abjad.NumberedInterval(-0.5)])
+
+half_up = evans.TranspositionHandler([abjad.NumberedInterval(1)])
+half_down = evans.TranspositionHandler([abjad.NumberedInterval(-1)])
+
+trill_handler = evans.TrillHandler(boolean_vector=[1], only_chords=True)
