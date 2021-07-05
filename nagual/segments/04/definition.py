@@ -11,6 +11,8 @@ from nagual.lib import (  # , with_sharps, zero_padding_glissando
     met_120,
     met_mod_100_120,
     met_mod_120_60,
+    quarter_up,
+    tremolo_handler,
 )
 from nagual.materials.instruments import instruments
 from nagual.materials.score_structure import score
@@ -46,6 +48,11 @@ maker = evans.SegmentMaker(
         #     with_sharps,
         #     abjad.select().components(abjad.Score),
         # ),
+        evans.call(
+            "Voice 2",
+            quarter_up,
+            baca.selectors.leaves([6, 7, 9, 11, 12]),
+        ),
         evans.call(
             "score",
             evans.SegmentMaker.beam_score,
@@ -83,6 +90,36 @@ maker = evans.SegmentMaker(
             "Global Context",
             met_mod_120_60,
             baca.selectors.leaf(2),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(r"\nebenStimmeStart", format_slot="before"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(r"\nebenStimmeStop", format_slot="before"),
+            baca.selectors.leaf(4),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.LilyPondLiteral(r"\hauptStimmeStart", format_slot="before"),
+            baca.selectors.leaf(2),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.LilyPondLiteral(r"\hauptStimmeStop", format_slot="before"),
+            baca.selectors.leaf(4),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.LilyPondLiteral(r"\nebenStimmeStart", format_slot="before"),
+            baca.selectors.leaf(6),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.LilyPondLiteral(r"\nebenStimmeStop", format_slot="before"),
+            baca.selectors.leaf(8),
         ),
         evans.attach(
             "Voice 1",
@@ -310,6 +347,65 @@ maker = evans.SegmentMaker(
             "Voice 4",
             abjad.Dynamic("f"),
             baca.selectors.leaf(29),
+        ),
+        evans.call(
+            "Voice 1",
+            tremolo_handler,
+            baca.selectors.leaves([_ for _ in range(6, 13)]),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.LilyPondLiteral(r'\boxed-markup "tone + air" 1', format_slot="after"),
+            baca.selectors.leaf(6),
+        ),
+        evans.call(
+            "Voice 2",
+            tremolo_handler,
+            baca.selectors.leaves([_ for _ in range(5, 8)]),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.LilyPondLiteral(r'\boxed-markup "spazzolato" 1', format_slot="after"),
+            baca.selectors.leaf(5),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.LilyPondLiteral(
+                r'\boxed-markup "pizz + dolce" 1', format_slot="after"
+            ),
+            baca.selectors.leaf(14),
+        ),
+        evans.call(
+            "Voice 3",
+            tremolo_handler,
+            baca.selectors.leaves([_ for _ in range(12, 20)]),
+        ),
+        evans.call(
+            "Voice 4",
+            tremolo_handler,
+            baca.selectors.leaves([_ for _ in range(12, 15)]),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.LilyPondLiteral(r'\boxed-markup "spazzolato" 1', format_slot="after"),
+            baca.selectors.leaf(12),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.LilyPondLiteral(
+                r'\boxed-markup "normale + ponticello" 1', format_slot="after"
+            ),
+            baca.selectors.leaf(21),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.LilyPondLiteral(r"\hauptStimmeStart", format_slot="before"),
+            baca.selectors.leaf(28),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.LilyPondLiteral(r"\hauptStimmeStop", format_slot="before"),
+            baca.selectors.leaf(30),
         ),
         evans.call(
             "Voice 1",

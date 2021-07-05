@@ -198,8 +198,8 @@
                                 a''4
                                 \p
                                 \<
-                                \startTrillSpan c'''
                                 ~
+                                \startTrillSpan c'''
 
                             }
                             %! COMMENT_MEASURE_NUMBERS
@@ -220,8 +220,8 @@
                             \pitchedTrill
                             g''4
                             \stopTrillSpan
-                            \startTrillSpan d'''
                             ~
+                            \startTrillSpan d'''
 
                             g''4.
                             ~
@@ -238,8 +238,8 @@
                                 \pitchedTrill
                                 df'''4
                                 \stopTrillSpan
-                                \startTrillSpan e'''
                                 ~
+                                \startTrillSpan e'''
 
                             }
 
@@ -276,14 +276,22 @@
                                 %! abjad.SegmentMaker.comment_measure_numbers()
                                 % [Voice 1 measure 7]
 
-                                f'4
+                                \pitchedTrill
+                                e''4
                                 \p
                                 \<
+                                \startTrillSpan f''
 
-                                f'2
+                                \pitchedTrill
+                                bf'2
+                                \stopTrillSpan
+                                \startTrillSpan d''
 
-                                f'2
+                                \pitchedTrill
+                                df''2
                                 \ff
+                                \stopTrillSpan
+                                \startTrillSpan ef''
 
                             }
 
@@ -294,30 +302,32 @@
                                 %! abjad.SegmentMaker.comment_measure_numbers()
                                 % [Voice 1 measure 8]
 
-                                f'4
+                                ef'4
                                 \p
                                 - \tweak stencil #abjad-flared-hairpin
                                 \<
+                                \stopTrillSpan
+                                \boxed-markup "tone + air" 1
 
-                                f'2.
+                                d'2.
 
-                                f'2
+                                af'2
                                 ~
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                f'8
+                                af'8
                                 [
 
-                                f'16
+                                g'16
                                 \ff
                                 - \accent
 
-                                f'16
+                                b'16
 
-                                f'16
+                                b'16
 
                                 \revert Staff.Stem.stemlet-length
-                                f'16
+                                b'16
                                 ]
 
                             }
@@ -361,23 +371,25 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 13]
 
+                            \hauptStimmeStart
                             f'4
                             \mp
                             - \tweak stencil #abjad-flared-hairpin
                             \<
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            f'16
+                            df'16
                             \mf
                             - \accent
                             [
 
-                            f'16
+                            \hauptStimmeStop
+                            af'16
 
-                            f'16
+                            fs'16
 
                             \revert Staff.Stem.stemlet-length
-                            f'16
+                            gqs'16
                             ]
 
                         }
@@ -762,9 +774,11 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 7]
 
-                            c''1
+                            \pitchedTrill
+                            ef'1
                             \p
                             \<
+                            \startTrillSpan e'
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 8]
@@ -774,6 +788,8 @@
                             r1 * 9/16
                             %! applying indicators
                             \ff
+                            %! applying indicators
+                            \stopTrillSpan
 
                             R1 * 9/16
                             %! COMMENT_MEASURE_NUMBERS
@@ -789,10 +805,11 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 10]
 
-                            c''8
+                            \hauptStimmeStart
+                            d''8
                             \mf
 
-                            c''4
+                            ds''4
                             \startTrillSpan
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
@@ -800,6 +817,8 @@
 
                             %! applying invisibility
                             \once \override Rest.transparent = ##t
+                            %! applying indicators
+                            \hauptStimmeStop
                             r1 * 1/4
                             %! applying indicators
                             \stopTrillSpan
@@ -809,16 +828,17 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 12]
 
-                            c''4.
+                            e''4.
                             \p
                             ~
+                            \boxed-markup "spazzolato" 1
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            c''8
+                            e''8
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            c''8
+                            fs''8
                             ~
                             ]
                             %! COMMENT_MEASURE_NUMBERS
@@ -826,15 +846,15 @@
                             % [Voice 2 measure 13]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            c''8
+                            fs''8
                             [
 
-                            c''8
+                            cs''8
 
                             c''8
 
                             \revert Staff.Stem.stemlet-length
-                            c''8
+                            d''8
                             ]
 
                         }
@@ -1018,6 +1038,7 @@
                             g4.
                             \p
                             ~
+                            \startTrillSpan
 
                             g4
                             ~
@@ -1028,9 +1049,12 @@
                                 %! abjad.SegmentMaker.comment_measure_numbers()
                                 % [Voice 3 measure 13]
 
+                                \nebenStimmeStart
                                 g2
 
                                 d'4
+                                \stopTrillSpan
+                                \startTrillSpan
 
                             }
 
@@ -1064,8 +1088,9 @@
                             f'4.
                             \pp
                             \<
-                            \startTrillSpan af'
                             ~
+                            \startTrillSpan af'
+                            \boxed-markup "ordinario + ponticello" 1
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 2]
@@ -1081,8 +1106,8 @@
                             \pitchedTrill
                             a'2.
                             \stopTrillSpan
-                            \startTrillSpan b'
                             ~
+                            \startTrillSpan b'
 
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 7/5
@@ -1096,8 +1121,8 @@
                                 \pitchedTrill
                                 c''4.
                                 \stopTrillSpan
-                                \startTrillSpan ef''
                                 ~
+                                \startTrillSpan ef''
 
                             }
                             %! COMMENT_MEASURE_NUMBERS
@@ -1115,30 +1140,30 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 6]
 
-                            c'4
+                            dqf'4
                             \p
                             - \tweak stencil #abjad-flared-hairpin
                             \<
                             \stopTrillSpan
                             \boxed-markup "spazzolato" 1
 
-                            c'8
+                            cs'8
                             ~
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            c'8
+                            cs'8
                             [
 
-                            c'16
+                            dqf'16
                             \f
                             - \accent
 
-                            c'16
+                            ef'16
 
-                            c'16
+                            cqs'16
 
                             \revert Staff.Stem.stemlet-length
-                            c'16
+                            cqs'16
                             ]
 
                             \times 4/5
@@ -1147,14 +1172,23 @@
                                 %! abjad.SegmentMaker.comment_measure_numbers()
                                 % [Voice 4 measure 7]
 
-                                c'8
+                                \pitchedTrill
+                                cs''8
                                 \p
                                 \<
+                                \startTrillSpan g''
+                                \boxed-markup "ordinario + ponticello" 1
 
-                                c'1
+                                \pitchedTrill
+                                d''1
+                                \stopTrillSpan
+                                \startTrillSpan fs''
 
-                                c'8
+                                \pitchedTrill
+                                ef''8
                                 \ff
+                                \stopTrillSpan
+                                \startTrillSpan g''
 
                             }
                             %! COMMENT_MEASURE_NUMBERS
@@ -1164,6 +1198,8 @@
                             %! applying invisibility
                             \once \override Rest.transparent = ##t
                             r1 * 9/16
+                            %! applying indicators
+                            \stopTrillSpan
 
                             R1 * 9/16
                             %! COMMENT_MEASURE_NUMBERS
@@ -1206,10 +1242,15 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 13]
 
-                            c'4.
+                            \pitchedTrill
+                            d''4.
                             \p
+                            \startTrillSpan af''
 
-                            c'8
+                            \pitchedTrill
+                            e''8
+                            \stopTrillSpan
+                            \startTrillSpan f''
 
                         }
 

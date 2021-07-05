@@ -7,16 +7,16 @@ from abjadext import rmakers
 
 from nagual.lib import (  # , with_sharps, zero_padding_glissando
     accel_40_100,
+    half_down,
     mark_40,
     met_40,
     met_66,
     met_70,
     met_mod_40_66,
-    tremolo_handler,
     octave_up,
-    half_down,
-    quarter_up,
     quarter_down,
+    quarter_up,
+    tremolo_handler,
 )
 from nagual.materials.instruments import instruments
 from nagual.materials.score_structure import score
@@ -132,6 +132,26 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 1",
+            abjad.LilyPondLiteral(r"\hauptStimmeStart", format_slot="before"),
+            baca.selectors.leaf(26),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.LilyPondLiteral(r"\hauptStimmeStop", format_slot="before"),
+            baca.selectors.leaf(29),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.LilyPondLiteral(r"\nebenStimmeStart", format_slot="before"),
+            baca.selectors.leaf(31),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.LilyPondLiteral(r"\nebenStimmeStop", format_slot="before"),
+            baca.selectors.leaf(33),
+        ),
+        evans.attach(
+            "Voice 1",
             abjad.LilyPondLiteral(r'\boxed-markup "tone + air" 1', format_slot="after"),
             baca.selectors.note(0),
         ),
@@ -213,7 +233,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 2",
             abjad.LilyPondLiteral(
-                r'\boxed-markup "plucked + ponticello" 1', format_slot="after"
+                r'\boxed-markup "pizz + ponticello" 1', format_slot="after"
             ),
             baca.selectors.note(15),
         ),
@@ -430,14 +450,14 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 4",
             abjad.LilyPondLiteral(
-                r'\boxed-markup "col legno tratto" 1', format_slot="after"
+                r'\boxed-markup "ordinario + col legno tratto" 1', format_slot="after"
             ),
             baca.selectors.leaf(29),
         ),
         evans.attach(
             "Voice 4",
             abjad.LilyPondLiteral(
-                r'\boxed-markup "normale + ponticello" 1', format_slot="after"
+                r'\boxed-markup "crine + ponticello" 1', format_slot="after"
             ),
             baca.selectors.leaf(70),
         ),

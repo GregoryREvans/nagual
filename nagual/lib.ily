@@ -162,6 +162,7 @@ normal-accidentals = #(
 
 double-diamond-parenthesized-top-markup =
     \markup
+    \raise #2
     \concat {
         \general-align #Y #1.25
         \override #'(baseline-skip . 1.75)
@@ -182,6 +183,7 @@ double-diamond-parenthesized-top-markup =
 
 diamond-parenthesized-double-diamond-markup =
     \markup
+    \raise #4
     \concat {
         \general-align #Y #2.5
         \scale #'(1 . 1.5)
@@ -201,3 +203,18 @@ diamond-parenthesized-double-diamond-markup =
         \scale #'(1 . 1.5)
         ")"
     }
+
+damp-markup =
+    \markup
+    \scale #'(0.75 . 0.75)
+    \combine
+    \bold
+    \override #'(font-name . "TimesNewRoman") "O"
+    \path #0.15
+    #'(
+        (moveto -.3 .6)
+        (rlineto 2.2 0)
+        (closepath)
+        (moveto .7 -.4)
+        (rlineto 0 2.2)
+        )

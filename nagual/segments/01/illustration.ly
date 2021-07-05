@@ -342,12 +342,14 @@
 
                                 d'2
 
+                                \hauptStimmeStart
                                 fqs'2.
 
                                 f'2
 
                                 fqs'4
 
+                                \hauptStimmeStop
                                 \override Staff.Stem.stemlet-length = 0.75
                                 g'16
                                 \mf
@@ -363,6 +365,7 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 11]
 
+                            \nebenStimmeStart
                             f''4
                             :32
                             \sfz
@@ -372,6 +375,7 @@
                             :32
                             \sfz
 
+                            \nebenStimmeStop
                             f''2
                             :32
                             \sfz
@@ -619,7 +623,7 @@
                                 af''16 * 15/8
                                 \mp
                                 [
-                                \boxed-markup "plucked + ponticello" 1
+                                \boxed-markup "pizz + ponticello" 1
 
                                 \revert Staff.Stem.stemlet-length
                                 g'''16 * 115/64
@@ -1366,7 +1370,7 @@
                                 b'32 * 15/4
                                 \mf
                                 [
-                                \boxed-markup "col legno tratto" 1
+                                \boxed-markup "ordinario + col legno tratto" 1
 
                                 \revert Staff.Stem.stemlet-length
                                 bf''32 * 115/32
@@ -1621,7 +1625,7 @@
                             <fs' b'>4
                             :32
                             \sfz
-                            \boxed-markup "normale + ponticello" 1
+                            \boxed-markup "crine + ponticello" 1
 
                             <fs' b'>4
                             :32

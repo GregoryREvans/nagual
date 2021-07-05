@@ -163,32 +163,33 @@
                                 \set Staff.instrumentName =
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Alto Flute" }
-                                f'4
+                                d'4
                                 \pp
+                                \stopTrillSpan
 
                                 f'4
 
-                                f'4
+                                d'4
                                 ~
 
                             }
 
-                            f'4
+                            d'4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 2]
 
-                            f'2
+                            g'2
                             ~
 
                             \times 2/3
                             {
 
-                                f'4
+                                g'4
 
-                                f'4
+                                a'4
 
-                                f'4
+                                e''4
                                 ~
 
                             }
@@ -199,35 +200,35 @@
                                 %! abjad.SegmentMaker.comment_measure_numbers()
                                 % [Voice 1 measure 3]
 
-                                f'4
+                                e''4
                                 ~
 
-                                f'4
+                                e''4
 
-                                f'4
+                                d''4
 
                             }
 
-                            f'2
+                            a'2
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 4]
 
-                            f'4
+                            b''4
                             ~
 
                             \times 2/3
                             {
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                f'8
+                                b''8
                                 [
 
-                                f'8
+                                a''8
                                 ~
 
                                 \revert Staff.Stem.stemlet-length
-                                f'8
+                                a''8
                                 ]
 
                             }
@@ -235,9 +236,9 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 5]
 
-                            f'2.
+                            b''2.
 
-                            f'2
+                            d''2
 
                             \times 2/3
                             {
@@ -245,41 +246,41 @@
                                 %! abjad.SegmentMaker.comment_measure_numbers()
                                 % [Voice 1 measure 6]
 
-                                f'4
+                                e''4
 
-                                f'4
+                                e''4
 
-                                f'4
+                                a'4
                                 ~
 
                             }
 
-                            f'2.
+                            a'2.
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 7]
 
-                            f'2
+                            d'2
 
-                            f'4
+                            e''4
 
-                            f'2.
+                            f''2.
                             ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 8]
 
-                            f'2
+                            f''2
                             ~
 
                             \times 2/3
                             {
 
-                                f'4
+                                f''4
 
-                                f'4
+                                f''4
 
-                                f'4
+                                g''4
 
                             }
 
@@ -297,7 +298,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <f'>8
+                                    <f' g''>8
                                     [
                                     (
 
@@ -338,7 +339,7 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    f'1.
+                                    g''1.
                                     \ff
 
                                 }
@@ -370,7 +371,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <f'>8
+                                    <f' a'>8
                                     [
                                     (
 
@@ -399,7 +400,7 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    f'1
+                                    a'1
 
                                 }
 
@@ -430,7 +431,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <f'>8
+                                    <f' e''>8
                                     [
                                     (
 
@@ -457,7 +458,7 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    f'2.
+                                    e''2.
 
                                 }
 
@@ -505,48 +506,48 @@
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Guitar" }
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c''16
+                                <g b d' g' af' d''>16
                                 \pp
                                 [
 
-                                c''16
+                                <g b d' g' af' d''>16
 
-                                c''16
+                                <g b d' g' af' d''>16
                                 ~
 
-                                c''16
+                                <g b d' g' af' d''>16
 
                                 \revert Staff.Stem.stemlet-length
-                                c''16
+                                <g b d' g' af' d''>16
                                 ~
                                 ]
 
                             }
 
-                            c''2
+                            <g b d' g' af' d''>2
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 2]
 
-                            c''2
+                            <d' c'' f'' a''>2
 
                             \times 4/5
                             {
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c''8
+                                <g b d' g' af' d''>8
                                 ~
                                 [
 
-                                c''8
+                                <g b d' g' af' d''>8
                                 ~
 
-                                c''8
+                                <g b d' g' af' d''>8
 
-                                c''8
+                                <g b d' g' af' d''>8
 
                                 \revert Staff.Stem.stemlet-length
-                                c''8
+                                <g b d' g' af' d''>8
                                 ]
 
                             }
@@ -558,24 +559,24 @@
                                 % [Voice 2 measure 3]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c''8
+                                <g b d' g' af' d''>8
                                 ~
                                 [
 
-                                c''8
+                                <g b d' g' af' d''>8
 
-                                c''8
+                                <g b d' g' af' d''>8
                                 ~
 
-                                c''8
+                                <g b d' g' af' d''>8
 
                                 \revert Staff.Stem.stemlet-length
-                                c''8
+                                <g b d' g' af' d''>8
                                 ]
 
                             }
 
-                            c''2
+                            <d' c'' f'' a''>2
                             ~
 
                             \times 4/5
@@ -585,47 +586,46 @@
                                 % [Voice 2 measure 4]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c''16
+                                <d' c'' f'' a''>16
                                 ~
                                 [
 
-                                c''16
+                                <d' c'' f'' a''>16
 
-                                c''16
+                                <cs' bf' e'' a''>16
 
-                                c''16
+                                <cs' bf' e'' a''>16
 
                                 \revert Staff.Stem.stemlet-length
-                                c''16
+                                <d' c'' f'' a''>16
                                 ~
                                 ]
 
                             }
 
-                            c''4
+                            <d' c'' f'' a''>4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 5]
 
-                            \hauptStimmeStart
-                            c''2
+                            <g b d' g' af' d''>2
                             ~
 
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5
                             {
 
-                                c''4
+                                <g b d' g' af' d''>4
 
-                                c''4
+                                <g b d' g' af' d''>4
 
-                                c''4
+                                <g b d' g' af' d''>4
                                 ~
 
-                                c''4
+                                <g b d' g' af' d''>4
                                 ~
 
-                                c''4
+                                <g b d' g' af' d''>4
 
                             }
 
@@ -636,43 +636,42 @@
                                 %! abjad.SegmentMaker.comment_measure_numbers()
                                 % [Voice 2 measure 6]
 
-                                c''4
+                                <g b d' g' af' d''>4
 
-                                c''4
+                                <g b d' g' af' d''>4
 
-                                c''4
+                                <g b d' g' af' d''>4
                                 ~
 
-                                c''4
+                                <g b d' g' af' d''>4
 
-                                c''4
+                                <g b d' g' af' d''>4
                                 ~
 
                             }
 
-                            c''2
+                            <g b d' g' af' d''>2
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 7]
 
-                            \hauptStimmeStop
-                            c''2.
+                            <b fs' a' d'' af''>2.
 
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5
                             {
 
-                                c''4
+                                <d' c'' f'' a''>4
                                 ~
 
-                                c''4
+                                <d' c'' f'' a''>4
                                 ~
 
-                                c''4
+                                <d' c'' f'' a''>4
 
-                                c''4
+                                <c' g' bf' ef'' a''>4
 
-                                c''4
+                                <c' g' bf' ef'' a''>4
 
                             }
 
@@ -683,88 +682,32 @@
                                 % [Voice 2 measure 8]
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c''8
+                                <d' c'' f'' a''>8
                                 ~
                                 [
 
-                                c''8
+                                <d' c'' f'' a''>8
 
-                                c''8
+                                <b fs' a' d'' af''>8
                                 ~
 
-                                c''8
+                                <b fs' a' d'' af''>8
 
                                 \revert Staff.Stem.stemlet-length
-                                c''8
+                                <c' g' bf' ef'' a''>8
                                 ]
 
                             }
 
-                            c''2
+                            <g e' b' d''>2
+                            :32
+                            %! COMMENT_MEASURE_NUMBERS
+                            %! abjad.SegmentMaker.comment_measure_numbers()
+                            % [Voice 2 measure 9]
 
-                            <<
-
-                                \context Voice = "On_Beat_Grace_Container"
-                                {
-                                    %! abjad.on_beat_grace_container(1)
-                                    \set fontSize = #-4
-                                    %! COMMENT_MEASURE_NUMBERS
-                                    %! abjad.SegmentMaker.comment_measure_numbers()
-                                    % [Voice 2 measure 9]
-
-                                    %! abjad.on_beat_grace_container(2)
-                                    \slash
-                                    %! abjad.on_beat_grace_container(3)
-                                    \voiceOne
-                                    <c''>16
-                                    [
-                                    (
-
-                                    c''8
-
-                                    c''16
-
-                                    c''16
-
-                                    c''8
-
-                                    c''16
-
-                                    c''16
-
-                                    c''16
-
-                                    c''8
-
-                                    c''16
-
-                                    c''8
-
-                                    c''16
-
-                                    c''16
-
-                                    c''8
-
-                                    c''16
-                                    )
-                                    ]
-
-                                }
-
-                                \context Voice = "Voice 2"
-                                {
-
-                                    %! abjad.on_beat_grace_container(4)
-                                    \voiceTwo
-                                    c''1.
-                                    \ff
-
-                                }
-
-                            >>
-                            %! applying indicators
-                            \oneVoice
+                            <g e' b' d''>1.
+                            :32
+                            \ff
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 10]
@@ -789,16 +732,10 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c''>16
+                                    <g' c''>16
                                     [
                                     (
 
-                                    c''16
-
-                                    c''8
-
-                                    c''16
-
                                     c''8
 
                                     c''16
@@ -808,6 +745,12 @@
                                     c''8
 
                                     c''16
+
+                                    c''16
+
+                                    c''16
+
+                                    c''8
                                     )
                                     ]
 
@@ -818,7 +761,7 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    c''1
+                                    g'1
 
                                 }
 
@@ -829,7 +772,8 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 12]
 
-                            c''2
+                            <g b d' g' af' d''>2
+                            :32
 
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5
@@ -838,24 +782,30 @@
                                 %! abjad.SegmentMaker.comment_measure_numbers()
                                 % [Voice 2 measure 13]
 
-                                c''4
+                                <g b d' g' af' d''>4
+                                :32
 
-                                c''4
+                                <g b d' g' af' d''>4
+                                :32
                                 ~
 
-                                c''4
+                                <g b d' g' af' d''>4
+                                :32
 
-                                c''4
+                                <g b d' g' af' d''>4
+                                :32
                                 ~
 
-                                c''4
+                                <g b d' g' af' d''>4
+                                :32
 
                             }
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 14]
 
-                            c''1
+                            <g b d' g' af' d''>1
+                            :32
                             \bar "||"
 
                         }
@@ -885,10 +835,12 @@
                             \set Staff.instrumentName =
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Percussion" }
+                            \nebenStimmeStop
                             \clef "percussion"
                             \override Staff.Stem.stemlet-length = 0.75
                             a8
                             \pp
+                            \stopTrillSpan
                             [
                             \boxed-markup "gongs" 1
 
@@ -976,6 +928,7 @@
 
                             e'1
 
+                            \hauptStimmeStart
                             a4
 
                             b'4
@@ -988,6 +941,7 @@
 
                             <c'' d''>4
 
+                            \hauptStimmeStop
                             r4
 
                             \tweak text #tuplet-number::calc-fraction-text
@@ -999,6 +953,7 @@
                                 %! abjad.SegmentMaker.comment_measure_numbers()
                                 % [Voice 3 measure 9]
 
+                                \hauptStimmeStart
                                 \clef "percussion"
                                 c'4
                                 \f
@@ -1016,6 +971,7 @@
 
                             }
 
+                            \hauptStimmeStop
                             c'4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
@@ -1045,12 +1001,6 @@
                                     [
                                     (
 
-                                    c'16
-
-                                    c'8
-
-                                    c'16
-
                                     c'8
 
                                     c'16
@@ -1060,6 +1010,12 @@
                                     c'8
 
                                     c'16
+
+                                    c'16
+
+                                    c'16
+
+                                    c'8
                                     )
                                     ]
 
@@ -1133,32 +1089,46 @@
                             \set Staff.instrumentName =
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Violin" }
+                            \nebenStimmeStart
                             \override Staff.Stem.stemlet-length = 0.75
-                            c'8.
+                            g8.
                             \mf
-                            ^ \double-diamond-parenthesized-top-markup
+                            \<
+                            \stopTrillSpan
                             [
                             %! abjad.glissando(7)
                             - \abjad-zero-padding-glissando
                             %! abjad.glissando(7)
                             \glissando
+                            - \tweak padding #2
+                            - \tweak staff-padding #1
+                            - \tweak bound-details.right.padding #2
+                            - \tweak bound-details.left.text
+                            \double-diamond-parenthesized-top-markup
+                            \startTrillSpan
 
                             \revert Staff.Stem.stemlet-length
                             \tweak Accidental.stencil ##f
                             \tweak X-extent #'(0 . 0)
                             \tweak transparent ##t
-                            c'16
+                            af16
                             ]
                             %! abjad.glissando(7)
                             - \abjad-zero-padding-glissando
                             %! abjad.glissando(7)
                             \glissando
+                            - \abjad-dashed-line-with-hook
+                            - \tweak bound-details.left.text \markup \concat { \damp-markup \hspace #0.5 }
+                            - \tweak staff-padding 3.5
+                            \startTextSpanOne
+                            \stopTrillSpan
 
+                            \nebenStimmeStop
                             \override Staff.Stem.stemlet-length = 0.75
                             \tweak Accidental.stencil ##f
                             \tweak X-extent #'(0 . 0)
                             \tweak transparent ##t
-                            c'8
+                            af8
                             [
                             %! abjad.glissando(7)
                             - \abjad-zero-padding-glissando
@@ -1169,7 +1139,7 @@
                             \tweak Accidental.stencil ##f
                             \tweak X-extent #'(0 . 0)
                             \tweak transparent ##t
-                            c'8
+                            cs'8
                             ]
                             %! abjad.glissando(7)
                             - \abjad-zero-padding-glissando
@@ -1179,7 +1149,7 @@
                             \tweak Accidental.stencil ##f
                             \tweak X-extent #'(0 . 0)
                             \tweak transparent ##t
-                            c'4
+                            cs'4
                             %! abjad.glissando(7)
                             - \abjad-zero-padding-glissando
                             %! abjad.glissando(7)
@@ -1194,7 +1164,7 @@
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'4
+                                af4
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -1203,7 +1173,7 @@
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'4
+                                af4
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -1212,7 +1182,7 @@
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'4
+                                cs'4
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -1223,7 +1193,7 @@
                             \tweak Accidental.stencil ##f
                             \tweak X-extent #'(0 . 0)
                             \tweak transparent ##t
-                            c'2
+                            e'2
                             %! abjad.glissando(7)
                             - \abjad-zero-padding-glissando
                             %! abjad.glissando(7)
@@ -1239,7 +1209,7 @@
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'16
+                                e'16
                                 [
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
@@ -1249,7 +1219,7 @@
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'16
+                                ef'16
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -1258,7 +1228,7 @@
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'16
+                                af16
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -1267,7 +1237,7 @@
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'16
+                                cs'16
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -1277,7 +1247,7 @@
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'16
+                                cs'16
                                 ]
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
@@ -1289,29 +1259,42 @@
                             \tweak Accidental.stencil ##f
                             \tweak X-extent #'(0 . 0)
                             \tweak transparent ##t
-                            c'4
-                            ^ \diamond-parenthesized-double-diamond-markup
+                            af4
+                            \ff
+                            \>
+                            \stopTextSpanOne
                             %! abjad.glissando(7)
                             - \abjad-zero-padding-glissando
                             %! abjad.glissando(7)
                             \glissando
+                            - \tweak padding #2
+                            - \tweak staff-padding #1
+                            - \tweak bound-details.right.padding #2
+                            - \tweak bound-details.left.text
+                            \diamond-parenthesized-double-diamond-markup
+                            \startTrillSpan
 
                             \override Staff.Stem.stemlet-length = 0.75
                             \tweak Accidental.stencil ##f
                             \tweak X-extent #'(0 . 0)
                             \tweak transparent ##t
-                            c'8
+                            af8
                             [
                             %! abjad.glissando(7)
                             - \abjad-zero-padding-glissando
                             %! abjad.glissando(7)
                             \glissando
+                            - \abjad-dashed-line-with-hook
+                            - \tweak bound-details.left.text \markup \concat { \damp-markup \hspace #0.5 }
+                            - \tweak staff-padding 3.5
+                            \startTextSpanOne
+                            \stopTrillSpan
 
                             \revert Staff.Stem.stemlet-length
                             \tweak Accidental.stencil ##f
                             \tweak X-extent #'(0 . 0)
                             \tweak transparent ##t
-                            c'8
+                            a8
                             ]
                             %! abjad.glissando(7)
                             - \abjad-zero-padding-glissando
@@ -1322,7 +1305,7 @@
                             \tweak Accidental.stencil ##f
                             \tweak X-extent #'(0 . 0)
                             \tweak transparent ##t
-                            c'16
+                            a16
                             [
                             %! abjad.glissando(7)
                             - \abjad-zero-padding-glissando
@@ -1333,7 +1316,7 @@
                             \tweak Accidental.stencil ##f
                             \tweak X-extent #'(0 . 0)
                             \tweak transparent ##t
-                            c'8.
+                            af8.
                             ]
                             %! abjad.glissando(7)
                             - \abjad-zero-padding-glissando
@@ -1349,7 +1332,7 @@
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'4
+                                af4
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -1358,7 +1341,7 @@
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'4
+                                af4
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -1367,7 +1350,7 @@
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'4
+                                ef'4
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -1381,7 +1364,7 @@
                             \tweak Accidental.stencil ##f
                             \tweak X-extent #'(0 . 0)
                             \tweak transparent ##t
-                            c'4
+                            bf4
                             %! abjad.glissando(7)
                             - \abjad-zero-padding-glissando
                             %! abjad.glissando(7)
@@ -1390,7 +1373,7 @@
                             \tweak Accidental.stencil ##f
                             \tweak X-extent #'(0 . 0)
                             \tweak transparent ##t
-                            c'4
+                            ef'4
                             %! abjad.glissando(7)
                             - \abjad-zero-padding-glissando
                             %! abjad.glissando(7)
@@ -1403,7 +1386,7 @@
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'4
+                                ef'4
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -1430,7 +1413,7 @@
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'4
+                                cs'4
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -1439,7 +1422,7 @@
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'4
+                                af4
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -1454,7 +1437,7 @@
                             \tweak Accidental.stencil ##f
                             \tweak X-extent #'(0 . 0)
                             \tweak transparent ##t
-                            c'8
+                            af8
                             [
                             %! abjad.glissando(7)
                             - \abjad-zero-padding-glissando
@@ -1464,7 +1447,7 @@
                             \tweak Accidental.stencil ##f
                             \tweak X-extent #'(0 . 0)
                             \tweak transparent ##t
-                            c'16
+                            cs'16
                             %! abjad.glissando(7)
                             - \abjad-zero-padding-glissando
                             %! abjad.glissando(7)
@@ -1474,7 +1457,7 @@
                             \tweak Accidental.stencil ##f
                             \tweak X-extent #'(0 . 0)
                             \tweak transparent ##t
-                            c'16
+                            fs'16
                             ]
                             %! abjad.glissando(7)
                             - \abjad-zero-padding-glissando
@@ -1487,26 +1470,39 @@
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'4
-                                ^ \double-diamond-parenthesized-top-markup
+                                a'4
+                                \mf
+                                \<
+                                \stopTextSpanOne
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
+                                - \tweak padding #2
+                                - \tweak staff-padding #1
+                                - \tweak bound-details.right.padding #2
+                                - \tweak bound-details.left.text
+                                \double-diamond-parenthesized-top-markup
+                                \startTrillSpan
 
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'4
+                                a'4
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
+                                - \abjad-dashed-line-with-hook
+                                - \tweak bound-details.left.text \markup \concat { \damp-markup \hspace #0.5 }
+                                - \tweak staff-padding 3.5
+                                \startTextSpanOne
+                                \stopTrillSpan
 
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'4
+                                bf'4
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -1517,20 +1513,34 @@
                             \tweak Accidental.stencil ##f
                             \tweak X-extent #'(0 . 0)
                             \tweak transparent ##t
-                            c'4
+                            bf'4
+                            \ff
+                            \>
+                            \stopTextSpanOne
                             %! abjad.glissando(7)
                             - \abjad-zero-padding-glissando
                             %! abjad.glissando(7)
                             \glissando
+                            - \tweak padding #2
+                            - \tweak staff-padding #1
+                            - \tweak bound-details.right.padding #2
+                            - \tweak bound-details.left.text
+                            \double-diamond-parenthesized-top-markup
+                            \startTrillSpan
 
                             \tweak Accidental.stencil ##f
                             \tweak X-extent #'(0 . 0)
                             \tweak transparent ##t
-                            c'4
+                            ef'4
                             %! abjad.glissando(7)
                             - \abjad-zero-padding-glissando
                             %! abjad.glissando(7)
                             \glissando
+                            - \abjad-dashed-line-with-hook
+                            - \tweak bound-details.left.text \markup \concat { \damp-markup \hspace #0.5 }
+                            - \tweak staff-padding 3.5
+                            \startTextSpanOne
+                            \stopTrillSpan
 
                             \tweak text #tuplet-number::calc-fraction-text
                             \times 3/5
@@ -1542,7 +1552,7 @@
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'4
+                                af'4
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -1551,7 +1561,7 @@
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'4
+                                af'4
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -1560,7 +1570,7 @@
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'4
+                                af'4
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -1569,7 +1579,7 @@
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'4
+                                cs''4
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -1578,7 +1588,7 @@
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'4
+                                bf'4
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -1589,28 +1599,42 @@
                             \tweak Accidental.stencil ##f
                             \tweak X-extent #'(0 . 0)
                             \tweak transparent ##t
-                            c'4
+                            a'4
+                            \mf
+                            \<
+                            \stopTextSpanOne
                             %! abjad.glissando(7)
                             - \abjad-zero-padding-glissando
                             %! abjad.glissando(7)
                             \glissando
+                            - \tweak padding #2
+                            - \tweak staff-padding #1
+                            - \tweak bound-details.right.padding #2
+                            - \tweak bound-details.left.text
+                            \diamond-parenthesized-double-diamond-markup
+                            \startTrillSpan
 
                             \override Staff.Stem.stemlet-length = 0.75
                             \tweak Accidental.stencil ##f
                             \tweak X-extent #'(0 . 0)
                             \tweak transparent ##t
-                            c'8
+                            a'8
                             [
                             %! abjad.glissando(7)
                             - \abjad-zero-padding-glissando
                             %! abjad.glissando(7)
                             \glissando
+                            - \abjad-dashed-line-with-hook
+                            - \tweak bound-details.left.text \markup \concat { \damp-markup \hspace #0.5 }
+                            - \tweak staff-padding 3.5
+                            \startTextSpanOne
+                            \stopTrillSpan
 
                             \revert Staff.Stem.stemlet-length
                             \tweak Accidental.stencil ##f
                             \tweak X-extent #'(0 . 0)
                             \tweak transparent ##t
-                            c'8
+                            e''8
                             ]
                             %! abjad.glissando(7)
                             - \abjad-zero-padding-glissando
@@ -1620,7 +1644,7 @@
                             \tweak Accidental.stencil ##f
                             \tweak X-extent #'(0 . 0)
                             \tweak transparent ##t
-                            c'4
+                            e''4
                             %! abjad.glissando(7)
                             - \abjad-zero-padding-glissando
                             %! abjad.glissando(7)
@@ -1636,7 +1660,7 @@
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'8
+                                b'8
                                 [
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
@@ -1646,7 +1670,7 @@
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'8
+                                e''8
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -1656,7 +1680,7 @@
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'8
+                                e''8
                                 ]
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
@@ -1668,20 +1692,34 @@
                             \tweak Accidental.stencil ##f
                             \tweak X-extent #'(0 . 0)
                             \tweak transparent ##t
-                            c'4
+                            e''4
+                            \ff
+                            \>
+                            \stopTextSpanOne
                             %! abjad.glissando(7)
                             - \abjad-zero-padding-glissando
                             %! abjad.glissando(7)
                             \glissando
+                            - \tweak padding #2
+                            - \tweak staff-padding #1
+                            - \tweak bound-details.right.padding #2
+                            - \tweak bound-details.left.text
+                            \double-diamond-parenthesized-top-markup
+                            \startTrillSpan
 
                             \tweak Accidental.stencil ##f
                             \tweak X-extent #'(0 . 0)
                             \tweak transparent ##t
-                            c'4
+                            ef''4
                             %! abjad.glissando(7)
                             - \abjad-zero-padding-glissando
                             %! abjad.glissando(7)
                             \glissando
+                            - \abjad-dashed-line-with-hook
+                            - \tweak bound-details.left.text \markup \concat { \damp-markup \hspace #0.5 }
+                            - \tweak staff-padding 3.5
+                            \startTextSpanOne
+                            \stopTrillSpan
 
                             \times 4/5
                             {
@@ -1690,7 +1728,7 @@
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'16
+                                d''16
                                 [
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
@@ -1700,7 +1738,9 @@
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'16
+                                g'16
+                                \mf
+                                \<
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -1709,7 +1749,7 @@
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'16
+                                g'16
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -1718,14 +1758,14 @@
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
-                                c'16
+                                c''16
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
 
                                 \revert Staff.Stem.stemlet-length
-                                c'16
+                                c''16
                                 ]
 
                             }
@@ -1744,16 +1784,10 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c'>16
+                                    <c' d''>16
                                     [
                                     (
 
-                                    c'16
-
-                                    c'8
-
-                                    c'16
-
                                     c'8
 
                                     c'16
@@ -1769,6 +1803,12 @@
                                     c'16
 
                                     c'8
+
+                                    c'16
+
+                                    c'8
+
+                                    c'16
 
                                     c'16
 
@@ -1785,8 +1825,9 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    c'1.
+                                    d''1.
                                     \ff
+                                    \stopTextSpanOne
 
                                 }
 
@@ -1817,19 +1858,19 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c'>16
+                                    <c' e'>16
                                     [
                                     (
 
-                                    c'8
-
-                                    c'16
-
-                                    c'16
-
                                     c'16
 
                                     c'8
+
+                                    c'16
+
+                                    c'8
+
+                                    c'16
 
                                     c'16
 
@@ -1846,7 +1887,7 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    c'1
+                                    e'1
 
                                 }
 
@@ -1877,19 +1918,19 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c'>16
+                                    <c' b'>16
                                     [
                                     (
 
-                                    c'8
-
-                                    c'16
-
-                                    c'16
-
                                     c'16
 
                                     c'8
+
+                                    c'16
+
+                                    c'8
+
+                                    c'16
 
                                     c'16
 
@@ -1904,7 +1945,7 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    c'2.
+                                    b'2.
 
                                 }
 

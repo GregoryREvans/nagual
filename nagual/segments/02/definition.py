@@ -6,17 +6,20 @@ import evans
 from abjadext import rmakers
 
 from nagual.lib import (  # , with_sharps, zero_padding_glissando
+    half_up,
     mark_100,
     mark_100_cautionary,
     met_100,
     met_mod_100_66,
+    octave_down,
+    octave_up,
+    quarter_up,
     red_start_repeat,
     red_stop_repeat,
     start_repeat,
     stop_repeat,
     trill_handler,
-    octave_up,
-    octave_down,
+    two_octaves_up,
 )
 from nagual.materials.instruments import instruments
 from nagual.materials.score_structure import score
@@ -55,7 +58,22 @@ maker = evans.SegmentMaker(
         evans.call(
             "Voice 1",
             octave_up,
-            baca.selectors.leaves([_ for _ in range(13)]),
+            baca.selectors.leaves([_ for _ in range(17)]),
+        ),
+        evans.call(
+            "Voice 1",
+            octave_up,
+            baca.selectors.leaves([_ for _ in range(19, 25)]),
+        ),
+        evans.call(
+            "Voice 1",
+            half_up,
+            baca.selectors.leaves([22, 24]),
+        ),
+        evans.call(
+            "Voice 1",
+            abjad.iterpitches.respell_with_sharps,
+            baca.selectors.leaves([22, 24]),
         ),
         evans.call(
             "Voice 2",
@@ -63,9 +81,19 @@ maker = evans.SegmentMaker(
             baca.selectors.leaves([_ for _ in range(40)]),
         ),
         evans.call(
+            "Voice 2",
+            quarter_up,
+            baca.selectors.leaves([47, 51, 52, 53]),
+        ),
+        evans.call(
             "Voice 4",
             octave_up,
             baca.selectors.leaves([_ for _ in range(8)]),
+        ),
+        evans.call(
+            "Voice 4",
+            two_octaves_up,
+            baca.selectors.leaves([_ for _ in range(15, 28)]),
         ),
         evans.call(
             "score",
@@ -102,10 +130,30 @@ maker = evans.SegmentMaker(
             rmakers.FeatherBeamCommand(),
             baca.selectors.leaves([_ for _ in range(34, 40)]),
         ),
+        evans.attach(
+            "Voice 2",
+            abjad.LilyPondLiteral(r"\hauptStimmeStart", format_slot="before"),
+            baca.selectors.leaf(46),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.LilyPondLiteral(r"\hauptStimmeStop", format_slot="before"),
+            baca.selectors.leaf(48),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(r"\nebenStimmeStart", format_slot="before"),
+            baca.selectors.leaf(31),
+        ),
         evans.call(
             "Voice 1",
             trill_handler,
-            baca.selectors.leaves([_ for _ in range(13)]),
+            abjad.select(),
+        ),
+        evans.call(
+            "Voice 2",
+            trill_handler,
+            abjad.select(),
         ),
         evans.call(
             "Voice 4",
@@ -141,6 +189,11 @@ maker = evans.SegmentMaker(
             "Voice 1",
             abjad.StartHairpin("<"),
             baca.selectors.leaf(14),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.LilyPondLiteral(r'\boxed-markup "tone + air" 1', format_slot="after"),
+            baca.selectors.leaf(17),
         ),
         evans.attach(
             "Voice 1",
@@ -246,6 +299,11 @@ maker = evans.SegmentMaker(
             "Voice 2",
             abjad.StopTrillSpan(),
             baca.selectors.leaf(48),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.LilyPondLiteral(r'\boxed-markup "spazzolato" 1', format_slot="after"),
+            baca.selectors.leaf(49),
         ),
         evans.attach(
             "Voice 2",
@@ -412,6 +470,28 @@ maker = evans.SegmentMaker(
             baca.selectors.leaf(29),
         ),
         evans.attach(
+            "Voice 3",
+            abjad.StartTrillSpan(),
+            baca.selectors.leaf(29),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.StopTrillSpan(),
+            baca.selectors.leaf(32),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.StartTrillSpan(),
+            baca.selectors.leaf(32),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.LilyPondLiteral(
+                r'\boxed-markup "ordinario + ponticello" 1', format_slot="after"
+            ),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
             "Voice 4",
             abjad.Dynamic("pp"),
             baca.selectors.leaf(0),
@@ -453,6 +533,13 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 4",
+            abjad.LilyPondLiteral(
+                r'\boxed-markup "ordinario + ponticello" 1', format_slot="after"
+            ),
+            baca.selectors.leaf(15),
+        ),
+        evans.attach(
+            "Voice 4",
             abjad.Dynamic("p"),
             baca.selectors.leaf(15),
         ),
@@ -470,6 +557,16 @@ maker = evans.SegmentMaker(
             "Voice 4",
             abjad.Dynamic("p"),
             baca.selectors.leaf(26),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.LilyPondLiteral(r"\hauptStimmeStart", format_slot="before"),
+            baca.selectors.leaf(31),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.LilyPondLiteral(r"\hauptStimmeStop", format_slot="before"),
+            baca.selectors.leaf(33),
         ),
         evans.attach(
             "Global Context",

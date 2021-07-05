@@ -402,7 +402,7 @@ grace_handler_03 = evans.OnBeatGraceHandler(
         15,
         9,
         8,
-        15,
+        # 15,
         9,
         9,
         15,
@@ -582,3 +582,23 @@ half_up = evans.TranspositionHandler([abjad.NumberedInterval(1)])
 half_down = evans.TranspositionHandler([abjad.NumberedInterval(-1)])
 
 trill_handler = evans.TrillHandler(boolean_vector=[1], only_chords=True)
+
+bis_handler = evans.BisbigliandoHandler(
+    fingering_list=[
+        r"\double-diamond-parenthesized-top-markup",
+        r"\diamond-parenthesized-double-diamond-markup",
+        r"\double-diamond-parenthesized-top-markup",
+    ],
+    boolean_vector=[1],
+    staff_padding=1,
+    forget=False,
+)
+
+start_damp = abjad.StartTextSpan(
+    left_text=abjad.Markup(r"\damp-markup", literal=True),
+    style="dashed-line-with-hook",
+    command=r"\startTextSpanOne",
+)
+abjad.tweak(start_damp).staff_padding = 3.5
+
+stop_damp = abjad.StopTextSpan(command=r"\stopTextSpanOne")

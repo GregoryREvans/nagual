@@ -5,12 +5,16 @@ import baca
 import evans
 
 from nagual.lib import (  # , with_sharps
+    bis_handler,
     clef_whitespace,
     grace_handler_03,
     met_50,
     met_100,
     met_mod_50_100,
     met_mod_66_50,
+    start_damp,
+    stop_damp,
+    tremolo_handler,
     zero_padding_glissando,
 )
 from nagual.materials.instruments import instruments
@@ -73,6 +77,41 @@ maker = evans.SegmentMaker(  # don't forget accents!
             baca.selectors.leaf(8),
         ),
         evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(r"\nebenStimmeStop", format_slot="before"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.LilyPondLiteral(r"\nebenStimmeStart", format_slot="before"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.LilyPondLiteral(r"\nebenStimmeStop", format_slot="before"),
+            baca.selectors.leaf(2),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(r"\hauptStimmeStart", format_slot="before"),
+            baca.selectors.leaf(27),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(r"\hauptStimmeStop", format_slot="before"),
+            baca.selectors.leaf(33),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.StopTrillSpan(),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.StopTrillSpan(),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
             "Voice 1",
             abjad.Dynamic("pp"),
             baca.selectors.leaf(0),
@@ -93,14 +132,19 @@ maker = evans.SegmentMaker(  # don't forget accents!
             baca.selectors.leaf(48),
         ),
         evans.attach(
-            "Voice 2",
+            "Voice 3",
             abjad.LilyPondLiteral(r"\hauptStimmeStart", format_slot="before"),
-            baca.selectors.leaf(24),
+            baca.selectors.leaf(22),
         ),
         evans.attach(
-            "Voice 2",
+            "Voice 3",
             abjad.LilyPondLiteral(r"\hauptStimmeStop", format_slot="before"),
-            baca.selectors.leaf(36),
+            baca.selectors.leaf(26),
+        ),
+        evans.call(
+            "Voice 2",
+            tremolo_handler,
+            baca.selectors.leaves([47, 48, 51, 52, 53, 54, 55, 56, 57]),
         ),
         evans.attach(
             "Voice 3",
@@ -208,6 +252,11 @@ maker = evans.SegmentMaker(  # don't forget accents!
         ),
         evans.attach(
             "Voice 4",
+            abjad.StopTrillSpan(),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 4",
             abjad.Dynamic("mf"),
             baca.selectors.leaf(0),
         ),
@@ -221,32 +270,133 @@ maker = evans.SegmentMaker(  # don't forget accents!
             zero_padding_glissando,
             baca.selectors.leaves([_ for _ in range(56)]),
         ),
-        evans.attach(
-            "Voice 4",
-            abjad.Markup(
-                r"\double-diamond-parenthesized-top-markup",
-                literal=True,
-                direction=abjad.Up,
-            ),
-            baca.selectors.note(0),
+        evans.call(
+            "Voice 4", bis_handler, baca.selectors.leaves([0, 14, 32, 35, 42, 49])
         ),
         evans.attach(
             "Voice 4",
-            abjad.Markup(
-                r"\diamond-parenthesized-double-diamond-markup",
-                literal=True,
-                direction=abjad.Up,
-            ),
-            baca.selectors.note(14),
+            abjad.StartHairpin("<"),
+            baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 4",
-            abjad.Markup(
-                r"\double-diamond-parenthesized-top-markup",
-                literal=True,
-                direction=abjad.Up,
-            ),
-            baca.selectors.note(32),
+            abjad.Dynamic("ff"),
+            baca.selectors.leaf(14),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.StartHairpin(">"),
+            baca.selectors.leaf(14),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Dynamic("mf"),
+            baca.selectors.leaf(32),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.StartHairpin("<"),
+            baca.selectors.leaf(32),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Dynamic("ff"),
+            baca.selectors.leaf(35),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.StartHairpin(">"),
+            baca.selectors.leaf(35),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Dynamic("mf"),
+            baca.selectors.leaf(42),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.StartHairpin("<"),
+            baca.selectors.leaf(42),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Dynamic("ff"),
+            baca.selectors.leaf(49),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.StartHairpin(">"),
+            baca.selectors.leaf(49),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Dynamic("mf"),
+            baca.selectors.leaf(52),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.StartHairpin("<"),
+            baca.selectors.leaf(52),
+        ),
+        evans.attach(
+            "Voice 4",
+            start_damp,
+            baca.selectors.leaf(1),
+        ),
+        evans.attach(
+            "Voice 4",
+            stop_damp,
+            baca.selectors.leaf(14),
+        ),
+        evans.attach(
+            "Voice 4",
+            start_damp,
+            baca.selectors.leaf(15),
+        ),
+        evans.attach(
+            "Voice 4",
+            stop_damp,
+            baca.selectors.leaf(32),
+        ),
+        evans.attach(
+            "Voice 4",
+            start_damp,
+            baca.selectors.leaf(33),
+        ),
+        evans.attach(
+            "Voice 4",
+            stop_damp,
+            baca.selectors.leaf(35),
+        ),
+        evans.attach(
+            "Voice 4",
+            start_damp,
+            baca.selectors.leaf(36),
+        ),
+        evans.attach(
+            "Voice 4",
+            stop_damp,
+            baca.selectors.leaf(42),
+        ),
+        evans.attach(
+            "Voice 4",
+            start_damp,
+            baca.selectors.leaf(43),
+        ),
+        evans.attach(
+            "Voice 4",
+            stop_damp,
+            baca.selectors.leaf(49),
+        ),
+        evans.attach(
+            "Voice 4",
+            start_damp,
+            baca.selectors.leaf(50),
+        ),
+        evans.attach(
+            "Voice 4",
+            stop_damp,
+            baca.selectors.leaf(56),
         ),
         evans.call(
             "Voice 1",
@@ -257,7 +407,7 @@ maker = evans.SegmentMaker(  # don't forget accents!
         evans.call(
             "Voice 2",
             grace_handler_03,
-            abjad.select().leaves().get([48, 50]),
+            abjad.select().leaves().get([50]),
         ),
         evans.call(
             "Voice 3",
