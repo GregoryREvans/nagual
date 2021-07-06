@@ -1367,32 +1367,32 @@
 
                                 \once \override Beam.grow-direction = #right
                                 \override Staff.Stem.stemlet-length = 0.75
-                                b'32 * 15/4
+                                b'16 * 15/8
                                 \mf
                                 [
                                 \boxed-markup "ordinario + col legno tratto" 1
 
                                 \revert Staff.Stem.stemlet-length
-                                bf''32 * 115/32
+                                bf''16 * 115/64
 
-                                r32 * 103/32
+                                r16 * 103/64
 
-                                c''32 * 11/4
+                                c''16 * 11/8
 
-                                r32 * 37/16
+                                r16 * 37/32
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                af'32 * 2
+                                af'16 * 1
 
                                 \revert Staff.Stem.stemlet-length
-                                g''32 * 7/4
+                                g''16 * 7/8
 
-                                r32 * 13/8
+                                r16 * 13/16
 
-                                r32 * 49/32
+                                r16 * 49/64
 
                                 \revert Staff.Stem.stemlet-length
-                                b'32 * 47/32
+                                b'16 * 47/64
                                 ]
 
                             }
@@ -1446,23 +1446,23 @@
 
                                 \once \override Beam.grow-direction = #left
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf''32 * 3/2
+                                bf''16 * 3/4
                                 [
 
                                 \revert Staff.Stem.stemlet-length
-                                c''32 * 25/16
+                                c''16 * 25/32
 
-                                r32 * 7/4
+                                r16 * 7/8
 
-                                af'32 * 65/32
+                                af'16 * 65/64
 
-                                r32 * 79/32
+                                r16 * 79/64
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                g''32 * 49/16
+                                g''16 * 49/32
 
                                 \revert Staff.Stem.stemlet-length
-                                b'32 * 29/8
+                                b'16 * 29/16
                                 ]
 
                             }

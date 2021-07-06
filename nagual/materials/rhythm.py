@@ -119,8 +119,6 @@ accelerando_01 = rmakers.stack(
     rmakers.accelerando(
         [(1, 8), (1, 20), (1, 16)],
         [(1, 20), (1, 8), (1, 16)],
-        [(1, 8), (1, 20), (1, 32)],
-        [(1, 20), (1, 8), (1, 32)],
     ),
     rmakers.force_rest(select_periodic_ties_2_4_7_8_of_10),
     rmakers.duration_bracket(),

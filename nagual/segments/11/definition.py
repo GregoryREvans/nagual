@@ -9,8 +9,12 @@ from nagual.lib import (  # , with_sharps, zero_padding_glissando
     met_95,
     met_130,
     met_mod_80_130,
+    octave_down,
     rit_130_60,
     stop_repeat_before,
+    tremolo_handler,
+    trill_handler,
+    two_octaves_down,
 )
 from nagual.materials.instruments import alt_instruments
 from nagual.materials.score_structure import score
@@ -67,6 +71,49 @@ maker = evans.SegmentMaker(
             baca.selectors.leaf(7),
         ),
         evans.call("Global Context", rit_130_60, baca.selectors.leaves([7, 8, 9, 10])),
+        evans.call(
+            "Voice 1", octave_down, baca.selectors.leaves([_ for _ in range(9, 43)])
+        ),
+        evans.call(
+            "Voice 2", octave_down, baca.selectors.leaves([_ for _ in range(11, 24)])
+        ),
+        evans.call(
+            "Voice 4", octave_down, baca.selectors.leaves([_ for _ in range(20, 40)])
+        ),
+        evans.call("Voice 4", octave_down, baca.selectors.leaves([45, 48, 53])),
+        evans.call(
+            "Voice 4", two_octaves_down, baca.selectors.leaves([42, 43, 47, 51, 52])
+        ),
+        evans.call(
+            "Voice 1",
+            trill_handler,
+            abjad.select(),
+        ),
+        evans.call(
+            "Voice 2",
+            trill_handler,
+            abjad.select(),
+        ),
+        evans.call(
+            "Voice 4",
+            trill_handler,
+            abjad.select(),
+        ),
+        evans.call(
+            "Voice 4",
+            tremolo_handler,
+            baca.selectors.leaves([_ for _ in range(5, 18)]),
+        ),
+        evans.call(
+            "Voice 4",
+            tremolo_handler,
+            baca.selectors.leaves([_ for _ in range(20, 40)]),
+        ),
+        evans.call(
+            "Voice 4",
+            tremolo_handler,
+            baca.selectors.leaves([_ for _ in range(42, 54)]),
+        ),
         evans.attach(
             "Voice 3",
             abjad.Clef("percussion"),
@@ -103,6 +150,76 @@ maker = evans.SegmentMaker(
                 stemlet_length=0.75,
             ),
             baca.selectors.leaves([_ for _ in range(11, 25)]),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.StartTrillSpan(),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.StopTrillSpan(),
+            baca.selectors.leaf(2),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.StartTrillSpan(),
+            baca.selectors.leaf(2),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.StopTrillSpan(),
+            baca.selectors.leaf(3),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.StartTrillSpan(),
+            baca.selectors.leaf(3),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.StopTrillSpan(),
+            baca.selectors.leaf(4),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.StartTrillSpan(),
+            baca.selectors.leaf(4),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.StopTrillSpan(),
+            baca.selectors.leaf(5),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.StartTrillSpan(),
+            baca.selectors.leaf(6),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.StopTrillSpan(),
+            baca.selectors.leaf(7),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.StartTrillSpan(),
+            baca.selectors.leaf(8),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.StopTrillSpan(),
+            baca.selectors.leaf(9),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.StartTrillSpan(),
+            baca.selectors.leaf(9),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.StopTrillSpan(),
+            baca.selectors.leaf(10),
         ),
         evans.attach(
             "Voice 4",

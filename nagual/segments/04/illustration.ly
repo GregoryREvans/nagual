@@ -531,22 +531,22 @@
 
                                 \once \override Beam.grow-direction = #right
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c'''32 * 63/16
+                                c'''16 * 63/32
                                 \mp
                                 [
                                 \boxed-markup "pizz + dolce" 1
 
                                 \revert Staff.Stem.stemlet-length
-                                af''32 * 115/32
+                                af''16 * 115/64
 
-                                r32 * 91/32
+                                r16 * 91/64
 
-                                g'''32 * 35/16
+                                g'''16 * 35/32
 
-                                r32 * 29/16
+                                r16 * 29/32
 
                                 \revert Staff.Stem.stemlet-length
-                                b''32 * 13/8
+                                b''16 * 13/16
                                 ]
                                 \bar "||"
 

@@ -9,6 +9,7 @@ from nagual.lib import (  # , with_sharps, zero_padding_glissando
     met_100,
     met_mod_120_100,
     toggle_tuplet_prolation,
+    tremolo_handler,
 )
 from nagual.materials.instruments import alt_instruments
 from nagual.materials.score_structure import score
@@ -48,6 +49,11 @@ maker = evans.SegmentMaker(
             "score",
             evans.SegmentMaker.beam_score,
             abjad.select().components(abjad.Score),
+        ),
+        evans.call(
+            "Voice 4",
+            tremolo_handler,
+            baca.selectors.leaves([20, 21, 22, 23, 24]),
         ),
         evans.attach(
             "Global Context",

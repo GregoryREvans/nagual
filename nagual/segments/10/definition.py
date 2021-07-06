@@ -12,8 +12,10 @@ from nagual.lib import (  # , with_sharps, zero_padding_glissando
     met_100,
     met_mod_80_100,
     met_mod_100_80,
+    sforzandi,
     start_repeat_before,
     toggle_tuplet_prolation,
+    tremolo_handler,
     zero_padding_glissando,
 )
 from nagual.materials.instruments import alt_instruments
@@ -95,6 +97,41 @@ maker = evans.SegmentMaker(
             met_mod_100_80,
             baca.selectors.leaf(15),
         ),
+        evans.call(
+            "Voice 1",
+            sforzandi,
+            baca.selectors.leaves([19, 20, 21, 22, 23, 24, 25, 26]),
+        ),
+        evans.call(
+            "Voice 1",
+            tremolo_handler,
+            baca.selectors.leaves([19, 20, 21, 22, 23, 24, 25, 26]),
+        ),
+        evans.call(
+            "Voice 2",
+            sforzandi,
+            baca.selectors.leaves([19, 20, 21, 22, 23, 24]),
+        ),
+        evans.call(
+            "Voice 2",
+            tremolo_handler,
+            baca.selectors.leaves([19, 20, 21, 22, 23, 24]),
+        ),
+        evans.call(
+            "Voice 3",
+            sforzandi,
+            baca.selectors.leaves([19, 20, 21, 22, 23, 24, 25]),
+        ),
+        evans.call(
+            "Voice 3",
+            tremolo_handler,
+            baca.selectors.leaves([19, 20, 21, 22, 23, 24, 25]),
+        ),
+        evans.call(
+            "Voice 4",
+            tremolo_handler,
+            baca.selectors.leaves([88, 89, 91, 93, 94, 97, 98, 99]),
+        ),
         evans.attach(
             "Voice 1",
             abjad.Dynamic("p"),
@@ -112,13 +149,13 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 1",
-            abjad.Dynamic("f"),
-            baca.selectors.leaf(16),
+            abjad.StartHairpin("<"),
+            baca.selectors.leaf(9),
         ),
         evans.attach(
             "Voice 1",
-            abjad.Dynamic("ff"),
-            baca.selectors.leaf(19),
+            abjad.Dynamic("f"),
+            baca.selectors.leaf(16),
         ),
         evans.attach(
             "Voice 1",
@@ -137,13 +174,13 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 2",
-            abjad.Dynamic("f"),
-            baca.selectors.leaf(16),
+            abjad.StartHairpin("<"),
+            baca.selectors.leaf(12),
         ),
         evans.attach(
             "Voice 2",
-            abjad.Dynamic("ff"),
-            baca.selectors.leaf(19),
+            abjad.Dynamic("f"),
+            baca.selectors.leaf(16),
         ),
         evans.attach(
             "Voice 2",
@@ -221,13 +258,13 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 3",
-            abjad.Dynamic("f"),
-            baca.selectors.leaf(16),
+            abjad.StartHairpin("<"),
+            baca.selectors.leaf(8),
         ),
         evans.attach(
             "Voice 3",
-            abjad.Dynamic("ff"),
-            baca.selectors.leaf(19),
+            abjad.Dynamic("f"),
+            baca.selectors.leaf(16),
         ),
         evans.attach(
             "Voice 3",
@@ -294,6 +331,18 @@ maker = evans.SegmentMaker(
             "Voice 4",
             abjad.Dynamic("f"),
             baca.selectors.leaf(85),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.LilyPondLiteral(
+                r'\boxed-markup "col legno tratto" 1', format_slot="after"
+            ),
+            baca.selectors.leaf(88),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.LilyPondLiteral(r'\boxed-markup "crine" 1', format_slot="after"),
+            baca.selectors.leaf(100),
         ),
         evans.call(
             "Voice 1",

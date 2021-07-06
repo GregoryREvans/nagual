@@ -10,7 +10,9 @@ from nagual.lib import (  # , with_sharps, zero_padding_glissando
     met_100,
     met_110,
     met_mod_66_100,
+    sforzandi,
     stop_repeat_before,
+    tremolo_handler,
 )
 from nagual.materials.instruments import instruments
 from nagual.materials.score_structure import score
@@ -90,6 +92,71 @@ maker = evans.SegmentMaker(
             "Voice 2",
             rmakers.FeatherBeamCommand(),
             baca.selectors.leaves([_ for _ in range(49, 59)]),
+        ),
+        evans.call(
+            "Voice 1",
+            tremolo_handler,
+            baca.selectors.leaves([_ for _ in range(8)]),
+        ),
+        evans.call(
+            "Voice 1",
+            sforzandi,
+            baca.selectors.leaves([_ for _ in range(8)]),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.Dynamic("ff"),
+            baca.selectors.leaf(8),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.LilyPondLiteral(r'\boxed-markup "tone + air" 1', format_slot="after"),
+            baca.selectors.leaf(8),
+        ),
+        evans.call(
+            "Voice 2",
+            tremolo_handler,
+            baca.selectors.leaves([_ for _ in range(19)]),
+        ),
+        evans.call(
+            "Voice 2",
+            sforzandi,
+            baca.selectors.leaves([_ for _ in range(19)]),
+        ),
+        evans.call(
+            "Voice 3",
+            tremolo_handler,
+            baca.selectors.leaves([_ for _ in range(25)]),
+        ),
+        evans.call(
+            "Voice 3",
+            sforzandi,
+            baca.selectors.leaves([_ for _ in range(25)]),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.Dynamic("ff"),
+            baca.selectors.leaf(25),
+        ),
+        evans.call(
+            "Voice 4",
+            tremolo_handler,
+            abjad.select(),
+        ),
+        evans.call(
+            "Voice 4",
+            sforzandi,
+            baca.selectors.leaves([_ for _ in range(22)]),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Dynamic("ff"),
+            baca.selectors.leaf(23),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.LilyPondLiteral(r'\boxed-markup "spazzolato" 1', format_slot="after"),
+            baca.selectors.leaf(23),
         ),
         evans.attach(
             "Voice 2",

@@ -2,10 +2,10 @@ import abjad
 handler_to_value = abjad.OrderedDict(
     [
         (
-            'demo_pitch_handler',
+            'trill_pitch_r_handler_06',
             abjad.OrderedDict(
                 [
-                    ('pitch_count', 0),
+                    ('pitch_count', 57),
                     ('chord_boolean_count', -1),
                     ('chord_groups_count', -1),
                     ]
@@ -16,6 +16,16 @@ handler_to_value = abjad.OrderedDict(
             abjad.OrderedDict(
                 [
                     ('pitch_count', 55),
+                    ('chord_boolean_count', -1),
+                    ('chord_groups_count', -1),
+                    ]
+                ),
+            ),
+        (
+            'spazzolato_pitch_handler_01',
+            abjad.OrderedDict(
+                [
+                    ('pitch_count', 168),
                     ('chord_boolean_count', -1),
                     ('chord_groups_count', -1),
                     ]

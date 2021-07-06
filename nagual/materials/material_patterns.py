@@ -3,9 +3,10 @@
 
 # from nagual.lib import WarbleFingerings
 from nagual.materials.pitch import (
-    demo_pitch_handler,
     flute_sho_pitch_handler_03,
     glissando_pitch_handler_03,
+    glissando_pitch_handler_09,
+    glissando_pitch_handler_10,
     grace_base_pitch_handler_03,
     guitar_pitch_handler_03,
     percussion_pitch_handler_01,
@@ -23,13 +24,30 @@ from nagual.materials.pitch import (
     percussion_pitch_handler_13,
     perforated_pitch_handler_01,
     perforated_pitch_handler_04,
+    perforated_pitch_handler_10,
+    perforated_pitch_handler_11,
+    perforated_pitch_handler_12,
+    sho_pitch_handler_09,
     spazzolato_pitch_handler_01,
     spazzolato_pitch_handler_02,
     spazzolato_pitch_handler_04,
     spazzolato_pitch_handler_05,
+    spazzolato_pitch_handler_07,
+    spazzolato_pitch_handler_08,
+    spazzolato_pitch_handler_10,
+    spazzolato_pitch_handler_12,
     tremolo_pitch_handler_01,
+    tremolo_pitch_handler_06,
+    tremolo_pitch_handler_07,
+    tremolo_pitch_handler_10,
     trill_pitch_i_handler_02,
+    trill_pitch_i_handler_10,
     trill_pitch_p_handler_02,
+    trill_pitch_p_handler_09,
+    trill_pitch_r_handler_06,
+    trill_pitch_r_handler_07,
+    trill_pitch_r_handler_08,
+    trill_pitch_ri_handler_11,
 )
 from nagual.materials.rhythm import (
     accelerando_handler_01,
@@ -496,24 +514,24 @@ rhythm_materials_06 = [
 ]
 
 pitch_materials_06 = [
-    demo_pitch_handler,  #
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,  #
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
+    tremolo_pitch_handler_06,  #
+    tremolo_pitch_handler_06,
+    tremolo_pitch_handler_06,
+    tremolo_pitch_handler_06,
+    trill_pitch_r_handler_06,
+    tremolo_pitch_handler_06,
+    tremolo_pitch_handler_06,
+    tremolo_pitch_handler_06,
+    tremolo_pitch_handler_06,
+    tremolo_pitch_handler_06,  #
+    tremolo_pitch_handler_06,
+    tremolo_pitch_handler_06,
+    tremolo_pitch_handler_06,
+    trill_pitch_r_handler_06,
+    tremolo_pitch_handler_06,
+    tremolo_pitch_handler_06,
+    tremolo_pitch_handler_06,
+    tremolo_pitch_handler_06,
     percussion_pitch_handler_06,  #
     percussion_pitch_handler_06,
     percussion_pitch_handler_06,
@@ -525,15 +543,15 @@ pitch_materials_06 = [
     percussion_pitch_handler_06,
     percussion_pitch_handler_06,
     percussion_pitch_handler_06,
-    demo_pitch_handler,  #
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
+    tremolo_pitch_handler_06,  #
+    tremolo_pitch_handler_06,
+    tremolo_pitch_handler_06,
+    tremolo_pitch_handler_06,
+    trill_pitch_r_handler_06,
+    tremolo_pitch_handler_06,
+    tremolo_pitch_handler_06,
+    tremolo_pitch_handler_06,
+    tremolo_pitch_handler_06,
 ]
 
 ## 07
@@ -588,25 +606,25 @@ rhythm_materials_07 = [
 ]
 
 pitch_materials_07 = [
-    demo_pitch_handler,  #
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
+    tremolo_pitch_handler_07,  #
+    tremolo_pitch_handler_07,
+    spazzolato_pitch_handler_07,
+    spazzolato_pitch_handler_07,
     silence_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
+    spazzolato_pitch_handler_07,
+    spazzolato_pitch_handler_07,
     silence_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,  #
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
+    spazzolato_pitch_handler_07,
+    spazzolato_pitch_handler_07,
+    tremolo_pitch_handler_07,  #
+    tremolo_pitch_handler_07,
+    tremolo_pitch_handler_07,
+    tremolo_pitch_handler_07,
+    tremolo_pitch_handler_07,
+    tremolo_pitch_handler_07,
+    trill_pitch_r_handler_07,
     silence_handler,
-    demo_pitch_handler,
+    trill_pitch_r_handler_07,
     percussion_pitch_handler_07,  #
     percussion_pitch_handler_07,
     percussion_pitch_handler_07,
@@ -620,20 +638,20 @@ pitch_materials_07 = [
     percussion_pitch_handler_07,
     percussion_pitch_handler_07,
     percussion_pitch_handler_07,
-    demo_pitch_handler,  #
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
+    tremolo_pitch_handler_07,  #
+    tremolo_pitch_handler_07,
+    tremolo_pitch_handler_07,
+    tremolo_pitch_handler_07,
+    tremolo_pitch_handler_07,
+    tremolo_pitch_handler_07,
+    tremolo_pitch_handler_07,
+    tremolo_pitch_handler_07,
+    tremolo_pitch_handler_07,
+    tremolo_pitch_handler_07,
+    tremolo_pitch_handler_07,
+    tremolo_pitch_handler_07,
     silence_handler,
-    demo_pitch_handler,
+    spazzolato_pitch_handler_07,
 ]
 
 ## 08
@@ -673,14 +691,14 @@ rhythm_materials_08 = [
 
 pitch_materials_08 = [
     silence_handler,  #
-    demo_pitch_handler,
+    trill_pitch_r_handler_08,
     silence_handler,
-    demo_pitch_handler,
+    trill_pitch_r_handler_08,
     silence_handler,
-    demo_pitch_handler,
+    trill_pitch_r_handler_08,
     silence_handler,
     silence_handler,  #
-    demo_pitch_handler,
+    trill_pitch_r_handler_08,
     silence_handler,
     percussion_pitch_handler_08,  #
     silence_handler,
@@ -694,13 +712,13 @@ pitch_materials_08 = [
     silence_handler,
     percussion_pitch_handler_08,
     silence_handler,  #
-    demo_pitch_handler,
+    trill_pitch_r_handler_08,
     silence_handler,
-    demo_pitch_handler,
+    trill_pitch_r_handler_08,
     silence_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
+    trill_pitch_r_handler_08,
+    spazzolato_pitch_handler_08,
+    trill_pitch_r_handler_08,
     silence_handler,
 ]
 
@@ -730,26 +748,26 @@ rhythm_materials_09 = [
 ]
 
 pitch_materials_09 = [
-    demo_pitch_handler,  #
-    demo_pitch_handler,
+    sho_pitch_handler_09,  #
+    trill_pitch_p_handler_09,
     silence_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,  #
-    demo_pitch_handler,
+    sho_pitch_handler_09,
+    trill_pitch_p_handler_09,
+    sho_pitch_handler_09,  #
+    trill_pitch_p_handler_09,
     silence_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
+    sho_pitch_handler_09,
+    trill_pitch_p_handler_09,
     percussion_pitch_handler_09,  #
     percussion_pitch_handler_09,
     silence_handler,
     percussion_pitch_handler_09,
     percussion_pitch_handler_09,
-    demo_pitch_handler,  #
-    demo_pitch_handler,
+    glissando_pitch_handler_09,  #
+    trill_pitch_p_handler_09,
     silence_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
+    glissando_pitch_handler_09,
+    trill_pitch_p_handler_09,
 ]
 
 ## 10
@@ -792,37 +810,37 @@ rhythm_materials_10 = [
 
 pitch_materials_10 = [
     silence_handler,  #
-    demo_pitch_handler,
+    spazzolato_pitch_handler_10,
     silence_handler,
-    demo_pitch_handler,
+    spazzolato_pitch_handler_10,
     silence_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
+    spazzolato_pitch_handler_10,
+    trill_pitch_i_handler_10,
     silence_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
-    silence_handler,
-    silence_handler,  #
-    demo_pitch_handler,
-    silence_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
-    silence_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
+    tremolo_pitch_handler_10,
+    trill_pitch_i_handler_10,
     silence_handler,
     silence_handler,  #
+    spazzolato_pitch_handler_10,
+    silence_handler,
+    spazzolato_pitch_handler_10,
+    trill_pitch_i_handler_10,
+    silence_handler,
+    tremolo_pitch_handler_10,
+    trill_pitch_i_handler_10,
+    silence_handler,
+    silence_handler,  #
     percussion_pitch_handler_10,
     percussion_pitch_handler_10,
     silence_handler,
     percussion_pitch_handler_10,
     percussion_pitch_handler_10,
     silence_handler,
-    demo_pitch_handler,  #
-    demo_pitch_handler,
+    glissando_pitch_handler_10,  #
+    trill_pitch_i_handler_10,
     silence_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
+    perforated_pitch_handler_10,
+    trill_pitch_i_handler_10,
     silence_handler,
 ]
 
@@ -860,20 +878,20 @@ rhythm_materials_11 = [
 ]
 
 pitch_materials_11 = [
-    demo_pitch_handler,  #
+    trill_pitch_ri_handler_11,  #
     silence_handler,
-    demo_pitch_handler,
+    trill_pitch_ri_handler_11,
     silence_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
+    trill_pitch_ri_handler_11,
+    perforated_pitch_handler_11,
     silence_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,  #
+    perforated_pitch_handler_11,
+    trill_pitch_ri_handler_11,  #
     silence_handler,
-    demo_pitch_handler,
+    trill_pitch_ri_handler_11,
     silence_handler,
-    demo_pitch_handler,
-    demo_pitch_handler,
+    trill_pitch_ri_handler_11,
+    perforated_pitch_handler_11,
     percussion_pitch_handler_11,  #
     silence_handler,
     percussion_pitch_handler_11,
@@ -881,13 +899,13 @@ pitch_materials_11 = [
     percussion_pitch_handler_11,
     silence_handler,
     percussion_pitch_handler_11,
-    demo_pitch_handler,  #
-    demo_pitch_handler,
-    demo_pitch_handler,
+    trill_pitch_ri_handler_11,  #
+    perforated_pitch_handler_11,
+    trill_pitch_ri_handler_11,
     silence_handler,
-    demo_pitch_handler,
+    perforated_pitch_handler_11,
     silence_handler,
-    demo_pitch_handler,
+    perforated_pitch_handler_11,
 ]
 
 ## 12
@@ -929,36 +947,36 @@ rhythm_materials_12 = [
 
 pitch_materials_12 = [
     silence_handler,  #
-    demo_pitch_handler,
+    spazzolato_pitch_handler_12,
     silence_handler,
     silence_handler,  #
-    demo_pitch_handler,
+    perforated_pitch_handler_12,
     silence_handler,
-    demo_pitch_handler,
+    perforated_pitch_handler_12,
     silence_handler,
-    demo_pitch_handler,
+    perforated_pitch_handler_12,
     silence_handler,
     silence_handler,  #
     percussion_pitch_handler_12,
     silence_handler,
     percussion_pitch_handler_12,
     silence_handler,
-    demo_pitch_handler,  #
+    perforated_pitch_handler_12,  #
     silence_handler,
-    demo_pitch_handler,
+    perforated_pitch_handler_12,
     silence_handler,
-    demo_pitch_handler,
+    perforated_pitch_handler_12,
     silence_handler,
-    demo_pitch_handler,
+    perforated_pitch_handler_12,
     silence_handler,
-    demo_pitch_handler,
+    perforated_pitch_handler_12,
     silence_handler,
-    demo_pitch_handler,
+    perforated_pitch_handler_12,
     silence_handler,
     silence_handler,
-    demo_pitch_handler,
+    spazzolato_pitch_handler_12,
     silence_handler,
-    demo_pitch_handler,
+    spazzolato_pitch_handler_12,
     silence_handler,
 ]
 

@@ -611,3 +611,9 @@ def fireworks(selections):
         abjad.attach(abjad.Dynamic("sfp"), first_leaf)
         abjad.attach(abjad.StartHairpin("<"), first_leaf)
         abjad.attach(abjad.Dynamic("fff", leak=True), last_leaf)
+
+
+def sforzandi(selections):
+    ties = abjad.select(selections).logical_ties(pitched=True)
+    for tie in ties:
+        abjad.attach(abjad.Dynamic("sfz"), tie[0])

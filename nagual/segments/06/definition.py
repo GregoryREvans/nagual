@@ -14,7 +14,9 @@ from nagual.lib import (  # , with_sharps, zero_padding_glissando
     met_mod_120_66,
     red_start_repeat,
     red_stop_repeat,
+    sforzandi,
     start_repeat_before,
+    tremolo_handler,
 )
 from nagual.materials.instruments import instruments
 from nagual.materials.score_structure import score
@@ -87,11 +89,6 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 1",
-            abjad.Dynamic("ff"),
-            baca.selectors.leaf(0),
-        ),
-        evans.attach(
-            "Voice 1",
             abjad.Dynamic("mf"),
             baca.selectors.leaf(19),
         ),
@@ -99,16 +96,6 @@ maker = evans.SegmentMaker(
             "Voice 1",
             abjad.Dynamic("f"),
             baca.selectors.leaf(21),
-        ),
-        evans.attach(
-            "Voice 1",
-            abjad.Dynamic("ff"),
-            baca.selectors.leaf(23),
-        ),
-        evans.attach(
-            "Voice 2",
-            abjad.Dynamic("ff"),
-            baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 2",
@@ -119,11 +106,6 @@ maker = evans.SegmentMaker(
             "Voice 2",
             abjad.Dynamic("f"),
             baca.selectors.leaf(19),
-        ),
-        evans.attach(
-            "Voice 2",
-            abjad.Dynamic("ff"),
-            baca.selectors.leaf(20),
         ),
         evans.attach(
             "Voice 3",
@@ -140,7 +122,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 3",
             abjad.LilyPondLiteral(
-                r'\boxed-markup "brushes + brake drum" 1', format_slot="after"
+                r'\boxed-markup "stone + brake drum" 1', format_slot="after"
             ),
             baca.selectors.leaf(0),
         ),
@@ -168,14 +150,9 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 3",
             abjad.LilyPondLiteral(
-                r'\boxed-markup "brushes + brake drum" 1', format_slot="after"
+                r'\boxed-markup "stone + brake drum" 1', format_slot="after"
             ),
             baca.selectors.leaf(29),
-        ),
-        evans.attach(
-            "Voice 3",
-            abjad.Dynamic("ff"),
-            baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 3",
@@ -203,16 +180,6 @@ maker = evans.SegmentMaker(
             baca.selectors.leaf(28),
         ),
         evans.attach(
-            "Voice 3",
-            abjad.Dynamic("ff"),
-            baca.selectors.leaf(29),
-        ),
-        evans.attach(
-            "Voice 4",
-            abjad.Dynamic("ff"),
-            baca.selectors.leaf(0),
-        ),
-        evans.attach(
             "Voice 4",
             abjad.Dynamic("p"),
             baca.selectors.leaf(18),
@@ -232,10 +199,45 @@ maker = evans.SegmentMaker(
             abjad.Dynamic("f"),
             baca.selectors.leaf(24),
         ),
-        evans.attach(
+        evans.call(
+            "Voice 1", tremolo_handler, baca.selectors.leaves([_ for _ in range(19)])
+        ),
+        evans.call("Voice 1", sforzandi, baca.selectors.leaves([_ for _ in range(19)])),
+        evans.call(
+            "Voice 1",
+            tremolo_handler,
+            baca.selectors.leaves([_ for _ in range(23, 39)]),
+        ),
+        evans.call(
+            "Voice 1", sforzandi, baca.selectors.leaves([_ for _ in range(23, 39)])
+        ),
+        evans.call(
+            "Voice 2", tremolo_handler, baca.selectors.leaves([_ for _ in range(16)])
+        ),
+        evans.call("Voice 2", sforzandi, baca.selectors.leaves([_ for _ in range(16)])),
+        evans.call(
+            "Voice 2",
+            tremolo_handler,
+            baca.selectors.leaves([_ for _ in range(20, 32)]),
+        ),
+        evans.call(
+            "Voice 2", sforzandi, baca.selectors.leaves([_ for _ in range(20, 32)])
+        ),
+        evans.call("Voice 3", sforzandi, baca.selectors.leaves([_ for _ in range(20)])),
+        evans.call(
+            "Voice 3", sforzandi, baca.selectors.leaves([_ for _ in range(29, 41)])
+        ),
+        evans.call(
+            "Voice 4", tremolo_handler, baca.selectors.leaves([_ for _ in range(17)])
+        ),
+        evans.call("Voice 4", sforzandi, baca.selectors.leaves([_ for _ in range(17)])),
+        evans.call(
             "Voice 4",
-            abjad.Dynamic("ff"),
-            baca.selectors.leaf(25),
+            tremolo_handler,
+            baca.selectors.leaves([_ for _ in range(25, 39)]),
+        ),
+        evans.call(
+            "Voice 4", sforzandi, baca.selectors.leaves([_ for _ in range(25, 39)])
         ),
         evans.call(
             "Voice 1",

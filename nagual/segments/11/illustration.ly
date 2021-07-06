@@ -155,28 +155,39 @@
                             \set Staff.instrumentName =
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Bass Flute" }
-                            c''2.
+                            \pitchedTrill
+                            d'2.
                             \mf
                             \>
                             ~
+                            \startTrillSpan fs'
 
-                            c''2
+                            d'2
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 2]
 
-                            c''2.
+                            \pitchedTrill
+                            cs'2.
+                            \stopTrillSpan
+                            \startTrillSpan g'
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 3]
 
-                            c''2
+                            \pitchedTrill
+                            ef'2
+                            \stopTrillSpan
+                            \startTrillSpan e'
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 4]
 
-                            c''1
+                            \pitchedTrill
+                            af'1
                             \pp
+                            \stopTrillSpan
+                            \startTrillSpan bf'
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 5]
@@ -184,13 +195,17 @@
                             %! applying invisibility
                             \once \override Rest.transparent = ##t
                             r1 * 1/2
+                            %! applying indicators
+                            \stopTrillSpan
 
                             R1 * 1/2
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 6]
 
-                            c''1
+                            \pitchedTrill
+                            f'1
+                            \startTrillSpan a'
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 7]
@@ -198,15 +213,19 @@
                             %! applying invisibility
                             \once \override Rest.transparent = ##t
                             r1 * 3/4
+                            %! applying indicators
+                            \stopTrillSpan
 
                             R1 * 3/4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 8]
 
-                            c''1.
+                            \pitchedTrill
+                            b'1.
                             \mf
                             \>
+                            \startTrillSpan c''
 
                             \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
                                 {
@@ -252,20 +271,21 @@
 
                                 \once \override Beam.grow-direction = #right
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c''16 * 63/32
+                                af'16 * 63/32
                                 \p
                                 \<
+                                \stopTrillSpan
                                 [
 
-                                c''16 * 125/64
+                                g''16 * 125/64
 
                                 r16 * 121/64
 
-                                c''16 * 115/64
+                                b'16 * 115/64
 
                                 r16 * 27/16
 
-                                c''16 * 101/64
+                                bf''16 * 101/64
 
                                 c''16 * 93/64
 
@@ -273,21 +293,21 @@
 
                                 r16 * 79/64
 
-                                c''16 * 73/64
+                                af'16 * 73/64
 
-                                c''16 * 17/16
+                                g''16 * 17/16
 
-                                c''16 * 1
+                                b'16 * 1
 
                                 r16 * 15/16
 
-                                c''16 * 57/64
+                                bf''16 * 57/64
 
                                 r16 * 55/64
 
                                 c''16 * 53/64
 
-                                c''16 * 13/16
+                                af'16 * 13/16
                                 \f
 
                                 r16 * 51/64
@@ -352,32 +372,32 @@
 
                                 \once \override Beam.grow-direction = #left
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c''16 * 23/32
+                                g''16 * 23/32
                                 \p
                                 \<
                                 [
 
-                                c''16 * 23/32
+                                b'16 * 23/32
 
                                 r16 * 3/4
 
-                                c''16 * 25/32
+                                bf''16 * 25/32
 
                                 r16 * 53/64
 
                                 c''16 * 57/64
 
-                                c''16 * 63/64
+                                af'16 * 63/64
 
                                 r16 * 69/64
 
                                 r16 * 77/64
 
-                                c''16 * 43/32
+                                g''16 * 43/32
 
-                                c''16 * 3/2
+                                b'16 * 3/2
 
-                                c''16 * 105/64
+                                bf''16 * 105/64
 
                                 r16 * 7/4
 
@@ -416,28 +436,39 @@
                             \set Staff.instrumentName =
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Guitar" }
+                            \pitchedTrill
                             c''2.
                             \mf
                             \>
                             ~
+                            \startTrillSpan cs''
 
                             c''2
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 2]
 
-                            c''2.
+                            \pitchedTrill
+                            fs'2.
+                            \stopTrillSpan
+                            \startTrillSpan bf'
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 3]
 
-                            c''2
+                            \pitchedTrill
+                            a'2
+                            \stopTrillSpan
+                            \startTrillSpan b'
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 4]
 
-                            c''1
+                            \pitchedTrill
+                            e'1
                             \pp
+                            \stopTrillSpan
+                            \startTrillSpan f'
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 5]
@@ -445,13 +476,17 @@
                             %! applying invisibility
                             \once \override Rest.transparent = ##t
                             r1 * 1/2
+                            %! applying indicators
+                            \stopTrillSpan
 
                             R1 * 1/2
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 6]
 
-                            c''1
+                            \pitchedTrill
+                            d'1
+                            \startTrillSpan af'
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 7]
@@ -459,26 +494,36 @@
                             %! applying invisibility
                             \once \override Rest.transparent = ##t
                             r1 * 3/4
+                            %! applying indicators
+                            \stopTrillSpan
 
                             R1 * 3/4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 8]
 
-                            c''1.
+                            \pitchedTrill
+                            ef'1.
                             \mf
                             \>
+                            \startTrillSpan g'
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 9]
 
-                            c''1.
+                            \pitchedTrill
+                            f'1.
+                            \stopTrillSpan
+                            \startTrillSpan a'
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 10]
 
-                            c''1.
+                            \pitchedTrill
+                            e'1.
                             \pp
+                            \stopTrillSpan
+                            \startTrillSpan bf'
 
                             \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
                                 {
@@ -524,36 +569,37 @@
 
                                 \once \override Beam.grow-direction = #right
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c''32 * 123/32
+                                af'16 * 123/64
                                 \p
                                 \<
+                                \stopTrillSpan
                                 [
 
-                                c''32 * 15/4
+                                g''16 * 15/8
 
-                                r32 * 7/2
+                                r16 * 7/4
 
-                                c''32 * 51/16
+                                b'16 * 51/32
 
-                                r32 * 45/16
+                                r16 * 45/32
 
-                                c''32 * 5/2
+                                bf''16 * 5/4
 
-                                c''32 * 71/32
+                                c''16 * 71/64
 
-                                r32 * 2
+                                r16 * 1
 
-                                r32 * 29/16
+                                r16 * 29/32
 
-                                c''32 * 27/16
+                                af'16 * 27/32
 
-                                c''32 * 51/32
+                                g''16 * 51/64
 
-                                c''32 * 25/16
+                                b'16 * 25/32
                                 \f
 
                                 \revert Staff.Stem.stemlet-length
-                                r32 * 49/32
+                                r16 * 49/64
                                 ]
                                 \bar "||"
 
@@ -591,6 +637,7 @@
                             \mf
                             \>
                             ~
+                            \startTrillSpan
 
                             g2
                             %! COMMENT_MEASURE_NUMBERS
@@ -598,17 +645,23 @@
                             % [Voice 3 measure 2]
 
                             b2.
+                            \stopTrillSpan
+                            \startTrillSpan
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 3]
 
                             d'2
+                            \stopTrillSpan
+                            \startTrillSpan
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 4]
 
                             f'1
                             \pp
+                            \stopTrillSpan
+                            \startTrillSpan
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 5]
@@ -616,6 +669,8 @@
                             %! applying invisibility
                             \once \override Rest.transparent = ##t
                             r1 * 1/2
+                            %! applying indicators
+                            \stopTrillSpan
 
                             R1 * 1/2
                             %! COMMENT_MEASURE_NUMBERS
@@ -623,6 +678,7 @@
                             % [Voice 3 measure 6]
 
                             b1
+                            \startTrillSpan
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 7]
@@ -630,6 +686,8 @@
                             %! applying invisibility
                             \once \override Rest.transparent = ##t
                             r1 * 3/4
+                            %! applying indicators
+                            \stopTrillSpan
 
                             R1 * 3/4
                             %! COMMENT_MEASURE_NUMBERS
@@ -639,12 +697,15 @@
                             d'1.
                             \mf
                             \>
+                            \startTrillSpan
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 9]
 
                             f'1.
                             \pp
+                            \stopTrillSpan
+                            \startTrillSpan
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 10]
@@ -652,6 +713,8 @@
                             %! applying invisibility
                             \once \override Rest.transparent = ##t
                             r1 * 3/4
+                            %! applying indicators
+                            \stopTrillSpan
 
                             R1 * 3/4
 
@@ -700,38 +763,38 @@
 
                                 \once \override Beam.grow-direction = #left
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c'32 * 23/16
+                                c'16 * 23/32
                                 \p
                                 \<
                                 [
                                 \boxed-markup "gongs" 1
 
-                                e'32 * 23/16
+                                e'16 * 23/32
 
-                                r32 * 3/2
+                                r16 * 3/4
 
-                                a32 * 25/16
+                                a16 * 25/32
 
-                                r32 * 53/32
+                                r16 * 53/64
 
-                                c'32 * 57/32
+                                c'16 * 57/64
 
-                                e'32 * 63/32
+                                e'16 * 63/64
 
-                                r32 * 69/32
+                                r16 * 69/64
 
-                                r32 * 77/32
+                                r16 * 77/64
 
-                                a32 * 43/16
+                                a16 * 43/32
 
-                                c'32 * 3
+                                c'16 * 3/2
 
-                                e'32 * 105/32
+                                e'16 * 105/64
 
-                                r32 * 7/2
+                                r16 * 7/4
 
                                 \revert Staff.Stem.stemlet-length
-                                a32 * 29/8
+                                a16 * 29/16
                                 \f
                                 ]
                                 \bar "||"
@@ -766,28 +829,39 @@
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Viola" }
                             \clef "alto"
-                            c'2.
+                            \pitchedTrill
+                            fs2.
                             \mf
                             \>
                             ~
+                            \startTrillSpan g
 
-                            c'2
+                            fs2
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 2]
 
-                            c'2.
+                            \pitchedTrill
+                            b2.
+                            \stopTrillSpan
+                            \startTrillSpan cs'
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 3]
 
-                            c'2
+                            \pitchedTrill
+                            af2
+                            \stopTrillSpan
+                            \startTrillSpan c'
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 4]
 
-                            c'1
+                            \pitchedTrill
+                            d'1
                             \pp
+                            \stopTrillSpan
+                            \startTrillSpan ef'
 
                             \override TupletNumber.text = \markup \scale #'(0.75 . 0.75) \score
                                 {
@@ -833,32 +907,41 @@
 
                                 \once \override Beam.grow-direction = #right
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c'16 * 123/64
+                                bf''16 * 123/64
+                                :32
                                 \mf
                                 \<
+                                \stopTrillSpan
                                 [
 
-                                c'16 * 15/8
+                                c''16 * 15/8
+                                :32
 
                                 r16 * 7/4
 
-                                c'16 * 51/32
+                                af'16 * 51/32
+                                :32
 
                                 r16 * 45/32
 
-                                c'16 * 5/4
+                                g''16 * 5/4
+                                :32
 
-                                c'16 * 71/64
+                                b'16 * 71/64
+                                :32
 
                                 r16 * 1
 
                                 r16 * 29/32
 
-                                c'16 * 27/32
+                                bf''16 * 27/32
+                                :32
 
-                                c'16 * 51/64
+                                c''16 * 51/64
+                                :32
 
-                                c'16 * 25/32
+                                af'16 * 25/32
+                                :32
                                 \f
 
                                 \revert Staff.Stem.stemlet-length
@@ -871,8 +954,10 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 6]
 
-                            c'1
+                            \pitchedTrill
+                            fs'1
                             \sp
+                            \startTrillSpan g'
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 7]
@@ -880,6 +965,8 @@
                             %! applying invisibility
                             \once \override Rest.transparent = ##t
                             r1 * 3/4
+                            %! applying indicators
+                            \stopTrillSpan
 
                             R1 * 3/4
 
@@ -927,49 +1014,61 @@
 
                                 \once \override Beam.grow-direction = #left
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c'16 * 49/64
+                                g'16 * 49/64
+                                :32
                                 \mf
                                 \<
                                 [
 
-                                c'16 * 49/64
+                                b16 * 49/64
+                                :32
 
                                 r16 * 25/32
 
-                                c'16 * 51/64
+                                bf'16 * 51/64
+                                :32
 
                                 r16 * 13/16
 
                                 c'16 * 27/32
+                                :32
 
-                                c'16 * 7/8
+                                af16 * 7/8
+                                :32
 
                                 r16 * 59/64
 
                                 r16 * 63/64
 
-                                c'16 * 67/64
+                                g'16 * 67/64
+                                :32
 
-                                c'16 * 71/64
+                                b16 * 71/64
+                                :32
 
-                                c'16 * 77/64
+                                bf'16 * 77/64
+                                :32
 
                                 r16 * 83/64
 
                                 c'16 * 89/64
+                                :32
 
                                 r16 * 3/2
 
-                                c'16 * 103/64
+                                af16 * 103/64
+                                :32
 
-                                c'16 * 55/32
+                                g'16 * 55/32
+                                :32
 
                                 r16 * 115/64
 
                                 r16 * 15/8
 
                                 \revert Staff.Stem.stemlet-length
-                                c'16 * 61/32
+                                b16 * 61/32
+                                :32
                                 \f
                                 ]
 
@@ -1038,36 +1137,44 @@
 
                                 \once \override Beam.grow-direction = #right
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c'32 * 123/32
+                                bf16 * 123/64
+                                :32
                                 \p
                                 \<
                                 [
 
-                                c'32 * 15/4
+                                c16 * 15/8
+                                :32
 
-                                r32 * 7/2
+                                r16 * 7/4
 
-                                c'32 * 51/16
+                                af16 * 51/32
+                                :32
 
-                                r32 * 45/16
+                                r16 * 45/32
 
-                                c'32 * 5/2
+                                g16 * 5/4
+                                :32
 
-                                c'32 * 71/32
+                                b16 * 71/64
+                                :32
 
-                                r32 * 2
+                                r16 * 1
 
-                                r32 * 29/16
+                                r16 * 29/32
 
-                                c'32 * 27/16
+                                bf16 * 27/32
+                                :32
 
-                                c'32 * 51/32
+                                c16 * 51/64
+                                :32
 
-                                c'32 * 25/16
+                                af16 * 25/32
+                                :32
                                 \f
 
                                 \revert Staff.Stem.stemlet-length
-                                r32 * 49/32
+                                r16 * 49/64
                                 ]
                                 \bar "||"
 

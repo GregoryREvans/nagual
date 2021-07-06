@@ -132,16 +132,25 @@
                                 \set Staff.instrumentName =
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Alto Flute" }
-                                f'4
+                                ef'4
+                                :32
+                                \sfz
 
-                                f'4
+                                ef'4
+                                :32
+                                \sfz
 
-                                f'4
+                                ef'4
+                                :32
+                                \sfz
                                 ~
 
-                                f'4
+                                ef'4
+                                :32
 
-                                f'4
+                                ef'4
+                                :32
+                                \sfz
                                 ~
 
                             }
@@ -149,20 +158,27 @@
                             \times 2/3
                             {
 
-                                f'4
+                                ef'4
+                                :32
 
-                                f'4
+                                ef'4
+                                :32
+                                \sfz
 
-                                f'4
+                                ef'4
+                                :32
+                                \sfz
 
                             }
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 2]
 
-                            f'1
+                            af'1
+                            \ff
+                            \boxed-markup "tone + air" 1
 
-                            f'2
+                            a'2
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 3]
@@ -178,7 +194,7 @@
 
                             f'1
 
-                            f'4
+                            gqf'4
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 5]
@@ -192,13 +208,13 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 6]
 
-                            f'1
+                            aqf'1
                             ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 7]
 
-                            f'4
+                            aqf'4
 
                             f'2
                             \bar "||"
@@ -232,11 +248,17 @@
                                 \set Staff.instrumentName =
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Guitar" }
-                                c''4
+                                <g' fs'' af''>4
+                                :32
+                                \sfz
 
-                                c''4
+                                <g' fs'' af''>4
+                                :32
+                                \sfz
 
-                                c''4
+                                <g' fs'' af''>4
+                                :32
+                                \sfz
                                 ~
 
                             }
@@ -244,32 +266,49 @@
                             \times 4/5
                             {
 
-                                c''4
+                                <g' fs'' af''>4
+                                :32
 
-                                c''4
+                                <g' fs'' af''>4
+                                :32
+                                \sfz
                                 ~
 
-                                c''4
+                                <g' fs'' af''>4
+                                :32
 
-                                c''4
+                                <g' fs'' af''>4
+                                :32
+                                \sfz
 
-                                c''4
+                                <g' fs'' af''>4
+                                :32
+                                \sfz
 
                             }
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 2]
 
-                            c''4
+                            <g' fs'' af''>4
+                            :32
+                            \sfz
 
-                            c''4
+                            <g' fs'' af''>4
+                            :32
+                            \sfz
 
-                            c''4
+                            <g' fs'' af''>4
+                            :32
+                            \sfz
                             ~
 
-                            c''4
+                            <g' fs'' af''>4
+                            :32
 
-                            c''2
+                            <g' fs'' af''>2
+                            :32
+                            \sfz
 
                             \times 2/3
                             {
@@ -277,23 +316,34 @@
                                 %! abjad.SegmentMaker.comment_measure_numbers()
                                 % [Voice 2 measure 3]
 
-                                c''4
+                                <g' fs'' af''>4
+                                :32
+                                \sfz
 
-                                c''4
+                                <g' fs'' af''>4
+                                :32
+                                \sfz
 
-                                c''4
+                                <g' fs'' af''>4
+                                :32
+                                \sfz
 
                             }
 
                             \times 2/3
                             {
 
-                                c''4
+                                <g' fs'' af''>4
+                                :32
+                                \sfz
 
-                                c''4
+                                <g' fs'' af''>4
+                                :32
+                                \sfz
                                 ~
 
-                                c''4
+                                <g' fs'' af''>4
+                                :32
 
                             }
 
@@ -343,41 +393,41 @@
 
                                 \once \override Beam.grow-direction = #right
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c''16 * 125/64
+                                g''16 * 125/64
                                 \p
                                 \<
                                 [
 
-                                c''16 * 123/64
+                                ef''16 * 123/64
 
-                                c''16 * 59/32
+                                cs''16 * 59/32
 
                                 c''16 * 55/32
 
-                                c''16 * 101/64
+                                b'16 * 101/64
 
                                 c''16 * 23/16
 
-                                c''16 * 83/64
+                                d''16 * 83/64
 
-                                c''16 * 19/16
+                                fs''16 * 19/16
 
-                                c''16 * 69/64
+                                ef''16 * 69/64
 
-                                c''16 * 1
+                                cs''16 * 1
 
-                                c''16 * 59/64
+                                af''16 * 59/64
 
-                                c''16 * 7/8
+                                g''16 * 7/8
 
-                                c''16 * 53/64
+                                bf''16 * 53/64
 
-                                c''16 * 13/16
+                                e''16 * 13/16
 
-                                c''16 * 25/32
+                                a''16 * 25/32
 
                                 \revert Staff.Stem.stemlet-length
-                                c''16 * 49/64
+                                f''16 * 49/64
                                 \f
                                 ]
 
@@ -437,35 +487,35 @@
 
                                 \once \override Beam.grow-direction = #right
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c''16 * 123/64
+                                ef''16 * 123/64
                                 \p
                                 \<
                                 [
 
-                                c''16 * 15/8
+                                g''16 * 15/8
 
-                                c''16 * 7/4
+                                d''16 * 7/4
 
-                                c''16 * 51/32
+                                af''16 * 51/32
 
-                                c''16 * 45/32
+                                f''16 * 45/32
 
-                                c''16 * 5/4
+                                fs''16 * 5/4
 
-                                c''16 * 71/64
+                                b'16 * 71/64
 
-                                c''16 * 1
+                                cs''16 * 1
 
-                                c''16 * 29/32
+                                e''16 * 29/32
 
                                 c''16 * 27/32
 
-                                c''16 * 51/64
+                                bf'16 * 51/64
 
-                                c''16 * 25/32
+                                a'16 * 25/32
 
                                 \revert Staff.Stem.stemlet-length
-                                c''16 * 49/64
+                                f'16 * 49/64
                                 ~
                                 ]
 
@@ -516,27 +566,27 @@
 
                                 \once \override Beam.grow-direction = #right
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c''16 * 15/8
+                                f'16 * 15/8
                                 [
 
-                                c''16 * 115/64
+                                fs'16 * 115/64
 
-                                c''16 * 103/64
+                                af'16 * 103/64
 
                                 c''16 * 11/8
 
-                                c''16 * 37/32
+                                a'16 * 37/32
 
-                                c''16 * 1
+                                g'16 * 1
 
-                                c''16 * 7/8
+                                d''16 * 7/8
 
-                                c''16 * 13/16
+                                cs''16 * 13/16
 
-                                c''16 * 49/64
+                                e''16 * 49/64
 
                                 \revert Staff.Stem.stemlet-length
-                                c''16 * 47/64
+                                bf'16 * 47/64
                                 \f
                                 ]
                                 \bar "||"
@@ -573,24 +623,36 @@
                             \markup { \hcenter-in #14 "Percussion" }
                             \clef "percussion"
                             e'4
+                            :32
+                            \sfz
                             \boxed-markup "gongs" 1
 
                             a4
+                            :32
+                            \sfz
 
                             c'4
+                            :32
+                            \sfz
                             ~
 
                             c'4
+                            :32
 
                             \times 2/3
                             {
 
                                 a4
+                                :32
+                                \sfz
                                 ~
 
                                 a4
+                                :32
 
                                 a4
+                                :32
+                                \sfz
 
                             }
 
@@ -601,10 +663,16 @@
                                 % [Voice 3 measure 2]
 
                                 c'4
+                                :32
+                                \sfz
 
                                 a4
+                                :32
+                                \sfz
 
                                 c'4
+                                :32
+                                \sfz
 
                             }
 
@@ -612,29 +680,45 @@
                             {
 
                                 e'4
+                                :32
+                                \sfz
                                 ~
 
                                 e'4
+                                :32
 
                                 a4
+                                :32
+                                \sfz
                                 ~
 
                             }
 
                             a4
+                            :32
 
                             e'4
+                            :32
+                            \sfz
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 3]
 
                             c'4
+                            :32
+                            \sfz
 
                             a4
+                            :32
+                            \sfz
 
                             c'4
+                            :32
+                            \sfz
 
                             c'4
+                            :32
+                            \sfz
                             ~
 
                             \times 2/3
@@ -644,25 +728,36 @@
                                 % [Voice 3 measure 4]
 
                                 c'4
+                                :32
 
                                 a4
+                                :32
+                                \sfz
                                 ~
 
                                 a4
+                                :32
 
                             }
 
                             c'4
+                            :32
+                            \sfz
 
                             a4
+                            :32
+                            \sfz
 
                             a4
+                            :32
+                            \sfz
                             \staff-line-count 1
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 5]
 
                             c'4
+                            \ff
                             \boxed-markup "superball + tam tam" 1
 
                             c'2
@@ -712,64 +807,105 @@
                             \set Staff.instrumentName =
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Violin" }
-                            c'4
+                            <cs' d''>4
+                            :32
+                            \sfz
 
-                            c'4
+                            <cs' d''>4
+                            :32
+                            \sfz
 
-                            c'4
+                            <cs' d''>4
+                            :32
+                            \sfz
                             ~
 
-                            c'4
+                            <cs' d''>4
+                            :32
 
-                            c'2
+                            <cs' d''>2
+                            :32
+                            \sfz
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 2]
 
-                            c'4
+                            <cs' d''>4
+                            :32
+                            \sfz
 
-                            c'4
+                            <cs' d''>4
+                            :32
+                            \sfz
 
-                            c'4
+                            <cs' d''>4
+                            :32
+                            \sfz
 
-                            c'4
+                            <cs' d''>4
+                            :32
+                            \sfz
 
-                            c'2
+                            <cs' d''>2
+                            :32
+                            \sfz
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 3]
 
-                            c'2
+                            <cs' d''>2
+                            :32
+                            \sfz
 
-                            c'4
+                            <cs' d''>4
+                            :32
+                            \sfz
 
-                            c'4
+                            <cs' d''>4
+                            :32
+                            \sfz
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 4]
 
-                            c'4
+                            <cs' d''>4
+                            :32
+                            \sfz
 
-                            c'4
+                            <cs' d''>4
+                            :32
+                            \sfz
 
-                            c'4
+                            <cs' d''>4
+                            :32
+                            \sfz
                             ~
 
-                            c'4
+                            <cs' d''>4
+                            :32
 
-                            c'4
+                            <cs' d''>4
+                            :32
+                            \sfz
                             ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 5]
 
-                            c'4
+                            <cs' d''>4
+                            :32
 
-                            c'4
+                            <cs' d''>4
+                            :32
+                            \sfz
 
-                            c'4
+                            <cs' d''>4
+                            :32
+                            \sfz
 
-                            c'4
+                            <cs' d''>4
+                            :32
+                            \sfz
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 6]
@@ -783,8 +919,11 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 7]
 
-                            c'2.
+                            dqf'2.
+                            :32
+                            \ff
                             \bar "||"
+                            \boxed-markup "spazzolato" 1
 
                         }
 

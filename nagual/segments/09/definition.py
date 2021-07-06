@@ -9,6 +9,8 @@ from nagual.lib import (  # , with_sharps, zero_padding_glissando
     grace_handler_09,
     met_80,
     met_mod_100_80,
+    tremolo_handler,
+    two_octaves_down,
     zero_padding_glissando,
 )
 from nagual.materials.instruments import alt_instruments
@@ -49,6 +51,16 @@ maker = evans.SegmentMaker(
             "score",
             evans.SegmentMaker.beam_score,
             abjad.select().components(abjad.Score),
+        ),
+        evans.call(
+            "Voice 2",
+            two_octaves_down,
+            baca.selectors.leaves([0, 1, 4, 5]),
+        ),
+        evans.call(
+            "Voice 2",
+            tremolo_handler,
+            baca.selectors.leaves([0, 1, 4, 5]),
         ),
         evans.call(
             "Voice 4",

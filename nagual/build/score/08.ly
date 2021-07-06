@@ -247,7 +247,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c''>16 * 16/35
+                                    <c'' ef''>16 * 16/35
                                     [
                                     (
 
@@ -298,7 +298,7 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    c''2.
+                                    ef''2.
                                     \p
                                     - \tweak stencil #constante-hairpin
                                     \<
@@ -336,7 +336,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c''>16 * 16/35
+                                    <b' c''>16 * 16/35
                                     [
                                     (
 
@@ -361,7 +361,7 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    c''4
+                                    b'4
                                     \mp
                                     - \tweak stencil #constante-hairpin
                                     \<
@@ -384,7 +384,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c''>8 * 8/35
+                                    <c'' d''>8 * 8/35
                                     [
                                     (
 
@@ -425,10 +425,10 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    c''4.
+                                    d''4.
                                     ~
 
-                                    c''8
+                                    d''8
 
                                 }
 
@@ -453,7 +453,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c''>16 * 16/35
+                                    <c'' fs''>16 * 16/35
                                     [
                                     (
 
@@ -498,13 +498,13 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    c''4.
+                                    fs''4.
                                     \mf
                                     - \tweak stencil #constante-hairpin
                                     \<
                                     ~
 
-                                    c''8
+                                    fs''8
 
                                 }
 
@@ -672,7 +672,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c''>8 * 8/35
+                                    <c'' cs''>8 * 8/35
                                     [
                                     (
 
@@ -703,13 +703,13 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    c''4
+                                    cs''4
                                     \mf
                                     - \tweak stencil #constante-hairpin
                                     \<
                                     ~
 
-                                    c''4
+                                    cs''4
 
                                 }
 
@@ -726,7 +726,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c''>8 * 8/35
+                                    <c'' g''>8 * 8/35
                                     [
                                     (
 
@@ -777,16 +777,16 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    c''8
+                                    g''8
                                     ~
                                     %! COMMENT_MEASURE_NUMBERS
                                     %! abjad.SegmentMaker.comment_measure_numbers()
                                     % [Voice 2 measure 14]
 
-                                    c''4.
+                                    g''4.
                                     ~
 
-                                    c''8
+                                    g''8
 
                                 }
 
@@ -1190,7 +1190,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c'>8 * 8/35
+                                    <c' e'>8 * 8/35
                                     [
                                     (
 
@@ -1252,7 +1252,7 @@
                                     \clef "alto"
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    c'2.
+                                    e'2.
                                     \p
                                     - \tweak stencil #constante-hairpin
                                     \<
@@ -1290,7 +1290,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c'>16 * 16/35
+                                    <c' f'>16 * 16/35
                                     [
                                     (
 
@@ -1307,7 +1307,7 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    c'8
+                                    f'8
                                     \mp
                                     - \tweak stencil #constante-hairpin
                                     \<
@@ -1327,7 +1327,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c'>8 * 8/35
+                                    <bf c'>8 * 8/35
                                     [
                                     (
 
@@ -1370,13 +1370,13 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    c'2
+                                    bf2
                                     ~
                                     %! COMMENT_MEASURE_NUMBERS
                                     %! abjad.SegmentMaker.comment_measure_numbers()
                                     % [Voice 4 measure 10]
 
-                                    c'4
+                                    bf4
 
                                 }
 
@@ -1444,7 +1444,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c'>16 * 16/35
+                                    <c' ef'>16 * 16/35
                                     [
                                     (
 
@@ -1471,7 +1471,7 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    c'4.
+                                    ef'4.
                                     \mf
                                     - \tweak stencil #constante-hairpin
                                     \<
@@ -1487,32 +1487,37 @@
 
                             \override Staff.Stem.stemlet-length = 0.75
                             c'16
+                            :32
                             \>
                             [
                             \boxed-markup "spazzolato" 1
 
-                            c'16
+                            eqf'16
+                            :32
                             ~
 
-                            c'8.
+                            eqf'8.
+                            :32
 
                             \revert Staff.Stem.stemlet-length
-                            c'16
+                            ef'16
+                            :32
                             ~
                             ]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            c'8.
+                            ef'8.
+                            :32
                             [
 
                             c'16
                             \pp
                             - \accent
 
-                            c'16
+                            cqs'16
 
                             \revert Staff.Stem.stemlet-length
-                            c'16
+                            dqf'16
                             ]
 
                             <<
@@ -1529,7 +1534,7 @@
                                     \slash
                                     %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c'>16 * 16/35
+                                    <b c'>16 * 16/35
                                     [
                                     (
 
@@ -1572,14 +1577,14 @@
 
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
-                                    c'4.
+                                    b4.
                                     \f
                                     - \tweak stencil #constante-hairpin
                                     \<
                                     ~
                                     \boxed-markup "normale" 1
 
-                                    c'8
+                                    b8
 
                                 }
 
