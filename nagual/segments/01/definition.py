@@ -7,7 +7,6 @@ from abjadext import rmakers
 
 from nagual.lib import (  # , with_sharps, zero_padding_glissando
     accel_40_100,
-    half_down,
     mark_40,
     met_40,
     met_66,
@@ -457,7 +456,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 4",
             abjad.LilyPondLiteral(
-                r'\boxed-markup "crine + ponticello" 1', format_slot="after"
+                r'\boxed-markup "ponticello + crine" 1', format_slot="after"
             ),
             baca.selectors.leaf(70),
         ),

@@ -4,7 +4,7 @@ import abjad
 import baca
 import evans
 
-from nagual.lib import met_120, met_mod_60_120  # , with_sharps, zero_padding_glissando
+from nagual.lib import met_120, met_mod_60_120, tremolo_handler
 from nagual.materials.instruments import instruments
 from nagual.materials.score_structure import score
 from nagual.materials.time_signatures import signatures_05
@@ -34,11 +34,6 @@ maker = evans.SegmentMaker(
         ),
         "skips",
         handler_commands_05,
-        # evans.call(
-        #     "score",
-        #     with_sharps,
-        #     abjad.select().components(abjad.Score),
-        # ),
         evans.call(
             "score",
             evans.SegmentMaker.beam_score,
@@ -52,6 +47,38 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             met_mod_60_120,
+            baca.selectors.leaf(0),
+        ),
+        evans.call(
+            "Voice 1",
+            tremolo_handler,
+            baca.selectors.leaves([0, 1, 2, 7, 8, 9, 14, 15, 16, 17, 18, 19]),
+        ),
+        evans.call(
+            "Voice 2",
+            tremolo_handler,
+            baca.selectors.leaves([0, 1, 2, 7, 8, 9, 14, 15, 16, 17, 18, 19, 20]),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.LilyPondLiteral(r'\boxed-markup "spazzolato" 1', format_slot="after"),
+            baca.selectors.leaf(0),
+        ),
+        evans.call(
+            "Voice 3",
+            tremolo_handler,
+            baca.selectors.leaves([0, 1, 2, 3, 8, 9, 10]),
+        ),
+        evans.call(
+            "Voice 4",
+            tremolo_handler,
+            baca.selectors.leaves([0, 1, 2, 3, 9, 10, 11, 16, 17, 18]),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.LilyPondLiteral(
+                r'\boxed-markup "spazzolato + col legno tratto" 1', format_slot="after"
+            ),
             baca.selectors.leaf(0),
         ),
         evans.attach(

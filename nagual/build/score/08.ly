@@ -841,7 +841,6 @@
                                 \clef "percussion"
                                 \override Staff.Stem.stemlet-length = 0.75
                                 c'8
-                                \f
                                 - \accent
                                 [
                                 \boxed-markup "bass drum" 1

@@ -26,6 +26,7 @@ from nagual.materials.pitch import (
     spazzolato_pitch_handler_01,
     spazzolato_pitch_handler_02,
     spazzolato_pitch_handler_04,
+    spazzolato_pitch_handler_05,
     tremolo_pitch_handler_01,
     trill_pitch_i_handler_02,
     trill_pitch_p_handler_02,
@@ -438,10 +439,17 @@ rhythm_materials_05 = [
 ]
 
 pitch_materials_05 = [
-    demo_pitch_handler,  #
-    demo_pitch_handler,  #
+    spazzolato_pitch_handler_05,  #
+    spazzolato_pitch_handler_05,
+    spazzolato_pitch_handler_05,
+    spazzolato_pitch_handler_05,  #
+    spazzolato_pitch_handler_05,
+    spazzolato_pitch_handler_05,
     percussion_pitch_handler_05,  #
-    demo_pitch_handler,  #
+    percussion_pitch_handler_05,
+    spazzolato_pitch_handler_05,  #
+    spazzolato_pitch_handler_05,
+    spazzolato_pitch_handler_05,
 ]
 
 ## 06
@@ -964,8 +972,46 @@ rhythm_materials_13 = [
 ]
 
 pitch_materials_13 = [
-    demo_pitch_handler,  #
-    demo_pitch_handler,  #
+    silence_handler,  #
+    silence_handler,
+    silence_handler,
+    silence_handler,
+    silence_handler,
+    silence_handler,
+    silence_handler,
+    silence_handler,
+    silence_handler,
+    silence_handler,
+    silence_handler,
+    silence_handler,  #
+    silence_handler,
+    silence_handler,
+    silence_handler,
+    silence_handler,
+    silence_handler,
+    silence_handler,
+    silence_handler,
+    silence_handler,
+    silence_handler,
     percussion_pitch_handler_13,  #
-    demo_pitch_handler,  #
+    percussion_pitch_handler_13,
+    percussion_pitch_handler_13,
+    percussion_pitch_handler_13,
+    percussion_pitch_handler_13,
+    percussion_pitch_handler_13,
+    percussion_pitch_handler_13,
+    percussion_pitch_handler_13,
+    percussion_pitch_handler_13,
+    percussion_pitch_handler_13,
+    silence_handler,  #
+    silence_handler,
+    silence_handler,
+    silence_handler,
+    silence_handler,
+    silence_handler,
+    silence_handler,
+    silence_handler,
+    silence_handler,
+    silence_handler,
+    silence_handler,
 ]

@@ -1625,7 +1625,7 @@
                             <fs' b'>4
                             :32
                             \sfz
-                            \boxed-markup "crine + ponticello" 1
+                            \boxed-markup "ponticello + crine" 1
 
                             <fs' b'>4
                             :32

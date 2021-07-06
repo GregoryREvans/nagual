@@ -44,6 +44,16 @@ spazzolato_pitch_handler_04 = spazzolato_pitch_handler_01.make_persistent_copy(
     )
 )
 
+spazzolato_pitch_handler_05 = spazzolato_pitch_handler_01.make_persistent_copy(
+    abjad.OrderedDict(
+        [
+            ("pitch_count", 102),
+            ("chord_boolean_count", -1),
+            ("chord_groups_count", -1),
+        ]
+    )
+)
+
 perforated_pitches = evans.Sequence([14, 25, 17, 28, 18]).transpose(-6)
 
 perforated_pitch_handler_01 = evans.PitchHandler(
@@ -167,6 +177,12 @@ trill_pitch_i_handler_02 = evans.PitchHandler(
     name="trill_pitch_i_handler_02",
     chord_boolean_vector=[1],
     chord_groups=[2],
+)
+
+trill_pitch_ri_handler_13 = evans.PitchHandler(
+    trill_pitches_ri,
+    forget=False,
+    name="trill_pitch_ri_handler_13",
 )
 
 grace_base_pitch_handler_03 = evans.PitchHandler(

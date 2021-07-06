@@ -83,36 +83,41 @@
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Alto Flute" }
                             \override Staff.Stem.stemlet-length = 0.75
-                            f'16
+                            af'16
+                            :32
                             \pp
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            f'8.
+                            g'8.
+                            :32
                             ~
                             ]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            f'16
+                            g'16
+                            :32
                             [
 
                             f'16
                             - \espressivo
 
-                            f'16
+                            c''16
 
                             \revert Staff.Stem.stemlet-length
-                            f'16
+                            a'16
                             ]
 
                             r4
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            f'8.
+                            c''8.
+                            :32
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            f'16
+                            df''16
+                            :32
                             ~
                             ]
                             %! COMMENT_MEASURE_NUMBERS
@@ -120,16 +125,17 @@
                             % [Voice 1 measure 2]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            f'16
+                            df''16
+                            :32
                             [
 
-                            f'16
+                            d''16
                             - \espressivo
 
-                            f'16
+                            af'16
 
                             \revert Staff.Stem.stemlet-length
-                            f'16
+                            g'16
                             ]
 
                             r2
@@ -138,13 +144,16 @@
                             {
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                f'8
+                                g'8
+                                :32
                                 [
 
-                                f'8
+                                bf'8
+                                :32
 
                                 \revert Staff.Stem.stemlet-length
                                 f'8
+                                :32
                                 ~
                                 ]
 
@@ -155,23 +164,26 @@
 
                             \override Staff.Stem.stemlet-length = 0.75
                             f'8
+                            :32
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            f'8
+                            fs'8
+                            :32
                             ]
 
                             \override Staff.Stem.stemlet-length = 0.75
                             f'16
+                            :32
                             [
 
-                            f'16
+                            c''16
                             - \espressivo
 
-                            f'16
+                            af'16
 
                             \revert Staff.Stem.stemlet-length
-                            f'16
+                            g'16
                             ]
                             \bar "||"
 
@@ -204,22 +216,26 @@
                                 \set Staff.instrumentName =
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Guitar" }
-                                c''8
+                                af''8
+                                :32
                                 \pp
+                                \boxed-markup "spazzolato" 1
 
-                                c''4.
+                                b''4.
+                                :32
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c''16
+                                fs''16
+                                :32
                                 [
 
-                                c''16
+                                g''16
                                 - \espressivo
 
-                                c''16
+                                fs''16
 
                                 \revert Staff.Stem.stemlet-length
-                                c''16
+                                cs''16
                                 ]
 
                             }
@@ -230,35 +246,40 @@
                             % [Voice 2 measure 2]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            c''8
+                            f''8
+                            :32
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            c''8
+                            cs''8
+                            :32
                             ~
                             ]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            c''16
+                            cs''16
+                            :32
                             [
 
-                            c''16
+                            fs''16
                             - \espressivo
 
-                            c''16
+                            g''16
 
                             \revert Staff.Stem.stemlet-length
-                            c''16
+                            fs''16
                             ]
 
                             r4
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            c''8
+                            b''8
+                            :32
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            c''8
+                            af''8
+                            :32
                             ~
                             ]
                             %! COMMENT_MEASURE_NUMBERS
@@ -266,30 +287,35 @@
                             % [Voice 2 measure 3]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            c''16
+                            af''16
+                            :32
                             [
 
-                            c''16
+                            d''16
+                            :32
                             ~
 
-                            c''16
+                            d''16
+                            :32
 
                             \revert Staff.Stem.stemlet-length
-                            c''16
+                            ef''16
+                            :32
                             ~
                             ]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            c''16
+                            ef''16
+                            :32
                             [
 
-                            c''16
+                            g''16
                             - \espressivo
 
                             c''16
 
                             \revert Staff.Stem.stemlet-length
-                            c''16
+                            cs''16
                             ]
                             \bar "||"
 
@@ -326,15 +352,19 @@
                                 \clef "percussion"
                                 \override Staff.Stem.stemlet-length = 0.75
                                 c'8.
+                                :32
                                 \pp
                                 [
                                 \boxed-markup "brushes + bass drum" 1
 
                                 c'8.
+                                :32
 
                                 c'8
+                                :32
 
                                 c'16
+                                :32
 
                                 c'16
                                 - \espressivo
@@ -354,15 +384,18 @@
 
                             \override Staff.Stem.stemlet-length = 0.75
                             c'8
+                            :32
                             [
 
                             \revert Staff.Stem.stemlet-length
                             c'8
+                            :32
                             ~
                             ]
 
                             \override Staff.Stem.stemlet-length = 0.75
                             c'16
+                            :32
                             [
 
                             c'16
@@ -416,23 +449,28 @@
                                 %! applying staff names and clefs
                                 \markup { \hcenter-in #14 "Violin" }
                                 c'4
+                                :32
                                 \pp
+                                \boxed-markup "spazzolato + col legno tratto" 1
 
-                                c'4
+                                f'4
+                                :32
 
-                                c'4
+                                d'4
+                                :32
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c'8.
+                                d'8.
+                                :32
                                 [
 
-                                c'16
+                                ef'16
                                 - \espressivo
 
-                                c'16
+                                a'16
 
                                 \revert Staff.Stem.stemlet-length
-                                c'16
+                                af'16
                                 ]
 
                             }
@@ -445,25 +483,28 @@
                             r4
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            c'16
+                            g'16
+                            :32
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            c'8.
+                            e'8.
+                            :32
                             ~
                             ]
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            c'16
+                            e'16
+                            :32
                             [
 
-                            c'16
+                            g'16
                             - \espressivo
 
                             c'16
 
                             \revert Staff.Stem.stemlet-length
-                            c'16
+                            d'16
                             ]
 
                             r4
@@ -474,19 +515,22 @@
                                 %! abjad.SegmentMaker.comment_measure_numbers()
                                 % [Voice 4 measure 3]
 
-                                c'4
+                                ef'4
+                                :32
                                 ~
 
-                                c'16
+                                ef'16
+                                :32
 
-                                c'4
+                                f'4
+                                :32
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                c'16
+                                e'16
                                 - \espressivo
                                 [
 
-                                c'16
+                                ef'16
 
                                 \revert Staff.Stem.stemlet-length
                                 c'16

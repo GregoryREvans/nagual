@@ -602,3 +602,12 @@ start_damp = abjad.StartTextSpan(
 abjad.tweak(start_damp).staff_padding = 3.5
 
 stop_damp = abjad.StopTextSpan(command=r"\stopTextSpanOne")
+
+
+def fireworks(selections):
+    for run in abjad.select(selections).runs():
+        first_leaf = abjad.select(run).leaf(0)
+        last_leaf = abjad.select(run).leaf(-1)
+        abjad.attach(abjad.Dynamic("sfp"), first_leaf)
+        abjad.attach(abjad.StartHairpin("<"), first_leaf)
+        abjad.attach(abjad.Dynamic("fff", leak=True), last_leaf)

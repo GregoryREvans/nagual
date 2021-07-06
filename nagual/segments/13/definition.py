@@ -3,10 +3,10 @@ import pathlib
 import abjad
 import baca
 import evans
-from abjadext import rmakers
 
-from nagual.lib import met_120  # , with_sharps, zero_padding_glissando
+from nagual.lib import fireworks, met_120, octave_up, tremolo_handler
 from nagual.materials.instruments import instruments
+from nagual.materials.pitch import trill_pitch_ri_handler_13
 from nagual.materials.score_structure import score
 from nagual.materials.time_signatures import signatures_13
 from nagual.materials.timespans import handler_commands_13, rhythm_commands_13
@@ -34,12 +34,32 @@ maker = evans.SegmentMaker(
             abjad.select().components(abjad.Score),
         ),
         "skips",
+        evans.call(
+            "vertical",
+            trill_pitch_ri_handler_13,
+            evans.return_vertical_moment_ties,
+        ),
+        evans.call(
+            "score",
+            fireworks,
+            abjad.select(),
+        ),
+        evans.call(
+            "Voice 1",
+            octave_up,
+            abjad.select(),
+        ),
+        evans.call(
+            "Voice 1",
+            octave_up,
+            abjad.select(),
+        ),
+        evans.call(
+            "Voice 4",
+            octave_up,
+            abjad.select(),
+        ),
         handler_commands_13,
-        # evans.call(
-        #     "score",
-        #     with_sharps,
-        #     abjad.select().components(abjad.Score),
-        # ),
         evans.call(
             "score",
             evans.SegmentMaker.beam_score,
@@ -50,15 +70,10 @@ maker = evans.SegmentMaker(
             met_120,
             baca.selectors.leaf(0),
         ),
-        evans.attach(
-            "Voice 1",
-            abjad.Dynamic("fff"),
-            baca.selectors.leaf(0),
-        ),
-        evans.attach(
+        evans.call(
             "Voice 2",
-            abjad.Dynamic("fff"),
-            baca.selectors.leaf(1),
+            tremolo_handler,
+            abjad.select(),
         ),
         evans.attach(
             "Voice 3",
@@ -100,16 +115,16 @@ maker = evans.SegmentMaker(
             ),
             baca.selectors.leaf(33),
         ),
-        evans.attach(
-            "Voice 3",
-            abjad.Dynamic("fff"),
-            baca.selectors.leaf(2),
-        ),
-        evans.attach(
-            "Voice 4",
-            abjad.Dynamic("fff"),
-            baca.selectors.leaf(1),
-        ),
+        # evans.attach(
+        #     "Voice 3",
+        #     abjad.Dynamic("fff"),
+        #     baca.selectors.leaf(2),
+        # ),
+        # evans.attach(
+        #     "Voice 4",
+        #     abjad.Dynamic("fff"),
+        #     baca.selectors.leaf(1),
+        # ),
         evans.attach(
             "Global Context",
             abjad.Markup(r"\rehearsal-mark-markup J 6 -1", literal=True),

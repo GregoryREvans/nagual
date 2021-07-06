@@ -155,11 +155,6 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 3",
-            abjad.Dynamic("f"),
-            baca.selectors.leaf(0),
-        ),
-        evans.attach(
-            "Voice 3",
             abjad.Articulation(">"),
             baca.selectors.leaf(0),
         ),
