@@ -971,7 +971,7 @@ pitch_materials_12 = [
     silence_handler,
     perforated_pitch_handler_12,
     silence_handler,
-    perforated_pitch_handler_12,
+    spazzolato_pitch_handler_12,
     silence_handler,
     silence_handler,
     spazzolato_pitch_handler_12,

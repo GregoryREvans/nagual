@@ -399,15 +399,14 @@ red_stop_repeat = abjad.LilyPondLiteral(
 
 grace_handler_03 = evans.OnBeatGraceHandler(
     number_of_attacks=[
-        15,
+        17,
+        11,
         9,
-        8,
-        # 15,
+        11,
+        11,
+        17,
+        11,
         9,
-        9,
-        15,
-        9,
-        8,
     ],
     durations=[
         2,
@@ -431,25 +430,25 @@ grace_handler_03 = evans.OnBeatGraceHandler(
 
 grace_handler_04 = evans.OnBeatGraceHandler(
     number_of_attacks=[
-        10,
         12,
-        10,
+        16,
         12,
+        14,
+        4,
         4,
         4,
         4,
         4,
         2,
-        2,
-        6,
-        6,
+        8,
+        7,
+        8,
+        8,
         4,
-        6,
+        8,
+        8,
         4,
-        4,
-        4,
-        4,
-        4,
+        8,
     ],
     durations=[
         1,
@@ -465,16 +464,16 @@ grace_handler_04 = evans.OnBeatGraceHandler(
 
 grace_handler_06 = evans.OnBeatGraceHandler(
     number_of_attacks=[
-        7,
-        7,
-        7,
         8,
+        12,
+        7,
+        10,
         4,
         4,
         4,
         4,
         3,
-        4,
+        8,
         4,
         4,
         3,
@@ -493,18 +492,18 @@ grace_handler_06 = evans.OnBeatGraceHandler(
 
 grace_handler_08 = evans.OnBeatGraceHandler(
     number_of_attacks=[
-        20,  #
+        24,  #
         7,
-        15,
         17,
-        10,  #
-        20,
+        17,
+        16,  #
+        21,
         25,  #
         3,
-        16,
+        26,
         3,
-        8,
-        16,
+        11,
+        17,
     ],
     durations=[
         1,
@@ -525,8 +524,8 @@ grace_handler_08 = evans.OnBeatGraceHandler(
 
 grace_handler_09 = evans.OnBeatGraceHandler(
     number_of_attacks=[
-        10,
-        40,
+        16,
+        50,
     ],
     durations=[
         1,
@@ -542,8 +541,8 @@ grace_handler_09 = evans.OnBeatGraceHandler(
 
 grace_handler_10 = evans.OnBeatGraceHandler(
     number_of_attacks=[
-        35,
-        28,
+        37,
+        29,
     ],
     durations=[
         1,

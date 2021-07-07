@@ -1325,21 +1325,21 @@
 
                             r4.
 
-                            f'8
+                            cs'8
                             \p
                             - \tweak stencil #abjad-flared-hairpin
                             \<
 
-                            a4
+                            dqf'4
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            af'16
+                            d'16
                             \f
                             - \accent
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            bf16
+                            c'16
                             ]
 
                             r4
@@ -1351,22 +1351,22 @@
 
                             r8
 
-                            cs'8
+                            cqs'8
                             \p
                             - \tweak stencil #abjad-flared-hairpin
                             \<
                             ~
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            cs'8
+                            cqs'8
                             [
 
-                            dqf'16
+                            fqs'16
                             \f
                             - \accent
 
                             \revert Staff.Stem.stemlet-length
-                            d'16
+                            e'16
                             ]
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
@@ -1375,12 +1375,12 @@
                             r8
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            c'16
+                            dqs'16
                             \mf
                             [
 
                             \revert Staff.Stem.stemlet-length
-                            cqs'16
+                            d'16
                             - \accent
                             ]
 
