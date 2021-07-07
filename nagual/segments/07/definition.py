@@ -150,12 +150,12 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 4",
-            abjad.Dynamic("ff"),
+            abjad.Markup(r'\boxed-markup "spazzolato" 1', literal=True),
             baca.selectors.leaf(23),
         ),
         evans.attach(
             "Voice 4",
-            abjad.LilyPondLiteral(r'\boxed-markup "spazzolato" 1', format_slot="after"),
+            abjad.Dynamic("ff"),
             baca.selectors.leaf(23),
         ),
         evans.attach(

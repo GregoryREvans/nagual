@@ -1049,7 +1049,6 @@
                                 %! abjad.SegmentMaker.comment_measure_numbers()
                                 % [Voice 3 measure 13]
 
-                                \nebenStimmeStart
                                 g2
 
                                 d'4
@@ -1090,7 +1089,7 @@
                             \<
                             ~
                             \startTrillSpan af'
-                            \boxed-markup "ordinario + ponticello" 1
+                            \boxed-markup "normale" 1
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 4 measure 2]

@@ -115,6 +115,20 @@ maker = evans.SegmentMaker(
             baca.selectors.leaves([_ for _ in range(42, 54)]),
         ),
         evans.attach(
+            "Voice 2",
+            abjad.LilyPondLiteral(
+                r'\boxed-markup "pizz + dolce" 1', format_slot="after"
+            ),
+            baca.selectors.leaf(11),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.LilyPondLiteral(
+                r'\boxed-markup "flautando + tasto" 1', format_slot="after"
+            ),
+            baca.selectors.leaf(5),
+        ),
+        evans.attach(
             "Voice 3",
             abjad.Clef("percussion"),
             baca.selectors.leaf(0),

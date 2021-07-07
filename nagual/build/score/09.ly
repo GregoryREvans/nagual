@@ -130,35 +130,35 @@
                                     [
                                     (
 
-                                    fs'''16 * 16/35
+                                    fs''16 * 16/35
 
-                                    d'''16 * 16/35
+                                    d''16 * 16/35
 
-                                    bf'''16 * 16/35
+                                    bf''16 * 16/35
 
-                                    a'''16 * 16/35
+                                    a''16 * 16/35
 
-                                    bf'''16 * 16/35
+                                    bf''16 * 16/35
 
-                                    a'''16 * 16/35
+                                    a''16 * 16/35
 
-                                    bf'''16 * 16/35
+                                    bf''16 * 16/35
 
-                                    a'''16 * 16/35
+                                    a''16 * 16/35
 
-                                    fs'''16 * 16/35
+                                    fs''16 * 16/35
 
-                                    d'''16 * 16/35
+                                    d''16 * 16/35
 
-                                    e''16 * 16/35
+                                    e'16 * 16/35
 
-                                    fs'''16 * 16/35
+                                    fs''16 * 16/35
 
-                                    d'''16 * 16/35
+                                    d''16 * 16/35
 
-                                    bf'''16 * 16/35
+                                    bf''16 * 16/35
 
-                                    a'''16 * 16/35
+                                    a''16 * 16/35
                                     )
                                     ]
 
@@ -215,103 +215,103 @@
                                     [
                                     (
 
-                                    a'''16 * 16/35
+                                    a''16 * 16/35
 
-                                    f'''16 * 16/35
+                                    f''16 * 16/35
 
-                                    cs''''16 * 16/35
+                                    cs'''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    cs''''16 * 16/35
+                                    cs'''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    cs''''16 * 16/35
+                                    cs'''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    a'''16 * 16/35
+                                    a''16 * 16/35
 
-                                    f'''16 * 16/35
+                                    f''16 * 16/35
 
-                                    g''16 * 16/35
+                                    g'16 * 16/35
 
-                                    a'''16 * 16/35
+                                    a''16 * 16/35
 
-                                    f'''16 * 16/35
+                                    f''16 * 16/35
 
-                                    cs''''16 * 16/35
+                                    cs'''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    cs''''16 * 16/35
+                                    cs'''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    cs''''16 * 16/35
+                                    cs'''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    cs''''16 * 16/35
+                                    cs'''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    a'''16 * 16/35
+                                    a''16 * 16/35
 
-                                    f'''16 * 16/35
+                                    f''16 * 16/35
 
-                                    g''16 * 16/35
+                                    g'16 * 16/35
 
-                                    a'''16 * 16/35
+                                    a''16 * 16/35
 
-                                    f'''16 * 16/35
+                                    f''16 * 16/35
 
-                                    cs''''16 * 16/35
+                                    cs'''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    cs''''16 * 16/35
+                                    cs'''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    cs''''16 * 16/35
+                                    cs'''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    cs''''16 * 16/35
+                                    cs'''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    cs''''16 * 16/35
+                                    cs'''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    cs''''16 * 16/35
+                                    cs'''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    a'''16 * 16/35
+                                    a''16 * 16/35
 
-                                    f'''16 * 16/35
+                                    f''16 * 16/35
 
-                                    g''16 * 16/35
+                                    g'16 * 16/35
 
-                                    a'''16 * 16/35
+                                    a''16 * 16/35
 
-                                    f'''16 * 16/35
+                                    f''16 * 16/35
 
-                                    cs''''16 * 16/35
+                                    cs'''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    cs''''16 * 16/35
+                                    cs'''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    cs''''16 * 16/35
+                                    cs'''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
                                     )
                                     ]
 
@@ -402,35 +402,35 @@
                                     [
                                     (
 
-                                    ef'''16 * 16/35
+                                    ef''16 * 16/35
 
-                                    b''16 * 16/35
+                                    b'16 * 16/35
 
-                                    g'''16 * 16/35
+                                    g''16 * 16/35
 
-                                    fs'''16 * 16/35
+                                    fs''16 * 16/35
 
-                                    g'''16 * 16/35
+                                    g''16 * 16/35
 
-                                    fs'''16 * 16/35
+                                    fs''16 * 16/35
 
-                                    g'''16 * 16/35
+                                    g''16 * 16/35
 
-                                    fs'''16 * 16/35
+                                    fs''16 * 16/35
 
-                                    ef'''16 * 16/35
+                                    ef''16 * 16/35
 
-                                    b''16 * 16/35
+                                    b'16 * 16/35
 
-                                    cs''16 * 16/35
+                                    cs'16 * 16/35
 
-                                    ef'''16 * 16/35
+                                    ef''16 * 16/35
 
-                                    b''16 * 16/35
+                                    b'16 * 16/35
 
-                                    g'''16 * 16/35
+                                    g''16 * 16/35
 
-                                    fs'''16 * 16/35
+                                    fs''16 * 16/35
                                     )
                                     ]
 
@@ -489,103 +489,103 @@
                                     [
                                     (
 
-                                    af'''16 * 16/35
+                                    af''16 * 16/35
 
-                                    e'''16 * 16/35
+                                    e''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    b'''16 * 16/35
+                                    b''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    b'''16 * 16/35
+                                    b''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    b'''16 * 16/35
+                                    b''16 * 16/35
 
-                                    af'''16 * 16/35
+                                    af''16 * 16/35
 
-                                    e'''16 * 16/35
+                                    e''16 * 16/35
 
-                                    fs''16 * 16/35
+                                    fs'16 * 16/35
 
-                                    af'''16 * 16/35
+                                    af''16 * 16/35
 
-                                    e'''16 * 16/35
+                                    e''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    b'''16 * 16/35
+                                    b''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    b'''16 * 16/35
+                                    b''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    b'''16 * 16/35
+                                    b''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    b'''16 * 16/35
+                                    b''16 * 16/35
 
-                                    af'''16 * 16/35
+                                    af''16 * 16/35
 
-                                    e'''16 * 16/35
+                                    e''16 * 16/35
 
-                                    fs''16 * 16/35
+                                    fs'16 * 16/35
 
-                                    af'''16 * 16/35
+                                    af''16 * 16/35
 
-                                    e'''16 * 16/35
+                                    e''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    b'''16 * 16/35
+                                    b''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    b'''16 * 16/35
+                                    b''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    b'''16 * 16/35
+                                    b''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    b'''16 * 16/35
+                                    b''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    b'''16 * 16/35
+                                    b''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    b'''16 * 16/35
+                                    b''16 * 16/35
 
-                                    af'''16 * 16/35
+                                    af''16 * 16/35
 
-                                    e'''16 * 16/35
+                                    e''16 * 16/35
 
-                                    fs''16 * 16/35
+                                    fs'16 * 16/35
 
-                                    af'''16 * 16/35
+                                    af''16 * 16/35
 
-                                    e'''16 * 16/35
+                                    e''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    b'''16 * 16/35
+                                    b''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    b'''16 * 16/35
+                                    b''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    b'''16 * 16/35
+                                    b''16 * 16/35
                                     )
                                     ]
 
@@ -678,35 +678,35 @@
                                     [
                                     (
 
-                                    cs'''16 * 16/35
+                                    cs''16 * 16/35
 
-                                    a''16 * 16/35
+                                    a'16 * 16/35
 
-                                    f'''16 * 16/35
+                                    f''16 * 16/35
 
-                                    e'''16 * 16/35
+                                    e''16 * 16/35
 
-                                    f'''16 * 16/35
+                                    f''16 * 16/35
 
-                                    e'''16 * 16/35
+                                    e''16 * 16/35
 
-                                    f'''16 * 16/35
+                                    f''16 * 16/35
 
-                                    e'''16 * 16/35
+                                    e''16 * 16/35
 
-                                    cs'''16 * 16/35
+                                    cs''16 * 16/35
 
-                                    a''16 * 16/35
+                                    a'16 * 16/35
 
-                                    b'16 * 16/35
+                                    b16 * 16/35
 
-                                    cs'''16 * 16/35
+                                    cs''16 * 16/35
 
-                                    a''16 * 16/35
+                                    a'16 * 16/35
 
-                                    f'''16 * 16/35
+                                    f''16 * 16/35
 
-                                    e'''16 * 16/35
+                                    e''16 * 16/35
                                     )
                                     ]
 
@@ -763,103 +763,103 @@
                                     [
                                     (
 
-                                    af'''16 * 16/35
+                                    af''16 * 16/35
 
-                                    e'''16 * 16/35
+                                    e''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    b'''16 * 16/35
+                                    b''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    b'''16 * 16/35
+                                    b''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    b'''16 * 16/35
+                                    b''16 * 16/35
 
-                                    af'''16 * 16/35
+                                    af''16 * 16/35
 
-                                    e'''16 * 16/35
+                                    e''16 * 16/35
 
-                                    fs''16 * 16/35
+                                    fs'16 * 16/35
 
-                                    af'''16 * 16/35
+                                    af''16 * 16/35
 
-                                    e'''16 * 16/35
+                                    e''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    b'''16 * 16/35
+                                    b''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    b'''16 * 16/35
+                                    b''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    b'''16 * 16/35
+                                    b''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    b'''16 * 16/35
+                                    b''16 * 16/35
 
-                                    af'''16 * 16/35
+                                    af''16 * 16/35
 
-                                    e'''16 * 16/35
+                                    e''16 * 16/35
 
-                                    fs''16 * 16/35
+                                    fs'16 * 16/35
 
-                                    af'''16 * 16/35
+                                    af''16 * 16/35
 
-                                    e'''16 * 16/35
+                                    e''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    b'''16 * 16/35
+                                    b''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    b'''16 * 16/35
+                                    b''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    b'''16 * 16/35
+                                    b''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    b'''16 * 16/35
+                                    b''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    b'''16 * 16/35
+                                    b''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    b'''16 * 16/35
+                                    b''16 * 16/35
 
-                                    af'''16 * 16/35
+                                    af''16 * 16/35
 
-                                    e'''16 * 16/35
+                                    e''16 * 16/35
 
-                                    fs''16 * 16/35
+                                    fs'16 * 16/35
 
-                                    af'''16 * 16/35
+                                    af''16 * 16/35
 
-                                    e'''16 * 16/35
+                                    e''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    b'''16 * 16/35
+                                    b''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    b'''16 * 16/35
+                                    b''16 * 16/35
 
-                                    c''''16 * 16/35
+                                    c'''16 * 16/35
 
-                                    b'''16 * 16/35
+                                    b''16 * 16/35
                                     )
                                     ]
 
@@ -937,6 +937,10 @@
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
+                                    - \abjad-dashed-line-with-hook
+                                    - \tweak bound-details.left.text \markup \concat { \damp-markup \hspace #0.5 }
+                                    - \tweak staff-padding 3.5
+                                    \startTextSpanOne
 
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
@@ -1014,10 +1018,17 @@
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
                                     a'4
+                                    \stopTextSpanOne
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
+                                    - \tweak padding #2
+                                    - \tweak staff-padding #1
+                                    - \tweak bound-details.right.padding #2
+                                    - \tweak bound-details.left.text
+                                    \double-diamond-parenthesized-top-markup
+                                    \startTrillSpan
 
                                 }
 
@@ -1039,6 +1050,13 @@
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
+                                \stopTrillSpan
+                                - \tweak padding #2
+                                - \tweak staff-padding #1
+                                - \tweak bound-details.right.padding #2
+                                - \tweak bound-details.left.text
+                                \diamond-parenthesized-double-diamond-markup
+                                \startTrillSpan
 
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
@@ -1048,6 +1066,13 @@
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
+                                \stopTrillSpan
+                                - \tweak padding #2
+                                - \tweak staff-padding #1
+                                - \tweak bound-details.right.padding #2
+                                - \tweak bound-details.left.text
+                                \double-diamond-parenthesized-top-markup
+                                \startTrillSpan
 
                                 \revert Staff.Stem.stemlet-length
                                 \tweak Accidental.stencil ##f
@@ -1059,6 +1084,13 @@
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
+                                \stopTrillSpan
+                                - \tweak padding #2
+                                - \tweak staff-padding #1
+                                - \tweak bound-details.right.padding #2
+                                - \tweak bound-details.left.text
+                                \double-diamond-parenthesized-top-markup
+                                \startTrillSpan
 
                             }
 
@@ -1072,6 +1104,13 @@
                             - \abjad-zero-padding-glissando
                             %! abjad.glissando(7)
                             \glissando
+                            \stopTrillSpan
+                            - \tweak padding #2
+                            - \tweak staff-padding #1
+                            - \tweak bound-details.right.padding #2
+                            - \tweak bound-details.left.text
+                            \diamond-parenthesized-double-diamond-markup
+                            \startTrillSpan
 
                             \tweak Accidental.stencil ##f
                             \tweak X-extent #'(0 . 0)
@@ -1081,6 +1120,13 @@
                             - \abjad-zero-padding-glissando
                             %! abjad.glissando(7)
                             \glissando
+                            \stopTrillSpan
+                            - \tweak padding #2
+                            - \tweak staff-padding #1
+                            - \tweak bound-details.right.padding #2
+                            - \tweak bound-details.left.text
+                            \double-diamond-parenthesized-top-markup
+                            \startTrillSpan
 
                             \tweak Accidental.stencil ##f
                             \tweak X-extent #'(0 . 0)
@@ -1090,6 +1136,13 @@
                             - \abjad-zero-padding-glissando
                             %! abjad.glissando(7)
                             \glissando
+                            \stopTrillSpan
+                            - \tweak padding #2
+                            - \tweak staff-padding #1
+                            - \tweak bound-details.right.padding #2
+                            - \tweak bound-details.left.text
+                            \double-diamond-parenthesized-top-markup
+                            \startTrillSpan
 
                             \revert Staff.Stem.stemlet-length
                             \tweak Accidental.stencil ##f
@@ -1101,6 +1154,13 @@
                             - \abjad-zero-padding-glissando
                             %! abjad.glissando(7)
                             \glissando
+                            \stopTrillSpan
+                            - \tweak padding #2
+                            - \tweak staff-padding #1
+                            - \tweak bound-details.right.padding #2
+                            - \tweak bound-details.left.text
+                            \diamond-parenthesized-double-diamond-markup
+                            \startTrillSpan
 
                             \times 2/3
                             {
@@ -1113,8 +1173,22 @@
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
+                                \stopTrillSpan
+                                - \tweak padding #2
+                                - \tweak staff-padding #1
+                                - \tweak bound-details.right.padding #2
+                                - \tweak bound-details.left.text
+                                \double-diamond-parenthesized-top-markup
+                                \startTrillSpan
 
                                 fs4
+                                \stopTrillSpan
+                                - \tweak padding #2
+                                - \tweak staff-padding #1
+                                - \tweak bound-details.right.padding #2
+                                - \tweak bound-details.left.text
+                                \double-diamond-parenthesized-top-markup
+                                \startTrillSpan
 
                             }
 
@@ -1135,35 +1209,35 @@
                                     [
                                     (
 
-                                    e''16 * 16/35
+                                    e'16 * 16/35
 
-                                    c''16 * 16/35
+                                    c'16 * 16/35
 
-                                    af''16 * 16/35
+                                    af'16 * 16/35
 
-                                    g''16 * 16/35
+                                    g'16 * 16/35
 
-                                    af''16 * 16/35
+                                    af'16 * 16/35
 
-                                    g''16 * 16/35
+                                    g'16 * 16/35
 
-                                    af''16 * 16/35
+                                    af'16 * 16/35
 
-                                    g''16 * 16/35
+                                    g'16 * 16/35
 
-                                    e''16 * 16/35
+                                    e'16 * 16/35
 
-                                    c''16 * 16/35
+                                    c'16 * 16/35
 
-                                    d'16 * 16/35
+                                    d16 * 16/35
 
-                                    e''16 * 16/35
+                                    e'16 * 16/35
 
-                                    c''16 * 16/35
+                                    c'16 * 16/35
 
-                                    af''16 * 16/35
+                                    af'16 * 16/35
 
-                                    g''16 * 16/35
+                                    g'16 * 16/35
                                     )
                                     ]
 
@@ -1176,6 +1250,7 @@
                                     \voiceTwo
                                     d'2
                                     \f
+                                    \stopTrillSpan
 
                                 }
 
@@ -1206,6 +1281,12 @@
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
+                                - \tweak padding #2
+                                - \tweak staff-padding #1
+                                - \tweak bound-details.right.padding #2
+                                - \tweak bound-details.left.text
+                                \diamond-parenthesized-double-diamond-markup
+                                \startTrillSpan
 
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
@@ -1215,6 +1296,13 @@
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
+                                \stopTrillSpan
+                                - \tweak padding #2
+                                - \tweak staff-padding #1
+                                - \tweak bound-details.right.padding #2
+                                - \tweak bound-details.left.text
+                                \double-diamond-parenthesized-top-markup
+                                \startTrillSpan
 
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
@@ -1224,6 +1312,18 @@
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
+                                - \abjad-solid-line-with-arrow
+                                - \tweak bound-details.left.text \markup \concat { poco \hspace #1 gridato \hspace #0.5 }
+                                - \tweak bound-details.right.text \markup { molto gridato }
+                                - \tweak staff-padding 7
+                                \startTextSpanTwo
+                                \stopTrillSpan
+                                - \tweak padding #2
+                                - \tweak staff-padding #1
+                                - \tweak bound-details.right.padding #2
+                                - \tweak bound-details.left.text
+                                \double-diamond-parenthesized-top-markup
+                                \startTrillSpan
 
                                 \times 4/5
                                 {
@@ -1238,6 +1338,17 @@
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
+                                    - \abjad-dashed-line-with-hook
+                                    - \tweak bound-details.left.text \markup \concat { \damp-markup \hspace #0.5 }
+                                    - \tweak staff-padding 3.5
+                                    \startTextSpanOne
+                                    \stopTrillSpan
+                                    - \tweak padding #2
+                                    - \tweak staff-padding #1
+                                    - \tweak bound-details.right.padding #2
+                                    - \tweak bound-details.left.text
+                                    \diamond-parenthesized-double-diamond-markup
+                                    \startTrillSpan
 
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
@@ -1247,6 +1358,13 @@
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
+                                    \stopTrillSpan
+                                    - \tweak padding #2
+                                    - \tweak staff-padding #1
+                                    - \tweak bound-details.right.padding #2
+                                    - \tweak bound-details.left.text
+                                    \double-diamond-parenthesized-top-markup
+                                    \startTrillSpan
 
                                     \revert Staff.Stem.stemlet-length
                                     \tweak Accidental.stencil ##f
@@ -1258,6 +1376,7 @@
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
+                                    \stopTrillSpan
 
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
@@ -1336,6 +1455,7 @@
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
                                     f'8
+                                    \stopTextSpanOne
                                     [
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
@@ -1352,6 +1472,12 @@
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
+                                    - \tweak padding #2
+                                    - \tweak staff-padding #1
+                                    - \tweak bound-details.right.padding #2
+                                    - \tweak bound-details.left.text
+                                    \double-diamond-parenthesized-top-markup
+                                    \startTrillSpan
 
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
@@ -1361,6 +1487,13 @@
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
+                                    \stopTrillSpan
+                                    - \tweak padding #2
+                                    - \tweak staff-padding #1
+                                    - \tweak bound-details.right.padding #2
+                                    - \tweak bound-details.left.text
+                                    \diamond-parenthesized-double-diamond-markup
+                                    \startTrillSpan
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     \tweak Accidental.stencil ##f
@@ -1372,6 +1505,13 @@
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
+                                    \stopTrillSpan
+                                    - \tweak padding #2
+                                    - \tweak staff-padding #1
+                                    - \tweak bound-details.right.padding #2
+                                    - \tweak bound-details.left.text
+                                    \double-diamond-parenthesized-top-markup
+                                    \startTrillSpan
 
                                 }
 
@@ -1380,13 +1520,22 @@
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
                                 g8
+                                \stopTextSpanTwo
                                 ]
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
+                                \stopTrillSpan
+                                - \tweak padding #2
+                                - \tweak staff-padding #1
+                                - \tweak bound-details.right.padding #2
+                                - \tweak bound-details.left.text
+                                \double-diamond-parenthesized-top-markup
+                                \startTrillSpan
 
                                 ef4.
+                                \stopTrillSpan
 
                             }
 
@@ -1407,103 +1556,103 @@
                                     [
                                     (
 
-                                    fs''16 * 16/35
+                                    fs'16 * 16/35
 
-                                    d''16 * 16/35
+                                    d'16 * 16/35
 
-                                    bf''16 * 16/35
+                                    bf'16 * 16/35
 
-                                    a''16 * 16/35
+                                    a'16 * 16/35
 
-                                    bf''16 * 16/35
+                                    bf'16 * 16/35
 
-                                    a''16 * 16/35
+                                    a'16 * 16/35
 
-                                    bf''16 * 16/35
+                                    bf'16 * 16/35
 
-                                    a''16 * 16/35
+                                    a'16 * 16/35
 
-                                    fs''16 * 16/35
+                                    fs'16 * 16/35
 
-                                    d''16 * 16/35
+                                    d'16 * 16/35
 
-                                    e'16 * 16/35
+                                    e16 * 16/35
 
-                                    fs''16 * 16/35
+                                    fs'16 * 16/35
 
-                                    d''16 * 16/35
+                                    d'16 * 16/35
 
-                                    bf''16 * 16/35
+                                    bf'16 * 16/35
 
-                                    a''16 * 16/35
+                                    a'16 * 16/35
 
-                                    bf''16 * 16/35
+                                    bf'16 * 16/35
 
-                                    a''16 * 16/35
+                                    a'16 * 16/35
 
-                                    bf''16 * 16/35
+                                    bf'16 * 16/35
 
-                                    a''16 * 16/35
+                                    a'16 * 16/35
 
-                                    bf''16 * 16/35
+                                    bf'16 * 16/35
 
-                                    a''16 * 16/35
+                                    a'16 * 16/35
 
-                                    fs''16 * 16/35
+                                    fs'16 * 16/35
 
-                                    d''16 * 16/35
+                                    d'16 * 16/35
 
-                                    e'16 * 16/35
+                                    e16 * 16/35
 
-                                    fs''16 * 16/35
+                                    fs'16 * 16/35
 
-                                    d''16 * 16/35
+                                    d'16 * 16/35
 
-                                    bf''16 * 16/35
+                                    bf'16 * 16/35
 
-                                    a''16 * 16/35
+                                    a'16 * 16/35
 
-                                    bf''16 * 16/35
+                                    bf'16 * 16/35
 
-                                    a''16 * 16/35
+                                    a'16 * 16/35
 
-                                    bf''16 * 16/35
+                                    bf'16 * 16/35
 
-                                    a''16 * 16/35
+                                    a'16 * 16/35
 
-                                    bf''16 * 16/35
+                                    bf'16 * 16/35
 
-                                    a''16 * 16/35
+                                    a'16 * 16/35
 
-                                    bf''16 * 16/35
+                                    bf'16 * 16/35
 
-                                    a''16 * 16/35
+                                    a'16 * 16/35
 
-                                    bf''16 * 16/35
+                                    bf'16 * 16/35
 
-                                    a''16 * 16/35
+                                    a'16 * 16/35
 
-                                    fs''16 * 16/35
+                                    fs'16 * 16/35
 
-                                    d''16 * 16/35
+                                    d'16 * 16/35
 
-                                    e'16 * 16/35
+                                    e16 * 16/35
 
-                                    fs''16 * 16/35
+                                    fs'16 * 16/35
 
-                                    d''16 * 16/35
+                                    d'16 * 16/35
 
-                                    bf''16 * 16/35
+                                    bf'16 * 16/35
 
-                                    a''16 * 16/35
+                                    a'16 * 16/35
 
-                                    bf''16 * 16/35
+                                    bf'16 * 16/35
 
-                                    a''16 * 16/35
+                                    a'16 * 16/35
 
-                                    bf''16 * 16/35
+                                    bf'16 * 16/35
 
-                                    a''16 * 16/35
+                                    a'16 * 16/35
                                     )
                                     ]
 
@@ -1516,6 +1665,7 @@
                                     \voiceTwo
                                     e'1.
                                     \f
+                                    - \boxed-markup "normale" 1
                                     \bar "||"
 
                                 }

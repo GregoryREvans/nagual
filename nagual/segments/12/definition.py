@@ -56,6 +56,32 @@ maker = evans.SegmentMaker(
             baca.selectors.leaf(0),
         ),
         evans.attach(
+            "Voice 1",
+            abjad.LilyPondLiteral(r'\boxed-markup "tone + air" 1', format_slot="after"),
+            baca.selectors.leaf(8),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.LilyPondLiteral(
+                r'\boxed-markup "col legno tratto" 1', format_slot="after"
+            ),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.LilyPondLiteral(
+                r'\boxed-markup "spazzolato + col legno" 1', format_slot="after"
+            ),
+            baca.selectors.leaf(45),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.LilyPondLiteral(
+                r'\boxed-markup "crine + chop" 1', format_slot="after"
+            ),
+            baca.selectors.leaf(57),
+        ),
+        evans.attach(
             "Voice 3",
             abjad.Clef("percussion"),
             baca.selectors.leaf(0),

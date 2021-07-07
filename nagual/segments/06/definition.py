@@ -90,6 +90,21 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 1",
+            abjad.LilyPondLiteral(r'\boxed-markup "normale" 1', format_slot="after"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.LilyPondLiteral(r'\boxed-markup "normale" 1', format_slot="after"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.LilyPondLiteral(r'\boxed-markup "normale" 1', format_slot="after"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 1",
             abjad.Dynamic("mf"),
             baca.selectors.leaf(19),
         ),

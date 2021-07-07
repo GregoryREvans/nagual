@@ -159,6 +159,7 @@
                                 :32
                                 \sfz
                                 [
+                                \boxed-markup "normale" 1
 
                                 ef''8
                                 :32
@@ -501,6 +502,7 @@
                             :32
                             \sfz
                             [
+                            \boxed-markup "normale" 1
 
                             <ef' b' e''>8
                             :32
@@ -1210,6 +1212,7 @@
                                 :32
                                 \sfz
                                 [
+                                \boxed-markup "normale" 1
 
                                 <g f'>8
                                 :32

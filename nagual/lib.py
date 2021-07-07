@@ -616,3 +616,14 @@ def sforzandi(selections):
     ties = abjad.select(selections).logical_ties(pitched=True)
     for tie in ties:
         abjad.attach(abjad.Dynamic("sfz"), tie[0])
+
+
+start_scratch = abjad.StartTextSpan(
+    left_text=abjad.Markup(r"poco \hspace #1 gridato", literal=True),
+    right_text=abjad.Markup("molto gridato"),
+    style="solid-line-with-arrow",
+    command=r"\startTextSpanTwo",
+)
+abjad.tweak(start_scratch).staff_padding = 7
+
+stop_scratch = abjad.StopTextSpan(command=r"\stopTextSpanTwo")

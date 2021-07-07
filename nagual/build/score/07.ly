@@ -908,8 +908,8 @@
                             dqf'2.
                             :32
                             \ff
+                            - \boxed-markup "spazzolato" 1
                             \bar "||"
-                            \boxed-markup "spazzolato" 1
 
                         }
 

@@ -93,16 +93,6 @@ maker = evans.SegmentMaker(
             baca.selectors.leaf(2),
         ),
         evans.attach(
-            "Voice 3",
-            abjad.LilyPondLiteral(r"\nebenStimmeStart", format_slot="before"),
-            baca.selectors.leaf(0),
-        ),
-        evans.attach(
-            "Voice 3",
-            abjad.LilyPondLiteral(r"\nebenStimmeStop", format_slot="before"),
-            baca.selectors.leaf(4),
-        ),
-        evans.attach(
             "Voice 1",
             abjad.LilyPondLiteral(r"\hauptStimmeStart", format_slot="before"),
             baca.selectors.leaf(2),
@@ -111,16 +101,6 @@ maker = evans.SegmentMaker(
             "Voice 1",
             abjad.LilyPondLiteral(r"\hauptStimmeStop", format_slot="before"),
             baca.selectors.leaf(4),
-        ),
-        evans.attach(
-            "Voice 1",
-            abjad.LilyPondLiteral(r"\nebenStimmeStart", format_slot="before"),
-            baca.selectors.leaf(6),
-        ),
-        evans.attach(
-            "Voice 1",
-            abjad.LilyPondLiteral(r"\nebenStimmeStop", format_slot="before"),
-            baca.selectors.leaf(8),
         ),
         evans.attach(
             "Voice 1",
@@ -216,7 +196,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 3",
             abjad.LilyPondLiteral(
-                r'\boxed-markup "brushes + brake drum" 1', format_slot="after"
+                r'\boxed-markup "stone + brake drum" 1', format_slot="after"
             ),
             baca.selectors.leaf(12),
         ),

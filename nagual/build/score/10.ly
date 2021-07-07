@@ -631,6 +631,7 @@
                             fqs''1
                             \p
                             ~
+                            \boxed-markup "spazzolato" 1
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 6]
@@ -784,6 +785,7 @@
                                     fs'2.
                                     \f
                                     ~
+                                    \boxed-markup "normale" 1
 
                                     fs'4.
 
@@ -1360,6 +1362,10 @@
                                 c4
                                 \mf
                                 \<
+                                - \abjad-dashed-line-with-hook
+                                - \tweak bound-details.left.text \markup \concat { \damp-markup \hspace #0.5 }
+                                - \tweak staff-padding 3.5
+                                \startTextSpanOne
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
@@ -1471,10 +1477,17 @@
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
                                 bf8
+                                \stopTextSpanOne
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
+                                - \tweak padding #2
+                                - \tweak staff-padding #1
+                                - \tweak bound-details.right.padding #2
+                                - \tweak bound-details.left.text
+                                \double-diamond-parenthesized-top-markup
+                                \startTrillSpan
 
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
@@ -1485,6 +1498,13 @@
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
+                                \stopTrillSpan
+                                - \tweak padding #2
+                                - \tweak staff-padding #1
+                                - \tweak bound-details.right.padding #2
+                                - \tweak bound-details.left.text
+                                \diamond-parenthesized-double-diamond-markup
+                                \startTrillSpan
 
                             }
 
@@ -1506,6 +1526,13 @@
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
+                                    \stopTrillSpan
+                                    - \tweak padding #2
+                                    - \tweak staff-padding #1
+                                    - \tweak bound-details.right.padding #2
+                                    - \tweak bound-details.left.text
+                                    \double-diamond-parenthesized-top-markup
+                                    \startTrillSpan
 
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
@@ -1515,6 +1542,13 @@
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
+                                    \stopTrillSpan
+                                    - \tweak padding #2
+                                    - \tweak staff-padding #1
+                                    - \tweak bound-details.right.padding #2
+                                    - \tweak bound-details.left.text
+                                    \double-diamond-parenthesized-top-markup
+                                    \startTrillSpan
 
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
@@ -1524,6 +1558,13 @@
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
+                                    \stopTrillSpan
+                                    - \tweak padding #2
+                                    - \tweak staff-padding #1
+                                    - \tweak bound-details.right.padding #2
+                                    - \tweak bound-details.left.text
+                                    \diamond-parenthesized-double-diamond-markup
+                                    \startTrillSpan
 
                                 }
 
@@ -1540,6 +1581,13 @@
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
+                                    \stopTrillSpan
+                                    - \tweak padding #2
+                                    - \tweak staff-padding #1
+                                    - \tweak bound-details.right.padding #2
+                                    - \tweak bound-details.left.text
+                                    \double-diamond-parenthesized-top-markup
+                                    \startTrillSpan
 
                                     \revert Staff.Stem.stemlet-length
                                     \tweak Accidental.stencil ##f
@@ -1551,6 +1599,13 @@
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
+                                    \stopTrillSpan
+                                    - \tweak padding #2
+                                    - \tweak staff-padding #1
+                                    - \tweak bound-details.right.padding #2
+                                    - \tweak bound-details.left.text
+                                    \double-diamond-parenthesized-top-markup
+                                    \startTrillSpan
 
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
@@ -1560,6 +1615,13 @@
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
+                                    \stopTrillSpan
+                                    - \tweak padding #2
+                                    - \tweak staff-padding #1
+                                    - \tweak bound-details.right.padding #2
+                                    - \tweak bound-details.left.text
+                                    \diamond-parenthesized-double-diamond-markup
+                                    \startTrillSpan
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     \tweak Accidental.stencil ##f
@@ -1571,6 +1633,13 @@
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
+                                    \stopTrillSpan
+                                    - \tweak padding #2
+                                    - \tweak staff-padding #1
+                                    - \tweak bound-details.right.padding #2
+                                    - \tweak bound-details.left.text
+                                    \double-diamond-parenthesized-top-markup
+                                    \startTrillSpan
 
                                 }
 
@@ -1584,6 +1653,13 @@
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
+                                \stopTrillSpan
+                                - \tweak padding #2
+                                - \tweak staff-padding #1
+                                - \tweak bound-details.right.padding #2
+                                - \tweak bound-details.left.text
+                                \double-diamond-parenthesized-top-markup
+                                \startTrillSpan
 
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
@@ -1593,6 +1669,13 @@
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
+                                \stopTrillSpan
+                                - \tweak padding #2
+                                - \tweak staff-padding #1
+                                - \tweak bound-details.right.padding #2
+                                - \tweak bound-details.left.text
+                                \diamond-parenthesized-double-diamond-markup
+                                \startTrillSpan
 
                             }
 
@@ -1613,6 +1696,13 @@
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
+                                    \stopTrillSpan
+                                    - \tweak padding #2
+                                    - \tweak staff-padding #1
+                                    - \tweak bound-details.right.padding #2
+                                    - \tweak bound-details.left.text
+                                    \double-diamond-parenthesized-top-markup
+                                    \startTrillSpan
 
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
@@ -1622,6 +1712,13 @@
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
+                                    \stopTrillSpan
+                                    - \tweak padding #2
+                                    - \tweak staff-padding #1
+                                    - \tweak bound-details.right.padding #2
+                                    - \tweak bound-details.left.text
+                                    \double-diamond-parenthesized-top-markup
+                                    \startTrillSpan
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     \tweak Accidental.stencil ##f
@@ -1633,6 +1730,13 @@
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
+                                    \stopTrillSpan
+                                    - \tweak padding #2
+                                    - \tweak staff-padding #1
+                                    - \tweak bound-details.right.padding #2
+                                    - \tweak bound-details.left.text
+                                    \diamond-parenthesized-double-diamond-markup
+                                    \startTrillSpan
 
                                 }
 
@@ -1640,10 +1744,15 @@
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
                                 fs8
+                                - \abjad-dashed-line-with-hook
+                                - \tweak bound-details.left.text \markup \concat { \damp-markup \hspace #0.5 }
+                                - \tweak staff-padding 3.5
+                                \startTextSpanOne
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
+                                \stopTrillSpan
 
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
@@ -1885,10 +1994,17 @@
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
                                     bf4
+                                    \stopTextSpanOne
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
+                                    - \tweak padding #2
+                                    - \tweak staff-padding #1
+                                    - \tweak bound-details.right.padding #2
+                                    - \tweak bound-details.left.text
+                                    \double-diamond-parenthesized-top-markup
+                                    \startTrillSpan
 
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
@@ -1898,6 +2014,13 @@
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
+                                    \stopTrillSpan
+                                    - \tweak padding #2
+                                    - \tweak staff-padding #1
+                                    - \tweak bound-details.right.padding #2
+                                    - \tweak bound-details.left.text
+                                    \double-diamond-parenthesized-top-markup
+                                    \startTrillSpan
 
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
@@ -1907,6 +2030,13 @@
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
+                                    \stopTrillSpan
+                                    - \tweak padding #2
+                                    - \tweak staff-padding #1
+                                    - \tweak bound-details.right.padding #2
+                                    - \tweak bound-details.left.text
+                                    \diamond-parenthesized-double-diamond-markup
+                                    \startTrillSpan
 
                                 }
 
@@ -1923,6 +2053,13 @@
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
+                                    \stopTrillSpan
+                                    - \tweak padding #2
+                                    - \tweak staff-padding #1
+                                    - \tweak bound-details.right.padding #2
+                                    - \tweak bound-details.left.text
+                                    \double-diamond-parenthesized-top-markup
+                                    \startTrillSpan
 
                                     \revert Staff.Stem.stemlet-length
                                     \tweak Accidental.stencil ##f
@@ -1934,6 +2071,13 @@
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
+                                    \stopTrillSpan
+                                    - \tweak padding #2
+                                    - \tweak staff-padding #1
+                                    - \tweak bound-details.right.padding #2
+                                    - \tweak bound-details.left.text
+                                    \double-diamond-parenthesized-top-markup
+                                    \startTrillSpan
 
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
@@ -1943,6 +2087,13 @@
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
+                                    \stopTrillSpan
+                                    - \tweak padding #2
+                                    - \tweak staff-padding #1
+                                    - \tweak bound-details.right.padding #2
+                                    - \tweak bound-details.left.text
+                                    \diamond-parenthesized-double-diamond-markup
+                                    \startTrillSpan
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     \tweak Accidental.stencil ##f
@@ -1954,6 +2105,13 @@
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
+                                    \stopTrillSpan
+                                    - \tweak padding #2
+                                    - \tweak staff-padding #1
+                                    - \tweak bound-details.right.padding #2
+                                    - \tweak bound-details.left.text
+                                    \double-diamond-parenthesized-top-markup
+                                    \startTrillSpan
 
                                 }
 
@@ -1967,6 +2125,13 @@
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
+                                \stopTrillSpan
+                                - \tweak padding #2
+                                - \tweak staff-padding #1
+                                - \tweak bound-details.right.padding #2
+                                - \tweak bound-details.left.text
+                                \double-diamond-parenthesized-top-markup
+                                \startTrillSpan
 
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
@@ -1976,6 +2141,13 @@
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
+                                \stopTrillSpan
+                                - \tweak padding #2
+                                - \tweak staff-padding #1
+                                - \tweak bound-details.right.padding #2
+                                - \tweak bound-details.left.text
+                                \diamond-parenthesized-double-diamond-markup
+                                \startTrillSpan
 
                             }
 
@@ -1996,6 +2168,13 @@
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
+                                    \stopTrillSpan
+                                    - \tweak padding #2
+                                    - \tweak staff-padding #1
+                                    - \tweak bound-details.right.padding #2
+                                    - \tweak bound-details.left.text
+                                    \double-diamond-parenthesized-top-markup
+                                    \startTrillSpan
 
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
@@ -2005,6 +2184,13 @@
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
+                                    \stopTrillSpan
+                                    - \tweak padding #2
+                                    - \tweak staff-padding #1
+                                    - \tweak bound-details.right.padding #2
+                                    - \tweak bound-details.left.text
+                                    \double-diamond-parenthesized-top-markup
+                                    \startTrillSpan
 
                                     \override Staff.Stem.stemlet-length = 0.75
                                     \tweak Accidental.stencil ##f
@@ -2012,10 +2198,22 @@
                                     \tweak transparent ##t
                                     ef'8
                                     [
+                                    - \abjad-solid-line-with-arrow
+                                    - \tweak bound-details.left.text \markup \concat { poco \hspace #1 gridato \hspace #0.5 }
+                                    - \tweak bound-details.right.text \markup { molto gridato }
+                                    - \tweak staff-padding 7
+                                    \startTextSpanTwo
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
+                                    \stopTrillSpan
+                                    - \tweak padding #2
+                                    - \tweak staff-padding #1
+                                    - \tweak bound-details.right.padding #2
+                                    - \tweak bound-details.left.text
+                                    \diamond-parenthesized-double-diamond-markup
+                                    \startTrillSpan
 
                                 }
 
@@ -2023,10 +2221,15 @@
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
                                 d'8
+                                - \abjad-dashed-line-with-hook
+                                - \tweak bound-details.left.text \markup \concat { \damp-markup \hspace #0.5 }
+                                - \tweak staff-padding 3.5
+                                \startTextSpanOne
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
+                                \stopTrillSpan
 
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
@@ -2181,10 +2384,17 @@
                                 \tweak X-extent #'(0 . 0)
                                 \tweak transparent ##t
                                 cs4
+                                \stopTextSpanOne
                                 %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
+                                - \tweak padding #2
+                                - \tweak staff-padding #1
+                                - \tweak bound-details.right.padding #2
+                                - \tweak bound-details.left.text
+                                \double-diamond-parenthesized-top-markup
+                                \startTrillSpan
 
                             }
 
@@ -2202,6 +2412,13 @@
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
+                                \stopTrillSpan
+                                - \tweak padding #2
+                                - \tweak staff-padding #1
+                                - \tweak bound-details.right.padding #2
+                                - \tweak bound-details.left.text
+                                \double-diamond-parenthesized-top-markup
+                                \startTrillSpan
 
                                 \tweak Accidental.stencil ##f
                                 \tweak X-extent #'(0 . 0)
@@ -2211,6 +2428,13 @@
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
+                                \stopTrillSpan
+                                - \tweak padding #2
+                                - \tweak staff-padding #1
+                                - \tweak bound-details.right.padding #2
+                                - \tweak bound-details.left.text
+                                \diamond-parenthesized-double-diamond-markup
+                                \startTrillSpan
 
                                 \override Staff.Stem.stemlet-length = 0.75
                                 \tweak Accidental.stencil ##f
@@ -2222,6 +2446,13 @@
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
+                                \stopTrillSpan
+                                - \tweak padding #2
+                                - \tweak staff-padding #1
+                                - \tweak bound-details.right.padding #2
+                                - \tweak bound-details.left.text
+                                \double-diamond-parenthesized-top-markup
+                                \startTrillSpan
 
                                 \revert Staff.Stem.stemlet-length
                                 \tweak Accidental.stencil ##f
@@ -2233,6 +2464,13 @@
                                 - \abjad-zero-padding-glissando
                                 %! abjad.glissando(7)
                                 \glissando
+                                \stopTrillSpan
+                                - \tweak padding #2
+                                - \tweak staff-padding #1
+                                - \tweak bound-details.right.padding #2
+                                - \tweak bound-details.left.text
+                                \double-diamond-parenthesized-top-markup
+                                \startTrillSpan
 
                             }
 
@@ -2254,6 +2492,13 @@
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
+                                    \stopTrillSpan
+                                    - \tweak padding #2
+                                    - \tweak staff-padding #1
+                                    - \tweak bound-details.right.padding #2
+                                    - \tweak bound-details.left.text
+                                    \diamond-parenthesized-double-diamond-markup
+                                    \startTrillSpan
 
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
@@ -2263,6 +2508,13 @@
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
+                                    \stopTrillSpan
+                                    - \tweak padding #2
+                                    - \tweak staff-padding #1
+                                    - \tweak bound-details.right.padding #2
+                                    - \tweak bound-details.left.text
+                                    \double-diamond-parenthesized-top-markup
+                                    \startTrillSpan
 
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
@@ -2272,6 +2524,13 @@
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
+                                    \stopTrillSpan
+                                    - \tweak padding #2
+                                    - \tweak staff-padding #1
+                                    - \tweak bound-details.right.padding #2
+                                    - \tweak bound-details.left.text
+                                    \double-diamond-parenthesized-top-markup
+                                    \startTrillSpan
 
                                 }
 
@@ -2284,16 +2543,22 @@
                                     \tweak transparent ##t
                                     g'8
                                     [
+                                    - \abjad-dashed-line-with-hook
+                                    - \tweak bound-details.left.text \markup \concat { \damp-markup \hspace #0.5 }
+                                    - \tweak staff-padding 3.5
+                                    \startTextSpanOne
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
                                     %! abjad.glissando(7)
                                     \glissando
+                                    \stopTrillSpan
 
                                     \revert Staff.Stem.stemlet-length
                                     \tweak Accidental.stencil ##f
                                     \tweak X-extent #'(0 . 0)
                                     \tweak transparent ##t
                                     bf8
+                                    \stopTextSpanTwo
                                     ]
                                     %! abjad.glissando(7)
                                     - \abjad-zero-padding-glissando
@@ -2438,6 +2703,8 @@
                                     \voiceTwo
                                     c'2.
                                     \f
+                                    - \boxed-markup "normale" 1
+                                    \stopTextSpanOne
                                     ~
 
                                     c'4.
@@ -2494,24 +2761,24 @@
 
                                 \once \override Beam.grow-direction = #right
                                 \override Staff.Stem.stemlet-length = 0.75
-                                bf''16 * 63/32
+                                g''16 * 63/32
                                 :32
                                 [
                                 \boxed-markup "col legno tratto" 1
 
                                 \revert Staff.Stem.stemlet-length
-                                c''16 * 115/64
+                                b'16 * 115/64
                                 :32
 
                                 r16 * 91/64
 
-                                af'16 * 35/32
+                                bf''16 * 35/32
                                 :32
 
                                 r16 * 29/32
 
                                 \revert Staff.Stem.stemlet-length
-                                g''16 * 13/16
+                                c''16 * 13/16
                                 :32
                                 ~
                                 ]
@@ -2563,7 +2830,7 @@
 
                                 \once \override Beam.grow-direction = #left
                                 \override Staff.Stem.stemlet-length = 0.75
-                                g''16 * 5/8
+                                c''16 * 5/8
                                 :32
                                 [
 
@@ -2572,14 +2839,14 @@
                                 r16 * 51/64
 
                                 \override Staff.Stem.stemlet-length = 0.75
-                                b'16 * 65/64
+                                bf'16 * 65/64
                                 :32
 
-                                bf''16 * 85/64
+                                a'16 * 85/64
                                 :32
 
                                 \revert Staff.Stem.stemlet-length
-                                c''16 * 25/16
+                                af'16 * 25/16
                                 :32
                                 ]
 

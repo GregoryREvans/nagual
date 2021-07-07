@@ -69,6 +69,11 @@ maker = evans.SegmentMaker(  # don't forget accents!
         ),
         evans.attach(
             "Global Context",
+            abjad.LilyPondLiteral(r"\score-system-break", format_slot="before"),
+            baca.selectors.leaf(1),
+        ),
+        evans.attach(
+            "Global Context",
             met_100,
             baca.selectors.leaf(8),
         ),
@@ -78,19 +83,24 @@ maker = evans.SegmentMaker(  # don't forget accents!
             baca.selectors.leaf(8),
         ),
         evans.attach(
-            "Voice 3",
-            abjad.LilyPondLiteral(r"\nebenStimmeStop", format_slot="before"),
+            "Voice 1",
+            abjad.LilyPondLiteral(r'\boxed-markup "normale" 1', format_slot="after"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.LilyPondLiteral(r'\boxed-markup "normale" 1', format_slot="after"),
             baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 4",
-            abjad.LilyPondLiteral(r"\nebenStimmeStart", format_slot="before"),
+            abjad.LilyPondLiteral(r'\boxed-markup "normale" 1', format_slot="after"),
             baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 4",
-            abjad.LilyPondLiteral(r"\nebenStimmeStop", format_slot="before"),
-            baca.selectors.leaf(2),
+            abjad.LilyPondLiteral(r'\boxed-markup "poco noise" 1', format_slot="after"),
+            baca.selectors.leaf(56),
         ),
         evans.attach(
             "Voice 3",

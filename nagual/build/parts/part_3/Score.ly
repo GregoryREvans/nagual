@@ -10,7 +10,7 @@
 } %! LilyPondFile
 
 \score{
-	\removeWithTag #'(voice1 voice2 voice4)
+	\removeWithTag #'(formatting voice1 voice2 voice4)
 	{
         \include "../../score/01.ly"
         \include "../../score/02.ly"

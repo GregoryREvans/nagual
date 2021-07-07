@@ -45,6 +45,7 @@
             %! abjad.SegmentMaker.comment_measure_numbers()
             % [Global Context measure 2]
 
+            \score-system-break
             %! scaling time signatures
             \time 4/4
             s1 * 1
@@ -180,6 +181,7 @@
                                 d'4
                                 \pp
                                 \stopTrillSpan
+                                \boxed-markup "normale" 1
 
                                 f'4
 
@@ -527,6 +529,7 @@
                                 <g b d' g' af' d''>16
                                 \pp
                                 [
+                                \boxed-markup "normale" 1
 
                                 <g b d' g' af' d''>16
 
@@ -855,7 +858,6 @@
                             \set Staff.instrumentName =
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Percussion" }
-                            \nebenStimmeStop
                             \clef "percussion"
                             \override Staff.Stem.stemlet-length = 0.75
                             a8
@@ -1111,7 +1113,6 @@
                             \set Staff.instrumentName =
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Violin" }
-                            \nebenStimmeStart
                             \override Staff.Stem.stemlet-length = 0.75
                             g8.
                             \mf
@@ -1122,6 +1123,7 @@
                             - \abjad-zero-padding-glissando
                             %! abjad.glissando(7)
                             \glissando
+                            \boxed-markup "normale" 1
                             - \tweak padding #2
                             - \tweak staff-padding #1
                             - \tweak bound-details.right.padding #2
@@ -1145,7 +1147,6 @@
                             \startTextSpanOne
                             \stopTrillSpan
 
-                            \nebenStimmeStop
                             \override Staff.Stem.stemlet-length = 0.75
                             \tweak Accidental.stencil ##f
                             \tweak X-extent #'(0 . 0)
@@ -1852,6 +1853,7 @@
                                     d''1.
                                     \ff
                                     \stopTextSpanOne
+                                    \boxed-markup "poco noise" 1
 
                                 }
 

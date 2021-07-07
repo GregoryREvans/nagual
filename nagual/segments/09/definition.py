@@ -5,10 +5,15 @@ import baca
 import evans
 
 from nagual.lib import (  # , with_sharps, zero_padding_glissando
+    bis_handler,
     clef_whitespace,
     grace_handler_09,
     met_80,
     met_mod_100_80,
+    start_damp,
+    start_scratch,
+    stop_damp,
+    stop_scratch,
     tremolo_handler,
     two_octaves_down,
     zero_padding_glissando,
@@ -171,6 +176,68 @@ maker = evans.SegmentMaker(
             "Voice 4",
             abjad.Clef("alto"),
             baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 4",
+            start_damp,
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 4",
+            stop_damp,
+            baca.selectors.leaf(8),
+        ),
+        evans.call(
+            "Voice 4",
+            bis_handler,
+            baca.selectors.leaves(
+                [
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    33,
+                    34,
+                    35,
+                    36,
+                ]
+            ),
+        ),
+        evans.attach(
+            "Voice 4",
+            start_damp,
+            baca.selectors.leaf(23),
+        ),
+        evans.attach(
+            "Voice 4",
+            stop_damp,
+            baca.selectors.leaf(32),
+        ),
+        evans.attach(
+            "Voice 4",
+            start_scratch,
+            baca.selectors.leaf(22),
+        ),
+        evans.attach(
+            "Voice 4",
+            stop_scratch,
+            baca.selectors.leaf(36),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Markup(r'\boxed-markup "normale" 1', literal=True),
+            baca.selectors.leaf(38),
         ),
         evans.attach(
             "Voice 4",

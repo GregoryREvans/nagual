@@ -140,11 +140,6 @@ maker = evans.SegmentMaker(
             abjad.LilyPondLiteral(r"\hauptStimmeStop", format_slot="before"),
             baca.selectors.leaf(48),
         ),
-        evans.attach(
-            "Voice 3",
-            abjad.LilyPondLiteral(r"\nebenStimmeStart", format_slot="before"),
-            baca.selectors.leaf(31),
-        ),
         evans.call(
             "Voice 1",
             trill_handler,
@@ -486,9 +481,7 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 4",
-            abjad.LilyPondLiteral(
-                r'\boxed-markup "ordinario + ponticello" 1', format_slot="after"
-            ),
+            abjad.LilyPondLiteral(r'\boxed-markup "normale" 1', format_slot="after"),
             baca.selectors.leaf(0),
         ),
         evans.attach(

@@ -141,16 +141,6 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 1",
-            abjad.LilyPondLiteral(r"\nebenStimmeStart", format_slot="before"),
-            baca.selectors.leaf(31),
-        ),
-        evans.attach(
-            "Voice 1",
-            abjad.LilyPondLiteral(r"\nebenStimmeStop", format_slot="before"),
-            baca.selectors.leaf(33),
-        ),
-        evans.attach(
-            "Voice 1",
             abjad.LilyPondLiteral(r'\boxed-markup "tone + air" 1', format_slot="after"),
             baca.selectors.note(0),
         ),

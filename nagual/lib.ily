@@ -11,12 +11,12 @@ colophon = \markup
         \with-color #black
         \line
         {
-            Iowa City, Ia.
+            Iowa City, Ia. - Spring Valley, Oh.
         }
         \with-color #black
         \line
         {
-            \hspace #0.75 June 2021
+            \hspace #0.75 June - July 2021
         }
     }
 }
@@ -218,3 +218,5 @@ damp-markup =
         (moveto .7 -.4)
         (rlineto 0 2.2)
         )
+
+score-system-break = \tag #'formatting { \break }

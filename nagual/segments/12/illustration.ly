@@ -214,6 +214,7 @@
                             - \tweak stencil #abjad-flared-hairpin
                             \<
                             ~
+                            \boxed-markup "tone + air" 1
 
                             f'8
 
@@ -958,6 +959,7 @@
                                 a16 * 5/8
                                 \p
                                 [
+                                \boxed-markup "col legno tratto" 1
 
                                 \revert Staff.Stem.stemlet-length
                                 af'16 * 43/64
@@ -1343,6 +1345,7 @@
                             \p
                             - \tweak stencil #abjad-flared-hairpin
                             \<
+                            \boxed-markup "spazzolato + col legno" 1
 
                             dqf'4
 
@@ -1392,6 +1395,7 @@
                             dqs'16
                             \mf
                             [
+                            \boxed-markup "crine + chop" 1
 
                             \revert Staff.Stem.stemlet-length
                             d'16

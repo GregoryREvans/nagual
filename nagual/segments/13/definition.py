@@ -44,6 +44,16 @@ maker = evans.SegmentMaker(
             fireworks,
             abjad.select(),
         ),
+        evans.attach(
+            "Voice 1",
+            abjad.LilyPondLiteral(r'\boxed-markup "normale" 1', format_slot="after"),
+            baca.selectors.leaf(0),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.LilyPondLiteral(r'\boxed-markup "normale" 1', format_slot="after"),
+            baca.selectors.leaf(0),
+        ),
         evans.call(
             "Voice 1",
             octave_up,
@@ -115,16 +125,6 @@ maker = evans.SegmentMaker(
             ),
             baca.selectors.leaf(33),
         ),
-        # evans.attach(
-        #     "Voice 3",
-        #     abjad.Dynamic("fff"),
-        #     baca.selectors.leaf(2),
-        # ),
-        # evans.attach(
-        #     "Voice 4",
-        #     abjad.Dynamic("fff"),
-        #     baca.selectors.leaf(1),
-        # ),
         evans.attach(
             "Global Context",
             abjad.Markup(r"\rehearsal-mark-markup J 6 -1", literal=True),

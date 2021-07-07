@@ -108,6 +108,7 @@
                             b''1
                             \sfp
                             \<
+                            \boxed-markup "normale" 1
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 2]
@@ -690,6 +691,7 @@
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Violin" }
                             r8
+                            \boxed-markup "normale" 1
 
                             d'8
                             \sfp

@@ -227,7 +227,6 @@
 
                             r8
 
-                            \nebenStimmeStart
                             \override Staff.Stem.stemlet-length = 0.75
                             f'8.
                             :32
@@ -245,7 +244,6 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 4]
 
-                            \nebenStimmeStop
                             \override Staff.Stem.stemlet-length = 0.75
                             bf'16
                             :32
@@ -539,16 +537,16 @@
                                 \boxed-markup "pizz + dolce" 1
 
                                 \revert Staff.Stem.stemlet-length
-                                af''16 * 115/64
+                                bf''16 * 115/64
 
                                 r16 * 91/64
 
-                                g'''16 * 35/32
+                                a''16 * 35/32
 
                                 r16 * 29/32
 
                                 \revert Staff.Stem.stemlet-length
-                                b''16 * 13/16
+                                af''16 * 13/16
                                 ]
                                 \bar "||"
 
@@ -582,7 +580,6 @@
                             \set Staff.instrumentName =
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Percussion" }
-                            \nebenStimmeStart
                             \clef "percussion"
                             r4
 
@@ -666,7 +663,6 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 2]
 
-                            \nebenStimmeStop
                             r4
 
                             <<
@@ -763,7 +759,7 @@
                             \f
                             \>
                             [
-                            \boxed-markup "brushes + brake drum" 1
+                            \boxed-markup "stone + brake drum" 1
 
                             \revert Staff.Stem.stemlet-length
                             c'8
