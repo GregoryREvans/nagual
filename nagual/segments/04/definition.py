@@ -94,16 +94,6 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 1",
-            abjad.LilyPondLiteral(r"\hauptStimmeStart", format_slot="before"),
-            baca.selectors.leaf(2),
-        ),
-        evans.attach(
-            "Voice 1",
-            abjad.LilyPondLiteral(r"\hauptStimmeStop", format_slot="before"),
-            baca.selectors.leaf(4),
-        ),
-        evans.attach(
-            "Voice 1",
             abjad.Dynamic("mf"),
             baca.selectors.leaf(0),
         ),

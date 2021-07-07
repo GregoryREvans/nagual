@@ -1045,6 +1045,8 @@
 
                             %! applying invisibility
                             \once \override Rest.transparent = ##t
+                            %! applying indicators
+                            \hauptStimmeStart
                             r1 * 3/8
 
                             R1 * 3/8
@@ -1064,6 +1066,7 @@
 
                                 c'8
 
+                                \hauptStimmeStop
                                 c'8
                                 ]
 

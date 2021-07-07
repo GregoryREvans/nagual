@@ -51,6 +51,16 @@ maker = evans.SegmentMaker(
             evans.SegmentMaker.beam_score,
             abjad.select().components(abjad.Score),
         ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(r"\hauptStimmeStart", format_slot="before"),
+            baca.selectors.leaf(52),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(r"\hauptStimmeStop", format_slot="before"),
+            baca.selectors.leaf(56),
+        ),
         evans.call(
             "Voice 4",
             tremolo_handler,

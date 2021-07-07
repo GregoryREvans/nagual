@@ -326,9 +326,9 @@
 
                                 e'4.
 
+                                \hauptStimmeStart
                                 d'2
 
-                                \hauptStimmeStart
                                 fqs'2.
 
                                 f'2

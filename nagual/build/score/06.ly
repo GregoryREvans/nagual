@@ -927,6 +927,7 @@
                                     {
                                         \staff-line-count 4
 
+                                        \hauptStimmeStart
                                         %! abjad.on_beat_grace_container(4)
                                         \voiceTwo
                                         d'4
@@ -1108,6 +1109,7 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 3 measure 5]
 
+                            \hauptStimmeStop
                             \override Staff.Stem.stemlet-length = 0.75
                             c'8
                             \sfz

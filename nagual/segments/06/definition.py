@@ -99,6 +99,16 @@ maker = evans.SegmentMaker(
             baca.selectors.leaf(0),
         ),
         evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(r"\hauptStimmeStart", format_slot="before"),
+            baca.selectors.leaf(20),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(r"\hauptStimmeStop", format_slot="before"),
+            baca.selectors.leaf(29),
+        ),
+        evans.attach(
             "Voice 4",
             abjad.LilyPondLiteral(r'\boxed-markup "normale" 1', format_slot="after"),
             baca.selectors.leaf(0),

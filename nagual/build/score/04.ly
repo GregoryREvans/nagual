@@ -205,7 +205,6 @@
                                 \context Voice = "Voice 1"
                                 {
 
-                                    \hauptStimmeStart
                                     %! abjad.on_beat_grace_container(4)
                                     \voiceTwo
                                     a'2
@@ -222,7 +221,6 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 1 measure 3]
 
-                            \hauptStimmeStop
                             r2.
 
                             r8
