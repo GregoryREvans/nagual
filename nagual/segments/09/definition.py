@@ -14,6 +14,7 @@ from nagual.lib import (  # , with_sharps, zero_padding_glissando
     zero_padding_glissando,
 )
 from nagual.materials.instruments import alt_instruments
+from nagual.materials.pitch import grace_pitch_handler_09
 from nagual.materials.score_structure import score
 from nagual.materials.time_signatures import signatures_09
 from nagual.materials.timespans import handler_commands_09, rhythm_commands_09
@@ -207,9 +208,39 @@ maker = evans.SegmentMaker(
             baca.selectors.leaves([2, 6]),
         ),
         evans.call(
+            "Staff 1",
+            grace_pitch_handler_09,
+            abjad.select().leaves(grace=True),
+        ),
+        evans.attach(
+            "Staff 1",
+            abjad.LilyPondLiteral(r"\overhead-accidentals -1", format_slot="before"),
+            baca.selectors.leaf(0, grace=True),
+        ),
+        evans.attach(
+            "Staff 1",
+            abjad.LilyPondLiteral(r"\overhead-accidentals -1", format_slot="before"),
+            baca.selectors.leaf(16, grace=True),
+        ),
+        evans.call(
             "Voice 2",
             grace_handler_09,
             baca.selectors.leaves([2, 6]),
+        ),
+        evans.call(
+            "Staff 2",
+            grace_pitch_handler_09,
+            abjad.select().leaves(grace=True),
+        ),
+        evans.attach(
+            "Staff 2",
+            abjad.LilyPondLiteral(r"\overhead-accidentals -1", format_slot="before"),
+            baca.selectors.leaf(0, grace=True),
+        ),
+        evans.attach(
+            "Staff 2",
+            abjad.LilyPondLiteral(r"\overhead-accidentals -1", format_slot="before"),
+            baca.selectors.leaf(16, grace=True),
         ),
         evans.call(
             "Voice 3",
@@ -217,9 +248,39 @@ maker = evans.SegmentMaker(
             baca.selectors.leaves([2, 6]),
         ),
         evans.call(
+            "Staff 3",
+            grace_pitch_handler_09,
+            abjad.select().leaves(grace=True),
+        ),
+        evans.attach(
+            "Staff 3",
+            abjad.LilyPondLiteral(r"\overhead-accidentals -1", format_slot="before"),
+            baca.selectors.leaf(0, grace=True),
+        ),
+        evans.attach(
+            "Staff 3",
+            abjad.LilyPondLiteral(r"\overhead-accidentals -1", format_slot="before"),
+            baca.selectors.leaf(16, grace=True),
+        ),
+        evans.call(
             "Voice 4",
             grace_handler_09,
             baca.selectors.leaves([18, 38]),
+        ),
+        evans.call(
+            "Staff 4",
+            grace_pitch_handler_09,
+            abjad.select().leaves(grace=True),
+        ),
+        evans.attach(
+            "Staff 4",
+            abjad.LilyPondLiteral(r"\overhead-accidentals -1", format_slot="before"),
+            baca.selectors.leaf(0, grace=True),
+        ),
+        evans.attach(
+            "Staff 4",
+            abjad.LilyPondLiteral(r"\overhead-accidentals -1", format_slot="before"),
+            baca.selectors.leaf(16, grace=True),
         ),
         evans.attach(
             "Global Context",

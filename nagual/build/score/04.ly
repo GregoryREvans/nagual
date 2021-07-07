@@ -102,35 +102,34 @@
                                     \set Staff.instrumentName =
                                     %! applying staff names and clefs
                                     \markup { \hcenter-in #14 "Alto Flute" }
-                                    %! abjad.on_beat_grace_container(2)
+                                    \overhead-accidentals -1
                                     \slash
-                                    %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <f' g''>16 * 16/35
+                                    g''16 * 16/35
                                     [
                                     (
 
-                                    f'16 * 16/35
+                                    ef''16 * 16/35
 
-                                    f'16 * 16/35
+                                    d''16 * 16/35
 
-                                    f'16 * 16/35
+                                    b'16 * 16/35
 
-                                    f'16 * 16/35
+                                    a'16 * 16/35
 
-                                    f'16 * 16/35
+                                    b'16 * 16/35
 
-                                    f'16 * 16/35
+                                    d''16 * 16/35
 
-                                    f'16 * 16/35
+                                    ef''16 * 16/35
 
-                                    f'16 * 16/35
+                                    g''16 * 16/35
 
-                                    f'16 * 16/35
+                                    ef''16 * 16/35
 
-                                    f'16 * 16/35
+                                    d''16 * 16/35
 
-                                    f'16 * 16/35
+                                    b'16 * 16/35
                                     )
                                     ]
 
@@ -162,43 +161,42 @@
                                     %! abjad.SegmentMaker.comment_measure_numbers()
                                     % [Voice 1 measure 2]
 
-                                    %! abjad.on_beat_grace_container(2)
+                                    \overhead-accidentals -1
                                     \slash
-                                    %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <f' a'>16 * 16/35
+                                    a'16 * 16/35
                                     [
                                     (
 
-                                    f'16 * 16/35
+                                    b'16 * 16/35
 
-                                    f'16 * 16/35
+                                    d''16 * 16/35
 
-                                    f'16 * 16/35
+                                    ef''16 * 16/35
 
-                                    f'16 * 16/35
+                                    g''16 * 16/35
 
-                                    f'16 * 16/35
+                                    ef''16 * 16/35
 
-                                    f'16 * 16/35
+                                    d''16 * 16/35
 
-                                    f'16 * 16/35
+                                    b'16 * 16/35
 
-                                    f'16 * 16/35
+                                    a'16 * 16/35
 
-                                    f'16 * 16/35
+                                    b'16 * 16/35
 
-                                    f'16 * 16/35
+                                    d''16 * 16/35
 
-                                    f'16 * 16/35
+                                    ef''16 * 16/35
 
-                                    f'16 * 16/35
+                                    g''16 * 16/35
 
-                                    f'16 * 16/35
+                                    ef''16 * 16/35
 
-                                    f'16 * 16/35
+                                    d''16 * 16/35
 
-                                    f'16 * 16/35
+                                    b'16 * 16/35
                                     )
                                     ]
 
@@ -336,35 +334,34 @@
                                     %! abjad.on_beat_grace_container(1)
                                     \set fontSize = #-4
 
-                                    %! abjad.on_beat_grace_container(2)
+                                    \overhead-accidentals -1
                                     \slash
-                                    %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c'' b''>16 * 16/35
+                                    b''16 * 16/35
                                     [
                                     (
 
-                                    c''16 * 16/35
+                                    g''16 * 16/35
 
-                                    c''16 * 16/35
+                                    fs''16 * 16/35
 
-                                    c''16 * 16/35
+                                    ef''16 * 16/35
 
-                                    c''16 * 16/35
+                                    cs''16 * 16/35
 
-                                    c''16 * 16/35
+                                    ef''16 * 16/35
 
-                                    c''16 * 16/35
+                                    fs''16 * 16/35
 
-                                    c''16 * 16/35
+                                    g''16 * 16/35
 
-                                    c''16 * 16/35
+                                    b''16 * 16/35
 
-                                    c''16 * 16/35
+                                    g''16 * 16/35
 
-                                    c''16 * 16/35
+                                    fs''16 * 16/35
 
-                                    c''16 * 16/35
+                                    ef''16 * 16/35
                                     )
                                     ]
 
@@ -396,39 +393,38 @@
                                     %! abjad.on_beat_grace_container(1)
                                     \set fontSize = #-4
 
-                                    %! abjad.on_beat_grace_container(2)
+                                    \overhead-accidentals -1
                                     \slash
-                                    %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <g' c''>16 * 16/35
+                                    g'16 * 16/35
                                     [
                                     (
 
-                                    c''16 * 16/35
+                                    a'16 * 16/35
 
                                     c''16 * 16/35
 
-                                    c''16 * 16/35
+                                    cs''16 * 16/35
+
+                                    f''16 * 16/35
+
+                                    cs''16 * 16/35
 
                                     c''16 * 16/35
 
-                                    c''16 * 16/35
+                                    a'16 * 16/35
+
+                                    g'16 * 16/35
+
+                                    a'16 * 16/35
 
                                     c''16 * 16/35
 
-                                    c''16 * 16/35
+                                    cs''16 * 16/35
 
-                                    c''16 * 16/35
+                                    f''16 * 16/35
 
-                                    c''16 * 16/35
-
-                                    c''16 * 16/35
-
-                                    c''16 * 16/35
-
-                                    c''16 * 16/35
-
-                                    c''16 * 16/35
+                                    cs''16 * 16/35
                                     )
                                     ]
 
@@ -597,19 +593,17 @@
                                     %! abjad.on_beat_grace_container(1)
                                     \set fontSize = #-4
 
-                                    %! abjad.on_beat_grace_container(2)
                                     \slash
-                                    %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <g c'>16 * 16/35
+                                    g16 * 16/35
                                     [
                                     (
 
-                                    c'16 * 16/35
+                                    b16 * 16/35
 
-                                    c'16 * 16/35
+                                    d'16 * 16/35
 
-                                    c'16 * 16/35
+                                    f'16 * 16/35
                                     )
                                     ]
 
@@ -639,19 +633,17 @@
                                     %! abjad.on_beat_grace_container(1)
                                     \set fontSize = #-4
 
-                                    %! abjad.on_beat_grace_container(2)
                                     \slash
-                                    %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <b c'>16 * 16/35
+                                    b16 * 16/35
                                     [
                                     (
 
-                                    c'16 * 16/35
+                                    d'16 * 16/35
 
-                                    c'16 * 16/35
+                                    b16 * 16/35
 
-                                    c'16 * 16/35
+                                    d'16 * 16/35
                                     )
                                     ]
 
@@ -684,19 +676,17 @@
                                     %! abjad.on_beat_grace_container(1)
                                     \set fontSize = #-4
 
-                                    %! abjad.on_beat_grace_container(2)
                                     \slash
-                                    %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <b c'>16 * 16/35
+                                    b16 * 16/35
                                     [
                                     (
 
-                                    c'16 * 16/35
+                                    g16 * 16/35
 
-                                    c'16 * 16/35
+                                    b16 * 16/35
 
-                                    c'16 * 16/35
+                                    g16 * 16/35
                                     )
                                     ]
 
@@ -727,19 +717,17 @@
                                     %! abjad.on_beat_grace_container(1)
                                     \set fontSize = #-4
 
-                                    %! abjad.on_beat_grace_container(2)
                                     \slash
-                                    %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c' d'>16 * 16/35
+                                    d'16 * 16/35
                                     [
                                     (
 
-                                    c'16 * 16/35
+                                    f'16 * 16/35
 
-                                    c'16 * 16/35
+                                    g16 * 16/35
 
-                                    c'16 * 16/35
+                                    b16 * 16/35
                                     )
                                     ]
 
@@ -842,19 +830,17 @@
                                     %! abjad.SegmentMaker.comment_measure_numbers()
                                     % [Voice 3 measure 5]
 
-                                    %! abjad.on_beat_grace_container(2)
                                     \slash
-                                    %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c' d'>16 * 16/35
+                                    d'16 * 16/35
                                     [
                                     (
 
-                                    c'16 * 16/35
+                                    g16 * 16/35
 
-                                    c'16 * 16/35
+                                    f'16 * 16/35
 
-                                    c'16 * 16/35
+                                    b16 * 16/35
                                     )
                                     ]
 
@@ -885,15 +871,13 @@
                                     %! abjad.on_beat_grace_container(1)
                                     \set fontSize = #-4
 
-                                    %! abjad.on_beat_grace_container(2)
                                     \slash
-                                    %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c' f'>16 * 16/35
+                                    f'16 * 16/35
                                     [
                                     (
 
-                                    c'16 * 16/35
+                                    g16 * 16/35
                                     )
                                     ]
 
@@ -947,27 +931,26 @@
                                     %! abjad.on_beat_grace_container(1)
                                     \set fontSize = #-4
 
-                                    %! abjad.on_beat_grace_container(2)
+                                    \overhead-accidentals -1
                                     \slash
-                                    %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c' d''>16 * 16/35
+                                    d''16 * 16/35
                                     [
                                     (
 
-                                    c'16 * 16/35
+                                    bf'16 * 16/35
 
-                                    c'16 * 16/35
+                                    a'16 * 16/35
 
-                                    c'16 * 16/35
+                                    fs'16 * 16/35
 
-                                    c'16 * 16/35
+                                    e'16 * 16/35
 
-                                    c'16 * 16/35
+                                    fs'16 * 16/35
 
-                                    c'16 * 16/35
+                                    a'16 * 16/35
 
-                                    c'16 * 16/35
+                                    bf'16 * 16/35
                                     )
                                     ]
 
@@ -996,25 +979,24 @@
                                     %! abjad.on_beat_grace_container(1)
                                     \set fontSize = #-4
 
-                                    %! abjad.on_beat_grace_container(2)
+                                    \overhead-accidentals -1
                                     \slash
-                                    %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c' e'>16 * 16/35
+                                    e'16 * 16/35
                                     [
                                     (
 
-                                    c'16 * 16/35
+                                    fs'16 * 16/35
 
-                                    c'16 * 16/35
+                                    a'16 * 16/35
 
-                                    c'16 * 16/35
+                                    bf'16 * 16/35
 
-                                    c'16 * 16/35
+                                    d''16 * 16/35
 
-                                    c'16 * 16/35
+                                    bf'16 * 16/35
 
-                                    c'16 * 16/35
+                                    a'16 * 16/35
                                     )
                                     ]
 
@@ -1046,27 +1028,26 @@
                                     %! abjad.on_beat_grace_container(1)
                                     \set fontSize = #-4
 
-                                    %! abjad.on_beat_grace_container(2)
+                                    \overhead-accidentals -1
                                     \slash
-                                    %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c' b'>16 * 16/35
+                                    b'16 * 16/35
                                     [
                                     (
 
-                                    c'16 * 16/35
+                                    g'16 * 16/35
 
-                                    c'16 * 16/35
+                                    fs'16 * 16/35
 
-                                    c'16 * 16/35
+                                    ef'16 * 16/35
 
-                                    c'16 * 16/35
+                                    cs'16 * 16/35
 
-                                    c'16 * 16/35
+                                    ef'16 * 16/35
 
-                                    c'16 * 16/35
+                                    fs'16 * 16/35
 
-                                    c'16 * 16/35
+                                    g'16 * 16/35
                                     )
                                     ]
 
@@ -1098,27 +1079,26 @@
                                     %! abjad.on_beat_grace_container(1)
                                     \set fontSize = #-4
 
-                                    %! abjad.on_beat_grace_container(2)
+                                    \overhead-accidentals -1
                                     \slash
-                                    %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <g c'>16 * 16/35
+                                    g16 * 16/35
                                     [
                                     (
 
-                                    c'16 * 16/35
+                                    a16 * 16/35
 
                                     c'16 * 16/35
 
-                                    c'16 * 16/35
+                                    cs'16 * 16/35
+
+                                    f'16 * 16/35
+
+                                    cs'16 * 16/35
 
                                     c'16 * 16/35
 
-                                    c'16 * 16/35
-
-                                    c'16 * 16/35
-
-                                    c'16 * 16/35
+                                    a16 * 16/35
                                     )
                                     ]
 
@@ -1147,19 +1127,18 @@
                                     %! abjad.on_beat_grace_container(1)
                                     \set fontSize = #-4
 
-                                    %! abjad.on_beat_grace_container(2)
+                                    \overhead-accidentals -1
                                     \slash
-                                    %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c' d''>16 * 16/35
+                                    d''16 * 16/35
                                     [
                                     (
 
-                                    c'16 * 16/35
+                                    bf'16 * 16/35
 
-                                    c'16 * 16/35
+                                    a'16 * 16/35
 
-                                    c'16 * 16/35
+                                    fs'16 * 16/35
                                     )
                                     ]
 
@@ -1229,27 +1208,26 @@
                                     %! abjad.on_beat_grace_container(1)
                                     \set fontSize = #-4
 
-                                    %! abjad.on_beat_grace_container(2)
+                                    \overhead-accidentals -1
                                     \slash
-                                    %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c' e'>16 * 16/35
+                                    e'16 * 16/35
                                     [
                                     (
 
-                                    c'16 * 16/35
+                                    fs'16 * 16/35
 
-                                    c'16 * 16/35
+                                    a'16 * 16/35
 
-                                    c'16 * 16/35
+                                    bf'16 * 16/35
 
-                                    c'16 * 16/35
+                                    d''16 * 16/35
 
-                                    c'16 * 16/35
+                                    bf'16 * 16/35
 
-                                    c'16 * 16/35
+                                    a'16 * 16/35
 
-                                    c'16 * 16/35
+                                    fs'16 * 16/35
                                     )
                                     ]
 
@@ -1282,27 +1260,26 @@
                                     %! abjad.on_beat_grace_container(1)
                                     \set fontSize = #-4
 
-                                    %! abjad.on_beat_grace_container(2)
+                                    \overhead-accidentals -1
                                     \slash
-                                    %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c' b'>16 * 16/35
+                                    b'16 * 16/35
                                     [
                                     (
 
-                                    c'16 * 16/35
+                                    g'16 * 16/35
 
-                                    c'16 * 16/35
+                                    fs'16 * 16/35
 
-                                    c'16 * 16/35
+                                    g'16 * 16/35
 
-                                    c'16 * 16/35
+                                    fs'16 * 16/35
 
-                                    c'16 * 16/35
+                                    g'16 * 16/35
 
-                                    c'16 * 16/35
+                                    ef'16 * 16/35
 
-                                    c'16 * 16/35
+                                    cs'16 * 16/35
                                     )
                                     ]
 
@@ -1334,19 +1311,18 @@
                                     %! abjad.on_beat_grace_container(1)
                                     \set fontSize = #-4
 
-                                    %! abjad.on_beat_grace_container(2)
+                                    \overhead-accidentals -1
                                     \slash
-                                    %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <g c'>16 * 16/35
+                                    g16 * 16/35
                                     [
                                     (
 
-                                    c'16 * 16/35
+                                    a16 * 16/35
 
                                     c'16 * 16/35
 
-                                    c'16 * 16/35
+                                    cs'16 * 16/35
                                     )
                                     ]
 
@@ -1379,27 +1355,26 @@
                                     %! abjad.on_beat_grace_container(1)
                                     \set fontSize = #-4
 
-                                    %! abjad.on_beat_grace_container(2)
+                                    \overhead-accidentals -1
                                     \slash
-                                    %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c' d''>16 * 16/35
+                                    d''16 * 16/35
                                     [
                                     (
 
-                                    c'16 * 16/35
+                                    bf'16 * 16/35
 
-                                    c'16 * 16/35
+                                    a'16 * 16/35
 
-                                    c'16 * 16/35
+                                    fs'16 * 16/35
 
-                                    c'16 * 16/35
+                                    e'16 * 16/35
 
-                                    c'16 * 16/35
+                                    fs'16 * 16/35
 
-                                    c'16 * 16/35
+                                    a'16 * 16/35
 
-                                    c'16 * 16/35
+                                    bf'16 * 16/35
                                     )
                                     ]
 

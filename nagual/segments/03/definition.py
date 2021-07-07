@@ -18,6 +18,7 @@ from nagual.lib import (  # , with_sharps
     zero_padding_glissando,
 )
 from nagual.materials.instruments import instruments
+from nagual.materials.pitch import grace_pitch_handler_03
 from nagual.materials.score_structure import score
 from nagual.materials.time_signatures import signatures_03
 from nagual.materials.timespans import handler_commands_03, rhythm_commands_03
@@ -403,6 +404,11 @@ maker = evans.SegmentMaker(  # don't forget accents!
             grace_handler_03,
             abjad.select().leaves().get([29, 31, 33]),
         ),
+        evans.call(
+            "Staff 1",
+            grace_pitch_handler_03,
+            abjad.select().leaves(grace=True),
+        ),
         evans.detach("Voice 2", abjad.Tie(), baca.selectors.leaf(47)),
         evans.call(
             "Voice 2",
@@ -410,14 +416,29 @@ maker = evans.SegmentMaker(  # don't forget accents!
             abjad.select().leaves().get([50]),
         ),
         evans.call(
+            "Staff 2",
+            grace_pitch_handler_03,
+            abjad.select().leaves(grace=True),
+        ),
+        evans.call(
             "Voice 3",
             grace_handler_03,
             abjad.select().leaves().get([35]),
         ),
         evans.call(
+            "Staff 3",
+            grace_pitch_handler_03,
+            abjad.select().leaves(grace=True),
+        ),
+        evans.call(
             "Voice 4",
             grace_handler_03,
             abjad.select().leaves().get([56, 58, 60]),
+        ),
+        evans.call(
+            "Staff 4",
+            grace_pitch_handler_03,
+            abjad.select().leaves(grace=True),
         ),
         evans.attach(
             "Global Context",

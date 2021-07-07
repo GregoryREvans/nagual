@@ -144,8 +144,8 @@ overhead-accidentals = #(
     (number?)
     #{
     \set suggestAccidentals = ##t
-    \override Staff.AccidentalSuggestion.font-size = #font-size
-    \override Staff.AccidentalSuggestion.parenthesized = ##t
+    \override Voice.AccidentalSuggestion.font-size = #font-size
+    \override Voice.AccidentalSuggestion.parenthesized = ##f
     #}
     )
 
@@ -155,8 +155,8 @@ normal-accidentals = #(
     (number?)
     #{
     \set suggestAccidentals = ##f
-    \revert Staff.AccidentalSuggestion.font-size
-    \revert Staff.AccidentalSuggestion.parenthesized
+    \revert Voice.AccidentalSuggestion.font-size
+    \revert Voice.AccidentalSuggestion.parenthesized
     #}
     )
 

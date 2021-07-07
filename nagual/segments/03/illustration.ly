@@ -308,45 +308,43 @@
                                     %! abjad.SegmentMaker.comment_measure_numbers()
                                     % [Voice 1 measure 9]
 
-                                    %! abjad.on_beat_grace_container(2)
                                     \slash
-                                    %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <f' g''>8
+                                    g''8
                                     [
                                     (
 
-                                    f'16
+                                    fs''16
 
-                                    f'16
+                                    b'16
 
-                                    f'16
+                                    df'16
 
-                                    f'8
+                                    ef'8
 
-                                    f'16
+                                    df'16
 
-                                    f'8
+                                    b'8
 
-                                    f'16
+                                    fs''16
 
-                                    f'16
+                                    ef'16
 
-                                    f'8
+                                    df'8
 
-                                    f'16
+                                    ef'16
 
-                                    f'16
+                                    df'16
 
-                                    f'16
+                                    fs''16
 
-                                    f'8
+                                    b'8
 
-                                    f'16
+                                    fs''16
 
-                                    f'8
+                                    g''8
 
-                                    f'16
+                                    fs''16
                                     )
                                     ]
 
@@ -385,33 +383,31 @@
                                     %! abjad.SegmentMaker.comment_measure_numbers()
                                     % [Voice 1 measure 11]
 
-                                    %! abjad.on_beat_grace_container(2)
                                     \slash
-                                    %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <f' a'>16
+                                    a'16
                                     [
                                     (
 
-                                    f'8
+                                    af'8
 
-                                    f'16
+                                    a'16
 
-                                    f'16
+                                    af'16
 
-                                    f'16
+                                    df''16
 
-                                    f'8
+                                    f''8
 
-                                    f'16
+                                    ef'16
 
-                                    f'8
+                                    df''8
 
-                                    f'16
+                                    af'16
 
-                                    f'16
+                                    a'16
 
-                                    f'8
+                                    df''8
                                     )
                                     ]
 
@@ -449,29 +445,27 @@
                                     %! abjad.SegmentMaker.comment_measure_numbers()
                                     % [Voice 1 measure 13]
 
-                                    %! abjad.on_beat_grace_container(2)
                                     \slash
-                                    %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <f' e''>16
+                                    e''16
                                     [
                                     (
 
-                                    f'16
+                                    fs''16
 
-                                    f'16
+                                    e''16
 
-                                    f'8
+                                    c''8
 
-                                    f'16
+                                    b'16
 
-                                    f'8
+                                    af'8
 
-                                    f'16
+                                    b'16
 
-                                    f'16
+                                    c''16
 
-                                    f'8
+                                    b'8
                                     )
                                     ]
 
@@ -752,33 +746,31 @@
                                     %! abjad.SegmentMaker.comment_measure_numbers()
                                     % [Voice 2 measure 11]
 
-                                    %! abjad.on_beat_grace_container(2)
                                     \slash
-                                    %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <g' c''>16
+                                    g'16
                                     [
                                     (
 
                                     c''16
 
-                                    c''16
+                                    cs''16
 
-                                    c''8
+                                    f''8
 
-                                    c''16
+                                    a''16
 
-                                    c''8
+                                    f''8
 
-                                    c''16
+                                    a''16
 
-                                    c''16
+                                    g'16
 
-                                    c''8
-
-                                    c''16
+                                    f''8
 
                                     c''16
+
+                                    cs''16
                                     )
                                     ]
 
@@ -1021,33 +1013,31 @@
                                     %! abjad.SegmentMaker.comment_measure_numbers()
                                     % [Voice 3 measure 11]
 
-                                    %! abjad.on_beat_grace_container(2)
                                     \slash
-                                    %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <a c'>16
+                                    a16
                                     [
                                     (
 
-                                    c'8
+                                    e'8
 
                                     c'16
 
-                                    c'8
+                                    a8
 
                                     c'16
 
+                                    e'16
+
+                                    a8
+
+                                    e'16
+
+                                    a16
+
                                     c'16
 
-                                    c'8
-
-                                    c'16
-
-                                    c'16
-
-                                    c'16
-
-                                    c'8
+                                    a8
                                     )
                                     ]
 
@@ -1812,45 +1802,43 @@
                                     %! abjad.SegmentMaker.comment_measure_numbers()
                                     % [Voice 4 measure 9]
 
-                                    %! abjad.on_beat_grace_container(2)
                                     \slash
-                                    %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c' d''>16
+                                    d''16
                                     [
                                     (
 
-                                    c'8
+                                    fs'8
 
-                                    c'16
+                                    a''16
 
-                                    c'16
+                                    e'16
 
-                                    c'8
+                                    bf''8
 
-                                    c'16
+                                    a''16
 
-                                    c'16
+                                    d''16
 
-                                    c'16
+                                    fs'16
 
-                                    c'8
+                                    e'8
 
-                                    c'16
+                                    fs'16
 
-                                    c'8
+                                    e'8
 
-                                    c'16
+                                    fs'16
 
-                                    c'16
+                                    d''16
 
-                                    c'8
+                                    e'8
 
-                                    c'16
+                                    a''16
 
-                                    c'16
+                                    e'16
 
-                                    c'16
+                                    d'16
                                     )
                                     ]
 
@@ -1890,33 +1878,31 @@
                                     %! abjad.SegmentMaker.comment_measure_numbers()
                                     % [Voice 4 measure 11]
 
-                                    %! abjad.on_beat_grace_container(2)
                                     \slash
-                                    %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c' e'>8
+                                    e'8
                                     [
                                     (
 
-                                    c'16
+                                    f'16
 
-                                    c'8
+                                    e'8
 
-                                    c'16
+                                    f'16
 
-                                    c'16
+                                    e'16
 
-                                    c'8
+                                    b8
 
-                                    c'16
+                                    e'16
 
-                                    c'16
+                                    f'16
 
-                                    c'16
+                                    a'16
 
-                                    c'8
+                                    cs''8
 
-                                    c'16
+                                    a'16
                                     )
                                     ]
 
@@ -1954,29 +1940,27 @@
                                     %! abjad.SegmentMaker.comment_measure_numbers()
                                     % [Voice 4 measure 13]
 
-                                    %! abjad.on_beat_grace_container(2)
                                     \slash
-                                    %! abjad.on_beat_grace_container(3)
                                     \voiceOne
-                                    <c' b'>8
+                                    b'8
                                     [
                                     (
 
-                                    c'16
+                                    a'16
 
-                                    c'16
+                                    f'16
 
-                                    c'8
+                                    e'8
 
-                                    c'16
+                                    cs'16
 
-                                    c'16
+                                    e'16
 
-                                    c'16
+                                    f'16
 
-                                    c'8
+                                    e'8
 
-                                    c'16
+                                    f'16
                                     )
                                     ]
 
