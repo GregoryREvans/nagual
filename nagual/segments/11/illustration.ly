@@ -1139,7 +1139,7 @@
 
                                 \once \override Beam.grow-direction = #right
                                 \override Staff.Stem.stemlet-length = 0.75
-                                af,16 * 123/64
+                                af16 * 123/64
                                 :32
                                 \p
                                 \<
@@ -1165,10 +1165,10 @@
 
                                 r16 * 29/32
 
-                                bf,16 * 27/32
+                                bf16 * 27/32
                                 :32
 
-                                a,16 * 51/64
+                                a16 * 51/64
                                 :32
 
                                 af16 * 25/32

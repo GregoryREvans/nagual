@@ -10,6 +10,7 @@ from nagual.lib import (  # , with_sharps, zero_padding_glissando
     met_130,
     met_mod_80_130,
     octave_down,
+    octave_up,
     rit_130_60,
     stop_repeat_before,
     tremolo_handler,
@@ -55,6 +56,11 @@ maker = evans.SegmentMaker(
         #     evans.SegmentMaker.beam_score,
         #     abjad.select().components(abjad.Score),
         # ),
+        evans.call(
+            "Voice 4",
+            octave_up,
+            baca.selectors.leaves([42, 51, 52]),
+        ),
         evans.attach(
             "Global Context",
             met_130,

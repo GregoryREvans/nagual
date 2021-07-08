@@ -52,7 +52,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 4",
             abjad.LilyPondLiteral(r'\boxed-markup "normale" 1', format_slot="after"),
-            baca.selectors.leaf(0),
+            baca.selectors.leaf(1),
         ),
         evans.call(
             "Voice 1",

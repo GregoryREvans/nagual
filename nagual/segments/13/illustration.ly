@@ -691,12 +691,12 @@
                             %! applying staff names and clefs
                             \markup { \hcenter-in #14 "Violin" }
                             r8
-                            \boxed-markup "normale" 1
 
                             d'8
                             \sfp
                             \<
                             ~
+                            \boxed-markup "normale" 1
 
                             d'4
                             ~

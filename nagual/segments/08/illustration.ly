@@ -1059,8 +1059,6 @@
 
                             %! applying invisibility
                             \once \override Rest.transparent = ##t
-                            %! applying indicators
-                            \hauptStimmeStart
                             r1 * 3/8
 
                             R1 * 3/8
@@ -1072,6 +1070,7 @@
                                 %! abjad.SegmentMaker.comment_measure_numbers()
                                 % [Voice 3 measure 11]
 
+                                \hauptStimmeStart
                                 c'8
                                 - \accent
                                 [
@@ -1080,7 +1079,6 @@
 
                                 c'8
 
-                                \hauptStimmeStop
                                 c'8
                                 ]
 
@@ -1091,6 +1089,8 @@
 
                             %! applying invisibility
                             \once \override Rest.transparent = ##t
+                            %! applying indicators
+                            \hauptStimmeStop
                             r1 * 3/16
 
                             R1 * 3/16

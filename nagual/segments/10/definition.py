@@ -13,6 +13,7 @@ from nagual.lib import (  # , with_sharps, zero_padding_glissando
     met_100,
     met_mod_80_100,
     met_mod_100_80,
+    quarter_up,
     sforzandi,
     start_damp,
     start_repeat_before,
@@ -62,6 +63,11 @@ maker = evans.SegmentMaker(
             "score",
             evans.SegmentMaker.beam_score,
             abjad.select().components(abjad.Score),
+        ),
+        evans.call(
+            "Voice 2",
+            quarter_up,
+            baca.selectors.note(0),
         ),
         evans.attach(
             "Global Context",

@@ -628,7 +628,7 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 5]
 
-                            fqs''1
+                            fs''1
                             \p
                             ~
                             \boxed-markup "spazzolato" 1
@@ -636,22 +636,22 @@
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 6]
 
-                            fqs''2.
+                            fs''2.
                             ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 7]
 
-                            fqs''2
+                            fs''2
                             ~
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 8]
 
-                            fqs''2.
+                            fs''2.
                             ~
 
-                            fqs''4.
+                            fs''4.
                             %! COMMENT_MEASURE_NUMBERS
                             %! abjad.SegmentMaker.comment_measure_numbers()
                             % [Voice 2 measure 9]

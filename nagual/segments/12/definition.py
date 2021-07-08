@@ -5,7 +5,7 @@ import baca
 import evans
 from abjadext import rmakers
 
-from nagual.lib import met_40, met_mod_60_40  # , with_sharps, zero_padding_glissando
+from nagual.lib import met_40, met_mod_60_40
 from nagual.materials.instruments import instruments
 from nagual.materials.score_structure import score
 from nagual.materials.time_signatures import signatures_12
