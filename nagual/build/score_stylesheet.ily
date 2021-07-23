@@ -150,6 +150,8 @@
 		\override Tie.height-limit = 6 % experimental
 		\override Tie.thickness = 1.5 % experimental
 
+		\override TrillSpanner.bound-details.right.padding = #2 % experimental
+
 		\override TupletBracket.breakable = ##t
         \override TupletBracket.full-length-to-extent = ##f
         \override TupletBracket.padding = 2 % was 1.55
