@@ -2,7 +2,7 @@
 \language "english"
 % preferred style
 #(set-default-paper-size "letterportrait")
-#(set-global-staff-size 11.5) % was 8
+#(set-global-staff-size 14) % was 11.5
 % alt style 1
 %{ #(set-default-paper-size "17x11")
 #(set-global-staff-size 13) %}

@@ -1,7 +1,7 @@
 \version "2.23.2"  %! LilyPondFile
 \language "english" %! LilyPondFile
 
-\include "../../parts_stylesheet.ily"                                      %! LilyPondFile
+\include "../../parts_stylesheet_enlarged.ily"                                      %! LilyPondFile
 \include "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily" %! LilyPondFile
 
 \header { %! LilyPondFile
@@ -18,6 +18,7 @@
         \include "../../score/05.ly"
         \include "../../score/06.ly"
         \include "../../score/07.ly"
+		\include "../../score/13.ly"
         \include "../../score/08.ly"
         \include "../../score/09.ly"
         \include "../../score/10.ly"

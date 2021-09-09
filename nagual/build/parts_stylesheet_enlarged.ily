@@ -1,8 +1,8 @@
 \version "2.23.2"
 \language "english"
 % preferred style
-#(set-default-paper-size "arch a")
-#(set-global-staff-size 9) % was 8
+#(set-default-paper-size "letterlandscape")
+#(set-global-staff-size 15) % was 9
 % alt style 1
 %{ #(set-default-paper-size "17x11")
 #(set-global-staff-size 13) %}
@@ -10,17 +10,17 @@
 %{ #(set-default-paper-size "11x17")
 #(set-global-staff-size 13) %}
 
-\include "evans-markups.ily"
-\include "evans-spanners.ily"
-\include "../../lib.ily"
+\include "/Users/evansdsg2/evans/lilypond/evans-markups.ily"
+\include "/Users/evansdsg2/evans/lilypond/evans-spanners.ily"
+\include "../../../lib.ily"
 
 \header {
 	tagline = ##f
 	breakbefore = ##t
-	dedication = \markup \override #'(font-name . "Bell MT Std") \fontsize #5.4 \center-column {"t o   E n s e m b l e   D a l   N i e n t e" \fontsize #3.4 \with-color #white "."}
+	%{ dedication = \markup \override #'(font-name . "Bell MT Std") \fontsize #3.4 \center-column {"t o   E n s e m b l e   D a l   N i e n t e" \fontsize #0.4 \with-color #white "."} %}
 	title =  \markup \center-column {
             \override #'(font-name . "Bell MT Std")
-            \fontsize #16
+            \fontsize #11
             \line {
                 \concat {
                 N
@@ -39,7 +39,7 @@
             }
             " "
             \override #'(font-name . "Bell MT Std Italic")
-            \fontsize #3
+            \fontsize #0.3
             \line {
                 for \hspace #0.75
                 Flute, \hspace #0.75
@@ -49,7 +49,14 @@
                 Violin
             }
     }
-	composer = \markup \override #'(font-name . "Bell MT Std") \fontsize #5 {"Gregory Rowland Evans (*1995)"}
+	composer = \markup \column {
+		\line {
+			\override #'(font-name . "Bell MT Std") \fontsize #1.5 {"Gregory Rowland Evans (*1995)"}
+		}
+		\line {
+			\vspace #12
+		}
+	}
 	tagline = \markup { "" }
 }
 
@@ -94,13 +101,14 @@
 		\override TimeSignature.X-extent = ##f
         \override TimeSignature.break-align-symbol = #'left-edge
         \override TimeSignature.break-visibility = #end-of-line-invisible
-        \override TimeSignature.font-size = 3 % was 8 for Bell MT
+        \override TimeSignature.font-size = 1.5 % was 8 for Bell MT
         \override TimeSignature.space-alist.clef = #'(extra-space . 0.5)
         \override TimeSignature.style = #'numbered
 		%{ \override TimeSignature.font-name = "Bell MT Std" %}
 		\override TimeSignature.whiteout-style = #'outline
 		\override TimeSignature.whiteout = ##t
-        \override VerticalAxisGroup.default-staff-staff-spacing = #'((basic-distance . 13) (minimum-distance . 13) (padding . 4) (stretchability . 0))
+		\override TimeSignature.transparent = ##t
+        \override VerticalAxisGroup.default-staff-staff-spacing = #'((basic-distance . 0) (minimum-distance . 11) (padding . 0) (stretchability . 0))
 		%{ barNumberFormatter = #oval-bar-numbers %}
     }
 	\context {
@@ -109,7 +117,7 @@
 		\remove Mark_engraver
 		%{ \remove Bar_number_engraver %}
 		\accepts TimeSignatureContext
-		\override Accidental.X-extent = ##f % experimental
+		%{ \override Accidental.X-extent = ##f % experimental %}
 		\override BarLine.bar-extent = #'(-2 . 2)
 		\override BarLine.hair-thickness = 0.5
 		\override BarLine.X-extent = #'(0 . 0)
@@ -150,7 +158,7 @@
 		\override Tie.height-limit = 6 % experimental
 		\override Tie.thickness = 1.5 % experimental
 
-		\override TrillSpanner.bound-details.right.padding = #2 % experimental
+		\override TrillSpanner.bound-details.right.padding = #3
 
 		\override TupletBracket.breakable = ##t
         \override TupletBracket.full-length-to-extent = ##f
@@ -164,7 +172,7 @@
 		\override TupletNumber.text = #tuplet-number::calc-fraction-text
 		autoBeaming = ##f
 		barNumberFormatter = #oval-bar-numbers
-		proportionalNotationDuration = #(ly:make-moment 1 20) % was 17
+		proportionalNotationDuration = #(ly:make-moment 2 33) % was 17
 		tupletFullLength = ##t
 	}
 	\context {
@@ -175,9 +183,10 @@
 	\context {
 		\Staff
 		\numericTimeSignature
-		\remove Time_signature_engraver
+		%{ \remove Time_signature_engraver %}
 		fontSize = #-1
 		explicitClefVisibility = #end-of-line-invisible
+		\override TimeSignature.break-visibility = #end-of-line-invisible
 	}
 	\context {
 		\RhythmicStaff
@@ -188,8 +197,8 @@
 }
 
 \paper {
-	system-separator-markup = \markup { \slashSeparator }
 
+	bottom-margin = 0.8\mm
     left-margin = 20\mm
     right-margin = 15\mm
 
@@ -225,29 +234,31 @@
     right-margin = 5\mm
     markup-system-spacing = #'(
         (basic-distance . 0)
-        (minimum-distance . 60)
+        (minimum-distance . 50)
         (padding . 0)
         (stretchability . 0)
     )
     system-system-spacing = #'(
         (basic-distance . 0)
-        (minimum-distance . 30) % space after each system
+        (minimum-distance . 21) % space after each system
         (padding . 0)
-        (stretchability . 0)
+        (stretchability . 5)
     )
     top-markup-spacing = #'(
         (basic-distance . 0)
-        (minimum-distance . 18)
+        (minimum-distance . 15)
         (padding . 0)
         (stretchability . 0)
     )
     top-system-spacing = #'(
         (basic-distance . 0)
-        (minimum-distance . 26)
+        (minimum-distance . 19)
         (padding . 0)
         (stretchability . 0)
     )
     top-margin = 0\mm
+
+	%{ max-systems-per-page = 5 %}
 
 	% experimental
 
