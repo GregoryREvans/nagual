@@ -46,14 +46,14 @@ maker = evans.SegmentMaker(
         evans.call(
             "score",
             evans.SegmentMaker.rewrite_meter,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         "skips",
         handler_commands_02,
         # evans.call(
         #     "score",
         #     with_sharps,
-        #     abjad.select().components(abjad.Score),
+        #     lambda _: abjad.Selection(_).components(abjad.Score),
         # ),
         evans.call(
             "Voice 1",
@@ -98,7 +98,7 @@ maker = evans.SegmentMaker(
         evans.call(
             "score",
             evans.SegmentMaker.beam_score,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.call(
             "Voice 2",
@@ -143,17 +143,17 @@ maker = evans.SegmentMaker(
         evans.call(
             "Voice 1",
             trill_handler,
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.call(
             "Voice 2",
             trill_handler,
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.call(
             "Voice 4",
             trill_handler,
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.attach(
             "Voice 1",
@@ -564,31 +564,31 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             mark_100,
-            abjad.select().leaf(0),
+            lambda _: abjad.Selection(_).leaf(0),
         ),
         evans.attach(
             "Global Context",
             met_100,
-            abjad.select().leaf(0),
+            lambda _: abjad.Selection(_).leaf(0),
         ),
         evans.attach(
             "Global Context",
             mark_100_cautionary,
-            abjad.select().leaf(6),
+            lambda _: abjad.Selection(_).leaf(6),
         ),
         evans.attach(
             "Global Context",
             mark_100_cautionary,
-            abjad.select().leaf(9),
+            lambda _: abjad.Selection(_).leaf(9),
         ),
         evans.attach(
             "Global Context",
             met_mod_100_66,
-            abjad.select().leaf(10),
+            lambda _: abjad.Selection(_).leaf(10),
         ),
         evans.attach(
             "Global Context",
-            abjad.Markup(r"\rehearsal-mark-markup C 6 -1", literal=True),
+            abjad.Markup(r"\rehearsal-mark-markup C 6 -1"),
             baca.selectors.leaf(0),
         ),
         evans.attach(
@@ -614,7 +614,7 @@ maker = evans.SegmentMaker(
         # evans.call(
         #     "Global Context",
         #     evans.annotate_time,
-        #     abjad.select(),
+        #     lambda _: abjad.Selection(_),
         # ),
     ],
     score_template=score,

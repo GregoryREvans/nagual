@@ -8,35 +8,35 @@ from abjadext import rmakers
 
 
 def select_outer_ties(argument):
-    result = abjad.select(argument).logical_ties().get([0, -1])
+    result = abjad.Selection(argument).logical_ties().get([0, -1])
     return result
 
 
 def select_last_tie_leaf(argument):
-    result = abjad.select(argument).logical_ties()[:-1]
-    return [abjad.select(_).leaf(-1) for _ in result]
+    result = abjad.Selection(argument).logical_ties()[:-1]
+    return [abjad.Selection(_).leaf(-1) for _ in result]
 
 
 def select_across_divisions(argument):
-    result = abjad.select(argument).tuplets()[:-1]
-    return [abjad.select(_).leaf(-1) for _ in result]
+    result = abjad.Selection(argument).tuplets()[:-1]
+    return [abjad.Selection(_).leaf(-1) for _ in result]
 
 
 def select_alternate_divisions(argument):
-    result = abjad.select(argument).tuplets().get([0], 2)
-    return [abjad.select(_).leaf(-1) for _ in result]
+    result = abjad.Selection(argument).tuplets().get([0], 2)
+    return [abjad.Selection(_).leaf(-1) for _ in result]
 
 
 def select_periodic_tuplets(argument):
-    return abjad.select(argument).tuplets().get([0], 2)
+    return abjad.Selection(argument).tuplets().get([0], 2)
 
 
 def select_periodic_ties_2_4_7_8_of_10(argument):
-    return abjad.select(argument).logical_ties().get([2, 4, 7, 8], 10)
+    return abjad.Selection(argument).logical_ties().get([2, 4, 7, 8], 10)
 
 
 def select_periodic_ties_2_4_of_8(argument):
-    return abjad.select(argument).logical_ties().get([2, 4], 8)
+    return abjad.Selection(argument).logical_ties().get([2, 4], 8)
 
 
 ##
@@ -44,7 +44,7 @@ def select_periodic_ties_2_4_of_8(argument):
 
 silence_maker = rmakers.stack(
     rmakers.NoteRhythmMaker(),
-    rmakers.force_rest(abjad.select().leaves(pitched=True)),
+    rmakers.force_rest(lambda _: abjad.Selection(_).leaves(pitched=True)),
 )
 
 silence_handler = evans.RhythmHandler(
@@ -84,10 +84,10 @@ helianthated_talea_01 = rmakers.stack(
         extra_counts=[0, -4, 0, 16, 8],
         end_counts=[1, 1],
     ),
-    rmakers.trivialize(abjad.select().tuplets()),
-    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-    rmakers.rewrite_sustained(abjad.select().tuplets()),
-    rmakers.extract_trivial(abjad.select().tuplets()),
+    rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.extract_trivial(lambda _: abjad.Selection(_).tuplets()),
 )
 
 helianthated_talea_handler_01 = evans.RhythmHandler(
@@ -100,10 +100,10 @@ helianthated_talea_handler_01 = evans.RhythmHandler(
 
 quarters_01 = rmakers.stack(
     rmakers.even_division([4], extra_counts=[0, 0, -1, 1]),
-    rmakers.trivialize(abjad.select().tuplets()),
+    rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
     rmakers.tie(select_periodic_ties_2_4_of_8),
-    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-    rmakers.rewrite_sustained(abjad.select().tuplets()),
+    rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
     rmakers.extract_trivial(),
 )
 
@@ -158,10 +158,10 @@ helianthated_talea_01_segment_02 = rmakers.stack(
         extra_counts=[0, -4, 0, 12, 8],
         end_counts=[1, 1, 1, 1],
     ),
-    rmakers.trivialize(abjad.select().tuplets()),
-    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-    rmakers.rewrite_sustained(abjad.select().tuplets()),
-    rmakers.extract_trivial(abjad.select().tuplets()),
+    rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.extract_trivial(lambda _: abjad.Selection(_).tuplets()),
 )
 
 helianthated_talea_handler_01_segment_02 = evans.RhythmHandler(
@@ -187,10 +187,10 @@ helianthated_talea_02 = rmakers.stack(
         extra_counts=[2, 0, 0, -2, 6],
         preamble=[1, 1, 1],
     ),
-    rmakers.trivialize(abjad.select().tuplets()),
-    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-    rmakers.rewrite_sustained(abjad.select().tuplets()),
-    rmakers.extract_trivial(abjad.select().tuplets()),
+    rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.extract_trivial(lambda _: abjad.Selection(_).tuplets()),
 )
 
 helianthated_talea_handler_02 = evans.RhythmHandler(
@@ -207,10 +207,10 @@ tuplet_maker_02 = rmakers.stack(
             (1, 2),
         ]
     ),
-    rmakers.trivialize(abjad.select().tuplets()),
-    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-    rmakers.rewrite_sustained(abjad.select().tuplets()),
-    rmakers.extract_trivial(abjad.select().tuplets()),
+    rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.extract_trivial(lambda _: abjad.Selection(_).tuplets()),
 )
 
 tuplet_handler_02 = evans.RhythmHandler(
@@ -230,10 +230,10 @@ even_division_maker_02 = rmakers.stack(
         ],
         extra_counts=[0, 2, 4, 2],
     ),
-    rmakers.trivialize(abjad.select().tuplets()),
-    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-    rmakers.rewrite_sustained(abjad.select().tuplets()),
-    rmakers.extract_trivial(abjad.select().tuplets()),
+    rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.extract_trivial(lambda _: abjad.Selection(_).tuplets()),
 )
 
 even_division_handler_02 = evans.RhythmHandler(
@@ -321,9 +321,9 @@ rtm_03 = rmakers.stack(
         ],
     ),
     rmakers.tie(select_periodic_ties_2_4_7_8_of_10),
-    rmakers.trivialize(abjad.select().tuplets()),
-    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-    rmakers.rewrite_sustained(abjad.select().tuplets()),
+    rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
     rmakers.extract_trivial(),
 )
 
@@ -349,9 +349,9 @@ sustain_03 = rmakers.stack(
             "(1 (1))",
         ],
     ),
-    rmakers.trivialize(abjad.select().tuplets()),
-    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-    rmakers.rewrite_sustained(abjad.select().tuplets()),
+    rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
     rmakers.extract_trivial(),
 )
 
@@ -376,10 +376,10 @@ helianthated_talea_01_segment_04 = rmakers.stack(
         extra_counts=[0, -4, 0, 12, 8],
         end_counts=[1, 1, 1, 1, 1],
     ),
-    rmakers.trivialize(abjad.select().tuplets()),
-    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-    rmakers.rewrite_sustained(abjad.select().tuplets()),
-    rmakers.extract_trivial(abjad.select().tuplets()),
+    rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.extract_trivial(lambda _: abjad.Selection(_).tuplets()),
 )
 
 helianthated_talea_handler_04 = evans.RhythmHandler(
@@ -422,9 +422,9 @@ rtm_04 = rmakers.stack(
             "(1 (-1 2 -1))",
         ],
     ),
-    rmakers.trivialize(abjad.select().tuplets()),
-    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-    rmakers.rewrite_sustained(abjad.select().tuplets()),
+    rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
     rmakers.extract_trivial(),
 )
 
@@ -445,10 +445,10 @@ helianthated_talea_01_segment_05 = rmakers.stack(
         extra_counts=[0, 4, 8, 6],
         end_counts=[1, 1, 1],
     ),
-    rmakers.trivialize(abjad.select().tuplets()),
-    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-    rmakers.rewrite_sustained(abjad.select().tuplets()),
-    rmakers.extract_trivial(abjad.select().tuplets()),
+    rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.extract_trivial(lambda _: abjad.Selection(_).tuplets()),
 )
 
 helianthated_talea_handler_05 = evans.RhythmHandler(
@@ -507,10 +507,10 @@ quarters_06 = rmakers.stack(
             0,
         ],
     ),
-    rmakers.trivialize(abjad.select().tuplets()),
+    rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
     rmakers.tie(select_periodic_ties_2_4_of_8),
-    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-    rmakers.rewrite_sustained(abjad.select().tuplets()),
+    rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
     rmakers.extract_trivial(),
 )
 
@@ -533,9 +533,9 @@ rtm_06 = rmakers.stack(
             "(1 (1 -2 1 -1 1))",
         ],
     ),
-    rmakers.trivialize(abjad.select().tuplets()),
-    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-    rmakers.rewrite_sustained(abjad.select().tuplets()),
+    rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
     rmakers.extract_trivial(),
 )
 
@@ -587,10 +587,10 @@ quarters_07 = rmakers.stack(
             0,
         ],
     ),
-    rmakers.trivialize(abjad.select().tuplets()),
+    rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
     rmakers.tie(select_periodic_ties_2_4_of_8),
-    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-    rmakers.rewrite_sustained(abjad.select().tuplets()),
+    rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
     rmakers.extract_trivial(),
 )
 
@@ -606,10 +606,10 @@ helianthated_talea_07 = rmakers.stack(
         8,
         extra_counts=[0],
     ),
-    rmakers.trivialize(abjad.select().tuplets()),
-    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-    rmakers.rewrite_sustained(abjad.select().tuplets()),
-    rmakers.extract_trivial(abjad.select().tuplets()),
+    rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.extract_trivial(lambda _: abjad.Selection(_).tuplets()),
 )
 
 helianthated_talea_handler_07 = evans.RhythmHandler(
@@ -642,9 +642,9 @@ rtm_08 = rmakers.stack(
             "(1 (1 1 1 1 1 1))",
         ],
     ),
-    rmakers.trivialize(abjad.select().tuplets()),
-    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-    rmakers.rewrite_sustained(abjad.select().tuplets()),
+    rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
     rmakers.extract_trivial(),
 )
 
@@ -668,9 +668,9 @@ rtm_09 = rmakers.stack(
         ],
     ),
     # rmakers.tie(select_periodic_ties_2_4_7_8_of_10),
-    rmakers.trivialize(abjad.select().tuplets()),
-    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-    rmakers.rewrite_sustained(abjad.select().tuplets()),
+    rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
     rmakers.extract_trivial(),
 )
 
@@ -708,9 +708,9 @@ rtm_10 = rmakers.stack(
         ],
     ),
     # rmakers.tie(select_periodic_ties_2_4_7_8_of_10),
-    rmakers.trivialize(abjad.select().tuplets()),
-    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-    rmakers.rewrite_sustained(abjad.select().tuplets()),
+    rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
     rmakers.extract_trivial(),
 )
 
@@ -738,9 +738,9 @@ rtm_09_segment_10 = rmakers.stack(
         ],
     ),
     # rmakers.tie(select_periodic_ties_2_4_7_8_of_10),
-    rmakers.trivialize(abjad.select().tuplets()),
-    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-    rmakers.rewrite_sustained(abjad.select().tuplets()),
+    rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
     rmakers.extract_trivial(),
 )
 
@@ -766,10 +766,10 @@ helianthated_talea_12 = rmakers.stack(
         extra_counts=[0],
         end_counts=[1, 1],
     ),
-    rmakers.trivialize(abjad.select().tuplets()),
-    rmakers.rewrite_rest_filled(abjad.select().tuplets()),
-    rmakers.rewrite_sustained(abjad.select().tuplets()),
-    rmakers.extract_trivial(abjad.select().tuplets()),
+    rmakers.trivialize(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_rest_filled(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.rewrite_sustained(lambda _: abjad.Selection(_).tuplets()),
+    rmakers.extract_trivial(lambda _: abjad.Selection(_).tuplets()),
 )
 
 helianthated_talea_handler_12 = evans.RhythmHandler(

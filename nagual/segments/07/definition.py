@@ -39,19 +39,19 @@ maker = evans.SegmentMaker(
         evans.call(
             "score",
             evans.SegmentMaker.rewrite_meter,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         "skips",
         handler_commands_07,
         # evans.call(
         #     "score",
         #     with_sharps,
-        #     abjad.select().components(abjad.Score),
+        #     lambda _: abjad.Selection(_).components(abjad.Score),
         # ),
         evans.call(
             "score",
             evans.SegmentMaker.beam_score,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.attach(
             "Global Context",
@@ -141,7 +141,7 @@ maker = evans.SegmentMaker(
         evans.call(
             "Voice 4",
             tremolo_handler,
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.call(
             "Voice 4",
@@ -150,7 +150,7 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 4",
-            abjad.Markup(r'\boxed-markup "spazzolato" 1', literal=True),
+            abjad.Markup(r'\boxed-markup "spazzolato" 1'),
             baca.selectors.leaf(23),
         ),
         evans.attach(
@@ -221,7 +221,7 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Global Context",
-            abjad.Markup(r"\rehearsal-mark-markup H 6 -1", literal=True),
+            abjad.Markup(r"\rehearsal-mark-markup H 6 -1"),
             baca.selectors.leaf(0),
         ),
         evans.attach(
@@ -232,7 +232,7 @@ maker = evans.SegmentMaker(
         # evans.call(
         #     "Global Context",
         #     evans.annotate_time,
-        #     abjad.select(),
+        #     lambda _: abjad.Selection(_),
         # ),
     ],
     score_template=score,

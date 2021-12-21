@@ -31,19 +31,19 @@ maker = evans.SegmentMaker(
         evans.call(
             "score",
             evans.SegmentMaker.rewrite_meter,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         "skips",
         handler_commands_12,
         # evans.call(
         #     "score",
         #     with_sharps,
-        #     abjad.select().components(abjad.Score),
+        #     lambda _: abjad.Selection(_).components(abjad.Score),
         # ),
         evans.call(
             "score",
             evans.SegmentMaker.beam_score,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.attach(
             "Global Context",
@@ -197,12 +197,12 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Global Context",
-            abjad.Markup(r"\rehearsal-mark-markup O 6 -1", literal=True),
+            abjad.Markup(r"\rehearsal-mark-markup O 6 -1"),
             baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 4",
-            abjad.Markup(r"\colophon", literal=True),
+            abjad.Markup(r"\colophon"),
             baca.selectors.leaf(-2),
         ),
         evans.attach(
@@ -333,7 +333,7 @@ maker = evans.SegmentMaker(
         # evans.call(
         #     "Global Context",
         #     evans.annotate_time,
-        #     abjad.select(),
+        #     lambda _: abjad.Selection(_),
         # ),
     ],
     score_template=score,

@@ -19,8 +19,8 @@ class WarbleFingerings(evans.handlers.Handler):
         self.name = name
 
     def __call__(self, selections):
-        for tie in abjad.select(selections).logical_ties(pitched=True):
-            first_leaf = abjad.select(tie).leaf(0)
+        for tie in abjad.Selection(selections).logical_ties(pitched=True):
+            first_leaf = abjad.Selection(tie).leaf(0)
             symbol = self._cyc_fingerings(r=1)[0]
             abjad.attach(symbol, first_leaf)
 
@@ -318,8 +318,8 @@ abjad.tweak(met_mod_80_100).padding = 6
 
 
 def zero_padding_glissando(selections):
-    for run in abjad.select(selections).runs():
-        leaves = abjad.select(run).leaves()
+    for run in abjad.Selection(selections).runs():
+        leaves = abjad.Selection(run).leaves()
         for leaf in leaves[1:-1]:
             abjad.tweak(leaf.note_head).Accidental.stencil = False
             abjad.tweak(leaf.note_head).transparent = True
@@ -594,7 +594,7 @@ bis_handler = evans.BisbigliandoHandler(
 )
 
 start_damp = abjad.StartTextSpan(
-    left_text=abjad.Markup(r"\damp-markup", literal=True),
+    left_text=abjad.Markup(r"\damp-markup"),
     style="dashed-line-with-hook",
     command=r"\startTextSpanOne",
 )
@@ -604,22 +604,22 @@ stop_damp = abjad.StopTextSpan(command=r"\stopTextSpanOne")
 
 
 def fireworks(selections):
-    for run in abjad.select(selections).runs():
-        first_leaf = abjad.select(run).leaf(0)
-        last_leaf = abjad.select(run).leaf(-1)
+    for run in abjad.Selection(selections).runs():
+        first_leaf = abjad.Selection(run).leaf(0)
+        last_leaf = abjad.Selection(run).leaf(-1)
         abjad.attach(abjad.Dynamic("sfp"), first_leaf)
         abjad.attach(abjad.StartHairpin("<"), first_leaf)
         abjad.attach(abjad.Dynamic("fff", leak=True), last_leaf)
 
 
 def sforzandi(selections):
-    ties = abjad.select(selections).logical_ties(pitched=True)
+    ties = abjad.Selection(selections).logical_ties(pitched=True)
     for tie in ties:
         abjad.attach(abjad.Dynamic("sfz"), tie[0])
 
 
 start_scratch = abjad.StartTextSpan(
-    left_text=abjad.Markup(r"poco \hspace #1 gridato", literal=True),
+    left_text=abjad.Markup(r"poco \hspace #1 gridato"),
     right_text=abjad.Markup("molto gridato"),
     style="solid-line-with-arrow",
     command=r"\startTextSpanTwo",

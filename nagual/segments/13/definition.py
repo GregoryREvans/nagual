@@ -31,7 +31,7 @@ maker = evans.SegmentMaker(
         evans.call(
             "score",
             evans.SegmentMaker.rewrite_meter,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         "skips",
         evans.call(
@@ -42,7 +42,7 @@ maker = evans.SegmentMaker(
         evans.call(
             "score",
             fireworks,
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.attach(
             "Voice 1",
@@ -57,23 +57,23 @@ maker = evans.SegmentMaker(
         evans.call(
             "Voice 1",
             octave_up,
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.call(
             "Voice 1",
             octave_up,
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.call(
             "Voice 4",
             octave_up,
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         handler_commands_13,
         evans.call(
             "score",
             evans.SegmentMaker.beam_score,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.attach(
             "Global Context",
@@ -83,7 +83,7 @@ maker = evans.SegmentMaker(
         evans.call(
             "Voice 2",
             tremolo_handler,
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.attach(
             "Voice 3",
@@ -127,13 +127,13 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Global Context",
-            abjad.Markup(r"\rehearsal-mark-markup J 6 -1", literal=True),
+            abjad.Markup(r"\rehearsal-mark-markup J 6 -1"),
             baca.selectors.leaf(0),
         ),
         # evans.call(
         #     "Global Context",
         #     evans.annotate_time,
-        #     abjad.select(),
+        #     lambda _: abjad.Selection(_),
         # ),
     ],
     score_template=score,
