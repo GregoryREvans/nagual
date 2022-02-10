@@ -10,16 +10,16 @@
 %{ #(set-default-paper-size "11x17")
 #(set-global-staff-size 13) %}
 
-\include "/Users/evansdsg2/evans/lilypond/evans-markups.ily"
-\include "/Users/evansdsg2/evans/lilypond/evans-spanners.ily"
+\include "/Users/gregoryevans/evans/lilypond/evans-markups.ily"
+\include "/Users/gregoryevans/evans/lilypond/evans-spanners.ily"
 \include "../../../lib.ily"
 
 \header {
 	tagline = ##f
 	breakbefore = ##t
-	%{ dedication = \markup \override #'(font-name . "Bell MT Std") \fontsize #3.4 \center-column {"t o   E n s e m b l e   D a l   N i e n t e" \fontsize #0.4 \with-color #white "."} %}
+	%{ dedication = \markup \override #'(font-name . "Bell MT") \fontsize #3.4 \center-column {"t o   E n s e m b l e   D a l   N i e n t e" \fontsize #0.4 \with-color #white "."} %}
 	title =  \markup \center-column {
-            \override #'(font-name . "Bell MT Std")
+            \override #'(font-name . "Bell MT")
             \fontsize #11
             \line {
                 \concat {
@@ -38,7 +38,7 @@
                 }
             }
             " "
-            \override #'(font-name . "Bell MT Std Italic")
+            \override #'(font-name . "Bell MT Italic")
             \fontsize #0.3
             \line {
                 for \hspace #0.75
@@ -51,7 +51,7 @@
     }
 	composer = \markup \column {
 		\line {
-			\override #'(font-name . "Bell MT Std") \fontsize #1.5 {"Gregory Rowland Evans (*1995)"}
+			\override #'(font-name . "Bell MT") \fontsize #1.5 {"Gregory Rowland Evans (*1995)"}
 		}
 		\line {
 			\vspace #12
@@ -84,14 +84,14 @@
 		\override BarNumber.extra-offset = #'(-4 . -4)
         \override BarNumber.font-size = 1
 		\override BarNumber.padding = 4
-		\override BarNumber.font-name = "Bell MT Std" %}
+		\override BarNumber.font-name = "Bell MT" %}
 		\override MetronomeMark.stencil = ##f
 		\override RehearsalMark.X-extent = #'(0 . 0)
 		\override RehearsalMark.X-offset = 6
 		\override RehearsalMark.Y-offset = -2.5
 		\override RehearsalMark.break-align-symbols = #'(time-signature)
 		\override RehearsalMark.break-visibility = #end-of-line-invisible
-		\override RehearsalMark.font-name = "Bell MT Std"
+		\override RehearsalMark.font-name = "Bell MT"
 		\override RehearsalMark.font-size = 3
 		\override RehearsalMark.outside-staff-priority = 500
 		\override RehearsalMark.self-alignment-X = #center
@@ -104,7 +104,7 @@
         \override TimeSignature.font-size = 1.5 % was 8 for Bell MT
         \override TimeSignature.space-alist.clef = #'(extra-space . 0.5)
         \override TimeSignature.style = #'numbered
-		%{ \override TimeSignature.font-name = "Bell MT Std" %}
+		%{ \override TimeSignature.font-name = "Bell MT" %}
 		\override TimeSignature.whiteout-style = #'outline
 		\override TimeSignature.whiteout = ##t
 		\override TimeSignature.transparent = ##t
@@ -209,9 +209,9 @@
         \fill-line {
             \bold
             \fontsize #3
-            \override #'(font-name . "Bell MT Std")
+            \override #'(font-name . "Bell MT")
             \concat {
-                \override #'(font-name . "Bell MT Std Italic")
+                \override #'(font-name . "Bell MT Italic")
                 Nagual
                 \hspace #3
                 —
@@ -264,7 +264,7 @@
 
 	%{ #(define fonts
       (set-global-fonts
-       #:roman "Bell MT Std"
+       #:roman "Bell MT"
        #:factor (/ staff-height pt 20)
       )) %}
 
